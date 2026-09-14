@@ -17,7 +17,7 @@
       --bg-main: #0B0F19;
       --bg-card: #131B2E;
       --bg-card-hover: #1B2640;
-      --bg-glass: rgba(19, 27, 46, 0.88);
+      --bg-glass: rgba(19, 27, 46, 0.92);
       --border-color: rgba(255, 255, 255, 0.1);
       --text-main: #F1F5F9;
       --text-muted: #94A3B8;
@@ -33,7 +33,7 @@
       --bg-main: #F8FAFC;
       --bg-card: #FFFFFF;
       --bg-card-hover: #F1F5F9;
-      --bg-glass: rgba(255, 255, 255, 0.92);
+      --bg-glass: rgba(255, 255, 255, 0.95);
       --border-color: #E2E8F0;
       --text-main: #0F172A;
       --text-muted: #64748B;
@@ -228,18 +228,22 @@
       pointer-events: none;
     }
 
-    /* NAVBAR */
+    /* CLEAN STICKY NAVBAR CONTAINER */
     .navbar {
       position: sticky;
       top: 0;
       z-index: 100;
       background: var(--bg-glass);
-      backdrop-filter: blur(12px);
+      backdrop-filter: blur(14px);
       border-bottom: 1px solid var(--border-color);
-      padding: 12px 20px;
+      padding: 10px 16px 8px 16px;
+    }
+
+    .nav-top-row {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 12px;
     }
 
     .nav-brand {
@@ -247,6 +251,7 @@
       align-items: center;
       gap: 10px;
       text-decoration: none;
+      min-width: 0;
     }
 
     .nav-logo-badge {
@@ -258,29 +263,23 @@
       font-family: var(--font-heading);
       letter-spacing: 0.5px;
       font-size: 0.85rem;
+      flex-shrink: 0;
     }
 
     .nav-title {
-      font-size: 0.9rem;
+      font-size: 0.92rem;
       font-weight: 700;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-    }
-
-    .nav-status {
-      font-size: 0.7rem;
-      padding: 2px 8px;
-      background: rgba(16, 185, 129, 0.15);
-      color: var(--accent);
-      border-radius: 20px;
-      font-weight: 600;
+      color: var(--text-main);
     }
 
     .nav-actions {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
+      flex-shrink: 0;
     }
 
     .btn-icon {
@@ -290,33 +289,31 @@
       padding: 8px 12px;
       border-radius: 8px;
       cursor: pointer;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       font-weight: 500;
       display: flex;
       align-items: center;
       gap: 6px;
-      min-height: 40px;
-      transition: background 0.2s ease;
+      min-height: 38px;
+      transition: background 0.2s ease, border-color 0.2s ease;
     }
 
     .btn-icon:hover {
       background: var(--bg-card-hover);
+      border-color: var(--primary);
     }
 
-    /* MOBILE NAVIGATION BAR / TOC BAR */
+    /* HORIZONTAL SCROLLABLE TOC BAR INSIDE STICKY HEADER */
     .mobile-toc-bar {
-      position: sticky;
-      top: 61px;
-      z-index: 90;
-      background: var(--bg-card);
-      border-bottom: 1px solid var(--border-color);
-      padding: 8px 16px;
       display: flex;
       align-items: center;
       gap: 8px;
       overflow-x: auto;
       white-space: nowrap;
       -webkit-overflow-scrolling: touch;
+      padding-top: 8px;
+      margin-top: 8px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
     }
 
     .mobile-toc-bar::-webkit-scrollbar {
@@ -327,12 +324,12 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 6px 14px;
+      padding: 5px 12px;
       background: rgba(255, 255, 255, 0.04);
       border: 1px solid var(--border-color);
       border-radius: 20px;
       color: var(--text-muted);
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       font-weight: 600;
       text-decoration: none;
       transition: all 0.2s ease;
@@ -553,7 +550,7 @@
       border-radius: 18px;
       padding: 28px 20px;
       margin-bottom: 24px;
-      scroll-margin-top: 120px;
+      scroll-margin-top: 110px;
     }
 
     .section-header {
@@ -799,16 +796,17 @@
     /* MOBILE RESPONSIVE MEDIA QUERIES */
     @media (max-width: 768px) {
       .navbar {
-        padding: 10px 12px;
+        padding: 10px 12px 6px 12px;
       }
       .nav-title {
-        display: none;
+        font-size: 0.82rem;
       }
       .btn-icon span {
         display: none;
       }
       .btn-icon {
         padding: 8px;
+        min-height: 36px;
       }
       .hero-title {
         font-size: 1.45rem;
@@ -915,54 +913,52 @@
   <!-- MAIN APP CONTENT -->
   <div id="app-content" class="blurred">
     
-    <!-- NAVBAR -->
+    <!-- CLEAN STICKY NAVBAR HEADER CONTAINER -->
     <header class="navbar">
-      <a href="#" class="nav-brand">
-        <div class="nav-logo-badge">SHINELINK</div>
-        <div>
+      <div class="nav-top-row">
+        <a href="#" class="nav-brand">
+          <div class="nav-logo-badge">SHINELINK</div>
           <div class="nav-title">SHINELINK INDUSTRIES (VIỆT NAM)</div>
-          <div style="font-size: 0.7rem; color: var(--text-muted);">Proposal Website Build 2026</div>
+        </a>
+        <div class="nav-actions">
+          <button class="btn-icon" onclick="toggleTocDrawer()" title="Mục lục đề xuất">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path>
+            </svg>
+            <span>Mục Lục</span>
+          </button>
+          <button class="btn-icon" onclick="toggleTheme()" title="Đổi giao diện Sáng/Tối">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+            </svg>
+            <span>Giao diện</span>
+          </button>
+          <button class="btn-icon" onclick="window.print()" title="In hoặc Xuất PDF">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
+            </svg>
+            <span>In / PDF</span>
+          </button>
+          <button class="btn-icon" onclick="logout()" title="Đăng xuất">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
+            </svg>
+            <span>Thoát</span>
+          </button>
         </div>
-      </a>
-      <div class="nav-actions">
-        <span class="nav-status">Chính Thức</span>
-        <button class="btn-icon" onclick="toggleTocDrawer()" title="Mục lục đề xuất">
-          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path>
-          </svg>
-          <span>Mục Lục</span>
-        </button>
-        <button class="btn-icon" onclick="toggleTheme()" title="Đổi giao diện Sáng/Tối">
-          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
-          </svg>
-          <span>Giao diện</span>
-        </button>
-        <button class="btn-icon" onclick="window.print()" title="In hoặc Xuất PDF">
-          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
-          </svg>
-          <span>In / PDF</span>
-        </button>
-        <button class="btn-icon" onclick="logout()" title="Đăng xuất">
-          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
-          </svg>
-          <span>Thoát</span>
-        </button>
       </div>
-    </header>
 
-    <!-- MOBILE HORIZONTAL SCROLLABLE TOC CHIPS BAR -->
-    <nav class="mobile-toc-bar">
-      <a href="#sec-intro" class="toc-chip">01. Hiện Trạng</a>
-      <a href="#sec-strategy" class="toc-chip">02. Công Nghệ</a>
-      <a href="#sec-templates" class="toc-chip">03. 9 Core Templates</a>
-      <a href="#sec-products" class="toc-chip">04. 49 SP &amp; 133 Tin</a>
-      <a href="#sec-pdf" class="toc-chip">05. 26 PDFs</a>
-      <a href="#sec-pricing" class="toc-chip">06. Báo Giá (40.98M)</a>
-      <a href="#sec-timeline" class="toc-chip">07. Timeline</a>
-    </nav>
+      <!-- HORIZONTAL SCROLLABLE TOC CHIPS BAR (INSIDE STICKY HEADER) -->
+      <nav class="mobile-toc-bar">
+        <a href="#sec-intro" class="toc-chip">01. Hiện Trạng</a>
+        <a href="#sec-strategy" class="toc-chip">02. Công Nghệ</a>
+        <a href="#sec-templates" class="toc-chip">03. 9 Core Templates</a>
+        <a href="#sec-products" class="toc-chip">04. 49 SP &amp; 133 Tin</a>
+        <a href="#sec-pdf" class="toc-chip">05. 26 PDFs</a>
+        <a href="#sec-pricing" class="toc-chip">06. Báo Giá (40.98M)</a>
+        <a href="#sec-timeline" class="toc-chip">07. Timeline</a>
+      </nav>
+    </header>
 
     <div class="container">
       
@@ -1406,7 +1402,7 @@
       window.addEventListener("scroll", () => {
         let current = "";
         sections.forEach(section => {
-          const sectionTop = section.offsetTop - 150;
+          const sectionTop = section.offsetTop - 130;
           if (pageYOffset >= sectionTop) {
             current = section.getAttribute("id");
           }
