@@ -3,49 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Đề Xuất Xây Dựng Website Shinelink Việt Nam (shinelink.vn)</title>
-  <meta name="description" content="Đề xuất phạm vi & báo giá xây dựng website chính thức Shinelink Industries Việt Nam (shinelink.vn)">
+  <title>Đề Xuất Thương Mại & Kỹ Thuật — Website Shinelink Việt Nam | Vietnam Sales Force</title>
+  <meta name="description" content="Đề xuất phạm vi & báo giá xây dựng website B2B chính thức shinelink.vn do Vietnam Sales Force (VSF) phát hành cho Shinelink Industries">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
+    /* ══════════════════════════════════════════════════════════════════
+       VIETNAM SALES FORCE (VSF) DESIGN SYSTEM & TOKENS
+       ══════════════════════════════════════════════════════════════════ */
     :root {
-      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      --font-heading: 'Outfit', sans-serif;
-      
-      /* Dark Theme Colors */
-      --bg-main: #0B0F19;
-      --bg-card: #131B2E;
-      --bg-card-hover: #1B2640;
-      --bg-glass: rgba(19, 27, 46, 0.92);
-      --border-color: rgba(255, 255, 255, 0.1);
-      --text-main: #F1F5F9;
-      --text-muted: #94A3B8;
-      --primary: #3B82F6;
-      --primary-hover: #2563EB;
-      --accent: #10B981;
-      --warning: #F59E0B;
-      --danger: #EF4444;
-      --shadow-color: rgba(0, 0, 0, 0.5);
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+      --max-width: 1140px;
+      --radius: 4px;
+      --radius-lg: 12px;
+
+      /* Dark Theme (Navy & Gold Luxury - Default) */
+      --navy: #08142A;
+      --navy-mid: #101E38;
+      --navy-card: #112240;
+      --navy-lite: #1A3259;
+      --gold: #C4973A;
+      --gold-lite: #D4AB5A;
+      --gold-pale: #F0E4C8;
+      --cream: #F8F4ED;
+      --white: #FFFFFF;
+
+      --bg-main: #08142A;
+      --bg-card: #112240;
+      --bg-card-hover: #162B50;
+      --bg-card-alt: rgba(255, 255, 255, 0.03);
+      --bg-glass: rgba(8, 20, 42, 0.94);
+      --border-color: rgba(196, 151, 58, 0.22);
+      --border-subtle: rgba(255, 255, 255, 0.09);
+      --text-main: #F8F4ED;
+      --text-muted: #9BB0C7;
+      --text-dim: #6B7C93;
+
+      --accent-green: #10B981;
+      --accent-red: #F87171;
+      --shadow-luxury: 0 12px 36px rgba(0, 0, 0, 0.45);
     }
 
     [data-theme="light"] {
-      --bg-main: #F8FAFC;
+      --bg-main: #F7F5F0;
       --bg-card: #FFFFFF;
-      --bg-card-hover: #F1F5F9;
-      --bg-glass: rgba(255, 255, 255, 0.95);
-      --border-color: #E2E8F0;
-      --text-main: #0F172A;
-      --text-muted: #64748B;
-      --primary: #2563EB;
-      --primary-hover: #1D4ED8;
-      --accent: #059669;
-      --warning: #D97706;
-      --danger: #DC2626;
-      --shadow-color: rgba(0, 0, 0, 0.1);
+      --bg-card-hover: #FDFCF9;
+      --bg-card-alt: #F1ECE3;
+      --bg-glass: rgba(247, 245, 240, 0.95);
+      --border-color: #DDD5C4;
+      --border-subtle: rgba(8, 20, 42, 0.12);
+      --text-main: #0E1E38;
+      --text-muted: #4F6176;
+      --text-dim: #7A8B9E;
+
+      --gold: #A87926;
+      --gold-lite: #BE8D35;
+      --gold-pale: #845D18;
+      --shadow-luxury: 0 10px 30px rgba(8, 20, 42, 0.08);
     }
 
-    * {
+    *, *::before, *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
@@ -53,25 +72,40 @@
 
     html {
       scroll-behavior: smooth;
+      scroll-padding-top: 100px;
     }
 
     body {
       font-family: var(--font-body);
       background-color: var(--bg-main);
       color: var(--text-main);
-      line-height: 1.6;
+      line-height: 1.65;
       transition: background-color 0.3s ease, color 0.3s ease;
       overflow-x: hidden;
+      font-size: 15px;
     }
 
+    /* TYPOGRAPHY */
     h1, h2, h3, h4, h5, h6 {
-      font-family: var(--font-heading);
-      font-weight: 700;
+      font-family: var(--font-display);
+      font-weight: 600;
       line-height: 1.25;
       color: var(--text-main);
+      letter-spacing: -0.01em;
     }
 
-    /* Modern Scrollbar */
+    em {
+      font-family: var(--font-display);
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* SCROLLBAR */
     ::-webkit-scrollbar {
       width: 6px;
       height: 6px;
@@ -80,21 +114,23 @@
       background: var(--bg-main);
     }
     ::-webkit-scrollbar-thumb {
-      background: var(--border-color);
-      border-radius: 4px;
+      background: var(--gold);
+      border-radius: 3px;
     }
 
-    /* GLASSMORPHISM AUTH OVERLAY */
+    /* ══════════════════════════════════════════════════════════════════
+       GLASSMORPHISM AUTH MODAL (PROTECTED PROPOSAL)
+       ══════════════════════════════════════════════════════════════════ */
     #auth-overlay {
       position: fixed;
       inset: 0;
       z-index: 9999;
-      background: rgba(11, 15, 25, 0.94);
+      background: rgba(8, 20, 42, 0.95);
       backdrop-filter: blur(16px);
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 16px;
+      padding: 20px;
       transition: opacity 0.4s ease, visibility 0.4s ease;
     }
 
@@ -105,13 +141,13 @@
     }
 
     .auth-card {
-      background: var(--bg-card);
+      background: var(--navy-mid);
       border: 1px solid var(--border-color);
-      border-radius: 20px;
-      padding: 36px 24px;
+      border-radius: var(--radius-lg);
+      padding: 44px 32px;
       width: 100%;
-      max-width: 420px;
-      box-shadow: 0 25px 50px -12px var(--shadow-color);
+      max-width: 440px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6);
       text-align: center;
       position: relative;
       overflow: hidden;
@@ -123,36 +159,43 @@
       top: 0;
       left: 0;
       right: 0;
-      height: 4px;
-      background: linear-gradient(90deg, var(--primary), var(--accent));
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
     }
 
-    .auth-logo {
-      width: 56px;
-      height: 56px;
-      background: rgba(59, 130, 246, 0.15);
-      color: var(--primary);
-      border-radius: 14px;
+    .auth-badge-icon {
+      width: 60px;
+      height: 60px;
+      background: rgba(196, 151, 58, 0.12);
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 0 auto 16px auto;
+      margin: 0 auto 20px auto;
     }
 
-    .auth-logo svg {
-      width: 28px;
-      height: 28px;
+    .auth-brand-sub {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 6px;
     }
 
     .auth-title {
-      font-size: 1.35rem;
+      font-size: 1.8rem;
+      font-weight: 600;
       margin-bottom: 8px;
     }
 
     .auth-subtitle {
-      font-size: 0.85rem;
+      font-size: 0.88rem;
       color: var(--text-muted);
-      margin-bottom: 24px;
+      margin-bottom: 26px;
+      line-height: 1.5;
     }
 
     .form-group {
@@ -164,49 +207,57 @@
       display: block;
       font-size: 0.75rem;
       font-weight: 600;
-      color: var(--text-muted);
+      color: var(--gold-pale);
       margin-bottom: 8px;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.08em;
     }
 
     .input-wrapper input {
       width: 100%;
-      padding: 14px 16px;
-      background: rgba(0, 0, 0, 0.2);
-      border: 1px solid var(--border-color);
-      border-radius: 10px;
-      color: var(--text-main);
-      font-size: 1rem;
+      padding: 13px 16px;
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(196, 151, 58, 0.3);
+      border-radius: var(--radius);
+      color: #fff;
+      font-size: 0.95rem;
       outline: none;
-      transition: border-color 0.2s ease;
+      transition: all 0.2s ease;
+      font-family: var(--font-body);
     }
 
     .input-wrapper input:focus {
-      border-color: var(--primary);
-      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(196, 151, 58, 0.25);
     }
 
     .btn-auth {
       width: 100%;
       padding: 14px;
-      background: linear-gradient(135deg, var(--primary), var(--primary-hover));
-      color: #fff;
-      font-size: 1rem;
-      font-weight: 600;
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
       border: none;
-      border-radius: 10px;
+      border-radius: var(--radius);
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
-      min-height: 48px;
+      gap: 10px;
+      transition: background 0.2s ease, transform 0.15s ease;
+    }
+
+    .btn-auth:hover {
+      background: var(--gold-lite);
+      transform: translateY(-1px);
     }
 
     .auth-error {
-      color: var(--danger);
-      font-size: 0.85rem;
+      color: var(--accent-red);
+      font-size: 0.82rem;
       margin-top: 12px;
       display: none;
     }
@@ -222,13 +273,17 @@
       40%, 80% { transform: translateX(6px); }
     }
 
-    /* MAIN CONTENT LAYOUT */
+    /* ══════════════════════════════════════════════════════════════════
+       MAIN CONTENT LAYOUT
+       ══════════════════════════════════════════════════════════════════ */
     #app-content.blurred {
       filter: blur(8px);
       pointer-events: none;
     }
 
-    /* CLEAN STICKY NAVBAR CONTAINER */
+    /* ══════════════════════════════════════════════════════════════════
+       STICKY NAVBAR (VSF SIGNATURE STYLE)
+       ══════════════════════════════════════════════════════════════════ */
     .navbar {
       position: sticky;
       top: 0;
@@ -236,84 +291,106 @@
       background: var(--bg-glass);
       backdrop-filter: blur(14px);
       border-bottom: 1px solid var(--border-color);
-      padding: 10px 16px 8px 16px;
+      padding: 12px 24px 8px 24px;
+      transition: background 0.3s ease;
+    }
+
+    .nav-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
     }
 
     .nav-top-row {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 12px;
+      gap: 16px;
     }
 
     .nav-brand {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 14px;
       text-decoration: none;
-      min-width: 0;
     }
 
-    .nav-logo-badge {
-      background: linear-gradient(135deg, var(--primary), #1D4ED8);
-      color: #fff;
-      font-weight: 800;
-      padding: 6px 10px;
-      border-radius: 8px;
-      font-family: var(--font-heading);
-      letter-spacing: 0.5px;
-      font-size: 0.85rem;
-      flex-shrink: 0;
+    .nav-brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.15;
     }
 
-    .nav-title {
-      font-size: 0.92rem;
+    .nav-brand-main {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
       font-weight: 700;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
       color: var(--text-main);
+      letter-spacing: 0.02em;
+    }
+
+    .nav-brand-sub {
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-top: 1px;
+    }
+
+    .nav-client-tag {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      border-left: 1px solid var(--border-color);
+      padding-left: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 500;
+    }
+
+    .nav-client-tag strong {
+      color: var(--gold-pale);
     }
 
     .nav-actions {
       display: flex;
       align-items: center;
-      gap: 6px;
-      flex-shrink: 0;
+      gap: 8px;
     }
 
     .btn-icon {
-      background: rgba(255, 255, 255, 0.05);
+      background: var(--bg-card-alt);
       border: 1px solid var(--border-color);
       color: var(--text-main);
-      padding: 8px 12px;
-      border-radius: 8px;
+      padding: 8px 14px;
+      border-radius: var(--radius);
       cursor: pointer;
-      font-size: 0.82rem;
-      font-weight: 500;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
       display: flex;
       align-items: center;
       gap: 6px;
-      min-height: 38px;
-      transition: background 0.2s ease, border-color 0.2s ease;
+      transition: all 0.2s ease;
     }
 
     .btn-icon:hover {
-      background: var(--bg-card-hover);
-      border-color: var(--primary);
+      background: var(--gold);
+      color: var(--navy);
+      border-color: var(--gold);
     }
 
-    /* HORIZONTAL SCROLLABLE TOC BAR INSIDE STICKY HEADER */
+    /* HORIZONTAL TOC CHIP BAR */
     .mobile-toc-bar {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
       overflow-x: auto;
       white-space: nowrap;
       -webkit-overflow-scrolling: touch;
-      padding-top: 8px;
+      padding-top: 10px;
       margin-top: 8px;
-      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      border-top: 1px solid var(--border-subtle);
     }
 
     .mobile-toc-bar::-webkit-scrollbar {
@@ -323,31 +400,33 @@
     .toc-chip {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      padding: 5px 12px;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid var(--border-color);
+      gap: 4px;
+      padding: 4px 12px;
+      background: var(--bg-card-alt);
+      border: 1px solid var(--border-subtle);
       border-radius: 20px;
       color: var(--text-muted);
-      font-size: 0.78rem;
-      font-weight: 600;
+      font-size: 0.75rem;
+      font-weight: 500;
       text-decoration: none;
       transition: all 0.2s ease;
       flex-shrink: 0;
     }
 
     .toc-chip.active, .toc-chip:hover {
-      background: rgba(59, 130, 246, 0.15);
-      color: var(--primary);
-      border-color: var(--primary);
+      background: rgba(196, 151, 58, 0.15);
+      color: var(--gold);
+      border-color: var(--gold);
     }
 
-    /* TABLE OF CONTENTS DRAWER / MODAL */
+    /* ══════════════════════════════════════════════════════════════════
+       TABLE OF CONTENTS SLIDE-OUT DRAWER
+       ══════════════════════════════════════════════════════════════════ */
     #toc-drawer {
       position: fixed;
       inset: 0;
       z-index: 999;
-      background: rgba(0, 0, 0, 0.7);
+      background: rgba(8, 20, 42, 0.75);
       backdrop-filter: blur(8px);
       display: flex;
       justify-content: flex-end;
@@ -362,12 +441,12 @@
     }
 
     .toc-drawer-content {
-      width: 85%;
-      max-width: 360px;
+      width: 88%;
+      max-width: 380px;
       height: 100%;
       background: var(--bg-card);
       border-left: 1px solid var(--border-color);
-      padding: 24px 20px;
+      padding: 32px 24px;
       overflow-y: auto;
       transform: translateX(100%);
       transition: transform 0.3s ease;
@@ -383,14 +462,16 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 20px;
-      padding-bottom: 12px;
+      margin-bottom: 24px;
+      padding-bottom: 14px;
       border-bottom: 1px solid var(--border-color);
     }
 
     .toc-drawer-title {
-      font-size: 1.1rem;
+      font-family: var(--font-display);
+      font-size: 1.4rem;
       font-weight: 700;
+      color: var(--gold);
     }
 
     .btn-close-toc {
@@ -399,6 +480,10 @@
       color: var(--text-muted);
       cursor: pointer;
       padding: 4px;
+    }
+
+    .btn-close-toc:hover {
+      color: var(--gold);
     }
 
     .toc-menu-list {
@@ -412,313 +497,534 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 12px 14px;
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid var(--border-color);
-      border-radius: 10px;
+      padding: 12px 16px;
+      background: var(--bg-card-alt);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
       color: var(--text-main);
       text-decoration: none;
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       font-weight: 500;
-      transition: background 0.2s ease, border-color 0.2s ease;
+      transition: all 0.2s ease;
     }
 
     .toc-menu-link:hover {
-      background: var(--bg-card-hover);
-      border-color: var(--primary);
+      background: rgba(196, 151, 58, 0.12);
+      border-color: var(--gold);
+      color: var(--gold);
     }
 
-    /* CONTAINER */
+    /* ══════════════════════════════════════════════════════════════════
+       CONTAINER & SECTIONS
+       ══════════════════════════════════════════════════════════════════ */
     .container {
-      max-width: 1140px;
+      max-width: var(--max-width);
       margin: 0 auto;
-      padding: 28px 16px;
+      padding: 40px 24px 80px 24px;
     }
 
-    /* HERO SECTION */
+    /* ══════════════════════════════════════════════════════════════════
+       HERO SECTION (COMMERCIAL PROPOSAL COVER)
+       ══════════════════════════════════════════════════════════════════ */
     .hero {
-      background: var(--bg-card);
+      background: linear-gradient(160deg, rgba(8, 20, 42, 0.94) 0%, rgba(16, 30, 56, 0.92) 50%, rgba(10, 26, 48, 0.96) 100%);
       border: 1px solid var(--border-color);
-      border-radius: 20px;
-      padding: 32px 24px;
-      margin-bottom: 28px;
+      border-radius: var(--radius-lg);
+      padding: 48px 40px;
+      margin-bottom: 36px;
       position: relative;
       overflow: hidden;
+      box-shadow: var(--shadow-luxury);
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 50% at 75% 30%, rgba(196, 151, 58, 0.12) 0%, transparent 70%);
+      pointer-events: none;
     }
 
     .hero::after {
       content: '';
       position: absolute;
-      top: -50%;
-      right: -20%;
-      width: 400px;
-      height: 400px;
-      background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(196, 151, 58, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(196, 151, 58, 0.04) 1px, transparent 1px);
+      background-size: 40px 40px;
+      mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 20%, transparent 100%);
       pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-badge-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
     }
 
     .hero-badge {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      background: rgba(59, 130, 246, 0.1);
-      color: var(--primary);
-      padding: 4px 14px;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .hero-badge::before {
+      content: '';
+      width: 24px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    .hero-tag-doc {
+      display: inline-block;
+      padding: 3px 10px;
+      background: rgba(196, 151, 58, 0.15);
+      border: 1px solid var(--border-color);
+      color: var(--gold-pale);
       border-radius: 20px;
-      font-size: 0.8rem;
+      font-size: 10px;
       font-weight: 600;
-      margin-bottom: 16px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
     }
 
     .hero-title {
-      font-size: 1.85rem;
-      margin-bottom: 14px;
-      background: linear-gradient(135deg, var(--text-main), var(--text-muted));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      font-size: clamp(2rem, 3.8vw, 3.2rem);
+      font-weight: 400;
+      line-height: 1.18;
+      color: #FFFFFF;
+      margin-bottom: 18px;
+      letter-spacing: -0.01em;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      color: var(--gold-pale);
+      font-weight: 600;
     }
 
     .hero-desc {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-      max-width: 850px;
-      margin-bottom: 24px;
+      font-size: 1.05rem;
+      font-weight: 300;
+      line-height: 1.75;
+      color: rgba(255, 255, 255, 0.82);
+      max-width: 880px;
+      margin-bottom: 32px;
     }
 
-    .meta-grid {
+    /* PARTIES META BOX */
+    .parties-card {
+      background: rgba(8, 20, 42, 0.6);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 24px;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 14px;
-      margin-top: 20px;
-      padding-top: 20px;
-      border-top: 1px solid var(--border-color);
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-top: 24px;
     }
 
-    .meta-item {
+    .party-item {
       display: flex;
       flex-direction: column;
     }
 
-    .meta-label {
-      font-size: 0.7rem;
+    .party-role {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .party-name {
+      font-size: 0.98rem;
+      font-weight: 600;
+      color: #FFFFFF;
+      line-height: 1.4;
+    }
+
+    .party-sub {
+      font-size: 0.82rem;
       color: var(--text-muted);
-      font-weight: 600;
-      letter-spacing: 0.5px;
+      margin-top: 4px;
     }
 
-    .meta-value {
-      font-size: 0.9rem;
-      font-weight: 600;
-      margin-top: 2px;
+    .party-sub a {
+      color: var(--gold-pale);
+      text-decoration: underline;
+      text-underline-offset: 2px;
     }
 
-    /* STATS SUMMARY COUNTERS */
+    /* ══════════════════════════════════════════════════════════════════
+       STATS SUMMARY COUNTERS (VSF STYLE)
+       ══════════════════════════════════════════════════════════════════ */
     .stats-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 14px;
-      margin-bottom: 28px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 36px;
     }
 
     .stat-card {
       background: var(--bg-card);
       border: 1px solid var(--border-color);
-      border-radius: 14px;
-      padding: 18px 14px;
-      text-align: center;
+      border-left: 3px solid var(--gold);
+      border-radius: var(--radius);
+      padding: 22px 20px;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-2px);
+      background: var(--bg-card-hover);
     }
 
     .stat-number {
-      font-size: 1.6rem;
-      font-weight: 800;
-      color: var(--primary);
-      font-family: var(--font-heading);
+      font-family: var(--font-display);
+      font-size: 2.3rem;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1.1;
+      margin-bottom: 4px;
     }
 
     .stat-label {
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      margin-top: 2px;
-      font-weight: 500;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-main);
     }
 
-    /* SECTION STYLING */
+    .stat-desc {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* ══════════════════════════════════════════════════════════════════
+       SECTION CARD BASE (ADVISORY LOOK)
+       ══════════════════════════════════════════════════════════════════ */
     .section-card {
       background: var(--bg-card);
       border: 1px solid var(--border-color);
-      border-radius: 18px;
-      padding: 28px 20px;
-      margin-bottom: 24px;
+      border-radius: var(--radius-lg);
+      padding: 38px 32px;
+      margin-bottom: 32px;
       scroll-margin-top: 110px;
+      box-shadow: var(--shadow-luxury);
+      position: relative;
     }
 
     .section-header {
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .section-label {
       display: flex;
       align-items: center;
       gap: 10px;
-      margin-bottom: 20px;
-      padding-bottom: 14px;
-      border-bottom: 1px solid var(--border-color);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 8px;
     }
 
-    .section-icon {
+    .section-label::after {
+      content: '';
       width: 36px;
-      height: 36px;
-      background: rgba(59, 130, 246, 0.1);
-      color: var(--primary);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 0.9rem;
-      flex-shrink: 0;
+      height: 1px;
+      background: var(--gold);
+      opacity: 0.5;
     }
 
     .section-title {
-      font-size: 1.25rem;
+      font-size: clamp(1.5rem, 2.5vw, 2.1rem);
+      font-weight: 400;
+      color: var(--text-main);
     }
 
-    /* COMPARISON CARDS */
+    .section-title em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    .section-intro {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      line-height: 1.7;
+    }
+
+    /* ══════════════════════════════════════════════════════════════════
+       SECTION 01: COMPARISON CARDS (OLD DOMAIN VS SHINELINK.VN)
+       ══════════════════════════════════════════════════════════════════ */
     .compare-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
     }
 
     .compare-card {
-      border-radius: 14px;
-      padding: 20px;
+      border-radius: var(--radius);
+      padding: 26px;
       border: 1px solid var(--border-color);
+      background: var(--bg-card-alt);
     }
 
     .compare-card.old {
-      background: rgba(239, 68, 68, 0.04);
-      border-color: rgba(239, 68, 68, 0.2);
+      border-top: 3px solid var(--accent-red);
     }
 
     .compare-card.new {
-      background: rgba(16, 185, 129, 0.04);
-      border-color: rgba(16, 185, 129, 0.3);
+      border-top: 3px solid var(--gold);
+      background: rgba(196, 151, 58, 0.04);
     }
 
     .compare-header {
-      font-size: 1rem;
+      font-family: var(--font-display);
+      font-size: 1.25rem;
       font-weight: 700;
-      margin-bottom: 12px;
+      margin-bottom: 16px;
       display: flex;
       align-items: center;
       gap: 8px;
     }
 
+    .compare-card.old .compare-header { color: var(--accent-red); }
+    .compare-card.new .compare-header { color: var(--gold); }
+
     .compare-list {
       list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
     }
 
     .compare-list li {
-      margin-bottom: 10px;
-      padding-left: 22px;
       position: relative;
+      padding-left: 24px;
       font-size: 0.88rem;
+      color: var(--text-main);
+      line-height: 1.55;
     }
 
-    .compare-card.old li::before {
-      content: '❌';
+    .compare-list li::before {
       position: absolute;
       left: 0;
-      font-size: 0.8rem;
+      top: 1px;
+      font-size: 13px;
     }
 
-    .compare-card.new li::before {
-      content: '✅';
-      position: absolute;
-      left: 0;
-      font-size: 0.8rem;
+    .compare-card.old .compare-list li::before {
+      content: '✕';
+      color: var(--accent-red);
+      font-weight: 700;
     }
 
-    /* PILLARS GRID */
+    .compare-card.new .compare-list li::before {
+      content: '✓';
+      color: var(--gold);
+      font-weight: 800;
+    }
+
+    /* ══════════════════════════════════════════════════════════════════
+       SECTION 02: 4 STRATEGIC PILLARS (VSF ADVISORY FORM)
+       ══════════════════════════════════════════════════════════════════ */
     .pillars-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 16px;
+      gap: 18px;
     }
 
     .pillar-item {
-      background: var(--bg-card-hover);
-      border: 1px solid var(--border-color);
-      border-radius: 12px;
-      padding: 16px;
+      background: var(--bg-card-alt);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 26px 20px;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+
+    .pillar-item:hover {
+      border-color: var(--gold);
+      transform: translateY(-2px);
+      background: rgba(196, 151, 58, 0.05);
     }
 
     .pillar-tag {
-      display: inline-block;
-      padding: 3px 8px;
-      background: rgba(59, 130, 246, 0.15);
-      color: var(--primary);
-      border-radius: 6px;
+      font-size: 10px;
       font-weight: 700;
-      font-size: 0.7rem;
-      margin-bottom: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 8px;
     }
 
     .pillar-title {
-      font-size: 0.98rem;
-      margin-bottom: 6px;
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--text-main);
     }
 
     .pillar-desc {
-      font-size: 0.85rem;
+      font-size: 0.86rem;
       color: var(--text-muted);
+      line-height: 1.6;
     }
 
-    /* TEMPLATE GRID */
+    /* ══════════════════════════════════════════════════════════════════
+       SECTION 03: 9 CORE TEMPLATES
+       ══════════════════════════════════════════════════════════════════ */
     .template-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
       gap: 16px;
     }
 
     .template-card {
-      background: var(--bg-card-hover);
-      border: 1px solid var(--border-color);
-      border-radius: 12px;
-      padding: 16px;
+      background: var(--bg-card-alt);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 22px;
       position: relative;
+      transition: all 0.2s ease;
     }
 
-    .template-badge {
-      float: right;
-      background: rgba(16, 185, 129, 0.15);
-      color: var(--accent);
-      font-size: 0.65rem;
-      font-weight: 700;
-      padding: 2px 6px;
-      border-radius: 4px;
+    .template-card:hover {
+      border-color: var(--gold);
+      background: rgba(196, 151, 58, 0.04);
+    }
+
+    .template-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
     }
 
     .template-num {
-      color: var(--primary);
-      font-weight: 800;
-      font-size: 0.85rem;
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--gold);
+    }
+
+    .template-badge {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      background: rgba(196, 151, 58, 0.12);
+      border: 1px solid var(--border-color);
+      color: var(--gold);
+      border-radius: 20px;
     }
 
     .template-name {
-      font-size: 0.98rem;
-      margin: 4px 0;
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 6px;
     }
 
     .template-detail {
-      font-size: 0.82rem;
+      font-size: 0.84rem;
       color: var(--text-muted);
+      line-height: 1.55;
     }
 
-    /* DATA TABLES */
+    /* ══════════════════════════════════════════════════════════════════
+       SECTION 04 & 05: PRODUCTS & AUDIT LIST
+       ══════════════════════════════════════════════════════════════════ */
+    .scope-box {
+      background: var(--bg-card-alt);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 22px 24px;
+      margin-bottom: 18px;
+    }
+
+    .scope-box-title {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .scope-box-text {
+      font-size: 0.88rem;
+      color: var(--text-main);
+      line-height: 1.65;
+    }
+
+    .pdf-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .pdf-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--bg-card-alt);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 10px 14px;
+      font-size: 0.82rem;
+      color: var(--text-main);
+    }
+
+    .pdf-tag {
+      padding: 2px 7px;
+      background: rgba(196, 151, 58, 0.15);
+      border: 1px solid var(--border-color);
+      color: var(--gold);
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    /* ══════════════════════════════════════════════════════════════════
+       SECTION 06: COMMERCIAL PRICING TABLE
+       ══════════════════════════════════════════════════════════════════ */
     .table-responsive {
       overflow-x: auto;
-      border-radius: 10px;
-      border: 1px solid var(--border-color);
-      -webkit-overflow-scrolling: touch;
+      margin-top: 20px;
     }
 
     .custom-table {
@@ -726,154 +1032,331 @@
       border-collapse: collapse;
       text-align: left;
       font-size: 0.88rem;
-      min-width: 580px;
     }
 
     .custom-table th {
-      background: rgba(255, 255, 255, 0.03);
-      padding: 12px 14px;
-      font-weight: 600;
-      color: var(--text-muted);
-      border-bottom: 1px solid var(--border-color);
+      background: rgba(8, 20, 42, 0.8);
+      color: var(--gold);
+      font-family: var(--font-body);
+      font-size: 0.76rem;
+      font-weight: 700;
       text-transform: uppercase;
-      font-size: 0.7rem;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.1em;
+      padding: 14px 18px;
+      border-bottom: 2px solid var(--gold);
+      border-top: 1px solid var(--border-color);
+    }
+
+    [data-theme="light"] .custom-table th {
+      background: #EAE4D6;
     }
 
     .custom-table td {
-      padding: 12px 14px;
-      border-bottom: 1px solid var(--border-color);
+      padding: 16px 18px;
+      border-bottom: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      vertical-align: top;
+      line-height: 1.5;
     }
 
-    .price-highlight {
-      font-weight: 800;
-      color: var(--accent);
-      font-family: var(--font-heading);
-      font-size: 0.95rem;
+    .custom-table tbody tr:hover td {
+      background: rgba(196, 151, 58, 0.04);
+    }
+
+    .price-num {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--gold);
+      white-space: nowrap;
     }
 
     .total-row td {
-      background: rgba(59, 130, 246, 0.08) !important;
+      background: rgba(196, 151, 58, 0.08) !important;
+      border-top: 2px solid var(--gold);
+      border-bottom: 2px solid var(--gold);
       font-weight: 700;
-      font-size: 0.98rem;
+      padding: 18px;
     }
 
-    /* LISTS */
-    .pdf-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 10px;
-      margin-top: 14px;
+    .total-price {
+      font-family: var(--font-display);
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--gold);
     }
 
-    .pdf-item {
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      padding: 10px 12px;
-      font-size: 0.82rem;
+    /* ══════════════════════════════════════════════════════════════════
+       SECTION 07: TIMELINE
+       ══════════════════════════════════════════════════════════════════ */
+    .timeline-card {
+      background: rgba(16, 185, 129, 0.05);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      border-radius: var(--radius);
+      padding: 22px;
+      margin-top: 24px;
+    }
+
+    .timeline-card-title {
+      font-family: var(--font-display);
+      font-size: 1.18rem;
+      font-weight: 700;
+      color: var(--accent-green);
+      margin-bottom: 6px;
       display: flex;
       align-items: center;
       gap: 8px;
     }
 
-    .pdf-icon {
-      color: var(--danger);
+    /* ══════════════════════════════════════════════════════════════════
+       SECTION 08: SIGN-OFF & ACCEPTANCE BLOCK (VSF & SHINELINK)
+       ══════════════════════════════════════════════════════════════════ */
+    .signoff-box {
+      border: 1px solid var(--border-color);
+      background: var(--bg-card-alt);
+      border-radius: var(--radius);
+      padding: 36px 30px;
+      margin-top: 10px;
+    }
+
+    .signoff-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 36px;
+      margin-top: 28px;
+    }
+
+    .signoff-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      position: relative;
+    }
+
+    .signoff-col-header {
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+    }
+
+    .signoff-tag {
+      font-size: 10px;
       font-weight: 700;
-      font-size: 0.75rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 4px;
     }
 
-    /* FOOTER */
-    .footer {
-      text-align: center;
-      padding: 32px 16px;
+    .signoff-entity {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.25;
+    }
+
+    .signoff-rep-info {
+      margin-bottom: 30px;
+    }
+
+    .signoff-rep-name {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--gold-pale);
+    }
+
+    .signoff-rep-title {
+      font-size: 0.84rem;
       color: var(--text-muted);
-      font-size: 0.85rem;
+      margin-top: 2px;
+    }
+
+    .signoff-signature-area {
+      border: 1px dashed var(--border-color);
+      border-radius: var(--radius);
+      min-height: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      background: var(--bg-card-alt);
+      text-align: center;
+    }
+
+    .signoff-seal-mark {
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      font-style: italic;
+      color: var(--gold);
+      margin-bottom: 4px;
+    }
+
+    .signoff-seal-hint {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+    }
+
+    .signoff-date-row {
+      margin-top: 14px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* ══════════════════════════════════════════════════════════════════
+       FOOTER
+       ══════════════════════════════════════════════════════════════════ */
+    .footer {
       border-top: 1px solid var(--border-color);
-      margin-top: 32px;
+      padding: 40px 0 20px 0;
+      margin-top: 60px;
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--text-muted);
     }
 
-    /* MOBILE RESPONSIVE MEDIA QUERIES */
-    @media (max-width: 768px) {
-      .navbar {
-        padding: 10px 12px 6px 12px;
-      }
-      .nav-title {
-        font-size: 0.82rem;
-      }
-      .btn-icon span {
-        display: none;
-      }
-      .btn-icon {
-        padding: 8px;
-        min-height: 36px;
-      }
-      .hero-title {
-        font-size: 1.45rem;
-      }
-      .hero {
-        padding: 24px 16px;
-      }
-      .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .template-grid {
-        grid-template-columns: 1fr;
-      }
-      .pillars-grid {
-        grid-template-columns: 1fr;
-      }
-      .section-card {
-        padding: 20px 14px;
-      }
+    .footer-brand {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 6px;
     }
 
-    /* PRINT STYLES */
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 14px 0;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--gold);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold-lite);
+    }
+
+    /* ══════════════════════════════════════════════════════════════════
+       PRINT STYLES FOR BOARDROOM & SIGNING PRESENTATION
+       ══════════════════════════════════════════════════════════════════ */
     @media print {
-      #auth-overlay, .mobile-toc-bar, #toc-drawer {
+      #auth-overlay, .navbar, #toc-drawer {
         display: none !important;
       }
       #app-content.blurred {
         filter: none !important;
       }
-      .navbar {
-        position: relative;
-        border: none;
+      body {
+        background: #FFFFFF !important;
+        color: #111111 !important;
+        font-size: 13px !important;
+      }
+      .container {
+        max-width: 100% !important;
+        padding: 0 !important;
+      }
+      .hero {
+        background: #F8F4ED !important;
+        border: 1px solid #C4973A !important;
+        color: #111111 !important;
+        box-shadow: none !important;
+        padding: 24px !important;
+        page-break-after: avoid;
+      }
+      .hero-title {
+        color: #08142A !important;
+        font-size: 1.8rem !important;
+      }
+      .hero-title em {
+        color: #885E14 !important;
+      }
+      .hero-desc, .party-sub {
+        color: #333333 !important;
+      }
+      .party-name {
+        color: #08142A !important;
+      }
+      .section-card {
+        border: 1px solid #DDD5C4 !important;
+        background: #FFFFFF !important;
+        color: #111111 !important;
+        box-shadow: none !important;
+        padding: 20px !important;
+        page-break-inside: avoid;
+        margin-bottom: 20px !important;
+      }
+      .custom-table th {
+        background: #EDE6D8 !important;
+        color: #08142A !important;
+        border-bottom: 2px solid #C4973A !important;
+      }
+      .custom-table td {
+        color: #111111 !important;
+      }
+      .total-row td {
+        background: #FAF6EF !important;
+      }
+      .signoff-box {
+        page-break-inside: avoid;
+      }
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .hero {
+        padding: 30px 20px;
+      }
+      .hero-title {
+        font-size: 1.75rem;
+      }
+      .section-card {
+        padding: 24px 18px;
+      }
+      .nav-client-tag {
+        display: none;
+      }
+      .btn-icon span {
+        display: none;
       }
       .btn-icon {
-        display: none !important;
-      }
-      body {
-        background: #fff !important;
-        color: #000 !important;
-      }
-      .section-card, .hero, .stat-card {
-        border: 1px solid #ccc !important;
-        background: #fff !important;
-        color: #000 !important;
-        box-shadow: none !important;
+        padding: 8px 10px;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- AUTHENTICATION GLASSMORPHISM MODAL OVERLAY -->
+  <!-- ══════════════════════════════════════════════════════════════════
+       VSF AUTHENTICATION MODAL OVERLAY (PASSWORD PROTECTED)
+       ══════════════════════════════════════════════════════════════════ -->
   <div id="auth-overlay">
     <div class="auth-card">
-      <div class="auth-logo">
-        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div class="auth-badge-icon">
+        <svg width="26" height="26" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
         </svg>
       </div>
-      <h2 class="auth-title">Xác Thực Truy Cập</h2>
-      <p class="auth-subtitle">Nhập mật khẩu để xem Đề xuất Xây dựng Website Shinelink Việt Nam</p>
+      <div class="auth-brand-sub">Vietnam Sales Force — Advisory</div>
+      <h2 class="auth-title">Đề Xuất Thương Mại</h2>
+      <p class="auth-subtitle">Nhập mật khẩu truy cập tài liệu đề xuất giải pháp website B2B cho đại diện Shinelink</p>
 
       <form id="auth-form" onsubmit="handleAuth(event)">
         <div class="form-group">
           <label for="password">Mật Khẩu Access Password</label>
           <div class="input-wrapper">
-            <input type="password" id="password" placeholder="Nhập mật khẩu..." autofocus required>
+            <input type="password" id="password" placeholder="Nhập mật khẩu truy cập..." autofocus required>
           </div>
         </div>
         <button type="submit" class="btn-auth">
@@ -887,355 +1370,440 @@
     </div>
   </div>
 
-  <!-- TABLE OF CONTENTS SLIDE-OUT DRAWER -->
+  <!-- ══════════════════════════════════════════════════════════════════
+       TABLE OF CONTENTS SLIDE-OUT DRAWER
+       ══════════════════════════════════════════════════════════════════ -->
   <div id="toc-drawer" onclick="closeTocDrawer(event)">
     <div class="toc-drawer-content" onclick="event.stopPropagation()">
       <div class="toc-drawer-header">
         <span class="toc-drawer-title">📋 Mục Lục Đề Xuất</span>
         <button class="btn-close-toc" onclick="toggleTocDrawer()" aria-label="Đóng">
-          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
           </svg>
         </button>
       </div>
       <ul class="toc-menu-list">
-        <li><a href="#sec-intro" class="toc-menu-link" onclick="toggleTocDrawer()"><span>01. Hiện Trạng &amp; Lý Do</span><span>➔</span></a></li>
+        <li><a href="#sec-intro" class="toc-menu-link" onclick="toggleTocDrawer()"><span>01. Bối Cảnh &amp; Hiện Trạng</span><span>➔</span></a></li>
         <li><a href="#sec-strategy" class="toc-menu-link" onclick="toggleTocDrawer()"><span>02. Chiến Lược Công Nghệ</span><span>➔</span></a></li>
         <li><a href="#sec-templates" class="toc-menu-link" onclick="toggleTocDrawer()"><span>03. 9 Core Templates</span><span>➔</span></a></li>
         <li><a href="#sec-products" class="toc-menu-link" onclick="toggleTocDrawer()"><span>04. 49 SP &amp; 133 Tin Tức</span><span>➔</span></a></li>
-        <li><a href="#sec-pdf" class="toc-menu-link" onclick="toggleTocDrawer()"><span>05. 26 PDFs &amp; Hình Ảnh</span><span>➔</span></a></li>
+        <li><a href="#sec-pdf" class="toc-menu-link" onclick="toggleTocDrawer()"><span>05. 26 PDFs &amp; Tư Liệu</span><span>➔</span></a></li>
         <li><a href="#sec-pricing" class="toc-menu-link" onclick="toggleTocDrawer()"><span>06. Báo Giá Trọn Gói</span><span>➔</span></a></li>
-        <li><a href="#sec-timeline" class="toc-menu-link" onclick="toggleTocDrawer()"><span>07. Timeline &amp; Bảo Hành</span><span>➔</span></a></li>
+        <li><a href="#sec-timeline" class="toc-menu-link" onclick="toggleTocDrawer()"><span>07. Timeline &amp; Cam Kết</span><span>➔</span></a></li>
+        <li><a href="#sec-signoff" class="toc-menu-link" onclick="toggleTocDrawer()"><span>08. Đại Diện Trình Ký</span><span>➔</span></a></li>
       </ul>
     </div>
   </div>
 
-  <!-- MAIN APP CONTENT -->
+  <!-- ══════════════════════════════════════════════════════════════════
+       MAIN PROPOSAL CONTENT
+       ══════════════════════════════════════════════════════════════════ -->
   <div id="app-content" class="blurred">
     
-    <!-- CLEAN STICKY NAVBAR HEADER CONTAINER -->
+    <!-- STICKY NAVBAR -->
     <header class="navbar">
-      <div class="nav-top-row">
-        <a href="#" class="nav-brand">
-          <div class="nav-logo-badge">SHINELINK</div>
-          <div class="nav-title">SHINELINK INDUSTRIES (VIỆT NAM)</div>
-        </a>
-        <div class="nav-actions">
-          <button class="btn-icon" onclick="toggleTocDrawer()" title="Mục lục đề xuất">
-            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path>
-            </svg>
-            <span>Mục Lục</span>
-          </button>
-          <button class="btn-icon" onclick="toggleTheme()" title="Đổi giao diện Sáng/Tối">
-            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
-            </svg>
-            <span>Giao diện</span>
-          </button>
-          <button class="btn-icon" onclick="window.print()" title="In hoặc Xuất PDF">
-            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
-            </svg>
-            <span>In / PDF</span>
-          </button>
-          <button class="btn-icon" onclick="logout()" title="Đăng xuất">
-            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
-            </svg>
-            <span>Thoát</span>
-          </button>
+      <div class="nav-inner">
+        <div class="nav-top-row">
+          <div class="nav-brand">
+            <div class="nav-brand-text">
+              <span class="nav-brand-main">Vietnam Sales Force</span>
+              <span class="nav-brand-sub">Market Entry Experts</span>
+            </div>
+            <div class="nav-client-tag">
+              <span>Đề xuất: <strong>Shinelink Industries</strong></span>
+            </div>
+          </div>
+          <div class="nav-actions">
+            <button class="btn-icon" onclick="toggleTocDrawer()" title="Mục lục đề xuất">
+              <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path>
+              </svg>
+              <span>Mục Lục</span>
+            </button>
+            <button class="btn-icon" onclick="toggleTheme()" title="Đổi giao diện Navy / Cream">
+              <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+              </svg>
+              <span>Giao Diện</span>
+            </button>
+            <button class="btn-icon" onclick="window.print()" title="In văn bản hoặc Xuất PDF">
+              <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
+              </svg>
+              <span>In / PDF</span>
+            </button>
+            <button class="btn-icon" onclick="logout()" title="Đăng xuất bảo mật">
+              <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
+              </svg>
+              <span>Thoát</span>
+            </button>
+          </div>
         </div>
-      </div>
 
-      <!-- HORIZONTAL SCROLLABLE TOC CHIPS BAR (INSIDE STICKY HEADER) -->
-      <nav class="mobile-toc-bar">
-        <a href="#sec-intro" class="toc-chip">01. Hiện Trạng</a>
-        <a href="#sec-strategy" class="toc-chip">02. Công Nghệ</a>
-        <a href="#sec-templates" class="toc-chip">03. 9 Core Templates</a>
-        <a href="#sec-products" class="toc-chip">04. 49 SP &amp; 133 Tin</a>
-        <a href="#sec-pdf" class="toc-chip">05. 26 PDFs</a>
-        <a href="#sec-pricing" class="toc-chip">06. Báo Giá (40.98M)</a>
-        <a href="#sec-timeline" class="toc-chip">07. Timeline</a>
-      </nav>
+        <!-- HORIZONTAL QUICK NAV -->
+        <nav class="mobile-toc-bar">
+          <a href="#sec-intro" class="toc-chip">01. Bối Cảnh</a>
+          <a href="#sec-strategy" class="toc-chip">02. Chiến Lược Công Nghệ</a>
+          <a href="#sec-templates" class="toc-chip">03. 9 Core Templates</a>
+          <a href="#sec-products" class="toc-chip">04. 49 SP &amp; 133 Tin</a>
+          <a href="#sec-pdf" class="toc-chip">05. 26 PDFs</a>
+          <a href="#sec-pricing" class="toc-chip">06. Báo Giá (40.98M)</a>
+          <a href="#sec-timeline" class="toc-chip">07. Timeline</a>
+          <a href="#sec-signoff" class="toc-chip">08. Trình Ký</a>
+        </nav>
+      </div>
     </header>
 
     <div class="container">
       
-      <!-- HERO HEADER -->
+      <!-- ══════════════════════════════════════════════════════════════════
+           HERO SECTION: COMMERCIAL & TECHNICAL PROPOSAL
+           ══════════════════════════════════════════════════════════════════ -->
       <section class="hero">
-        <div class="hero-badge">⚡ Kế Hoạch Chuyển Đổi Kênh Số B2B</div>
-        <h1 class="hero-title">ĐỀ XUẤT PHẠM VI XÂY DỰNG WEBSITE<br>SHINELINK INDUSTRIES VIỆT NAM (shinelink.vn)</h1>
-        <p class="hero-desc">
-          Xây dựng kênh giao tiếp B2B chuẩn quốc tế &amp; số 1 về độ tin cậy tại thị trường Việt Nam. Tối ưu hóa tốc độ tải trang dưới 1 giây, tích hợp công nghệ AI Search (GEO) và định danh pháp nhân Tân Tạo, TP.HCM.
-        </p>
+        <div class="hero-inner">
+          <div class="hero-badge-row">
+            <span class="hero-badge">VIETNAM SALES FORCE — MARKET ENTRY ADVISORY</span>
+            <span class="hero-tag-doc">COMMERCIAL PROPOSAL • 2026</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Đề Xuất Phạm Vi &amp; Báo Giá Xây Dựng Kênh Số B2B<br>
+            <em>Shinelink Industries</em> Tại Thị Trường Việt Nam
+          </h1>
+          
+          <p class="hero-desc">
+            Kế hoạch chiến lược do <strong>Vietnam Sales Force (VSF)</strong> xây dựng nhằm đồng hành cùng Shinelink Industries thâm nhập thị trường Việt Nam (Market Entry). Trọng tâm giai đoạn 1 là thiết lập kênh số B2B độc lập (shinelink.vn) chuẩn SEO công nghiệp, tốc độ dưới 1 giây, tối ưu công cụ tìm kiếm AI (GEO) để tiếp cận trực tiếp Phòng Kỹ thuật các nhà máy Mía đường, Luyện kim, Khai khoáng.
+          </p>
 
-        <div class="meta-grid">
-          <div class="meta-item">
-            <span class="meta-label">Khách Hàng</span>
-            <span class="meta-value">CÔNG TY TNHH SHINELINK INDUSTRIES (VIỆT NAM)</span>
-          </div>
-          <div class="meta-item">
-            <span class="meta-label">Địa Chỉ Trụ Sở</span>
-            <span class="meta-value">86 Đường 53C, P. Tân Tạo, Q. Bình Tân, TP.HCM</span>
-          </div>
-          <div class="meta-item">
-            <span class="meta-label">Thời Gian Triển Khai</span>
-            <span class="meta-value">Tháng 9 - Tháng 10/2026 (4 - 5 tuần)</span>
-          </div>
-          <div class="meta-item">
-            <span class="meta-label">Tên Miền Mục Tiêu</span>
-            <span class="meta-value" style="color: var(--primary);">shinelink.vn (Đăng ký 3 năm)</span>
+          <!-- CONTRACTING PARTIES META BOX -->
+          <div class="parties-card">
+            <div class="party-item">
+              <span class="party-role">🏛️ Đơn Vị Đề Xuất &amp; Triển Khai</span>
+              <span class="party-name">VIETNAM SALES FORCE (VSF)</span>
+              <span class="party-sub">Đại diện: <strong>Ông Drachan Lam</strong> (CEO &amp; Founder)</span>
+              <span class="party-sub">Website: <a href="https://vietnamsalesforce.com" target="_blank" rel="noopener">vietnamsalesforce.com</a></span>
+            </div>
+            
+            <div class="party-item">
+              <span class="party-role">🤝 Khách Hàng / Đối Tác Thụ Hưởng</span>
+              <span class="party-name">SHINELINK INDUSTRIES</span>
+              <span class="party-sub">Đại diện tiếp nhận: <strong>Anh Hiệp</strong> (Đại diện Shinelink)</span>
+              <span class="party-sub">Website mẹ: <a href="https://www.shinelinkgroup.com/" target="_blank" rel="noopener">shinelinkgroup.com</a></span>
+            </div>
+
+            <div class="party-item">
+              <span class="party-role">🌐 Tên Miền Mục Tiêu</span>
+              <span class="party-name" style="color: var(--gold);">shinelink.vn</span>
+              <span class="party-sub">Đăng ký bản quyền &amp; duy trì 3 năm</span>
+              <span class="party-sub">Hạ tầng: CDN Cloud Server Việt Nam</span>
+            </div>
+
+            <div class="party-item">
+              <span class="party-role">⏱️ Thời Gian Triển Khai</span>
+              <span class="party-name">4 - 5 Tuần</span>
+              <span class="party-sub">Kế hoạch: Tháng 9 - Tháng 10/2026</span>
+              <span class="party-sub">Bảo hành kỹ thuật: 12 tháng</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- STATS COUNTERS -->
+      <!-- ══════════════════════════════════════════════════════════════════
+           STATS SUMMARY COUNTERS
+           ══════════════════════════════════════════════════════════════════ -->
       <div class="stats-grid">
         <div class="stat-card">
           <div class="stat-number">40,98M</div>
-          <div class="stat-label">Tổng Báo Giá Trọn Gói (VNĐ)</div>
+          <div class="stat-label">Tổng Chi Phí Trọn Gói (VNĐ)</div>
+          <div class="stat-desc">Đã gồm domain .vn 3 năm &amp; 133 bài tin tức</div>
         </div>
         <div class="stat-card">
-          <div class="stat-number">9</div>
-          <div class="stat-label">Khung 9 Trang Core Template</div>
+          <div class="stat-number">09</div>
+          <div class="stat-label">Core Templates Độc Quyền</div>
+          <div class="stat-desc">Thiết kế chuẩn UI/UX B2B quốc tế, đều có CTA</div>
         </div>
         <div class="stat-card">
           <div class="stat-number">49</div>
-          <div class="stat-label">Trang Chi Tiết Sản Phẩm Catalog</div>
+          <div class="stat-label">Trang Sản Phẩm Catalog</div>
+          <div class="stat-desc">3 dòng xích công nghiệp trọng điểm</div>
         </div>
         <div class="stat-card">
           <div class="stat-number">133</div>
-          <div class="stat-label">Bài Tin Tức Viết Lại (>30% Unique)</div>
+          <div class="stat-label">Bài Tin Kỹ Thuật Viết Lại</div>
+          <div class="stat-desc">Unique content &gt;30% tối ưu hóa SEO &amp; AI</div>
         </div>
       </div>
 
-      <!-- SECTION 1: LỜI MỞ ĐẦU & LÝ DO BUILD SITE MỚI -->
+      <!-- ══════════════════════════════════════════════════════════════════
+           SECTION 01: BỐI CẢNH & HIỆN TRẠNG
+           ══════════════════════════════════════════════════════════════════ -->
       <section id="sec-intro" class="section-card">
         <div class="section-header">
-          <div class="section-icon">01</div>
-          <h2 class="section-title">Hiện Trạng &amp; Lý Do Cần Xây Dựng Website Mới (shinelink.vn)</h2>
+          <div class="section-label">Mục 01 • Hiện Trạng &amp; Bối Cảnh</div>
+          <h2 class="section-title">Lý Do Shinelink Cần Kênh Số Độc Lập <em>(shinelink.vn)</em></h2>
         </div>
 
-        <p style="margin-bottom: 20px; color: var(--text-muted); font-size: 0.92rem;">
-          Shinelink Industries là nhà sản xuất xích công nghiệp chất lượng cao xuất khẩu Châu Âu &amp; Bắc Mỹ. Việc thành lập pháp nhân <strong>CÔNG TY TNHH SHINELINK INDUSTRIES (VIỆT NAM)</strong> tại TP.HCM đòi hỏi một website thương hiệu độc lập để thuyết phục <strong>Phòng Kỹ thuật &amp; Mua hàng</strong> các nhà máy Mía đường, Luyện kim, Xi măng.
+        <p class="section-intro">
+          Shinelink Industries là nhà sản xuất xích công nghiệp chất lượng cao đã xuất khẩu thành công sang Châu Âu và Bắc Mỹ, với ưu thế cạnh tranh vượt trội: <strong>khả năng tùy biến (customized) theo bản vẽ</strong> và chi phí cạnh tranh so với Nhật Bản. Để thâm nhập thị trường Việt Nam và thuyết phục <strong>Phòng Kỹ thuật &amp; Ban Quản lý Nhà máy Mía đường, Luyện kim, Xi măng</strong>, Shinelink cần một website thương hiệu độc lập, tin cậy tuyệt đối thay vì dùng chung domain phụ.
         </p>
 
         <div class="compare-grid">
           <div class="compare-card old">
-            <div class="compare-header" style="color: var(--danger);">
+            <div class="compare-header">
               <span>Hạn Chế Của Domain Cũ (vi.shinelinkgroup.com)</span>
             </div>
             <ul class="compare-list">
-              <li>Subdomain phụ không thể hiện tính pháp nhân chính thức tại Việt Nam.</li>
-              <li>Server đặt tại Trung Quốc, tốc độ tải trang chậm (3-6 giây), gây mất kiên nhẫn.</li>
-              <li>Cấu trúc kỹ thuật cũ (.html tĩnh), không tối ưu cho AI Search (ChatGPT, Gemini).</li>
-              <li>Thiếu thông tin địa chỉ kho vận Tân Tạo TP.HCM và chế độ bảo hành tại VN.</li>
+              <li>Subdomain phụ mang cảm giác đại diện tạm thời, thiếu định vị thương hiệu trực tiếp tại Việt Nam.</li>
+              <li>Server đặt ngoài lãnh thổ khiến tốc độ tải trang chậm (3 - 6 giây), gây mất kiên nhẫn cho kỹ sư tra cứu.</li>
+              <li>Cấu trúc kỹ thuật cũ (.html tĩnh), chưa tối ưu cho các công cụ AI Search hiện đại (ChatGPT, Gemini).</li>
+              <li>Chưa có đầu mối hỗ trợ kỹ thuật và cam kết dịch vụ bảo hành rõ ràng tại Việt Nam.</li>
             </ul>
           </div>
 
           <div class="compare-card new">
-            <div class="compare-header" style="color: var(--accent);">
-              <span>Ưu Điểm Vượt Trội Của Website Mới (shinelink.vn)</span>
+            <div class="compare-header">
+              <span>Lợi Thế Chiến Lược Của Website Mới (shinelink.vn)</span>
             </div>
             <ul class="compare-list">
-              <li>Tên miền quốc gia shinelink.vn (3 năm), khẳng định đầu tư lâu dài.</li>
-              <li>Hạ tầng CDN Server Việt Nam, tốc độ load siêu tốc &lt; 1 giây.</li>
-              <li>Tích hợp chuẩn GEO (Generative Engine Optimization) với llms.txt &amp; Schema JSON-LD.</li>
-              <li>Định danh Hyper-Local với Google Business Profile vị trí Tân Tạo, TP.HCM.</li>
+              <li>Tên miền quốc gia cấp cao <strong>shinelink.vn</strong> (đăng ký 3 năm), khẳng định sự gắn kết dài lâu tại thị trường VN.</li>
+              <li>Hạ tầng CDN Server Việt Nam, tốc độ load siêu tốc &lt; 1 giây, kỹ sư mở tra catalog trên điện thoại tức thì.</li>
+              <li>Tích hợp chuẩn <strong>GEO (Generative Engine Optimization)</strong> với file <code>llms.txt</code> và Schema JSON-LD.</li>
+              <li>Được bảo trợ chiến lược phát triển thị trường bởi mạng lưới chuyên gia <strong>Vietnam Sales Force</strong>.</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!-- SECTION 2: CHIẾN LƯỢC CHUYỂN ĐỔI -->
+      <!-- ══════════════════════════════════════════════════════════════════
+           SECTION 02: CHIẾN LƯỢC CÔNG NGHỆ VSF
+           ══════════════════════════════════════════════════════════════════ -->
       <section id="sec-strategy" class="section-card">
         <div class="section-header">
-          <div class="section-icon">02</div>
-          <h2 class="section-title">Chiến Lược Công Nghệ (SEO - GEO - Hyper Local - Pure HTML)</h2>
+          <div class="section-label">Mục 02 • Kiến Trúc &amp; Chiến Lược</div>
+          <h2 class="section-title">4 Trụ Cột Công Nghệ <em>(SEO • GEO • Pure Code • Local Trust)</em></h2>
         </div>
+
+        <p class="section-intro">
+          Vietnam Sales Force áp dụng triết lý triển khai thực dụng, hướng tới kết quả thương mại (Results-driven), loại bỏ hoàn toàn các framework cồng kềnh để tối ưu hóa hiệu suất tối đa:
+        </p>
 
         <div class="pillars-grid">
           <div class="pillar-item">
             <span class="pillar-tag">SPEED &amp; CODE</span>
             <h3 class="pillar-title">Pure HTML/CSS/JS</h3>
-            <p class="pillar-desc">Không dùng CMS nặng nề. Đạt 95-100 điểm Google PageSpeed, kỹ sư mở tra cứu bản vẽ trên điện thoại công trường tức thì.</p>
+            <p class="pillar-desc">Không dùng WordPress hay CMS nặng nề. Đạt 95-100 điểm Google PageSpeed, tối ưu tải bản vẽ CAD/PDF cực nhanh trên thiết bị di động tại công trường.</p>
           </div>
 
           <div class="pillar-item">
             <span class="pillar-tag">SEO B2B</span>
             <h3 class="pillar-title">Cấu Trúc SILO Ngành</h3>
-            <p class="pillar-desc">Phân loại chuẩn 3 dòng xích: Xích truyền động, Xích băng tải, Xích ứng dụng. Tối ưu từ khóa kỹ thuật chuyên sâu.</p>
+            <p class="pillar-desc">Phân loại khoa học 3 dòng xích trọng điểm (Truyền động, Băng tải, Ứng dụng). Tối ưu hóa từ khóa kỹ thuật chuyên sâu ngành mía đường &amp; công nghiệp nặng.</p>
           </div>
 
           <div class="pillar-item">
             <span class="pillar-tag">GEO READY</span>
             <h3 class="pillar-title">AI Search Optimization</h3>
-            <p class="pillar-desc">Tích hợp file llms.txt và JSON-LD Schema giúp ChatGPT, Gemini, Copilot đọc và ưu tiên đề xuất Shinelink Việt Nam.</p>
+            <p class="pillar-desc">Tích hợp file chuẩn <code>llms.txt</code> và Schema JSON-LD chi tiết, giúp các trợ lý AI (ChatGPT, Gemini, Perplexity) nhận diện và ưu tiên trích dẫn Shinelink.</p>
           </div>
 
           <div class="pillar-item">
-            <span class="pillar-tag">HYPER LOCAL</span>
-            <h3 class="pillar-title">Định Danh Pháp Nhân</h3>
-            <p class="pillar-desc">Kết nối Google Maps (GBP) trụ sở Tân Tạo TP.HCM, thể hiện cam kết hỗ trợ kỹ thuật &amp; bảo hành tận nơi.</p>
+            <span class="pillar-tag">LOCAL TRUST</span>
+            <h3 class="pillar-title">Định Vị Thị Trường</h3>
+            <p class="pillar-desc">Khẳng định năng lực tùy biến theo yêu cầu, hỗ trợ kỹ thuật tại Việt Nam, tăng tỷ lệ gửi bản vẽ yêu cầu báo giá từ kỹ sư nhà máy.</p>
           </div>
         </div>
       </section>
 
-      <!-- SECTION 3: KHUNG 9 TRANG CORE TEMPLATES -->
+      <!-- ══════════════════════════════════════════════════════════════════
+           SECTION 03: 9 CORE TEMPLATES
+           ══════════════════════════════════════════════════════════════════ -->
       <section id="sec-templates" class="section-card">
         <div class="section-header">
-          <div class="section-icon">03</div>
-          <h2 class="section-title">Khung 9 Trang Mẫu Cốt Lõi (Core Templates - Đều Có CTA)</h2>
+          <div class="section-label">Mục 03 • Khung Giao Diện Cốt Lõi</div>
+          <h2 class="section-title">Khung 9 Trang Mẫu <em>(Core Templates Đều Tích Hợp CTA)</em></h2>
         </div>
 
-        <p style="margin-bottom: 20px; color: var(--text-muted); font-size: 0.92rem;">
-          Dự án tập trung thiết kế UI/UX và lập trình chi tiết <strong>9 trang mẫu cốt lõi</strong>. Mọi trang đều được bố trí khối Call-To-Action (CTA) chiến lược thúc đẩy yêu cầu báo giá:
+        <p class="section-intro">
+          Dự án xây dựng bộ khung <strong>9 trang mẫu cốt lõi</strong> với thiết kế độc quyền. Tất cả các trang đều bố trí nút Call-To-Action (CTA) chiến lược thúc đẩy kỹ sư nhà máy gửi bản vẽ hoặc liên hệ tư vấn kỹ thuật:
         </p>
 
         <div class="template-grid">
           <div class="template-card">
-            <span class="template-badge">Tích hợp CTA</span>
-            <span class="template-num">01</span>
+            <div class="template-card-top">
+              <span class="template-num">01</span>
+              <span class="template-badge">Tích hợp CTA</span>
+            </div>
             <h3 class="template-name">Trang Chủ (Home)</h3>
-            <p class="template-detail">Tích hợp khối USP Tùy biến xích theo yêu cầu/bản vẽ + Giới thiệu 3 dòng sản phẩm.</p>
+            <p class="template-detail">Tập trung USP: Tùy biến xích theo yêu cầu/bản vẽ, năng lực xuất khẩu Châu Âu/Mỹ &amp; phân luồng 3 dòng sản phẩm chính.</p>
           </div>
 
           <div class="template-card">
-            <span class="template-badge">Tích hợp CTA</span>
-            <span class="template-num">02</span>
+            <div class="template-card-top">
+              <span class="template-num">02</span>
+              <span class="template-badge">Tích hợp CTA</span>
+            </div>
             <h3 class="template-name">Trang Giới Thiệu (About)</h3>
-            <p class="template-detail">Giới thiệu pháp nhân Shinelink VN, tập đoàn công ty mẹ &amp; năng lực xuất khẩu Âu/Mỹ.</p>
+            <p class="template-detail">Giới thiệu quy mô nhà máy Shinelink, công nghệ chế tạo xích tải nặng, tiêu chuẩn kiểm định quốc tế &amp; chiến lược tại VN.</p>
           </div>
 
           <div class="template-card">
-            <span class="template-badge">Tích hợp CTA</span>
-            <span class="template-num">03</span>
+            <div class="template-card-top">
+              <span class="template-num">03</span>
+              <span class="template-badge">Tích hợp CTA</span>
+            </div>
             <h3 class="template-name">Trang Liên Hệ (Contact)</h3>
-            <p class="template-detail">Bản đồ vị trí kho Tân Tạo TP.HCM + Form gửi bản vẽ yêu cầu tư vấn kỹ thuật.</p>
+            <p class="template-detail">Form tiếp nhận yêu cầu báo giá &amp; gửi file bản vẽ CAD/PDF đính kèm; kênh chat trực tiếp (Zalo, WhatsApp, Hotline).</p>
           </div>
 
           <div class="template-card">
-            <span class="template-badge">Tích hợp CTA</span>
-            <span class="template-num">04</span>
+            <div class="template-card-top">
+              <span class="template-num">04</span>
+              <span class="template-badge">Tích hợp CTA</span>
+            </div>
             <h3 class="template-name">Trang Catalog Hub</h3>
-            <p class="template-detail">Danh mục phân loại 3 dòng: Xích truyền động, Xích băng tải, Xích ứng dụng.</p>
+            <p class="template-detail">Trung tâm danh mục sản phẩm 3 nhóm: Xích truyền động, Xích băng tải, Xích ứng dụng đặc biệt; lọc thông số pitch và tải trọng.</p>
           </div>
 
           <div class="template-card">
-            <span class="template-badge">Tích hợp CTA</span>
-            <span class="template-num">05</span>
+            <div class="template-card-top">
+              <span class="template-num">05</span>
+              <span class="template-badge">Tích hợp CTA</span>
+            </div>
             <h3 class="template-name">Trang Chi Tiết Sản Phẩm</h3>
-            <p class="template-detail">Khung bảng thông số kỹ thuật (Pitch, Breaking load...), bản vẽ CAD/PDF đính kèm.</p>
+            <p class="template-detail">Khung bảng thông số kỹ thuật chuẩn (Pitch, Breaking Load, Vật liệu), nút tải bản vẽ CAD/PDF và nút yêu cầu báo giá theo mã.</p>
           </div>
 
           <div class="template-card">
-            <span class="template-badge">Tích hợp CTA</span>
-            <span class="template-num">06</span>
+            <div class="template-card-top">
+              <span class="template-num">06</span>
+              <span class="template-badge">Tích hợp CTA</span>
+            </div>
             <h3 class="template-name">Trang Case Study Hub</h3>
-            <p class="template-detail">Danh sách dự án tiêu biểu (Welkait Sugar Mill Ethiopia - 0.65 tỷ USD...).</p>
+            <p class="template-detail">Tổng hợp các dự án cung cấp xích quy mô lớn toàn cầu (Welkait Sugar Mill Ethiopia - 0.65 tỷ USD, dự án xi măng, luyện kim...).</p>
           </div>
 
           <div class="template-card">
-            <span class="template-badge">Tích hợp CTA</span>
-            <span class="template-num">07</span>
+            <div class="template-card-top">
+              <span class="template-num">07</span>
+              <span class="template-badge">Tích hợp CTA</span>
+            </div>
             <h3 class="template-name">Trang Chi Tiết Case Study</h3>
-            <p class="template-detail">Bài viết phân tích chuyên sâu giải pháp cung cấp xích cho dự án quy mô lớn.</p>
+            <p class="template-detail">Bài viết phân tích chuyên sâu giải pháp thay thế xích tùy biến, tăng tuổi thọ và giảm chi phí bảo trì cho nhà máy.</p>
           </div>
 
           <div class="template-card">
-            <span class="template-badge">Tích hợp CTA</span>
-            <span class="template-num">08</span>
+            <div class="template-card-top">
+              <span class="template-num">08</span>
+              <span class="template-badge">Tích hợp CTA</span>
+            </div>
             <h3 class="template-name">Trang Tin Tức Hub (Blog)</h3>
-            <p class="template-detail">Danh mục bài viết kỹ thuật &amp; kiến thức ngành xích công nghiệp.</p>
+            <p class="template-detail">Thư viện bài viết kỹ thuật, hướng dẫn bôi trơn, bảo dưỡng và cách chọn bước xích phù hợp điều kiện tải nặng.</p>
           </div>
 
           <div class="template-card">
-            <span class="template-badge">Tích hợp CTA</span>
-            <span class="template-num">09</span>
+            <div class="template-card-top">
+              <span class="template-num">09</span>
+              <span class="template-badge">Tích hợp CTA</span>
+            </div>
             <h3 class="template-name">Trang Chi Tiết Tin Tức</h3>
-            <p class="template-detail">Khung bài viết tin tức tối ưu chuẩn SEO &amp; đề xuất sản phẩm liên quan.</p>
+            <p class="template-detail">Khung bài viết chuyên sâu tối ưu On-page SEO, hộp đề xuất dòng xích liên quan và form nhận tư vấn kỹ thuật.</p>
           </div>
         </div>
       </section>
 
-      <!-- SECTION 4: PHÂN ĐỊNH SẢN PHẨM & TIN TỨC -->
+      <!-- ══════════════════════════════════════════════════════════════════
+           SECTION 04: 49 SẢN PHẨM & 133 BÀI TIN TỨC
+           ══════════════════════════════════════════════════════════════════ -->
       <section id="sec-products" class="section-card">
         <div class="section-header">
-          <div class="section-icon">04</div>
-          <h2 class="section-title">Chuyển Đổi 49 Trang Sản Phẩm &amp; 133 Bài Tin Tức</h2>
+          <div class="section-label">Mục 04 • Phân Định Khối Lượng Nội Dung</div>
+          <h2 class="section-title">Chuyển Đổi 49 Sản Phẩm &amp; 133 Bài Tin Tức <em>(Rõ Ràng &amp; Minh Bạch)</em></h2>
         </div>
 
-        <div style="margin-bottom: 20px;">
-          <h3 style="font-size: 1.05rem; margin-bottom: 10px; color: var(--primary);">📦 49 Trang Sản Phẩm Catalog (Chi phí nhập liệu = 0 VNĐ)</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem;">
-            Chia làm 3 nhóm chính: <strong>12 trang Xích truyền động</strong>, <strong>19 trang Xích băng tải</strong>, <strong>18 trang Xích ứng dụng</strong>. 
-            <em>Phân định trách nhiệm: Agency tạo khung dữ liệu, phía Shinelink Việt Nam chịu trách nhiệm hiệu chỉnh và duyệt thông số kỹ thuật tiếng Việt.</em>
+        <div class="scope-box">
+          <div class="scope-box-title">
+            <span>📦 49 Trang Sản Phẩm Catalog (Chi Phí Nhập Liệu = 0 VNĐ)</span>
+          </div>
+          <p class="scope-box-text">
+            Phân bổ thành 3 nhóm danh mục: <strong>12 trang Xích truyền động</strong>, <strong>19 trang Xích băng tải</strong>, <strong>18 trang Xích ứng dụng</strong>.<br>
+            <em>Phân định phối hợp:</em> Vietnam Sales Force phụ trách lập trình toàn bộ cấu trúc dữ liệu bảng thông số kỹ thuật. Đại diện Shinelink (Anh Hiệp) chịu trách nhiệm cung cấp, rà soát và phê duyệt các thông số kỹ thuật tiếng Việt tương ứng.
           </p>
         </div>
 
-        <div>
-          <h3 style="font-size: 1.05rem; margin-bottom: 10px; color: var(--primary);">📰 133 Bài Tin Tức (Tách riêng theo đơn giá 60.000 VNĐ / bài)</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem;">
-            Chuyển đổi và viết lại &gt;30% nội dung bài viết cũ bằng AI + Biên tập viên rà soát. 
-            Tổng chi phí cho 133 bài = <strong>7.980.000 VNĐ</strong> <em>(Shinelink có thể linh hoạt chốt số lượng bài thực tế)</em>.
+        <div class="scope-box">
+          <div class="scope-box-title">
+            <span>📰 133 Bài Tin Kỹ Thuật (Đơn Giá 60.000 VNĐ / bài)</span>
+          </div>
+          <p class="scope-box-text">
+            Chuyển đổi và viết lại &gt;30% nội dung bài viết gốc bằng AI chuyên sâu kết hợp Biên tập viên VSF hiệu đính ngữ nghĩa tiếng Việt chuẩn công nghiệp.<br>
+            Tổng chi phí cho 133 bài = <strong>7.980.000 VNĐ</strong> <em>(Shinelink hoàn toàn có thể linh hoạt điều chỉnh số lượng bài thực tế cần chuyển đổi)</em>.
           </p>
         </div>
       </section>
 
-      <!-- SECTION 5: AUDIT PDF & HÌNH ẢNH -->
+      <!-- ══════════════════════════════════════════════════════════════════
+           SECTION 05: 26 BỘ TÀI LIỆU PDF & HÌNH ẢNH
+           ══════════════════════════════════════════════════════════════════ -->
       <section id="sec-pdf" class="section-card">
         <div class="section-header">
-          <div class="section-icon">05</div>
-          <h2 class="section-title">Phối Hợp Chuẩn Hóa 26 Bộ Tài Liệu PDF &amp; Hình Ảnh</h2>
+          <div class="section-label">Mục 05 • Chuẩn Hóa Tư Liệu Kỹ Thuật</div>
+          <h2 class="section-title">Rà Soát 26 Bộ Tài Liệu PDF <em>&amp; Hình Ảnh Thực Tế</em></h2>
         </div>
 
-        <p style="margin-bottom: 14px; color: var(--text-muted); font-size: 0.9rem;">
-          Qua rà soát tự động toàn bộ 57 trang web cũ, Agency phát hiện <strong>26 tài liệu PDF kỹ thuật tiếng Trung/Anh</strong> và một số trang sản phẩm bị thiếu hình ảnh. Đề xuất phía Shinelink Việt Nam phối hợp chuyển ngữ &amp; cung cấp ảnh thực tế:
+        <p class="section-intro">
+          Qua kiểm toán kỹ thuật toàn bộ dữ liệu hiện hữu từ website mẹ, VSF phát hiện <strong>26 tài liệu PDF kỹ thuật song ngữ Trung/Anh</strong> và một số ảnh xích độ phân giải thấp. VSF đề xuất hai bên cùng phối hợp chuẩn hóa:
         </p>
 
         <div class="pdf-list">
           <div class="pdf-item">
-            <span class="pdf-icon">PDF</span>
-            <span>02 Brochure Công Ty Mẹ Shinelink</span>
+            <span class="pdf-tag">PDF</span>
+            <span>02 Brochure Tổng Quan Shinelink Group</span>
           </div>
           <div class="pdf-item">
-            <span class="pdf-icon">PDF</span>
+            <span class="pdf-tag">PDF</span>
             <span>Xích WH Series (Thép hàn má cong/thẳng)</span>
           </div>
           <div class="pdf-item">
-            <span class="pdf-icon">PDF</span>
+            <span class="pdf-tag">PDF</span>
             <span>Xích FV Series &amp; FVT_MT Series</span>
           </div>
           <div class="pdf-item">
-            <span class="pdf-icon">PDF</span>
-            <span>Xích ngành mỏ &amp; than (Mining Chain)</span>
+            <span class="pdf-tag">PDF</span>
+            <span>Xích ngành mỏ &amp; than đá (Mining Chain)</span>
           </div>
           <div class="pdf-item">
-            <span class="pdf-icon">PDF</span>
+            <span class="pdf-tag">PDF</span>
             <span>Xích cào &amp; xích kéo thép hàn (WD Series)</span>
           </div>
           <div class="pdf-item">
-            <span class="pdf-icon">PDF</span>
-            <span>Xích băng tải ngũ cốc &amp; nông nghiệp</span>
+            <span class="pdf-tag">PDF</span>
+            <span>Xích băng tải ngũ cốc &amp; nông sản mía đường</span>
           </div>
           <div class="pdf-item">
-            <span class="pdf-icon">PDF</span>
-            <span>Xích tải luyện kim &amp; siêu tải heavy duty</span>
+            <span class="pdf-tag">PDF</span>
+            <span>Xích tải luyện kim &amp; siêu tải Heavy Duty</span>
           </div>
           <div class="pdf-item">
-            <span class="pdf-icon">PDF</span>
+            <span class="pdf-tag">PDF</span>
             <span>Xích chốt rỗng &amp; Xích khối thép WT</span>
           </div>
         </div>
       </section>
 
-      <!-- SECTION 6: BÁO GIÁ TRỌN GÓI -->
+      <!-- ══════════════════════════════════════════════════════════════════
+           SECTION 06: BẢNG BÁO GIÁ TRỌN GÓI
+           ══════════════════════════════════════════════════════════════════ -->
       <section id="sec-pricing" class="section-card">
         <div class="section-header">
-          <div class="section-icon">06</div>
-          <h2 class="section-title">Bảng Báo Giá Chi Tiết Trọn Gói Dự Án</h2>
+          <div class="section-label">Mục 06 • Chi Phí &amp; Ngân Sách Triển Khai</div>
+          <h2 class="section-title">Bảng Báo Giá Chi Tiết Trọn Gói Dự Án <em>(shinelink.vn)</em></h2>
         </div>
+
+        <p class="section-intro">
+          Báo giá được xây dựng trên nguyên tắc minh bạch, trọn gói, cam kết không phát sinh bất kỳ chi phí ẩn nào trong suốt quá trình triển khai:
+        </p>
 
         <div class="table-responsive">
           <table class="custom-table">
@@ -1243,102 +1811,198 @@
               <tr>
                 <th style="width: 50px;">STT</th>
                 <th>Hạng Mục Công Việc</th>
-                <th>Chi Tiết Triển Khai</th>
-                <th style="text-align: right;">Chi Phí (VNĐ)</th>
+                <th>Chi Tiết Triển Khai Thực Tế</th>
+                <th style="text-align: right; width: 180px;">Chi Phí (VNĐ)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td><strong>01</strong></td>
-                <td><strong>Tên miền &amp; Server (3 năm)</strong></td>
-                <td>Tên miền quốc gia <strong>shinelink.vn</strong> (duy trì 3 năm) + Hosting/CDN tốc độ cao tại VN (1 năm).</td>
-                <td style="text-align: right;" class="price-highlight">4.500.000</td>
+                <td><strong>Tên Miền &amp; Hạ Tầng CDN (3 năm)</strong></td>
+                <td>Đăng ký sở hữu tên miền quốc gia <strong>shinelink.vn</strong> (duy trì 3 năm) + CDN Server tốc độ cao tại Việt Nam (1 năm).</td>
+                <td style="text-align: right;" class="price-num">4.500.000</td>
               </tr>
               <tr>
                 <td><strong>02</strong></td>
-                <td><strong>Thiết kế &amp; Lập trình 9 Trang Core Template</strong></td>
-                <td>Code thuần HTML/CSS/JS (Load &lt; 1s). Thiết kế 9 trang cốt lõi, <strong>tích hợp khối CTA chiến lược ở tất cả 9 trang</strong>.</td>
-                <td style="text-align: right;" class="price-highlight">24.000.000</td>
+                <td><strong>Thiết Kế &amp; Lập Trình 9 Core Templates</strong></td>
+                <td>Code thuần HTML/CSS/JS (Load &lt; 1s, chuẩn 95-100 Google PageSpeed). Thiết kế giao diện độc quyền B2B, <strong>tích hợp CTA ở tất cả 9 trang</strong>.</td>
+                <td style="text-align: right;" class="price-num">24.000.000</td>
               </tr>
               <tr>
                 <td><strong>03</strong></td>
                 <td><strong>49 Trang Chi Tiết Sản Phẩm Catalog</strong></td>
-                <td>12 Xích truyền động + 19 Xích băng tải + 18 Xích ứng dụng. <em>(Shinelink VN hiệu chỉnh nội dung &amp; thông số kỹ thuật)</em>.</td>
-                <td style="text-align: right;" class="price-highlight">0 <span style="font-size: 0.7rem; color: var(--text-muted); font-weight: 400;">(Tính trong Template)</span></td>
+                <td>12 Xích truyền động + 19 Xích băng tải + 18 Xích ứng dụng. Lập trình bảng thông số kỹ thuật <em>(Đại diện Shinelink duyệt thông số)</em>.</td>
+                <td style="text-align: right;" class="price-num">0 <span style="font-size: 0.72rem; color: var(--text-muted); font-weight: 400;">(Đã gồm trong Template)</span></td>
               </tr>
               <tr>
                 <td><strong>04</strong></td>
-                <td><strong>Chuyển đổi 133 Bài Tin Tức</strong></td>
-                <td>Đơn giá <strong>60.000 VNĐ / bài</strong> (Ứng dụng AI + Biên tập viên rà soát &gt;30% unique content).</td>
-                <td style="text-align: right;" class="price-highlight">7.980.000</td>
+                <td><strong>Chuyển Đổi &amp; Viết Lại 133 Bài Tin Tức</strong></td>
+                <td>Đơn giá <strong>60.000 VNĐ / bài</strong> (Công nghệ AI + Biên tập viên VSF hiệu đính đạt &gt;30% unique content chuẩn SEO).</td>
+                <td style="text-align: right;" class="price-num">7.980.000</td>
               </tr>
               <tr>
                 <td><strong>05</strong></td>
-                <td><strong>Cấu hình SEO / GEO / Hyper-Local</strong></td>
-                <td>Cấu hình Google Search Console, GA4, Schema JSON-LD, file llms.txt cho AI Search, Google Map kho Tân Tạo TP.HCM.</td>
-                <td style="text-align: right;" class="price-highlight">4.500.000</td>
+                <td><strong>Cấu Hình SEO / GEO / Local Trust</strong></td>
+                <td>Cấu hình Google Search Console, Google Analytics 4, Schema JSON-LD, file <code>llms.txt</code> cho AI Search, tối ưu nhận diện thương hiệu.</td>
+                <td style="text-align: right;" class="price-num">4.500.000</td>
               </tr>
               <tr class="total-row">
-                <td colspan="3" style="text-align: right;">TỔNG CHI PHÍ TRỌN GÓI (Đã bao gồm tên miền 3 năm &amp; 133 bài tin tức):</td>
-                <td style="text-align: right; color: var(--accent); font-size: 1.15rem;">40.980.000 VNĐ</td>
+                <td colspan="3" style="text-align: right;">TỔNG CỘNG CHI PHÍ TRỌN GÓI (Đã bao gồm tên miền 3 năm &amp; 133 bài viết):</td>
+                <td style="text-align: right;" class="total-price">40.980.000 VNĐ</td>
               </tr>
             </tbody>
           </table>
         </div>
-        <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 10px;">* Giá trên chưa bao gồm 8% thuế VAT. Cam kết không phát sinh bất kỳ chi phí ẩn nào.</p>
+        <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 14px;">
+          * Đơn giá chưa bao gồm thuế GTGT (8% VAT nếu xuất hóa đơn). Vietnam Sales Force cam kết bàn giao đầy đủ quyền quản trị tên miền và mã nguồn cho đối tác.
+        </p>
       </section>
 
-      <!-- SECTION 7: TIMELINE & CAM KẾT -->
+      <!-- ══════════════════════════════════════════════════════════════════
+           SECTION 07: TIMELINE & CAM KẾT
+           ══════════════════════════════════════════════════════════════════ -->
       <section id="sec-timeline" class="section-card">
         <div class="section-header">
-          <div class="section-icon">07</div>
-          <h2 class="section-title">Timeline Triển Khai (4 - 5 Tuần) &amp; Bàn Giao</h2>
+          <div class="section-label">Mục 07 • Lộ Trình Thực Hiện</div>
+          <h2 class="section-title">Timeline Triển Khai <em>(4 - 5 Tuần)</em> &amp; Bàn Giao Kỹ Thuật</h2>
         </div>
 
-        <div class="pillars-grid" style="margin-bottom: 20px;">
+        <div class="pillars-grid">
           <div class="pillar-item">
             <span class="pillar-tag">TUẦN 1</span>
-            <h4 class="pillar-title">Khảo Sát &amp; Hạ Tầng</h4>
-            <p class="pillar-desc">Đăng ký shinelink.vn 3 năm, khởi tạo CDN VN, chốt UI/UX 9 trang cốt lõi.</p>
+            <h3 class="pillar-title">Khởi Tạo &amp; Hạ Tầng</h3>
+            <p class="pillar-desc">Đăng ký tên miền shinelink.vn (3 năm), thiết lập CDN server VN, thống nhất layout UI/UX cho 9 core templates.</p>
           </div>
+
           <div class="pillar-item">
             <span class="pillar-tag">TUẦN 2</span>
-            <h4 class="pillar-title">Lập Trình UI Pure Code</h4>
-            <p class="pillar-desc">Lập trình HTML/CSS/JS thuần cho 9 trang mẫu, chuẩn hóa Responsive Mobile.</p>
+            <h3 class="pillar-title">Lập Trình Pure Code</h3>
+            <p class="pillar-desc">Lập trình HTML/CSS/JS thuần cho 9 trang mẫu cốt lõi, chuẩn hóa responsive hiển thị hoàn hảo trên Mobile, Tablet &amp; Desktop.</p>
           </div>
+
           <div class="pillar-item">
             <span class="pillar-tag">TUẦN 3</span>
-            <h4 class="pillar-title">Chuyển Đổi Nội Dung</h4>
-            <p class="pillar-desc">Import 49 sản phẩm catalog, rewrite >30% nội dung 133 bài tin tức.</p>
+            <h3 class="pillar-title">Nhập Liệu &amp; Nội Dung</h3>
+            <p class="pillar-desc">Thiết lập dữ liệu 49 sản phẩm catalog xích công nghiệp; tiến hành viết lại &amp; hiệu đính 133 bài tin tức chuẩn SEO B2B.</p>
           </div>
+
           <div class="pillar-item">
             <span class="pillar-tag">TUẦN 4 - 5</span>
-            <h4 class="pillar-title">GEO / SEO &amp; Bàn Giao</h4>
-            <p class="pillar-desc">Cấu hình llms.txt, Schema JSON-LD, Google Map, nghiệm thu kỹ thuật bàn giao.</p>
+            <h3 class="pillar-title">GEO / SEO &amp; Nghiệm Thu</h3>
+            <p class="pillar-desc">Cấu hình file llms.txt, Schema JSON-LD, kết nối GA4 &amp; GSC, kiểm thử tốc độ tải trang &lt;1s và bàn giao tài khoản quản trị.</p>
           </div>
         </div>
 
-        <div style="background: rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 12px; padding: 16px;">
-          <h3 style="color: var(--accent); font-size: 1rem; margin-bottom: 6px;">🛡️ Cam Kết &amp; Bảo Hành Kỹ Thuật</h3>
-          <p style="font-size: 0.85rem; color: var(--text-muted);">
-            Bàn giao 100% mã nguồn sạch, quyền sở hữu tên miền shinelink.vn, tài khoản Hosting, GA4, GSC, Google Maps. Bảo hành kỹ thuật 12 tháng hỗ trợ sự cố 24/7, đảm bảo website uptime 99.9%.
+        <div class="timeline-card">
+          <div class="timeline-card-title">
+            <span>🛡️ Cam Kết Dịch Vụ &amp; Bảo Hành Kỹ Thuật 12 Tháng</span>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.65;">
+            Vietnam Sales Force cam kết bàn giao 100% mã nguồn sạch, toàn quyền sở hữu tên miền shinelink.vn và tài khoản quản trị hạ tầng. Trong 12 tháng đầu vận hành, VSF chịu trách nhiệm bảo trì kỹ thuật 24/7, xử lý sự cố phát sinh đảm bảo website vận hành liên tục với uptime 99.9%.
           </p>
         </div>
       </section>
 
-      <!-- FOOTER -->
+      <!-- ══════════════════════════════════════════════════════════════════
+           SECTION 08: ĐẠI DIỆN TRÌNH KÝ & PHÊ DUYỆT ĐỀ XUẤT
+           ══════════════════════════════════════════════════════════════════ -->
+      <section id="sec-signoff" class="section-card">
+        <div class="section-header">
+          <div class="section-label">Mục 08 • Xác Nhận &amp; Trình Ký</div>
+          <h2 class="section-title">Đại Diện Xác Nhận &amp; <em>Ký Thỏa Thuận Triển Khai</em></h2>
+        </div>
+
+        <p class="section-intro">
+          Bản đề xuất này là căn cứ chính thức để hai bên tiến hành ký kết Hợp đồng Dịch vụ Xây dựng Kênh Số B2B Shinelink Việt Nam. Khi hai bên thống nhất các điều khoản, thỏa thuận sẽ có hiệu lực triển khai theo tiến độ đã cam kết.
+        </p>
+
+        <div class="signoff-box">
+          <div class="signoff-grid">
+            
+            <!-- VSF REPRESENTATIVE -->
+            <div class="signoff-col">
+              <div>
+                <div class="signoff-col-header">
+                  <div class="signoff-tag">ĐƠN VỊ ĐỀ XUẤT &amp; KÝ KẾT THỰC THI</div>
+                  <div class="signoff-entity">VIETNAM SALES FORCE (VSF)</div>
+                </div>
+                <div class="signoff-rep-info">
+                  <div class="signoff-rep-name">Ông Drachan Lam</div>
+                  <div class="signoff-rep-title">CEO &amp; Founder — Vietnam Sales Force</div>
+                  <div class="signoff-rep-title" style="margin-top: 4px; font-size: 0.8rem;">Email: contact@vietnamsalesforce.com</div>
+                </div>
+              </div>
+
+              <div>
+                <div class="signoff-signature-area">
+                  <div class="signoff-seal-mark">Drachan Lam</div>
+                  <div class="signoff-seal-hint">Đại diện ký tên &amp; Đóng dấu xác nhận VSF</div>
+                </div>
+                <div class="signoff-date-row">
+                  <span>Ngày: ..... / ..... / 2026</span>
+                  <span style="color: var(--gold);">Vietnam Sales Force LLC</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- SHINELINK REPRESENTATIVE -->
+            <div class="signoff-col">
+              <div>
+                <div class="signoff-col-header">
+                  <div class="signoff-tag">ĐƠN VỊ TIẾP NHẬN &amp; PHÊ DUYỆT</div>
+                  <div class="signoff-entity">SHINELINK INDUSTRIES</div>
+                </div>
+                <div class="signoff-rep-info">
+                  <div class="signoff-rep-name">Anh Hiệp</div>
+                  <div class="signoff-rep-title">Đại diện Shinelink tại Việt Nam</div>
+                  <div class="signoff-rep-title" style="margin-top: 4px; font-size: 0.8rem;">Website: shinelinkgroup.com</div>
+                </div>
+              </div>
+
+              <div>
+                <div class="signoff-signature-area">
+                  <div class="signoff-seal-mark" style="color: var(--text-dim);">[ Chữ Ký Phê Duyệt ]</div>
+                  <div class="signoff-seal-hint">Đại diện ký tên xác nhận đề xuất</div>
+                </div>
+                <div class="signoff-date-row">
+                  <span>Ngày: ..... / ..... / 2026</span>
+                  <span>Đại diện Shinelink</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════════════════════
+           FOOTER
+           ══════════════════════════════════════════════════════════════════ -->
       <footer class="footer">
-        <p>© 2026 CÔNG TY TNHH SHINELINK INDUSTRIES (VIỆT NAM) — Proposal Website Build</p>
-        <p style="font-size: 0.75rem; margin-top: 4px;">Hosted on Cloudflare Pages (proposal-shinelink-vietnam.vinhmekong.com)</p>
+        <div class="footer-brand">Vietnam Sales Force — Market Entry Experts</div>
+        <p>A network of industry experts, bank leaders, and lawyers helping international companies connect, establish, and grow in Vietnam.</p>
+        <div class="footer-links">
+          <a href="https://vietnamsalesforce.com" target="_blank" rel="noopener">Trang Chủ VSF</a>
+          <span>•</span>
+          <a href="https://www.shinelinkgroup.com/" target="_blank" rel="noopener">Shinelink Group</a>
+          <span>•</span>
+          <a href="mailto:contact@vietnamsalesforce.com">contact@vietnamsalesforce.com</a>
+        </div>
+        <p style="font-size: 0.74rem; color: var(--text-dim); margin-top: 8px;">
+          © 2026 Vietnam Sales Force LLC. Đề xuất bảo mật dành riêng cho Shinelink Industries.
+        </p>
       </footer>
 
     </div>
   </div>
 
+  <!-- ══════════════════════════════════════════════════════════════════
+       CLIENT-SIDE SCRIPT: AUTH, THEME TOGGLE, TOC SCROLL
+       ══════════════════════════════════════════════════════════════════ -->
   <script>
     const CORRECT_PASS = "shinelink2026";
 
-    // CHECK AUTH ON LOAD
+    // CHECK AUTHENTICATION ON LOAD
     window.addEventListener("DOMContentLoaded", () => {
       const isAuth = sessionStorage.getItem("shinelink_auth") === "true" || localStorage.getItem("shinelink_auth") === "true";
       if (isAuth) {
@@ -1402,8 +2066,8 @@
       window.addEventListener("scroll", () => {
         let current = "";
         sections.forEach(section => {
-          const sectionTop = section.offsetTop - 130;
-          if (pageYOffset >= sectionTop) {
+          const sectionTop = section.offsetTop - 140;
+          if (window.pageYOffset >= sectionTop) {
             current = section.getAttribute("id");
           }
         });
