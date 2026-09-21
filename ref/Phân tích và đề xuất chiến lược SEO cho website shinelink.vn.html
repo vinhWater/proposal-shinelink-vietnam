@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://proposal-seo-shinelink.web.app/#s4 -->
+<html lang="vi"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phân tích và đề xuất chiến lược SEO cho website shinelink.vn</title>
+<link rel="icon" href="https://proposal-seo-shinelink.web.app/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" href="https://proposal-seo-shinelink.web.app/assets/favicon-32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://proposal-seo-shinelink.web.app/assets/favicon-512.png" sizes="512x512">
+<link rel="apple-touch-icon" href="https://proposal-seo-shinelink.web.app/assets/favicon-180.png">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Đề xuất chiến lược SEO cho website shinelink.vn: hiện trạng, đối thủ tại Việt Nam, kế hoạch SEO theo hai giai đoạn, ngân sách 12 tháng và năng lực triển khai.">
+<style>
+  :root{
+    --ink:#111f38; --ink2:#1b2f52; --ink3:#26406b;
+    --brass:#e5322c; --brass2:#ff5a2c; --brass-soft:#fdeae6; --blue:#0347ac;
+    --paper:#f4f6f8; --card:#ffffff; --fg:#1a2438; --muted:#5b6576;
+    --line:#e3e7ec; --line2:#d3dae2; --clay:#a9542f; --inkfg:#e9edf5; --inkmut:#a0b0c7;
+    --serif:Arial,Helvetica,'Liberation Sans',sans-serif; /* site Shinelink dùng Arial cho cả tiêu đề */
+    --sans:Arial,Helvetica,'Liberation Sans',sans-serif;
+    --maxw:1200px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--fg);font-family:var(--sans);font-size:16px;line-height:1.72;font-weight:400;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.serif{font-family:var(--serif)}
+  h2{font-weight:700;letter-spacing:-.2px}
+  a{color:var(--ink2);text-underline-offset:2px}
+  .src{color:var(--brass);text-decoration:underline;text-underline-offset:2px;font-weight:600}
+  .note.dark .src{color:var(--brass2)}
+  .eyebrow{font-family:var(--sans);text-transform:uppercase;letter-spacing:.22em;font-size:11px;font-weight:600;color:var(--brass)}
+  .tnum{font-variant-numeric:tabular-nums}
+
+  header.bar{position:sticky;top:0;z-index:40;background:rgba(17,31,56,.96);backdrop-filter:saturate(1.2) blur(6px);
+    color:var(--inkfg);display:flex;align-items:center;justify-content:space-between;padding:13px 26px;border-bottom:1px solid rgba(255,90,44,.28)}
+  header.bar .brand{font-family:var(--serif);font-size:20px;font-weight:700;letter-spacing:.3px}
+  header.bar .brand b{color:var(--brass2);font-weight:700}
+  header.bar .brand .sep{color:var(--inkmut);font-family:var(--sans);font-size:11.5px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;margin-left:12px}
+  header.bar button{font-family:var(--sans);background:transparent;color:var(--brass2);border:1px solid var(--brass);border-radius:2px;
+    padding:9px 18px;font-weight:600;font-size:13px;letter-spacing:.03em;cursor:pointer;transition:.2s}
+  header.bar button:hover{background:var(--brass);color:#fff}
+
+  .hero{background:
+      radial-gradient(1200px 520px at 80% -10%, rgba(229,50,44,.17), transparent 60%),
+      linear-gradient(180deg,#12213c 0%, #0f1c34 100%);
+    color:var(--inkfg);padding:44px 0 40px;border-bottom:3px solid var(--brass)}
+  .hero .in{max-width:var(--maxw);margin:0 auto;padding:0 40px}
+  .hero h1{color:#fff;font-size:38px;line-height:1.15;margin:0;font-weight:700;letter-spacing:-.4px;max-width:900px}
+  .hero h1 em{font-style:normal;color:var(--brass2);font-weight:700}
+  .hero .sub{font-family:var(--sans);font-style:normal;font-size:19px;line-height:1.5;color:#cfd8e6;margin:22px 0 0;max-width:760px;font-weight:500}
+  .hero .meta{margin-top:24px;font-size:13px;color:var(--inkmut);line-height:1.5;border-top:1px solid rgba(255,255,255,.12);padding-top:18px;font-weight:400;display:grid;grid-template-columns:1.4fr 1fr .7fr 1.4fr;gap:18px 28px}
+  .hero .meta .k{display:block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--brass2);margin-bottom:4px;font-weight:600}
+  .hero .meta b{color:#eef2f8;font-weight:600}
+  @media (max-width:760px){ .hero .meta{grid-template-columns:1fr 1fr} }
+  .stat{background:rgba(255,255,255,.05);border:1px solid rgba(255,90,44,.35);border-radius:14px;padding:28px 30px}
+  .stat .lab{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--brass2);font-weight:600}
+  .stat .big{font-family:var(--serif);font-size:64px;line-height:1;color:#fff;margin:10px 0 2px;font-weight:600}
+  .stat .big small{font-size:21px;color:var(--inkmut);font-family:var(--sans);font-weight:400}
+  .stat .vs{display:flex;align-items:baseline;gap:10px;margin-top:14px;padding-top:14px;border-top:1px dashed rgba(255,255,255,.16)}
+  .stat .vs .n{font-family:var(--serif);font-size:31px;color:var(--brass2);font-weight:600}
+  .stat .vs .t{font-size:12.5px;color:#cfd8e6}
+  .stat .foot{margin-top:16px;font-size:12px;color:var(--inkmut);line-height:1.6}
+
+  .shell{max-width:var(--maxw);margin:0 auto;padding:0 40px;display:grid;grid-template-columns:236px 1fr;gap:48px;align-items:start}
+  nav.toc{position:sticky;top:78px;align-self:start;padding:34px 0;max-height:calc(100vh - 90px);overflow:auto}
+  nav.toc .lbl{text-transform:uppercase;letter-spacing:.2em;font-size:10px;color:var(--muted);font-weight:600;margin:0 0 14px;padding-left:14px}
+  nav.toc a{display:flex;gap:9px;color:var(--muted);text-decoration:none;padding:6px 14px;font-size:13px;border-left:2px solid transparent;transition:.15s;font-weight:500}
+  nav.toc a .s{font-family:var(--serif);color:var(--line2);font-size:13px;min-width:28px;font-weight:600}
+  nav.toc a:hover{color:var(--ink)}
+  nav.toc a.active{color:var(--ink);border-left-color:var(--brass);font-weight:600}
+  nav.toc a.active .s{color:var(--brass)}
+
+  main{padding:8px 0 30px;min-width:0}
+  section{scroll-margin-top:82px;padding:36px 0}
+  section:first-child{border-top:0}
+  .sechead{display:flex;align-items:baseline;gap:14px;margin-bottom:6px}
+  .sechead .mark{font-family:var(--serif);color:var(--brass);font-size:21px;font-weight:600;white-space:nowrap}
+  .sechead h2{font-size:30px;margin:0;color:var(--ink);line-height:1.2}
+  h3{font-size:19px;color:var(--ink2);margin:22px 0 6px;font-weight:600}
+  p{margin:11px 0}
+  ul,ol{margin:11px 0;padding-left:20px}
+  li{margin:7px 0}
+  li::marker{color:var(--brass)}
+  em{color:var(--muted)}
+  /* Căn đều 2 bên cho văn xuôi dài; giữ trái cho card/timeline/tiêu đề/ô bảng */
+  main p, main li, .note{text-align:justify}
+  .note .tt{text-align:left}
+  .pillar p, .pillar .res, .tl-item p, .gaprow .name, td, th{text-align:left}
+  td[style*="right"], th[style*="right"]{text-align:right}
+  .lead{font-family:var(--serif);font-size:21px;line-height:1.55;color:var(--ink2);font-weight:500}
+
+  .note{border-left:3px solid var(--brass);background:#fff;box-shadow:0 1px 2px rgba(17,31,56,.05);padding:16px 20px;margin:18px 0;border-radius:12px}
+  .note.dark{border-color:var(--brass);background:var(--ink);color:var(--inkfg)}
+  .note.dark .tt{color:var(--brass2)}
+  .note.warn{border-color:var(--clay);background:#fbf1ec}
+  .note .tt{display:block;font-family:var(--serif);font-weight:600;font-size:18px;margin-bottom:4px;color:var(--ink)}
+  .note.warn .tt{color:var(--clay)}
+
+  .gap{margin:20px 0 8px;border:1px solid var(--line);border-radius:6px;background:#fff;overflow:hidden}
+  .gap .gh{display:grid;grid-template-columns:1fr 96px;gap:12px;padding:11px 18px;background:var(--ink);color:var(--inkfg);font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:600}
+  .gap .gh .r{text-align:right}
+  .gaprow{display:grid;grid-template-columns:1fr 96px;gap:12px;align-items:center;padding:12px 18px;border-top:1px solid var(--line)}
+  .gaprow:nth-child(even){background:#fafbfc}
+  .gaprow .name{font-size:13.5px}
+  .track{position:relative;height:22px;margin-top:7px;background:#eef1f5;border-radius:3px;overflow:hidden}
+  .track .comp{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,#26406b,#33517f);opacity:.26}
+  .track .fta{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,var(--brass),var(--brass2));width:0;transition:width 1s ease}
+  .gaprow .fig{text-align:right;font-size:12px;color:var(--muted);line-height:1.4}
+  .gaprow .fig b{display:block;font-family:var(--serif);font-size:20px;color:var(--ink);font-weight:600}
+  .gaplegend{font-size:12px;color:var(--muted);margin:10px 2px 0;display:flex;gap:20px;flex-wrap:wrap}
+  .gaplegend i{display:inline-block;width:22px;height:10px;border-radius:2px;margin-right:7px;vertical-align:middle}
+  .sw-fta{background:linear-gradient(90deg,var(--brass),var(--brass2))}
+  .sw-comp{background:#33517f;opacity:.4}
+
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13.5px}
+  th,td{border-bottom:1px solid var(--line);padding:11px 12px;text-align:left;vertical-align:top}
+  thead th{color:var(--ink);border-bottom:2px solid var(--ink);font-family:var(--sans);font-weight:600;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  tbody tr:hover{background:#fafbfc}
+  .dr tbody tr.me{background:var(--brass-soft)}
+  .dr tbody tr.me:hover{background:var(--brass-soft)}
+  .dr tbody tr.me td{border-bottom:1px solid var(--brass);color:var(--ink)}
+  .prio td:first-child{font-family:var(--serif);font-size:20px;color:var(--brass);font-weight:600;text-align:center;width:56px}
+
+  .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:18px 0}
+  .tier{border:1px solid var(--line);border-radius:8px;background:#fff;padding:22px 20px;display:flex;flex-direction:column}
+  .tier.feat{border:1.5px solid var(--brass);box-shadow:0 12px 34px -18px rgba(229,50,44,.5);position:relative}
+  .tier.feat::before{content:"Đề xuất";position:absolute;top:-11px;left:20px;background:var(--brass);color:#fff;font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:3px 12px;border-radius:20px}
+  .tier .nm{font-family:var(--serif);font-size:23px;color:var(--ink);font-weight:600}
+  .tier .fit{font-size:12.5px;color:var(--muted);margin:4px 0 14px;min-height:36px}
+  .tier ul{list-style:none;padding:0;margin:0 0 16px;font-size:13px}
+  .tier ul li{padding:7px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:10px;margin:0}
+  .tier ul li::marker{content:""}
+  .tier ul li span:last-child{color:var(--ink);font-weight:600;text-align:right}
+  .tier .price{margin-top:auto;padding-top:14px;border-top:2px solid var(--ink)}
+
+  .fill{background:var(--brass-soft);border:1px dashed var(--brass);border-radius:3px;padding:1px 8px;font-size:12.5px;color:#9c2419;font-weight:600}
+  .tag{display:inline-block;font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:2px 9px;border-radius:20px;background:var(--brass-soft);color:#9c2419;font-weight:600;vertical-align:middle;margin-left:8px}
+
+  footer{border-top:3px solid var(--brass);background:var(--ink);color:var(--inkmut);margin-top:20px}
+  footer .in{max-width:var(--maxw);margin:0 auto;padding:26px 40px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12.5px}
+  footer b{color:var(--inkfg);font-family:var(--serif);font-weight:600}
+
+  .rv{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+  .rv.in{opacity:1;transform:none}
+
+  /* Bức tranh 1 phút */
+  .snap{background:linear-gradient(180deg,#ffffff,var(--paper));border-bottom:1px solid var(--line)}
+  .snap .in{max-width:var(--maxw);margin:0 auto;padding:32px 40px 34px}
+  .snap .cap{font-family:var(--sans);text-transform:uppercase;letter-spacing:.2em;font-size:11px;font-weight:600;color:var(--brass);margin:0 0 18px}
+  .flow{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+  .step{position:relative;background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px 20px;box-shadow:0 1px 2px rgba(17,31,56,.05);transition:transform .2s ease,box-shadow .2s ease}
+  .step:hover{transform:translateY(-3px);box-shadow:0 14px 30px -18px rgba(17,31,56,.3)}
+  .step:not(:last-child)::after{content:"→";position:absolute;right:-19px;top:50%;transform:translateY(-50%);color:var(--brass);font-size:19px;font-weight:700}
+  .step .ic{width:22px;height:22px;color:var(--brass);margin-bottom:13px;display:block;padding:11px;background:var(--brass-soft);border-radius:11px;box-sizing:content-box}
+  .step .k{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:5px}
+  .step .v{font-family:var(--serif);font-size:16px;line-height:1.34;color:var(--ink);font-weight:600}
+  .step .d{font-size:12.5px;color:var(--muted);margin-top:7px;line-height:1.5}
+  .bignums{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
+  .bignum{background:var(--ink);color:var(--inkfg);border-radius:12px;padding:20px 24px;border:1px solid rgba(255,90,44,.3)}
+  .bignum .n{font-family:var(--serif);font-size:38px;line-height:1;color:#fff;font-weight:600}
+  .bignum .n small{font-size:16px;color:var(--brass2);font-family:var(--sans);font-weight:500}
+  .bignum .l{font-size:12.5px;color:var(--inkmut);margin-top:9px;line-height:1.5}
+
+  /* 3 hạng mục */
+  .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:24px 0 6px}
+  .pillar{position:relative;background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px 24px;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(17,31,56,.05);transition:transform .22s ease,box-shadow .22s ease;overflow:hidden}
+  .pillar::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--brass),var(--brass2))}
+  .pillar:hover{transform:translateY(-4px);box-shadow:0 18px 38px -20px rgba(17,31,56,.35)}
+  .pillar .ic{width:24px;height:24px;color:var(--brass);display:block;padding:13px;background:var(--brass-soft);border-radius:13px;box-sizing:content-box;margin-bottom:16px}
+  .pillar .pn{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);font-weight:700;white-space:nowrap}
+  .pillar h4{font-family:var(--serif);font-size:19px;color:var(--ink);margin:5px 0 15px;font-weight:600;line-height:1.3}
+  .pillar p{font-size:13.5px;margin:0;color:var(--fg);line-height:1.62}
+  .pillar .res{margin-top:auto;padding:13px 15px;background:var(--brass-soft);border-radius:9px;font-size:12.5px;color:var(--ink);line-height:1.5}
+  .pillar .chk{list-style:none;padding:0;margin:0 0 16px}
+  .pillar .chk li{position:relative;padding:5px 0 5px 24px;font-size:13px;line-height:1.5;color:var(--fg);margin:0}
+  .pillar .chk li::before{content:"\2713";position:absolute;left:0;top:5px;width:15px;height:15px;line-height:15px;text-align:center;background:var(--brass);color:#fff;border-radius:50%;font-weight:700;font-size:9px}
+  .pillar .res b{color:#9c2419;font-weight:700}
+
+  /* Lộ trình timeline */
+  .timeline{margin:22px 0 4px;position:relative}
+  .tl-item{position:relative;padding:0 0 26px 56px;min-height:40px}
+  .tl-item:last-child{padding-bottom:2px}
+  .tl-item::before{content:"";position:absolute;left:17px;top:36px;bottom:2px;width:2px;background:var(--line2)}
+  .tl-item:last-child::before{display:none}
+  .tl-num{position:absolute;left:0;top:0;width:36px;height:36px;border-radius:50%;background:var(--ink);color:#fff;font-family:var(--serif);font-weight:600;display:flex;align-items:center;justify-content:center;font-size:16px;border:2px solid var(--brass)}
+  .tl-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .tl-head h4{font-family:var(--serif);font-size:18px;color:var(--ink);margin:0;font-weight:600}
+  .tl-time{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#9c2419;font-weight:600;background:var(--brass-soft);padding:3px 11px;border-radius:20px}
+  .tl-item p{font-size:13.5px;color:var(--fg);margin:7px 0 0;line-height:1.6}
+
+  /* Biểu đồ thanh ngang - đối thủ */
+  .chead{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:20px 0 10px}
+  .hbars{margin:0 0 6px}
+  .hbar{display:grid;grid-template-columns:168px 1fr 66px;gap:14px;align-items:center;padding:6px 0}
+  .hbar .hl{font-size:13px;text-align:right;line-height:1.24;color:var(--ink);font-weight:500}
+  .hbar .hl .sub{display:block;font-size:11px;color:var(--muted);font-weight:400}
+  .hbar .htrack{position:relative;height:24px;background:#eef1f5;border-radius:4px;overflow:hidden}
+  .hbar .hfill{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,#284674,#3a5b8c);border-radius:4px}
+  .hbar.me .hfill{background:linear-gradient(90deg,var(--brass),var(--brass2))}
+  .hbar .hval{font-family:var(--serif);font-weight:600;color:var(--ink);text-align:right;font-variant-numeric:tabular-nums;font-size:14.5px}
+  .hbar.me .hl,.hbar.me .hval{color:#9a7635}
+  .hbar.me .htrack{outline:1px dashed var(--brass);background:var(--brass-soft)}
+
+  /* Biểu đồ từ khóa */
+  .kwbars{margin:16px 0 6px}
+  .kwrow{padding:10px 0;border-top:1px solid var(--line)}
+  .kwrow:first-child{border-top:0}
+  .kwl{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:6px}
+  .kwl .kw{color:var(--ink);font-weight:500;font-size:14px}
+  .kwl .kw .kwtag{color:var(--muted);font-weight:400;font-size:12px}
+  .kwl .kwv{font-family:var(--serif);font-weight:600;color:var(--ink);white-space:nowrap;font-size:15px}
+  .kwl .kwv small{font-size:12px;color:var(--muted);font-family:var(--sans);font-weight:500}
+  .kwtrack{height:15px;background:#eef1f5;border-radius:3px;overflow:hidden}
+  .kwfill{height:100%;background:linear-gradient(90deg,var(--brass),var(--brass2));border-radius:3px}
+
+  /* Bảng KPI cam kết */
+  .kpi{font-size:13px}
+  .kpi thead th{text-align:center}
+  .kpi thead th:first-child{text-align:left}
+  .kpi td:not(:first-child),.kpi th:not(:first-child){text-align:center;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .kpi tbody td:first-child{color:var(--fg)}
+  .kpi tr.grp td{background:var(--brass-soft);color:#9c2419;font-weight:600;text-transform:uppercase;letter-spacing:.05em;font-size:11px;padding-top:9px;padding-bottom:9px;border-bottom:1px solid var(--line)}
+  .kpi tr.grp.tot td{background:#fff;color:var(--ink);text-transform:none;letter-spacing:0;font-size:13.5px;font-weight:700;border-top:2px solid var(--ink);border-bottom:0}
+  .kpi thead th small{display:block;font-weight:400;font-size:10px;letter-spacing:.04em;text-transform:uppercase;color:var(--brass)}
+  .kpi .fill{font-size:11.5px;padding:1px 6px}
+
+  @media (max-width:960px){
+    .hero .in{padding:0 22px}
+    .hero h1{font-size:32px}
+    .shell{grid-template-columns:1fr;padding:0 22px;gap:0}
+    nav.toc{position:static;max-height:none;padding:18px 0;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:4px}
+    nav.toc .lbl{width:100%}
+    nav.toc a{border-left:0;border-bottom:0;padding:6px 10px;flex:0 0 100%}
+    nav.toc a:not(.sub){margin-top:8px}
+    nav.toc a.sub{padding-left:26px}
+    nav.toc a.active{border-left:0}
+    nav.toc a:not(.sub).active{border-left:2px solid var(--brass);padding-left:8px}
+    nav.toc a.sub.active{border-left:2px solid var(--brass);padding-left:24px}
+    .tiers{grid-template-columns:1fr}
+    footer .in{padding:22px}
+    .snap .in{padding:24px 22px}
+    .flow{grid-template-columns:1fr 1fr;gap:14px}
+    .step:not(:last-child)::after{display:none}
+    .bignums{grid-template-columns:1fr}
+    .pillars{grid-template-columns:1fr}
+  }
+  @media (max-width:520px){ .hero h1{font-size:29px} .sechead h2{font-size:24px} .stat .big{font-size:52px} .flow{grid-template-columns:1fr} .hbar{grid-template-columns:104px 1fr 50px;gap:9px} .hbar .hl{font-size:11.5px} .hbar .hl .sub{font-size:10px} }
+  @media (prefers-reduced-motion:reduce){ .rv{opacity:1;transform:none;transition:none} .track .fta{transition:none} html{scroll-behavior:auto} }
+
+  @media print{
+    header.bar,nav.toc{display:none}
+    body{background:#fff;font-size:11pt}
+    .hero{padding:24px 0}.hero .in,.shell,footer .in{padding-left:0;padding-right:0}
+    .shell{display:block}.rv{opacity:1;transform:none}.track .fta{transition:none}
+    .tiers{grid-template-columns:repeat(3,1fr)}
+    section{padding:14px 0}
+    .gap,.note,table,.tier{page-break-inside:avoid}
+    h2,h3{page-break-after:avoid}
+    @page{size:A4;margin:14mm}
+  }
+
+  .note p{margin:0 0 8px} .note p:last-child{margin-bottom:0}
+  .note ul,.note ol{margin:6px 0 10px}
+  .tl-item ul{font-size:13.5px;color:var(--fg);margin:7px 0 0;padding-left:18px;line-height:1.6}
+  .tl-item li{margin:4px 0;text-align:left}
+  td ul,td ol{margin:0 0 6px;padding-left:16px} td li{margin:3px 0;text-align:left}
+  li ul,li ol{margin:6px 0 4px}
+  .note.dark b{color:#fff}
+  .note.dark li::marker{color:var(--brass2)}
+  .note.dark p,.note.dark li{color:var(--inkfg)}
+
+  /* mục lục: phân cấp rõ giữa mục lớn và tiểu mục */
+  nav.toc a:not(.sub){color:var(--ink);font-weight:600;font-size:13.5px;margin-top:12px;line-height:1.45}
+  nav.toc a:not(.sub):first-of-type{margin-top:0}
+  nav.toc a:not(.sub) .s{color:var(--brass);font-size:12px;opacity:.75}
+  nav.toc a:not(.sub).active .s{opacity:1}
+  nav.toc a.sub{font-size:12px;padding:3px 14px 3px 30px;color:var(--muted);font-weight:400;line-height:1.4;gap:7px}
+  nav.toc a.sub .s{font-size:10.5px;min-width:20px;color:var(--line2);font-weight:500}
+  nav.toc a.sub:hover{color:var(--ink)}
+  nav.toc a.sub.active{color:var(--ink);font-weight:600}
+  nav.toc a.sub.active .s{color:var(--brass)}
+  @media (max-width:1040px){ nav.toc a.sub{font-size:11.5px;padding-left:22px} }
+
+  .kpi.price{table-layout:fixed;width:100%;font-size:13px}
+  .kpi.price col.c-nm{width:15%} .kpi.price col.c-dt{width:32%} .kpi.price col.c-un{width:8%} .kpi.price col.c-pr{width:12%} .kpi.price col.c-op{width:11%}
+  .kpi.price th,.kpi.price td{padding:11px 8px;vertical-align:top}
+  .kpi.price th:first-child,.kpi.price td:first-child{padding-left:12px}
+  .kpi.price thead th{font-size:11px;letter-spacing:.06em;vertical-align:middle;padding-top:10px;padding-bottom:10px;background:#fff}
+  .kpi.price thead th:nth-child(2){text-align:left}
+  .kpi.price thead th:nth-child(n+5){color:var(--brass)}
+  .kpi td.nm{font-weight:600;color:var(--ink);line-height:1.4;padding-top:13px}
+  .kpi td.dt{font-size:12.5px;color:var(--fg);line-height:1.55;text-align:left;white-space:normal;padding-right:14px}
+  table td.num{white-space:nowrap}
+  .issues{table-layout:fixed;font-size:13px}
+  .evidence{display:grid;grid-template-columns:1fr;gap:18px;margin:14px 0 22px}
+  .evidence figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;box-shadow:0 1px 2px rgba(17,31,56,.05)}
+  .evidence img{width:100%;height:auto;display:block;border-radius:8px;border:1px solid var(--line)}
+  .evidence figcaption{font-size:12.5px;color:var(--muted);margin-top:10px;line-height:1.55;text-align:left}
+  .issues th,.issues td{text-align:left;white-space:normal;vertical-align:top;padding:10px 10px;line-height:1.5}
+  .issues td:first-child{color:var(--ink)}
+  .issues td:last-child{color:var(--ink);font-weight:500}
+  .issues tr.grp td{background:var(--brass-soft);color:#9c2419;font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:11px;padding:8px 12px}
+  .kpi td.dt ul.dl{margin:5px 0 0;padding-left:15px;color:var(--muted)}
+  .kpi td.dt ul.dl li{margin:2px 0;text-align:left;padding-left:2px}
+  .kpi td.dt ul.dl li::marker{color:var(--brass)}
+  .kpi.price tbody td:nth-child(n+3){text-align:center;padding-top:13px}
+  .kpi.price tbody td:nth-child(4){font-weight:600;color:var(--ink)}
+  .kpi.price tbody td:nth-child(n+5){font-weight:600;color:var(--ink);background:rgba(229,50,44,.025)}
+  .kpi.price tr.grp td{background:var(--brass-soft);padding-top:8px;padding-bottom:8px}
+  .kpi.price tr.grp.tot td{background:var(--ink);color:#fff;font-size:13px;font-weight:700;padding:14px 4px;border:0;white-space:nowrap;letter-spacing:0}
+  .kpi.price tr.grp.tot td:nth-child(n+2){text-align:center}
+  .kpi.price tr.grp.tot td:first-child{text-align:left;padding-left:12px;text-transform:none;letter-spacing:0}
+  .kpi.price tr.grp.tot.mo td{background:var(--ink2);color:var(--inkmut);font-size:11.5px;font-weight:500;padding-top:6px;padding-bottom:10px}
+  .pillar .res b.tnum{display:block;margin-bottom:2px}
+  .stat .vs .n{white-space:nowrap}
+  @media (max-width:960px){ .kpi.price{table-layout:auto;min-width:860px} }
+
+  .kpi.price col.c-nm{width:18%} .kpi.price col.c-dt{width:45%} .kpi.price col.c-un{width:9%} .kpi.price col.c-pr{width:14%} .kpi.price col.c-op{width:14%}
+
+</style>
+
+<!-- ===== Firebase SDK (compat) ===== -->
+<script src="./Phân tích và đề xuất chiến lược SEO cho website shinelink.vn_files/firebase-app-compat.js"></script>
+<script src="./Phân tích và đề xuất chiến lược SEO cho website shinelink.vn_files/firebase-auth-compat.js"></script>
+<script src="./Phân tích và đề xuất chiến lược SEO cho website shinelink.vn_files/firebase-firestore-compat.js"></script>
+<script>
+  const FIREBASE_CONFIG = {
+    apiKey: "AIzaSyD62pCRiiXPm343xQP09ZU-sm9UYH5cL48",
+    authDomain: "steady-vine-491414-i4.firebaseapp.com",
+    projectId: "steady-vine-491414-i4",
+    storageBucket: "steady-vine-491414-i4.firebasestorage.app",
+    messagingSenderId: "764897907518",
+    appId: "1:764897907518:web:e0741424587fd5425c126f"
+  };
+  const OWNER_EMAIL   = "phapld0311@gmail.com";   /* email Google được quyền SỬA */
+  const VIEW_PASSWORD = "shinelink2026";          /* mật khẩu để XEM */
+  const CONTENT_DOC   = "site/shinelink";         /* nội dung trong Firestore (tách với FTA) */
+  const COMMENTS_COL  = "comments_shinelink";     /* nhận xét (tách với FTA) */
+  const SS_KEY        = "shl_ok";
+  const PRICING_DOC   = "site/shinelink_pricing"; /* đơn giá + số lượng + cam kết, owner sửa trên web */
+</script>
+<style>
+  #gate{position:fixed;inset:0;z-index:200;background:var(--paper);display:flex;align-items:center;justify-content:center;padding:24px}
+  #gate .box{background:#fff;border:1px solid var(--line);border-radius:14px;padding:34px 32px 36px;max-width:400px;width:100%;text-align:center;box-shadow:0 1px 2px rgba(17,31,56,.05),0 18px 48px rgba(17,31,56,.10)}
+  #gate .logos{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:22px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+  #gate .logos img{height:36px;width:auto;display:block}
+  #gate .bd{font-family:var(--serif);font-size:22px;color:var(--ink);font-weight:700;margin-bottom:6px}
+  #gate p{color:var(--muted);font-size:13.5px;margin:0 0 18px}
+  #gate input{width:100%;padding:11px 13px;border:1px solid var(--line2);border-radius:6px;font-size:15px;font-family:var(--sans);margin-bottom:12px;box-sizing:border-box;outline:none}
+  #gate input:focus{border-color:var(--ink3);box-shadow:0 0 0 3px rgba(17,31,56,.12)}
+  #gate button{width:100%;padding:12px;background:var(--ink);color:#fff;border:0;border-radius:6px;font-weight:600;font-size:14px;cursor:pointer;font-family:var(--sans)}
+  #gate .err{color:var(--brass);font-size:12.5px;min-height:16px;margin-top:8px}
+  body.locked{overflow:hidden}
+  #ebar{position:fixed;right:18px;bottom:18px;z-index:150;display:flex;gap:8px;align-items:center;background:rgba(17,31,56,.97);color:#fff;border:1px solid var(--brass);border-radius:30px;padding:8px 10px 8px 16px;box-shadow:0 8px 30px rgba(0,0,0,.32);font-family:var(--sans);font-size:12.5px}
+  #ebar b{color:var(--brass2);font-weight:600}
+  #ebar button{background:var(--brass);color:#fff;border:0;border-radius:20px;padding:7px 13px;font-weight:600;font-size:12px;cursor:pointer;font-family:var(--sans)}
+  #ebar button.ghost{background:transparent;color:#cfd8e6;border:1px solid rgba(255,255,255,.3)}
+  body.editing [data-edit]{outline:2px dashed var(--brass);outline-offset:3px;border-radius:2px}
+  body.editing [data-edit]:focus{outline:2px solid var(--brass);background:#fffdf7}
+  .cmt-btn{font-family:var(--sans);font-size:11px;font-weight:600;color:#9c2419;background:var(--brass-soft);border:1px solid var(--brass);border-radius:20px;padding:2px 10px;cursor:pointer;margin-left:10px;vertical-align:middle;white-space:nowrap}
+  .cmt-panel{background:#fff;border:1px solid var(--line);border-left:3px solid var(--brass);border-radius:0 6px 6px 0;padding:14px 16px;margin:10px 0 6px}
+  .cmt{padding:9px 0;border-top:1px solid var(--line);font-size:13.5px}
+  .cmt:first-child{border-top:0}
+  .cmt .who{font-weight:600;color:var(--ink)}
+  .cmt .when{color:var(--muted);font-size:11.5px;margin-left:6px}
+  .cmt .tx{color:var(--fg);margin-top:2px;white-space:pre-wrap;text-align:left}
+  .cmt .del{float:right;color:var(--clay);font-size:11px;cursor:pointer;border:0;background:none}
+  .cmt-empty{color:var(--muted);font-size:13px;font-style:italic}
+  .cmt-form{margin-top:12px}
+  .cmt-form textarea{width:100%;border:1px solid var(--line2);border-radius:6px;padding:9px;font-family:var(--sans);font-size:13.5px;min-height:56px;resize:vertical;box-sizing:border-box}
+  .cmt-form .row{display:flex;gap:8px;align-items:center;margin-top:8px;flex-wrap:wrap}
+  .cmt-form button{background:var(--ink);color:#fff;border:0;border-radius:6px;padding:8px 16px;font-weight:600;font-size:13px;cursor:pointer;font-family:var(--sans)}
+  .cmt-form .hint{color:var(--muted);font-size:12.5px}
+  .cmt-form .signin{background:var(--brass);color:#fff}
+  body.pricing td[data-price],body.pricing td[data-q],body.pricing td[data-kpi]{background:#fffdf7!important}
+  input.pin{width:72px;max-width:100%;padding:5px 4px;font-size:12.5px;border:1px solid var(--brass);border-radius:5px;font:inherit;font-weight:600;color:var(--ink);text-align:right;background:#fff;box-sizing:border-box}
+  td[data-price] input.pin{width:104px}
+  input.pin:focus{outline:2px solid var(--brass);outline-offset:1px}
+  td.dirty,span.dirty{color:var(--brass)!important}
+  #toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 18px;border-radius:24px;font-size:13px;z-index:300;opacity:0;transition:opacity .3s;pointer-events:none;font-family:var(--sans)}
+  #toast.show{opacity:1}
+  @media print{ #gate,#ebar,.cmt-btn,.cmt-panel,#toast{display:none!important} }
+</style>
+</head>
+<body class="">
+<div id="gate" style="display: none;"><div class="box">
+  <div class="logos"><img src="./Phân tích và đề xuất chiến lược SEO cho website shinelink.vn_files/shinelink-logo-s.png" alt="Shinelink"><img src="./Phân tích và đề xuất chiến lược SEO cho website shinelink.vn_files/shinelink-logo.png" alt="Shine Link"></div>
+  <div class="bd">Confidential document</div>
+  <p>Enter the password to view the SEO proposal for shinelink.vn.</p>
+  <input id="gate-pw" type="password" placeholder="Password" autocomplete="off">
+  <button id="gate-go">View proposal</button>
+  <div class="err" id="gate-err"></div>
+</div></div>
+<div id="ebar" style="display:none"></div>
+<div id="toast"></div>
+
+
+<header class="bar">
+  <div class="brand" style="display:flex;align-items:center;gap:12px"><img src="./Phân tích và đề xuất chiến lược SEO cho website shinelink.vn_files/shinelink-logo-s.png" alt="Shinelink" style="height:36px;width:auto;display:block"><img src="./Phân tích và đề xuất chiến lược SEO cho website shinelink.vn_files/shinelink-logo.png" alt="Shine Link" style="height:34px;width:auto;display:block"><span class="sep" style="margin-left:6px">Đề xuất chiến lược SEO</span></div>
+  <button onclick="window.print()">In / Lưu PDF</button>
+</header>
+
+<section class="hero" id="top">
+  <div class="in">
+    <div>
+      <h1>Phân tích và đề xuất <em>chiến lược SEO</em> cho website shinelink.vn</h1>
+      <div class="meta">
+        <div><span class="k">Client</span><b>Hangzhou Shinelink Machinery Co., Ltd.</b></div>
+        <div><span class="k">Website</span><b>shinelink.vn</b> (đang dựng mới)</div>
+        <div><span class="k">Ngày</span><b>16/09/2026</b></div>
+        <div><span class="k">Phạm vi</span><b>Dịch vụ SEO thị trường Việt Nam</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="snap">
+  <div class="in">
+    <p class="cap">Bức tranh tổng quan</p>
+    <div class="flow">
+      <div class="step">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9.9 4.24A9.1 9.1 0 0 1 12 4c7 0 10 8 10 8a18.5 18.5 0 0 1-2.16 3.19M6.6 6.6A18.5 18.5 0 0 0 2 12s3 8 10 8a9.1 9.1 0 0 0 5.4-1.6"></path><path d="M14.12 14.12A3 3 0 1 1 9.88 9.88"></path><line x1="2" y1="2" x2="22" y2="22"></line></svg>
+        <div class="k">Hiện trạng</div>
+        <div class="v">Shinelink chưa hiện diện trên Google Việt Nam</div>
+        <div class="d">Website hiện tại chỉ có tiếng Anh và tiếng Trung, không có từ khóa nào tại Việt Nam; trang sản phẩm mỏng, thông số nằm trong tệp PDF, hồ sơ liên kết phần lớn đến từ các trang bán liên kết.</div>
+      </div>
+      <div class="step">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="5"></circle><circle cx="12" cy="12" r="1.6"></circle></svg>
+        <div class="k">Đối thủ</div>
+        <div class="v">Thị trường khó, nhưng Shinelink có lợi thế của nhà sản xuất</div>
+        <div class="d">Năm website thương mại đã chiếm từ khóa chung, hãng Nhật có nhà phân phối mạnh, uy tín tên miền đối thủ tới 51/100; nhưng chưa đối thủ nào trên trang một Google là nhà sản xuất, và lợi thế giá, tùy biến so với hàng Nhật chưa ai nói trên Google.</div>
+      </div>
+      <div class="step">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 22 8.5 12 15 2 8.5 12 2"></polygon><polyline points="2 15.5 12 22 22 15.5"></polyline></svg>
+        <div class="k">Kế hoạch</div>
+        <div class="v">Tập trung hai từ khóa Shinelink đã chọn</div>
+        <div class="d">Xích cho ngành mía đường và xích công nghiệp nặng, nối với những câu hỏi kỹ sư nhà máy tra cứu mà đối thủ chưa trả lời, kèm bài blog bổ trợ và bài so sánh với hãng Nhật; triển khai theo ba hạng mục Onpage, Content và Offpage trong suốt 12 tháng.</div>
+      </div>
+      <div class="step">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 7"></polyline><polyline points="15 7 21 7 21 13"></polyline></svg>
+        <div class="k">Ngân sách</div>
+        <div class="v">Cam kết đầu ra rõ ràng</div>
+        <div class="d">Mỗi hạng mục có đơn giá riêng; cam kết lượt truy cập tự nhiên và số từ khóa vào top 10 sau 12 tháng, đo bằng Google Analytics 4 và kết quả tìm kiếm trên Google.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="shell">
+  <nav class="toc" id="toc">
+    <p class="lbl">Mục lục</p>
+    <a href="https://proposal-seo-shinelink.web.app/#s1"><span class="s">1</span>Hiện trạng website shinelinkgroup.com</a>
+    <a href="https://proposal-seo-shinelink.web.app/#s2"><span class="s">2</span>Phân tích đối thủ</a><a class="sub" href="https://proposal-seo-shinelink.web.app/#cac-hang-xich-nuoc-ngoai-tren-google-viet-nam"><span class="s">2.1</span>Các hãng xích nước ngoài trên Google Việt Nam</a><a class="sub" href="https://proposal-seo-shinelink.web.app/#nam-doi-thu-manh-nhat-tren-trang-mot-google-tim-kiem"><span class="s">2.2</span>Năm đối thủ mạnh nhất trên trang một Google tìm kiếm</a><a class="sub" href="https://proposal-seo-shinelink.web.app/#ket-luan"><span class="s">2.3</span>Kết luận</a>
+    <a href="https://proposal-seo-shinelink.web.app/#s3"><span class="s">3</span>Kế hoạch SEO</a><a class="sub" href="https://proposal-seo-shinelink.web.app/#muc-tieu-va-khach-hang-muc-tieu"><span class="s">3.1</span>Mục tiêu và khách hàng mục tiêu</a><a class="sub" href="https://proposal-seo-shinelink.web.app/#ban-do-tu-khoa"><span class="s">3.2</span>Bản đồ từ khóa</a><a class="sub" href="https://proposal-seo-shinelink.web.app/#ba-hang-muc-trien-khai"><span class="s">3.3</span>Ba hạng mục triển khai</a>
+    <a href="https://proposal-seo-shinelink.web.app/#s4"><span class="s">4</span>Ngân sách và thanh toán</a><a class="sub" href="https://proposal-seo-shinelink.web.app/#chi-phi-theo-hang-muc"><span class="s">4.1</span>Chi phí theo hạng mục</a><a class="sub" href="https://proposal-seo-shinelink.web.app/#cam-ket-dau-ra"><span class="s">4.2</span>Cam kết đầu ra</a><a class="sub" href="https://proposal-seo-shinelink.web.app/#phuong-an-neu-kpi-khong-dat-100"><span class="s">4.3</span>Phương án nếu KPI không đạt 100%</a><a class="sub" href="https://proposal-seo-shinelink.web.app/#tien-do-trien-khai-va-thanh-toan-theo-thang"><span class="s">4.4</span>Tiến độ triển khai và thanh toán theo tháng</a>
+    <a href="https://proposal-seo-shinelink.web.app/#s5"><span class="s">5</span>Năng lực triển khai</a>
+    <a href="https://proposal-seo-shinelink.web.app/#s6"><span class="s">6</span>Phụ lục</a><a class="sub active" href="https://proposal-seo-shinelink.web.app/#phu-luc-a-ho-so-thuong-hieu-va-lien-ket-nen-social-entity"><span class="s">6.1</span>Phụ lục A: Hồ sơ thương hiệu và liên kết nền (social entity)</a><a class="sub" href="https://proposal-seo-shinelink.web.app/#phu-luc-b-bao-va-website-dat-bai-pr-textlink-guest-post"><span class="s">6.2</span>Phụ lục B: Báo và website đặt bài PR, textlink, guest post</a><a class="sub" href="https://proposal-seo-shinelink.web.app/#phu-luc-c-nguon-so-lieu"><span class="s">6.3</span>Phụ lục C: Nguồn số liệu</a>
+  </nav>
+
+  <main data-edit="">
+    <section id="s1" class="rv in">
+      <div class="sechead"><span class="mark">1</span><h2>Hiện trạng website shinelinkgroup.com</h2><button class="cmt-btn" type="button" contenteditable="false">💬 Comment</button></div>
+      <p>Shinelink đang xây dựng website shinelink.vn dành riêng cho thị trường Việt Nam. Vì website mới nhiều khả năng sẽ kế thừa nội dung, hình ảnh và cách trình bày của website hiện tại, chúng tôi đã rà soát toàn bộ shinelinkgroup.com trước: 250 địa chỉ trong sơ đồ site được thu thập ngày 16/09/2026, đối chiếu với số liệu Ahrefs và kết quả kiểm tra trực tiếp trên Google Việt Nam ngày 16/09/2026. Việc rà soát nhằm hai mục đích:</p>
+      <ul>
+        <li>Xác định vị trí hiện tại của Shinelink trên Google.</li>
+        <li>Chỉ rõ những điểm shinelink.vn không được lặp lại nếu dùng lại nội dung hay cách dựng của website này.</li>
+      </ul>
+      <p><b>Điểm mạnh hiện có:</b></p>
+      <ul>
+        <li>Danh mục sản phẩm đầy đủ: 81 dòng xích, mỗi dòng có một trang riêng.</li>
+        <li>42 dòng xích có tài liệu thông số kỹ thuật dạng PDF.</li>
+        <li>Hai dự án nhà máy đường thực tế tại Ethiopia và Bolivia cùng hình ảnh nhà máy để làm bằng chứng năng lực.</li>
+      </ul>
+      <p>Đây là nguồn tư liệu tốt cho website mới, song chưa được trình bày theo cách Google và kỹ sư có thể đọc.</p>
+      <h3>Các vấn đề đang tồn đọng</h3>
+      <div style="overflow-x:auto">
+      <table class="issues">
+        <thead><tr><th style="width:23%">Vấn đề</th><th style="width:29%">Hiện trạng website shinelinkgroup.com</th><th style="width:22%">Ảnh hưởng đến SEO</th><th>shinelink.vn cần tối ưu</th></tr></thead>
+        <tbody>
+          <tr class="grp"><td colspan="4">Nội dung và hiện diện tại Việt Nam</td></tr>
+          <tr><td><b>Trang sản phẩm gần như không có nội dung</b></td><td>Nội dung rất mỏng: đa số trang sản phẩm có nội dung dưới 150 từ; phần mô tả thực tế chỉ 1-3 câu, chưa có phần giới thiệu ứng dụng hay ưu điểm của sản phẩm</td><td>Google không có nội dung để xếp hạng; kỹ sư vào trang chưa đủ thông tin để so sánh và ra quyết định</td><td>Tối ưu lại từng trang từ nội dung Shinelink đã có: mô tả kỹ thuật theo từ khóa, ứng dụng theo ngành, hình ảnh hiển thị ngay, CTA gửi bản vẽ hoặc mã xích cũ</td></tr>
+          <tr><td><b>Thông số kỹ thuật nằm trong PDF, gần nửa số trang không có cả PDF</b></td><td>42/81 trang sản phẩm chỉ có nút tải PDF (ví dụ Mining Chain Page1.pdf, Page2.pdf), không có bảng thông số trên trang; 39 trang còn lại không có thông số dưới bất kỳ dạng nào</td><td>Google không đọc được thông số để xếp hạng cho truy vấn kỹ thuật (cỡ xích, bước xích, tải kéo đứt); kỹ sư phải tải tệp mới biết sản phẩm có phù hợp không</td><td>Bảng thông số ngay trên trang cho mọi sản phẩm, PDF chỉ là tệp đính kèm</td></tr>
+          <tr><td><b>87 bài tin tức viết chung chung, trùng chủ đề</b></td><td>87 bài chi tiết (144 địa chỉ kể cả trang danh sách và thẻ), trung vị 545 từ; nhiều bài cùng một chủ đề: 3 bài về Double Flex Chain, 3 bài về Water Treatment Chain, 2 bài "Structure of roller chain", 6 bài về "Theme Park Chain"; 10 trang dùng chung 5 tiêu đề giống hệt nhau (Theme Park Chain-Shinelink, Water Treatment Chain-Shinelink, Marsh Buggy Chain-Shinelink...)</td><td>Các bài tự cạnh tranh nhau, Google chỉ chọn một; chủ đề website bị loãng bởi các bài không liên quan thị trường Việt Nam</td><td>Chỉ giữ khoảng 5 bài còn giá trị (dự án Ethiopia, lắp đặt, bảo quản, bảo trì); bài mới viết theo bản đồ từ khóa ở mục 3</td></tr>
+          <tr><td><b>Chưa có nội dung tiếng Việt trên Google</b></td><td>Ahrefs: 1 từ khóa xếp hạng (tại Mỹ), 0 lượt truy cập từ Việt Nam; không xuất hiện ở trang một Google tìm kiếm của bất kỳ từ khóa nào trong ngành được kiểm tra, kể cả hai từ khóa Shinelink ưu tiên</td><td>Kỹ sư Việt Nam không thể tìm thấy Shinelink; mọi yêu cầu báo giá đến từ Google đang thuộc về đối thủ</td><td>Toàn bộ shinelink.vn viết bằng tiếng Việt theo hai giai đoạn ở mục 3</td></tr>
+          <tr class="grp"><td colspan="4">Thẻ tiêu đề và mô tả</td></tr>
+          <tr><td><b>Tiêu đề trang đặt theo mẫu, không theo từ khóa</b></td><td>Mẫu "Tên sản phẩm-Products-Shinelink" cho cả 81 trang; 129/248 trang có tiêu đề dài quá 60 ký tự, 45 trang ngắn dưới 30 ký tự; trang chủ chỉ là "Shinelink-Transmission Chain-Conveyor Chain"</td><td>Google hiển thị tiêu đề bị cắt hoặc tự thay bằng tiêu đề khác; tiêu đề không chứa từ khóa mua hàng nào (nhà sản xuất, cỡ xích, ứng dụng)</td><td>Khung tiêu đề theo từng loại trang, chứa từ khóa và lợi ích, dài 50-60 ký tự</td></tr>
+          <tr><td><b>Thẻ mô tả chỉ lặp lại tên trang</b></td><td>85/248 trang có thẻ mô tả chỉ là tên trang cộng chữ "Shinelink" (ví dụ "Marsh Buggy Chain Shinelink"); 81/81 trang sản phẩm đều như vậy; 15 trang dùng chung một mô tả; 4 trang không có</td><td>Mất quyền kiểm soát đoạn mô tả hiện trên Google, làm giảm tỷ lệ nhấp</td><td>Mô tả riêng cho từng trang, nêu ứng dụng và điểm khác biệt</td></tr>
+          <tr class="grp"><td colspan="4">Kỹ thuật</td></tr>
+          <tr><td><b>Thiếu tiêu đề chính, không có tiêu đề phụ</b></td><td>53/248 trang không có thẻ H1 (trang chủ, trang danh sách tin, trang thẻ tag, 30 trang sản phẩm); 19 trang có hơn một H1; 232/248 trang không có thẻ H2 nào</td><td>Google không xác định được chủ đề chính và cấu trúc nội dung của trang</td><td>Mỗi trang một H1 duy nhất, H2 cho từng phần (thông số, ứng dụng, tài liệu)</td></tr>
+          <tr><td><b>Một sản phẩm có nhiều đường dẫn</b></td><td>18 tên sản phẩm tồn tại ở từ 2 địa chỉ trở lên trong sơ đồ site (ví dụ Marsh Buggy Chain, Trencher chain, Chain for mechanical parking garage); cùng một trang còn được liên kết từ trang chủ bằng địa chỉ dạng mã số /product/1256046662581374976.html và /Products_detail_1/...</td><td>Nội dung trùng lặp; sức mạnh liên kết chia nhỏ cho nhiều địa chỉ</td><td>Mỗi sản phẩm một địa chỉ duy nhất có canonical; sơ đồ site chỉ chứa địa chỉ chính</td></tr>
+          <tr><td><b>Không có dữ liệu có cấu trúc</b></td><td>248/248 trang không có khối schema nào</td><td>Google không có căn cứ để nhận diện Shinelink là một doanh nghiệp và các trang là trang sản phẩm; mất cơ hội hiển thị mở rộng</td><td>Schema Organization và Product cho toàn site</td></tr>
+          <tr><td><b>Không khai báo ngôn ngữ</b></td><td>248/248 trang không có thẻ hreflang dù website có bản tiếng Anh và tiếng Trung</td><td>shinelink.vn và shinelinkgroup.com sẽ không được hiểu là hai phiên bản của cùng doanh nghiệp</td><td>hreflang hai chiều giữa .com và .vn</td></tr>
+          <tr><td><b>Ảnh nạp bằng cơ chế riêng của nền tảng</b></td><td>27.799 thẻ ảnh trên 248 trang (menu sản phẩm lặp lại ở mọi trang), 88% có src là ảnh trống, ảnh thật nằm ở thuộc tính riêng; thư viện ảnh sản phẩm hiện trống khi trang được tải bởi trình duyệt không chạy cuộn; 276 ảnh thiếu alt</td><td>Google có thể không thấy ảnh sản phẩm; mất lưu lượng từ tìm kiếm hình ảnh; trang nặng (HTML trung vị 197 KB)</td><td>Dùng lazy loading chuẩn của trình duyệt, thẻ alt mô tả sản phẩm, menu gọn hơn</td></tr>
+          <tr><td><b>Máy chủ chặn công cụ thu thập</b></td><td>Ahrefs nhận mã 403; khi thu thập 250 trang, trang danh mục "Sugar mill chain &amp; attachment" trả về 403 (CE-WAF) và 1 trang trả về 404</td><td>Công cụ SEO và trình thu thập của AI không đọc được website; trang danh mục quan trọng nhất với Shinelink lại là trang bị chặn</td><td>Cho phép bot hợp lệ (Googlebot, Bingbot, công cụ đo) trên shinelink.vn</td></tr>
+          <tr><td><b>Nền tảng dựng web đóng</b></td><td>Chân trang ghi "Powered by www.300.cn"; tài nguyên tải từ máy chủ tại Trung Quốc (faststatics.com, thefastimg.com)</td><td>Khó can thiệp schema, hreflang, cấu trúc đường dẫn; tốc độ với người dùng Việt Nam không kiểm soát được</td><td>shinelink.vn dùng nền tảng cho phép chỉnh sửa và đặt máy chủ gần người dùng Việt Nam</td></tr>
+          <tr class="grp"><td colspan="4">Uy tín và nhận diện thương hiệu</td></tr>
+          <tr><td><b>Uy tín tên miền bằng 0</b></td><td>Domain Rating 0, Ahrefs Rank 122.664.251</td><td>Chưa có nền tảng uy tín để xếp hạng các từ khóa cạnh tranh</td><td>Xây lớp hồ sơ thương hiệu và liên kết sạch từ đầu</td></tr>
+          <tr><td><b>Hồ sơ liên kết phần lớn là spam</b></td><td>383 tên miền trỏ về, nhưng 9 trong 10 tên miền uy tín cao nhất là trang bán liên kết (rankyour.website, factmags.com, backlinker.shop, buybacklinks.agency, backlinksplace.site, backlinkshop.site, linkrankpro.shop, rankshiftseo.shop...)</td><td>Không mang lại giá trị và có thể gây rủi ro nếu chuyển tiếp sang tên miền mới</td><td>shinelink.vn không kế thừa liên kết của .com; hai website chỉ nối nhau bằng hreflang</td></tr>
+          <tr><td><b>Hai tên công ty trên cùng một trang</b></td><td>Đầu trang và chân trang ghi "Hangzhou Shinelink Machinery Co., Ltd.", dòng bản quyền ghi "Hangzhou Sailike Machinery Equipment Co., Ltd."</td><td>Google và người mua khó xác nhận đây là một doanh nghiệp; tín hiệu thực thể bị chia đôi</td><td>Thống nhất một tên hiển thị trên toàn website và mọi hồ sơ bên ngoài; tên pháp nhân ghi rõ ở trang giới thiệu</td></tr>
+          <tr><td><b>Tên thương hiệu gần như chưa được tìm kiếm</b></td><td>"xích shinelink" dưới 10 lượt tìm mỗi tháng tại Việt Nam, trong khi "xích tsubaki", "xích kana", "xích donghua" đạt 100 mỗi từ (Google Keyword Planner)</td><td>Google và người mua chưa nhận diện Shinelink tại Việt Nam</td><td>Hồ sơ thương hiệu trên mạng xã hội, diễn đàn và PR (mục 3)</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="note warn"><span class="tt">Vì sao không nên dịch nguyên trạng website tiếng Anh sang shinelink.vn</span>
+      <p>Dịch lại nội dung sẵn có là cách nhanh nhất để website mới có bài, nhưng với hiện trạng nêu trên, bản dịch sẽ mang theo cả những điểm yếu của website cũ. Sáu rủi ro cụ thể:</p>
+      <ol>
+        <li><b>Nội dung mỏng</b>: trang sản phẩm tiếng Anh chỉ có 1-3 câu; nếu chỉ dịch mà không biên tập thêm thì bản tiếng Việt vẫn chỉ có 1-3 câu, không đủ để Google xếp hạng.</li>
+        <li><b>Trùng lặp nội bộ</b>: các bài cùng chủ đề sau khi dịch sẽ thành nhiều trang tiếng Việt gần giống nhau, tự cạnh tranh với nhau và Google chỉ chọn một trang để hiển thị.</li>
+        <li><b>Vi phạm chính sách của Google</b>: tạo hàng loạt trang bằng công cụ tự động, trong đó có dịch máy, mà không bổ sung giá trị cho người đọc bị Google xếp vào nhóm "scaled content abuse" (Nguồn: <a class="src" href="https://developers.google.com/search/docs/essentials/spam-policies" target="_blank" rel="noopener">Google Search Central, Spam policies</a>); website có thể bị hạ hạng toàn bộ.</li>
+        <li><b>Lệch nhu cầu tìm kiếm</b>: bài tiếng Anh được viết cho từ khóa toàn cầu, trong khi kỹ sư Việt Nam tìm theo cỡ xích tiêu chuẩn, loại băng tải và bảng tra thông số.</li>
+        <li><b>Sai thuật ngữ chuyên ngành</b>: dịch máy các từ như pintle, rivetless, bushed dễ cho ra cách gọi không đúng với kỹ sư Việt Nam, làm giảm uy tín với bộ phận kỹ thuật.</li>
+        <li><b>Loãng chủ đề</b>: những bài không liên quan đến thị trường Việt Nam (ví dụ Theme Park Chain) khiến Google khó xác định website chuyên về xích công nghiệp cho nhà máy.</li>
+      </ol>
+      <p><b>Đề xuất của chúng tôi:</b> nếu Shinelink đã có bản dịch, bản dịch đó nên được dùng làm tư liệu đầu vào về thuật ngữ, thông số và dự án. Trang sản phẩm trên shinelink.vn sẽ được biên tập lại từ nội dung đó theo bản đồ từ khóa ở mục 3, bài viết mới viết theo cùng bản đồ; trong 87 bài tin hiện có, chỉ giữ lại và tối ưu khoảng năm bài còn giá trị (dự án Ethiopia, hướng dẫn lắp đặt, bảo quản, bảo trì).</p></div>
+      <div class="note dark"><span class="tt">Kết luận</span>
+      <p>Shinelink đã có sẵn danh mục sản phẩm, tài liệu kỹ thuật và dự án thực tế, nhưng website hiện tại chưa trình bày những tư liệu đó theo cách Google và kỹ sư Việt Nam có thể tìm thấy và đọc hiểu. Bắt đầu từ một website mới vì vậy lại là lợi thế: shinelink.vn không phải kế thừa lỗi cũ, và mọi trang có thể được làm đúng chuẩn ngay từ đầu.</p>
+      <p>Các yêu cầu ở cột "shinelink.vn cần tối ưu" được chia làm hai phần:</p>
+      <ul>
+        <li><b>Phần kỹ thuật</b> (cấu trúc đường dẫn, thẻ tiêu đề, schema, hreflang, tốc độ tải trang và trải nghiệm di động): bàn giao cho đơn vị dựng web trước khi thi công và nghiệm thu trước khi đưa website vào hoạt động; tốc độ trang và Core Web Vitals được đo ngay khi website hoạt động, kèm danh sách đề xuất tối ưu gửi đơn vị dựng web.</li>
+        <li><b>Phần nội dung và uy tín</b> (trang sản phẩm, bài viết, hồ sơ thương hiệu, liên kết): chúng tôi thực hiện theo kế hoạch ở mục 3.</li>
+      </ul></div>
+    </section>
+
+    <section id="s2" class="rv in">
+      <div class="sechead"><span class="mark">2</span><h2>Phân tích đối thủ</h2><button class="cmt-btn" type="button" contenteditable="false">💬 Comment</button></div>
+      <p>Qua nghiên cứu từ khóa ngành xích công nghiệp trên Google Việt Nam (loại xích, cỡ xích, tra cứu kỹ thuật, tên hãng, ý định mua, ứng dụng theo ngành) và kiểm tra trực tiếp trang một Google tìm kiếm ngày 16/09/2026, chúng tôi xác định được hai nhóm đối thủ:</p>
+      <ul>
+        <li><b>Các hãng xích nước ngoài</b> đang bán tại Việt Nam: cạnh tranh về thương hiệu và giá.</li>
+        <li><b>Các website trong nước</b> đang chiếm trang một Google tìm kiếm: cạnh tranh về thứ hạng.</li>
+      </ul>
+
+      <h3 id="cac-hang-xich-nuoc-ngoai-tren-google-viet-nam">2.1. Các hãng xích nước ngoài trên Google Việt Nam</h3>
+      <div style="overflow-x:auto">
+      <table>
+        <thead><tr><th style="width:22%">Hãng</th><th>Hãng xuất hiện trên Google Việt Nam bằng cách nào</th><th style="width:22%">Lượt tìm tên hãng mỗi tháng</th></tr></thead>
+        <tbody>
+          <tr><td><b>Tsubaki</b> (Nhật)</td><td>Không có website tiếng Việt chính hãng. Xuất hiện qua ba website nhà phân phối: MHP Technique (mạnh nhất, có mặt trên trang một ở gần 40% số từ khóa của ngành), Truyền Động Cơ Khí (uy tín tên miền 51) và tsubaki.net.vn.</td><td>"xích tsubaki": 100</td></tr>
+          <tr><td><b>KANA</b> (Nhật)</td><td>Không có website tiếng Việt chính hãng. Xuất hiện qua nhà phân phối Cơ khí Nguyên Việt, website có tỷ lệ từ khóa vào top 3 cao nhất nhóm dẫn đầu (24/35) và đứng đầu ở các cỡ xích 40, 50, 60, 80.</td><td>"xích kana": 100</td></tr>
+          <tr><td><b>D.I.D</b> (Nhật), <b>YBN</b> (Đài Loan)</td><td>Có công ty và nhà máy tại Việt Nam, nhưng website chỉ có tiếng Anh nên hầu như chỉ xuất hiện khi kỹ sư tìm bằng tiếng Anh.</td><td>Chưa có dữ liệu</td></tr>
+          <tr><td><b>Renold</b> (Anh), <b>Rexnord</b> (Mỹ)</td><td>Không có website tiếng Việt. Xuất hiện qua nhà phân phối Đại Hồng Phát ở từ khóa tên hãng và "nhà sản xuất xích công nghiệp".</td><td>Chưa có dữ liệu</td></tr>
+          <tr><td><b>KMC</b> (Đài Loan), <b>Donghua</b> (Trung Quốc)</td><td>Không có website tiếng Việt và không có nhà phân phối nào nổi bật; người tìm tên hãng gặp các website bán hàng nhỏ trong nước.</td><td>"xích kmc": 1.000 (phần lớn là xích xe đạp); "xích donghua": 100</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p><b>Nhận xét:</b> các hãng Nhật cạnh tranh trên Google Việt Nam thông qua nhà phân phối có nội dung tiếng Việt bài bản, rõ nhất là Tsubaki qua MHP Technique. Hãng có nhà máy tại Việt Nam (D.I.D, YBN) chưa làm nội dung tiếng Việt. Shinelink cạnh tranh với nhóm này về giá và khả năng tùy biến; trên Google, đối thủ về thứ hạng là website của các nhà phân phối và công ty thương mại ở phần dưới.</p>
+
+      <h3 id="nam-doi-thu-manh-nhat-tren-trang-mot-google-tim-kiem">2.2. Năm đối thủ mạnh nhất trên trang một Google tìm kiếm</h3>
+      <p>Gần như toàn bộ vị trí ở từ khóa tiếng Việt thuộc về công ty thương mại, nhà phân phối và công ty băng tải trong nước; website hãng nước ngoài và sàn made-in-china chỉ xuất hiện lẻ tẻ. Facebook, Shopee và YouTube có mặt ở khoảng 15-20% số từ khóa.</p>
+      <p>Trong các website chuyên về xích công nghiệp, xếp theo lượt truy cập tự nhiên mỗi tháng, năm đối thủ mạnh nhất là:</p>
+      <div style="overflow-x:auto">
+      <table>
+        <thead><tr><th style="width:22%">Đối thủ</th><th class="num">Từ khóa đang xếp hạng</th><th class="num">Trong đó top 10</th><th class="num">Trong đó top 3</th><th class="num">Lượt truy cập / tháng</th><th class="num">Uy tín tên miền (0-100)</th><th>Điểm mạnh</th></tr></thead>
+        <tbody>
+          <tr><td><b>Doanh Trí</b><br><span style="color:var(--muted)">doanhtritech.vn</span></td><td class="num">110</td><td class="num">105</td><td class="num">43</td><td class="num">1.400</td><td class="num">4</td><td>Công ty thương mại băng tải và phụ kiện. Lượt truy cập cao nhất nhóm, nhưng phần lớn đến từ bảng tra vòng bi và băng tải; phần xích công nghiệp khoảng 300 lượt mỗi tháng, đứng thứ hai ở "xích công nghiệp nặng" và "xích băng tải".</td></tr>
+          <tr><td><b>MHP Technique</b><br><span style="color:var(--muted)">mhp.com.vn</span></td><td class="num">84</td><td class="num">78</td><td class="num">36</td><td class="num">1.000</td><td class="num">10</td><td>Nhà phân phối Tsubaki. Gần 40% lượt truy cập từ một bài "băng tải là gì"; phần xích khoảng 180 lượt, đứng đầu Google ở "xích con lăn", "thông số xích công nghiệp" và xếp hạng cả từ khóa tiếng Anh.</td></tr>
+          <tr><td><b>Cơ khí Nguyên Việt</b><br><span style="color:var(--muted)">cokhinguyenviet.com</span></td><td class="num">35</td><td class="num">35</td><td class="num">24</td><td class="num">676</td><td class="num">9</td><td>Công ty thương mại, bán xích KANA. Website tập trung xích nhất nhóm: gần 470 lượt mỗi tháng từ "xích 40/50/60/80", "nhông xích", "khớp nối xích", "xích công nghiệp", "xích tải"; 24/35 từ khóa ở top 3.</td></tr>
+          <tr><td><b>Toàn Phát</b><br><span style="color:var(--muted)">toanphatinfo.com</span></td><td class="num">40</td><td class="num">36</td><td class="num">27</td><td class="num">654</td><td class="num">34</td><td>Công ty thiết bị công nghiệp. Uy tín tên miền cao nhất nhóm nhờ 2.300 tên miền trỏ về; hai phần ba lượt truy cập từ từ khóa chung "xích inox", phần xích công nghiệp khoảng 90 lượt (khớp nối xích, xích 60, xích 40).</td></tr>
+          <tr><td><b>Trường Phương</b><br><span style="color:var(--muted)">truongphuongvn.com</span></td><td class="num">54</td><td class="num">47</td><td class="num">20</td><td class="num">319</td><td class="num">0</td><td>Công ty thương mại. Phần xích khoảng 130 lượt, đứng đầu Google ở "bảng tra thông số nhông xích", "nhông xích"; còn lại từ máng xích nhựa luồn cáp và bánh vít.</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p style="font-size:12.5px;color:var(--muted)">Số từ khóa, lượt truy cập và uy tín tên miền lấy từ Ahrefs, thị trường Việt Nam, ngày 16/09/2026.</p>
+      <p><b>Nhận xét:</b> năm đối thủ dẫn đầu đều là công ty thương mại hoặc nhà phân phối, mỗi website đang xếp hạng 35-110 từ khóa tại Việt Nam và thu về 319-1.400 lượt truy cập mỗi tháng. Đáng chú ý là phần lớn lượt truy cập đó đến từ sản phẩm lân cận (vòng bi, băng tải, bánh răng, xích inox); tính riêng từ khóa xích công nghiệp, mỗi website chỉ đạt khoảng 90-470 lượt mỗi tháng, cao nhất là Cơ khí Nguyên Việt. Uy tín tên miền của nhóm ở mức 0-34, không quá cao, nhưng Shinelink đang ở con số 0 nên vẫn phải xây cả nội dung lẫn liên kết từ đầu. Điểm thuận lợi là không đối thủ nào là nhà sản xuất, và mức lưu lượng riêng cho xích của nhóm dẫn đầu là một đích cụ thể để đo kết quả sau 12 tháng (mục 4).</p>
+      <p>Bên cạnh năm đối thủ trên, còn hai nhóm website đang chia sẻ thị phần tìm kiếm:</p>
+      <ul>
+        <li><b>Các công ty thiết bị và băng tải lớn.</b> Xích chỉ là một phần trong danh mục của họ, nhưng nhờ website có lưu lượng cao nên vẫn giành được nhiều vị trí:
+          <ul>
+            <li>Hoàng Long Vũ chuyên motor và hộp số, có thêm nhông xích; cả website đạt 6.983 lượt truy cập mỗi tháng; đứng đầu Google ở "sên công nghiệp" và nằm trong top 3 ở "bảng tra thông số xích", "đĩa xích công nghiệp".</li>
+            <li>Intech Group chuyên băng tải; cả website đạt 2.899 lượt truy cập mỗi tháng, nằm trong top 3 ở "băng tải xích tấm".</li>
+          </ul>
+        </li>
+        <li><b>Các website xích nhỏ hơn.</b> Lưu lượng thấp hơn nhóm dẫn đầu nhưng vẫn giữ nhiều vị trí trên trang một: Hộp Giảm Tốc (393 lượt mỗi tháng), Nhông Xích 119 (374), Sumac, Truyền Động Cơ Khí (bán Tsubaki, uy tín tên miền 51) và Đại Kinh Bắc.</li>
+      </ul>
+
+
+      <h3 id="ket-luan">2.3. Kết luận</h3>
+      <div class="note dark"><span class="tt">Kết luận: khó khăn và thuận lợi của Shinelink</span>
+      <p>Từ phân tích các đối thủ trực tiếp và gián tiếp ở trên, website shinelink.vn sẽ gặp một số khó khăn nhưng cũng có những thuận lợi riêng khi làm SEO tại thị trường Việt Nam.</p>
+      <p><b>Khó khăn</b></p>
+      <ul>
+        <li>Các từ khóa chung của ngành như "xích công nghiệp", "xích băng tải", "xích con lăn", các cỡ xích tiêu chuẩn hay bảng tra thông số đang do năm website thương mại chiếm thứ hạng. Đây là những website đã làm nội dung ổn định trong thời gian dài, mỗi website xếp hạng 35-110 từ khóa và có mặt trên trang một ở khoảng một phần tư đến gần một nửa số từ khóa trọng tâm của ngành.</li>
+        <li>Các hãng Nhật mà Shinelink coi là đối thủ trực tiếp đã có mặt trên Google thông qua nhà phân phối. Tsubaki đi qua MHP Technique và Truyền Động Cơ Khí, KANA đi qua Cơ khí Nguyên Việt; kỹ sư gõ tên hãng là gặp ngay nhà phân phối với nội dung tiếng Việt đầy đủ.</li>
+        <li>Một số đối thủ đã có uy tín tên miền 34-51 (Toàn Phát, Sumac, Hoàng Long Vũ, Truyền Động Cơ Khí) với hàng trăm đến hơn hai nghìn tên miền trỏ về; ngay cả nhóm dẫn đầu về lượt truy cập với uy tín 0-10 cũng đã có 250-420 tên miền trỏ về, trong khi shinelink.vn bắt đầu từ 0 và chưa có liên kết nào tại Việt Nam.</li>
+      </ul>
+      <p><b>Thuận lợi</b></p>
+      <ul>
+        <li>Shinelink là nhà sản xuất, còn các đối thủ dẫn đầu đều là đơn vị bán hàng. Nhà máy, thông số gốc, hai dự án nhà máy đường tại Ethiopia và Bolivia, khả năng làm theo bản vẽ kể cả với mẫu xích đã ngừng sản xuất là những nội dung đối thủ không thể tự viết ra.</li>
+        <li>Lợi thế về giá và khả năng tùy biến so với hàng Nhật chưa được ai nói đến trên Google. Trang một của "xích tsubaki", "xích kana" hiện chỉ có nhà phân phối và bài giới thiệu hàng chính hãng; bài so sánh và bài thay thế cho từng hãng sẽ đón đúng những kỹ sư đang cân nhắc đổi nhà cung cấp.</li>
+      </ul></div>
+    </section>
+
+    <section id="s3" class="rv in">
+      <div class="sechead"><span class="mark">3</span><h2>Kế hoạch SEO</h2><button class="cmt-btn" type="button" contenteditable="false">💬 Comment</button></div>
+      <h3 id="muc-tieu-va-khach-hang-muc-tieu">3.1. Mục tiêu và khách hàng mục tiêu</h3>
+      <ul>
+        <li><b>Shinelink</b>: nhà sản xuất xích công nghiệp nặng tại Hàng Châu, đã xuất khẩu sang châu Âu và Bắc Mỹ, có dự án nhà máy đường tại Ethiopia và Bolivia. Hai điểm khác biệt:
+          <ul>
+            <li>Tùy biến theo yêu cầu của từng nhà máy, kể cả những mẫu xích mà các hãng khác đã ngừng sản xuất.</li>
+            <li>Giá thấp hơn đáng kể so với hàng Nhật cùng loại, chất lượng tương đương.</li>
+          </ul>
+        </li>
+        <li><b>Khách hàng mục tiêu</b>: người ra quyết định là bộ phận kỹ thuật của nhà máy, thuộc hai nhóm; 12 tháng đầu nội dung và từ khóa dồn cho nhóm mía đường và nhu cầu xích chịu tải nặng nói chung, nhóm luyện kim và khai khoáng được đón một phần qua các từ khóa tải nặng dùng chung:
+          <ul>
+            <li><b>Nhà máy mía đường ở miền Nam</b>: niên vụ 2024-2025 cả nước ép 12,43 triệu tấn mía, sản xuất trên 1,26 triệu tấn đường; niên vụ 2025-2026 dự kiến 25 nhà máy hoạt động với tổng công suất 124.000 tấn mía mỗi ngày (Nguồn: <a class="src" href="https://www.vienmiaduong.vn/vi/detailkhoa.php?idTin=3502" target="_blank" rel="noopener">Hiệp hội Mía đường Việt Nam, dẫn lại bởi Viện Nghiên cứu Mía đường</a>).</li>
+            <li><b>Nhà máy luyện kim và khai khoáng ở Quảng Ninh, Nghệ An</b>: TKV khai thác 38,6 triệu tấn than nguyên khai năm 2025 (Nguồn: <a class="src" href="https://sct.dongnai.gov.vn/vi/news/Dien-nang/san-xuat-tieu-thu-than-nam-2025-vuot-ke-hoach-52280.html" target="_blank" rel="noopener">Sở Công Thương Đồng Nai, dẫn số liệu TKV</a>); ngành thép đạt 24,7 triệu tấn thép thô, tăng 12% (Nguồn: <a class="src" href="https://vsa.com.vn/nganh-thep-viet-nam-nhin-lai-2025-trien-vong-2026/" target="_blank" rel="noopener">Hiệp hội Thép Việt Nam</a>).</li>
+          </ul>
+          Hai từ khóa Shinelink chọn có ít người tìm trực tiếp nhưng giá trị mỗi đơn hàng cao; lượt truy cập sẽ đến chủ yếu từ các từ khóa cùng nghĩa ở 3.2 dẫn về trang giải pháp. Hiệu quả SEO vì vậy được đo bằng lượt truy cập tự nhiên và số từ khóa vào top 10 trong danh sách từ khóa triển khai ở mục 4.
+        </li>
+        <li><b>Mục tiêu</b>: shinelink.vn có thứ hạng cho các từ khóa trong danh sách triển khai và cải thiện dần, qua đó tăng lượt truy cập tự nhiên đều đặn từ đúng nhóm nhà máy mục tiêu; mức cam kết cụ thể ở mục 4.</li>
+      </ul>
+
+
+      <h3 id="ban-do-tu-khoa">3.2. Bản đồ từ khóa</h3>
+      <p>Toàn bộ 12 tháng tập trung vào hai từ khóa Shinelink đề xuất: "xích cho ngành mía đường" và "xích công nghiệp nặng". Kỹ sư nhà máy tìm hai nhu cầu này theo nhiều dạng khác nhau: có người gõ đúng tên nhu cầu, có người gõ tên sản phẩm theo cách gọi trong nước, có người gõ hẳn một câu hỏi kỹ thuật. Vì vậy chúng tôi tối ưu đồng thời hai từ khóa Shinelink đề xuất và các từ khóa cùng nghĩa với chúng, để mọi cách tìm đều điều hướng người đọc về đúng trang đích.</p>
+      <div style="overflow-x:auto">
+      <table>
+        <thead><tr><th style="width:20%">Từ khóa mục tiêu</th><th style="width:32%">Từ khóa cùng nghĩa kỹ sư tra cứu, dẫn về trang đích</th><th>Trang đích và nội dung hỗ trợ trên shinelink.vn</th></tr></thead>
+        <tbody>
+          <tr><td><b>xích cho ngành mía đường</b></td><td><ul><li>cách chọn xích cho băng tải mía</li><li>xích tải mía loại nào tốt</li><li>xích chịu ăn mòn nhà máy đường</li><li>xích gầu tải nhà máy đường</li><li>xích tải mía bị giãn</li><li>tiêu chuẩn xích nhà máy mía đường</li></ul></td><td>Trang giải pháp "Xích cho nhà máy đường": vị trí dùng xích trong nhà máy (băng tải mía, máy ép, băng bã, gầu tải), dòng xích phù hợp kèm bảng thông số, dự án Ethiopia và Bolivia, nút gửi bản vẽ để báo giá. Các trang sản phẩm xích tải mía, xích cào, xích tấm, xích gầu tải, xích tải rèn, xích tải thép hàn và cụm bài kỹ thuật (chọn xích cho băng tải mía, thay xích hãng Nhật bằng xích tương đương, bảo trì mùa vụ) liên kết về trang giải pháp.</td></tr>
+          <tr><td><b>xích công nghiệp nặng</b></td><td><ul><li>cách chọn xích tải nặng</li><li>xích tải nặng dùng trong ngành nào</li><li>xích bước lớn dùng để làm gì</li><li>xích tấm chịu lực</li><li>so sánh xích rèn và xích con lăn</li><li>cách đọc mã xích công nghiệp</li><li>cách tính số mắt xích băng tải</li><li>độ giãn xích cho phép</li><li>dấu hiệu xích công nghiệp cần thay</li><li>cách căng xích băng tải</li><li>tuổi thọ xích công nghiệp</li><li>xích Shinelink, Shinelink Vietnam (từ khóa thương hiệu)</li></ul></td><td>Trang danh mục "Xích công nghiệp nặng": gom xích tải nặng, xích tải rèn, xích tải thép hàn, xích tải đúc, kèm bảng chọn theo tải trọng và ứng dụng. Trang theo từng cỡ xích tiêu chuẩn và bài "bảng tra thông số xích tải nặng" kéo lượt tìm có sẵn và liên kết về danh mục.</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>Song song với hai nhóm từ khóa trên, chúng tôi viết các bài blog thông tin để bổ trợ: mỗi bài nhắm một câu hỏi kỹ sư thường tra cứu, trả lời trực tiếp để được AI Overview trích dẫn, và liên kết về trang giải pháp hoặc trang sản phẩm tương ứng. Bốn nhóm bài:</p>
+      <ul>
+        <li><b>Bài hướng dẫn chọn xích</b> cho từng vị trí trong nhà máy đường (băng tải mía, máy ép, băng bã, gầu tải) và cho tải nặng nói chung: cách tính tải trọng, chọn bước xích, chọn vật liệu; dẫn về trang giải pháp và trang sản phẩm.</li>
+        <li><b>Bài tra cứu kỹ thuật</b> theo nhu cầu có lượt tìm cao: cách đọc mã xích công nghiệp và đối chiếu mã hãng Nhật, cách tính số mắt xích băng tải, độ giãn xích cho phép, bảng tra thông số theo cỡ xích; đây là nhóm đang mang nhiều lượt truy cập nhất cho đối thủ.</li>
+        <li><b>Bài so sánh và bài thay thế</b> cho từng hãng Nhật (Tsubaki, KANA): xích Shinelink tương đương mã nào, khác gì về giá và thời gian giao, làm được theo bản vẽ và mẫu đã ngừng sản xuất ra sao; đón kỹ sư đang tìm theo tên hãng ("xích tsubaki", "xích kana" hiện có 100 lượt tìm mỗi tháng cho mỗi từ).</li>
+        <li><b>Bài vận hành và dự án</b>: bảo trì xích theo mùa vụ, dấu hiệu xích cần thay, cách căng xích băng tải, tuổi thọ xích theo điều kiện làm việc, bài học từ hai dự án nhà máy đường tại Ethiopia và Bolivia; xây lòng tin trước khi kỹ sư gửi bản vẽ.</li>
+      </ul>
+
+
+
+      <h3 id="ba-hang-muc-trien-khai">3.3. Ba hạng mục triển khai</h3>
+      <p>Kế hoạch bám vào hai thuận lợi đã nêu ở kết luận mục 2: nội dung chỉ nhà sản xuất mới viết được, và lợi thế giá, tùy biến so với hàng Nhật chưa ai nói trên Google. Ba hạng mục dưới đây tương ứng với ba nhóm trong bảng ngân sách ở mục 4.</p>
+      <div class="pillars">
+        <div class="pillar">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>
+          <div class="pn">Hạng mục 1 · Onpage</div>
+          <h4>Nền kỹ thuật đúng từ đầu</h4>
+          <ul class="chk"><li>Cấu trúc chuyên mục và đường dẫn chuẩn SEO, mỗi sản phẩm một địa chỉ</li><li>Khung tiêu đề, thẻ mô tả và tiêu đề chính cho từng loại trang</li><li>Khai báo hreflang giữa shinelinkgroup.com và shinelink.vn</li><li>Dữ liệu có cấu trúc cho doanh nghiệp và sản phẩm</li><li>Sơ đồ trang, robots.txt, Google Search Console và Analytics</li></ul>
+          <div class="res"><b>Cách làm:</b> đơn vị dựng web của Shinelink thi công theo bộ tiêu chuẩn này; chúng tôi audit trước khi đưa website vào hoạt động, audit lại và đo tốc độ sau khi website đi vào hoạt động. <b>Kết quả:</b> mọi trang đủ điều kiện xếp hạng ngay từ ngày đầu hoạt động, không phải sửa lại sau.</div>
+        </div>
+        <div class="pillar">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><line x1="10" y1="9" x2="8" y2="9"></line></svg>
+          <div class="pn">Hạng mục 2 · Content</div>
+          <h4>Nội dung cho kỹ sư nhà máy</h4>
+          <ul class="chk"><li>Hai trang giải pháp: "Xích cho nhà máy đường" và "Xích công nghiệp nặng", viết từ thông số gốc, năng lực nhà máy và hai dự án Ethiopia, Bolivia</li><li>Tối ưu trang sản phẩm từ nội dung Shinelink đã có, đặt tên theo cách gọi trong nước: cỡ xích tiêu chuẩn, xích con lăn, xích băng tải, xích cào, xích tấm, xích gầu tải, xích tải rèn, xích tải thép hàn</li><li>Bảng thông số kỹ thuật ngay trên trang, lấy từ tài liệu PDF của Shinelink</li><li>Bài blog thông tin theo bốn nhóm ở 3.2: hướng dẫn chọn xích, tra cứu kỹ thuật, so sánh và thay thế hãng Nhật (Tsubaki, KANA), vận hành và dự án</li><li>Mọi bài viết theo chuẩn được AI Overview trích dẫn: đoạn trả lời trực tiếp ở đầu, bảng thông số, câu hỏi thường gặp</li><li>Bộ phận kỹ thuật Shinelink thẩm định thông số trước khi đăng</li></ul>
+          <div class="res"><b>Kết quả:</b> phủ đúng nhu cầu tra cứu của kỹ sư nhà máy và đưa họ về shinelink.vn.</div>
+        </div>
+        <div class="pillar">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+          <div class="pn">Hạng mục 3 · Offpage</div>
+          <h4>Uy tín ngoài website</h4>
+          <ul class="chk"><li>Xây dựng hồ sơ thương hiệu và liên kết nền (social entity): <span data-bind="q:3:0">300</span> hồ sơ Shinelink trên <span data-bind="q:3:0">300</span> mạng xã hội, nền tảng nội dung và diễn đàn, mỗi hồ sơ có liên kết về shinelink.vn, hoàn thành ngay trong tháng đầu để Google nhận diện Shinelink là doanh nghiệp thật tại Việt Nam (lợi ích và danh sách nền tảng ở Phụ lục A)</li><li>Bài PR trên báo uy tín, giới thiệu năng lực và dự án</li><li>Textlink từ báo ngành, báo trung ương và báo tỉnh uy tín</li><li>Guest post trên các website kỹ thuật, xây dựng và tin tổng hợp có uy tín</li><li>Chia sẻ bài viết và trang sản phẩm lên mạng xã hội, diễn đàn kỹ sư</li><li>Xây tín hiệu thương hiệu để tên Shinelink dần được nhận diện tại Việt Nam, như cách các hãng Nhật đang có lượt tìm riêng theo tên</li></ul>
+          <div class="res"><b>Kết quả:</b> tạo nền uy tín để shinelink.vn xếp hạng được ở các từ khóa mục tiêu và giữ thứ hạng bền vững.</div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="s4" class="rv in">
+      <div class="sechead"><span class="mark">4</span><h2>Ngân sách và thanh toán</h2><button class="cmt-btn" type="button" contenteditable="false">💬 Comment</button></div>
+      <h3 id="chi-phi-theo-hang-muc">4.1. Chi phí theo hạng mục</h3>
+      <p>Ngân sách 12 tháng tính theo từng hạng mục với đơn giá riêng. Số lượng ghi trong bảng là khối lượng chúng tôi cam kết thực hiện.</p>
+      <div style="overflow-x:auto">
+      <table class="kpi price">
+        <colgroup><col class="c-nm"><col class="c-dt"><col class="c-un"><col class="c-pr"><col class="c-op"></colgroup>
+        <thead><tr><th>Hạng mục</th><th>Chi tiết</th><th>Đơn vị</th><th>Đơn giá (đ)</th><th>Số lượng</th></tr></thead>
+        <tbody>
+<tr class="grp"><td colspan="5">A. Onpage</td></tr>
+<tr data-item="0"><td class="nm">Tiêu chuẩn kỹ thuật và audit Onpage</td><td class="dt">Đơn vị dựng web của Shinelink thi công shinelink.vn theo tiêu chuẩn SEO do chúng tôi bàn giao; chúng tôi kiểm tra trước và sau khi website đi vào hoạt động:<ul class="dl"><li>Bộ yêu cầu kỹ thuật SEO bàn giao cho đội dựng web trước khi làm: cấu trúc chuyên mục và URL, mỗi sản phẩm một địa chỉ có canonical; khung title, meta description, H1 theo loại trang; hreflang giữa .com và .vn; schema Organization và Product; sitemap XML, robots.txt; Google Search Console và GA4</li><li>Audit toàn bộ website trước khi đưa vào hoạt động, gửi danh sách lỗi cần sửa để đội dựng web xử lý</li><li>Audit lại sau khi website đi vào hoạt động và đo tốc độ trang (PageSpeed, Core Web Vitals) để đề xuất tối ưu thêm</li></ul></td><td>trọn gói</td><td class="tnum" data-price="0" data-kind="check" data-val="5000000">5.000.000</td><td class="tnum" data-q="0:0" data-val="">✓</td></tr>
+<tr class="grp"><td colspan="5">B. Nội dung website</td></tr>
+<tr data-item="1"><td class="nm">Tối ưu trang sản phẩm chuẩn SEO</td><td class="dt">Trong số này có hai trang giải pháp viết mới cho hai từ khóa mục tiêu ("Xích cho nhà máy đường", "Xích công nghiệp nặng"); các trang còn lại là trang sản phẩm Shinelink đã có nội dung, chúng tôi tối ưu lại theo chuẩn SEO và cách kỹ sư Việt Nam tìm kiếm, ưu tiên những dòng có từ khóa quan trọng với thị trường Việt Nam:<ul class="dl"><li>Biên tập mô tả kỹ thuật theo đúng từ khóa và ý định tìm kiếm của kỹ sư</li><li>Đưa bảng thông số từ tệp PDF lên thẳng trang để Google đọc được</li><li>Bổ sung ứng dụng theo ngành và CTA gửi yêu cầu báo giá</li><li>Tối ưu title, meta description, H1 và thẻ alt hình ảnh</li><li>Liên kết nội bộ giữa các trang cùng nhóm</li></ul></td><td>trang</td><td class="tnum" data-price="1" data-kind="qty" data-val="200000">200.000</td><td class="tnum" data-q="1:0" data-val="30">30</td></tr>
+<tr data-item="2"><td class="nm">Bài viết blog kỹ thuật chuẩn SEO</td><td class="dt">Bài viết dành cho kỹ sư nhà máy, mỗi bài nhắm một cụm từ khóa cụ thể:<ul class="dl"><li>Bốn nhóm bài: hướng dẫn chọn xích cho từng vị trí trong nhà máy đường và cho tải nặng; tra cứu kỹ thuật (bảng tra thông số, bước xích, ký hiệu ANSI/BS); so sánh và thay thế hãng Nhật (Tsubaki, KANA); vận hành, bảo trì và dự án thực tế</li><li>Viết theo chuẩn được AI Overview trích dẫn: đoạn trả lời trực tiếp ở đầu, bảng thông số, câu hỏi thường gặp</li><li>Liên kết nội bộ về trang giải pháp và trang sản phẩm liên quan</li></ul></td><td>bài</td><td class="tnum" data-price="2" data-kind="qty" data-val="350000">350.000</td><td class="tnum" data-q="2:0" data-val="50">50</td></tr>
+<tr class="grp"><td colspan="5">C. Offpage &amp; Entity</td></tr>
+<tr data-item="3"><td class="nm">Hồ sơ thương hiệu &amp; liên kết nền (social entity)</td><td class="dt">Để Google và người mua nhận diện Shinelink là nhà sản xuất có thật tại thị trường Việt Nam:<ul class="dl"><li>Tạo hồ sơ Shinelink thống nhất trên <span data-bind="q:3:0">300</span> mạng xã hội, nền tảng nội dung và diễn đàn kỹ thuật, chọn từ kho hơn 700 nền tảng (danh sách tiêu biểu ở Phụ lục A)</li><li>Mỗi hồ sơ có mô tả, hình ảnh nhà máy, tài liệu kỹ thuật và một liên kết về shinelink.vn; tên, địa chỉ, số điện thoại đồng nhất ở mọi nơi</li><li>Toàn bộ hoàn thành ngay trong tháng đầu để làm nền cho các hạng mục sau</li><li>Là lớp nền để bài PR, textlink và guest post phát huy giá trị trên một tên miền mới</li><li>Kết quả kỳ vọng: Google xác nhận shinelink.vn là website chính thức, bộ phận mua hàng tra cứu tên công ty thấy đủ bằng chứng, và "xích Shinelink" bắt đầu có lượt tìm riêng</li></ul></td><td>hồ sơ</td><td class="tnum" data-price="3" data-kind="qty" data-val="7000">7.000</td><td class="tnum" data-q="3:0" data-val="300">300</td></tr>
+<tr data-item="4"><td class="nm">Bài PR báo uy tín</td><td class="dt">Bài viết trên các báo uy tín, được Google tin cậy:<ul class="dl"><li>Giới thiệu năng lực sản xuất và dự án tiêu biểu của Shinelink</li><li>Kèm liên kết chất lượng cao trỏ về website</li><li>Là bằng chứng thương hiệu khi kỹ sư nhà máy tra cứu tên công ty</li></ul></td><td>bài</td><td class="tnum" data-price="4" data-kind="qty" data-val="5000000">5.000.000</td><td class="tnum" data-q="4:0" data-val="2">2</td></tr>
+<tr data-item="5"><td class="nm">Textlink chất lượng</td><td class="dt">Liên kết đặt trong nội dung bài viết trên báo ngành, báo trung ương và báo tỉnh uy tín:<ul class="dl"><li>Dẫn về trang sản phẩm và bài viết cần tối ưu lên hạng</li><li>Anchor text phân bổ hợp lý giữa tên thương hiệu, từ khóa và cụm từ tự nhiên</li><li>Nhịp đặt liên kết tăng dần đều để không bị Google xem là bất thường</li></ul></td><td>link</td><td class="tnum" data-price="5" data-kind="qty" data-val="11000">11.000</td><td class="tnum" data-q="5:0" data-val="1500">1.500</td></tr>
+<tr data-item="6"><td class="nm">Guest post</td><td class="dt">Bài viết đăng trên các website kỹ thuật, xây dựng và tin tổng hợp có uy tín tên miền cao:<ul class="dl"><li>Nội dung viết riêng cho từng website, xoay quanh xích công nghiệp và ứng dụng trong nhà máy</li><li>Liên kết đặt trong ngữ cảnh bài viết, dẫn về website Shinelink</li><li>Danh sách website ở Phụ lục B</li></ul></td><td>bài</td><td class="tnum" data-price="6" data-kind="qty" data-val="1500000">1.500.000</td><td class="tnum" data-q="6:0" data-val="4">4</td></tr>
+<tr data-item="7"><td class="nm">Chia sẻ MXH &amp; diễn đàn</td><td class="dt">Chia sẻ bài viết và trang sản phẩm lên mạng xã hội và các diễn đàn:<ul class="dl"><li>Đưa nội dung đến đúng người đọc, mang thêm lượt truy cập</li><li>Giúp Google nhanh phát hiện và lập chỉ mục các trang mới</li></ul></td><td>link</td><td class="tnum" data-price="7" data-kind="qty" data-val="3500">3.500</td><td class="tnum" data-q="7:0" data-val="1500">1.500</td></tr>
+<tr class="grp"><td colspan="5">D. Vận hành</td></tr>
+<tr data-item="8"><td class="nm">Quản lý, tối ưu &amp; báo cáo</td><td class="dt">Trong suốt 12 tháng:<ul class="dl"><li>Theo dõi thứ hạng từ khóa, lượt truy cập hàng tháng</li><li>Điều chỉnh nội dung, liên kết nội bộ và kế hoạch offpage theo số liệu thực tế</li><li>Gửi báo cáo hàng tháng gồm thứ hạng, lượt truy cập, liên kết và các việc đã làm</li></ul></td><td>12 tháng</td><td class="tnum" data-price="8" data-kind="free" data-val="0">Miễn phí</td><td class="tnum" data-q="8:0" data-val="">✓</td></tr>
+<tr class="grp tot"><td colspan="4">Tổng chi phí 12 tháng</td><td class="tnum" data-tot="0">68.350.000</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <h3 id="cam-ket-dau-ra">4.2. Cam kết đầu ra</h3>
+      <p>Khối lượng ở bảng trên là phần việc chúng tôi thực hiện. Kết quả mà khối lượng đó phải mang lại được cam kết riêng dưới đây, đo bằng Google Analytics 4 và Google tab ẩn danh, báo cáo hàng tháng.</p>
+      <div style="overflow-x:auto">
+      <table class="kpi">
+        <thead><tr><th>Chỉ số</th><th>Đơn vị</th><th>Cam kết 12 tháng</th></tr></thead>
+        <tbody>
+<tr><td>Lượt truy cập tự nhiên từ Google, cộng dồn 12 tháng (đo bằng Google Analytics 4)</td><td style="text-align:center">lượt</td><td class="tnum" style="text-align:center;font-weight:600;color:var(--ink)" data-kpi="0:0" data-val="3000">3.000</td></tr>
+<tr><td>Từ khóa vào top 10 Google Việt Nam sau 12 tháng, tính trên danh sách 20 từ khóa triển khai bên dưới</td><td style="text-align:center">từ khóa</td><td class="tnum" style="text-align:center;font-weight:600;color:var(--ink)" data-kpi="1:0" data-val="2">2</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p><b>Chúng tôi cam kết đưa ít nhất hai trong hai mươi từ khóa dưới đây lên top 10 Google Việt Nam sau 12 tháng.</b> Cả hai mươi từ khóa đều được chúng tôi tối ưu, cam kết tính trên kết quả thực tế của cả danh sách. Thứ hạng đo ở chế độ ẩn danh và báo cáo hàng tháng.</p>
+      <div style="overflow-x:auto">
+      <table class="issues">
+        <thead><tr><th style="width:8%;text-align:center">#</th><th style="width:58%">Từ khóa triển khai</th><th>Thứ hạng hiện tại</th></tr></thead>
+        <tbody><tr><td style="text-align:center">1</td><td><b>xích cho ngành mía đường</b></td><td>Chưa có thứ hạng</td></tr><tr><td style="text-align:center">2</td><td><b>cách chọn xích cho băng tải mía</b></td><td>Chưa có thứ hạng</td></tr><tr><td style="text-align:center">3</td><td><b>xích tải mía loại nào tốt</b></td><td>Chưa có thứ hạng</td></tr><tr><td style="text-align:center">4</td><td><b>xích chịu ăn mòn nhà máy đường</b></td><td>Chưa có thứ hạng</td></tr><tr><td style="text-align:center">5</td><td><b>xích gầu tải nhà máy đường</b></td><td>Chưa có thứ hạng</td></tr><tr><td style="text-align:center">6</td><td><b>xích tải mía bị giãn</b></td><td>Chưa có thứ hạng</td></tr><tr><td style="text-align:center">7</td><td><b>xích công nghiệp nặng</b></td><td>Chưa có thứ hạng</td></tr><tr><td style="text-align:center">8</td><td><b>cách chọn xích tải nặng</b></td><td>Chưa có thứ hạng</td></tr><tr><td style="text-align:center">9</td><td><b>xích tải nặng dùng trong ngành nào</b></td><td>Chưa có thứ hạng</td></tr><tr><td style="text-align:center">10</td><td><b>xích bước lớn dùng để làm gì</b></td><td>Chưa có thứ hạng</td></tr><tr><td style="text-align:center">11</td><td><b>xích tấm chịu lực</b></td><td>Chưa có thứ hạng</td></tr><tr><td style="text-align:center">12</td><td><b>so sánh xích rèn và xích con lăn</b></td><td>Chưa có thứ hạng</td></tr><tr><td style="text-align:center">13</td><td><b>cách đọc mã xích công nghiệp</b></td><td>Chưa có thứ hạng</td></tr><tr><td style="text-align:center">14</td><td><b>cách tính số mắt xích băng tải</b></td><td>Chưa có thứ hạng</td></tr><tr><td style="text-align:center">15</td><td><b>độ giãn xích cho phép</b></td><td>Chưa có thứ hạng</td></tr><tr><td style="text-align:center">16</td><td><b>dấu hiệu xích công nghiệp cần thay</b></td><td>Chưa có thứ hạng</td></tr><tr><td style="text-align:center">17</td><td><b>cách căng xích băng tải</b></td><td>Chưa có thứ hạng</td></tr><tr><td style="text-align:center">18</td><td><b>tuổi thọ xích công nghiệp</b></td><td>Chưa có thứ hạng</td></tr><tr><td style="text-align:center">19</td><td><b>xích Shinelink</b></td><td>Chưa có thứ hạng</td></tr><tr><td style="text-align:center">20</td><td><b>Shinelink Vietnam</b></td><td>Chưa có thứ hạng</td></tr></tbody>
+      </table>
+      </div>
+      <h3 id="phuong-an-neu-kpi-khong-dat-100">4.3. Phương án nếu KPI không đạt 100%</h3>
+      <p>Mức hoàn thành của từng chỉ số được tính bằng kết quả thực tế chia cho mức cam kết, tối đa 100%; phần vượt của chỉ số này không bù cho chỉ số kia. <b>Mức hoàn thành chung là trung bình cộng của hai chỉ số</b>, đo tại thời điểm kết thúc tháng thứ mười hai.</p>
+      <div style="overflow-x:auto">
+      <table class="issues">
+        <thead><tr><th style="width:44%">Chỉ số</th><th style="width:18%;text-align:center">Cam kết</th><th style="width:18%;text-align:center">Ví dụ đạt được</th><th style="text-align:center">Mức hoàn thành</th></tr></thead>
+        <tbody>
+<tr><td>Lượt truy cập tự nhiên cộng dồn 12 tháng</td><td style="text-align:center">3.000</td><td style="text-align:center">2.700</td><td style="text-align:center"><b>90%</b></td></tr><tr><td>Từ khóa vào top 10</td><td style="text-align:center">2</td><td style="text-align:center">1</td><td style="text-align:center"><b>50%</b></td></tr><tr class="grp"><td colspan="3">Mức hoàn thành chung (trung bình cộng hai chỉ số)</td><td style="text-align:center"><b>70%</b></td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p style="font-size:12.5px;color:var(--muted)">Bảng trên chỉ là ví dụ minh họa cách tính, không phải dự báo kết quả.</p>
+      <p><b>Khi mức hoàn thành chung dưới 100%</b>, chúng tôi áp dụng phương án khắc phục dưới đây, Shinelink không phải trả thêm chi phí.</p>
+      <ul>
+        <li><b>Gia hạn triển khai, tối đa ba tháng.</b> Chúng tôi chủ động đề nghị kéo dài thời gian để đẩy tiếp phần còn thiếu. Trong ba tháng này, nội dung, liên kết và audit vẫn được thực hiện bình thường, <b>toàn bộ chi phí do chúng tôi chịu</b>.</li>
+        <li><b>Đề xuất điều chỉnh từ khóa khi thị trường thay đổi.</b> Có hai tình huống nằm ngoài khả năng kiểm soát của cả hai bên: một doanh nghiệp lớn có nguồn lực mạnh tham gia cạnh tranh cùng từ khóa, hoặc Google thay đổi thuật toán làm đảo lộn kết quả của cả nhóm ngành. Khi đó chúng tôi gửi bằng chứng đo được (thứ hạng theo thời gian, hồ sơ đối thủ mới, thời điểm biến động) kèm đề xuất từ khóa thay thế cùng nhóm nhu cầu, <b>hai bên thống nhất qua email trước khi áp dụng</b>.</li>
+      </ul>
+
+      <h3 id="tien-do-trien-khai-va-thanh-toan-theo-thang">4.4. Tiến độ triển khai và thanh toán theo tháng</h3>
+      <p>Bảng dưới đây là cơ sở nghiệm thu và thanh toán hàng tháng. <b>Ngân sách mỗi tháng tính theo đúng khối lượng công việc bàn giao, nhân với đơn giá từng hạng mục</b>. Cột lượt truy cập là mốc tham chiếu để theo dõi tiến độ, không phải cam kết riêng của từng tháng; cam kết chính thức vẫn tính sau 12 tháng như bảng trên.</p>
+      <div class="note dark"><span class="tt">Điều khoản thanh toán</span><p><b>Tạm ứng khi ký hợp đồng: 20.505.000 đ</b>, bằng 30% giá trị hợp đồng, dùng làm chi phí triển khai ban đầu. Từ tháng thứ nhất, Shinelink thanh toán <b>70% giá trị công việc</b> bàn giao mỗi tháng, phần 30% còn lại đã nằm trong khoản tạm ứng.</p></div>
+      <div style="overflow-x:auto">
+      <table class="issues">
+        <thead><tr><th style="width:9%;text-align:center">Thời gian</th><th style="width:41%">Công việc bàn giao trong tháng</th><th style="width:20%">Lượt truy cập tham chiếu</th><th style="width:15%;text-align:right">Giá trị công việc (đ)</th><th style="text-align:right">Thanh toán trong tháng (đ)</th></tr></thead>
+        <tbody>
+<tr><td style="text-align:center"><b>Tháng 1</b></td><td><ul><li>Tiêu chuẩn kỹ thuật và audit Onpage trọn gói: bàn giao bộ yêu cầu kỹ thuật SEO cho đội dựng web, audit trước khi website hoạt động, audit lại và đo tốc độ trang sau khi hoạt động: <b>5.000.000</b></li><li>10 trang sản phẩm tối ưu × 200.000: <b>2.000.000</b></li><li>6 bài blog kỹ thuật × 350.000: <b>2.100.000</b></li><li>300 hồ sơ thương hiệu × 7.000: <b>2.100.000</b></li></ul></td><td>—</td><td class="tnum" style="text-align:right;white-space:nowrap">11.200.000</td><td class="tnum" style="text-align:right;white-space:nowrap"><b>7.840.000</b></td></tr>
+<tr><td style="text-align:center"><b>Tháng 2</b></td><td><ul><li>10 trang sản phẩm tối ưu × 200.000: <b>2.000.000</b></li><li>9 bài blog kỹ thuật × 350.000: <b>3.150.000</b></li><li>1 bài PR báo uy tín × 5.000.000: <b>5.000.000</b></li><li>150 lượt chia sẻ mạng xã hội, diễn đàn × 3.500: <b>525.000</b></li></ul></td><td>—</td><td class="tnum" style="text-align:right;white-space:nowrap">10.675.000</td><td class="tnum" style="text-align:right;white-space:nowrap"><b>7.472.500</b></td></tr>
+<tr><td style="text-align:center"><b>Tháng 3</b></td><td><ul><li>10 trang sản phẩm tối ưu × 200.000: <b>2.000.000</b></li><li>9 bài blog kỹ thuật × 350.000: <b>3.150.000</b></li><li>1 bài PR báo uy tín × 5.000.000: <b>5.000.000</b></li><li>100 textlink × 11.000: <b>1.100.000</b></li><li>1 guest post × 1.500.000: <b>1.500.000</b></li><li>150 lượt chia sẻ mạng xã hội, diễn đàn × 3.500: <b>525.000</b></li></ul></td><td>20 lượt (cộng dồn 20)</td><td class="tnum" style="text-align:right;white-space:nowrap">13.275.000</td><td class="tnum" style="text-align:right;white-space:nowrap"><b>9.292.500</b></td></tr>
+<tr><td style="text-align:center"><b>Tháng 4</b></td><td><ul><li>9 bài blog kỹ thuật × 350.000: <b>3.150.000</b></li><li>110 textlink × 11.000: <b>1.210.000</b></li><li>150 lượt chia sẻ mạng xã hội, diễn đàn × 3.500: <b>525.000</b></li></ul></td><td>50 lượt (cộng dồn 70)</td><td class="tnum" style="text-align:right;white-space:nowrap">4.885.000</td><td class="tnum" style="text-align:right;white-space:nowrap"><b>3.419.500</b></td></tr>
+<tr><td style="text-align:center"><b>Tháng 5</b></td><td><ul><li>9 bài blog kỹ thuật × 350.000: <b>3.150.000</b></li><li>120 textlink × 11.000: <b>1.320.000</b></li><li>1 guest post × 1.500.000: <b>1.500.000</b></li><li>150 lượt chia sẻ mạng xã hội, diễn đàn × 3.500: <b>525.000</b></li></ul></td><td>100 lượt (cộng dồn 170)</td><td class="tnum" style="text-align:right;white-space:nowrap">6.495.000</td><td class="tnum" style="text-align:right;white-space:nowrap"><b>4.546.500</b></td></tr>
+<tr><td style="text-align:center"><b>Tháng 6</b></td><td><ul><li>8 bài blog kỹ thuật × 350.000: <b>2.800.000</b></li><li>130 textlink × 11.000: <b>1.430.000</b></li><li>150 lượt chia sẻ mạng xã hội, diễn đàn × 3.500: <b>525.000</b></li></ul></td><td>160 lượt (cộng dồn 330)</td><td class="tnum" style="text-align:right;white-space:nowrap">4.755.000</td><td class="tnum" style="text-align:right;white-space:nowrap"><b>3.328.500</b></td></tr>
+<tr><td style="text-align:center"><b>Tháng 7</b></td><td><ul><li>140 textlink × 11.000: <b>1.540.000</b></li><li>1 guest post × 1.500.000: <b>1.500.000</b></li><li>150 lượt chia sẻ mạng xã hội, diễn đàn × 3.500: <b>525.000</b></li></ul></td><td>230 lượt (cộng dồn 560)</td><td class="tnum" style="text-align:right;white-space:nowrap">3.565.000</td><td class="tnum" style="text-align:right;white-space:nowrap"><b>2.495.500</b></td></tr>
+<tr><td style="text-align:center"><b>Tháng 8</b></td><td><ul><li>150 textlink × 11.000: <b>1.650.000</b></li><li>150 lượt chia sẻ mạng xã hội, diễn đàn × 3.500: <b>525.000</b></li></ul></td><td>300 lượt (cộng dồn 860)</td><td class="tnum" style="text-align:right;white-space:nowrap">2.175.000</td><td class="tnum" style="text-align:right;white-space:nowrap"><b>1.522.500</b></td></tr>
+<tr><td style="text-align:center"><b>Tháng 9</b></td><td><ul><li>160 textlink × 11.000: <b>1.760.000</b></li><li>1 guest post × 1.500.000: <b>1.500.000</b></li><li>150 lượt chia sẻ mạng xã hội, diễn đàn × 3.500: <b>525.000</b></li></ul></td><td>380 lượt (cộng dồn 1.240)</td><td class="tnum" style="text-align:right;white-space:nowrap">3.785.000</td><td class="tnum" style="text-align:right;white-space:nowrap"><b>2.649.500</b></td></tr>
+<tr><td style="text-align:center"><b>Tháng 10</b></td><td><ul><li>170 textlink × 11.000: <b>1.870.000</b></li><li>150 lượt chia sẻ mạng xã hội, diễn đàn × 3.500: <b>525.000</b></li></ul></td><td>480 lượt (cộng dồn 1.720)</td><td class="tnum" style="text-align:right;white-space:nowrap">2.395.000</td><td class="tnum" style="text-align:right;white-space:nowrap"><b>1.676.500</b></td></tr>
+<tr><td style="text-align:center"><b>Tháng 11</b></td><td><ul><li>200 textlink × 11.000: <b>2.200.000</b></li><li>150 lượt chia sẻ mạng xã hội, diễn đàn × 3.500: <b>525.000</b></li></ul></td><td>590 lượt (cộng dồn 2.310)</td><td class="tnum" style="text-align:right;white-space:nowrap">2.725.000</td><td class="tnum" style="text-align:right;white-space:nowrap"><b>1.907.500</b></td></tr>
+<tr><td style="text-align:center"><b>Tháng 12</b></td><td><ul><li>220 textlink × 11.000: <b>2.420.000</b></li></ul></td><td>690 lượt (cộng dồn 3.000)<br><b style="color:var(--brass)">2 từ khóa vào top 10</b></td><td class="tnum" style="text-align:right;white-space:nowrap">2.420.000</td><td class="tnum" style="text-align:right;white-space:nowrap"><b>1.694.000</b></td></tr>
+<tr class="grp"><td colspan="2">Tổng cộng</td><td>3.000 lượt cộng dồn, 2 từ khóa top 10</td><td class="tnum" style="text-align:right">68.350.000</td><td class="tnum" style="text-align:right"><b>47.845.000</b></td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>Phần nội dung được làm sớm nhất có thể: <b>toàn bộ 30 trang sản phẩm hoàn thành trong ba tháng đầu, 50 bài viết hoàn thành trong sáu tháng đầu</b>, cùng 300 hồ sơ thương hiệu ngay tháng đầu và hai bài PR trong tháng 2, tháng 3. Lý do là nội dung cần thời gian để Google lập chỉ mục và tích lũy thứ hạng, nên càng lên sớm càng có nhiều tháng chạy. Từ tháng thứ tư trở đi, công việc tập trung vào liên kết với nhịp tăng dần, giữ cho hồ sơ liên kết tự nhiên và đẩy thứ hạng của phần nội dung đã có.</p>
+
+    </section>
+
+    <section id="s5" class="rv in">
+      <div class="sechead"><span class="mark">5</span><h2>Năng lực triển khai</h2><button class="cmt-btn" type="button" contenteditable="false">💬 Comment</button></div>
+      <p>Đội ngũ thực hiện đã triển khai SEO cho nhiều doanh nghiệp sản xuất, phân phối và dịch vụ tại Việt Nam, luôn đo kết quả bằng số liệu thực tế và báo cáo hàng tháng. Dự án dưới đây được chọn vì có bài toán tương tự Shinelink: thương hiệu đã có tên tuổi, nhưng các từ khóa sản phẩm chưa có thứ hạng trên Google.</p>
+      <h3>Dự án tiêu biểu: LocknLock Việt Nam</h3>
+      <p><b>Thương hiệu:</b> LocknLock, hãng gia dụng Hàn Quốc. <b>Website:</b> <a class="src" href="https://locknlock.vn/" target="_blank" rel="noopener">locknlock.vn</a>, website bán hàng chính thức tại Việt Nam.</p>
+      <ul>
+        <li><b>Thời gian:</b> 6 tháng cuối năm 2025.</li>
+        <li><b>Phạm vi:</b> Onpage, Content và Offpage cho toàn bộ locknlock.vn.</li>
+        <li><b>Bài toán:</b> phần lớn lượt truy cập đến từ những người đã biết và gõ đúng tên thương hiệu. Các từ khóa sản phẩm như bình giữ nhiệt, hộp cơm, máy lọc không khí, bếp hồng ngoại chưa có thứ hạng, nên website bỏ lỡ nhóm người mua đang tìm sản phẩm mà chưa nghĩ tới thương hiệu.</li>
+        <li><b>Cách làm:</b> viết lại trang danh mục và trang sản phẩm theo đúng từ khóa sản phẩm, bổ sung bài hướng dẫn chọn và so sánh sản phẩm, xây liên kết đều đặn hàng tháng.</li>
+      </ul>
+      <p><b>Kết quả sau 6 tháng</b>, so sánh tháng 12 với tháng 6 năm 2025 theo Google Search Console:</p>
+      <div style="overflow-x:auto">
+      <table>
+        <thead><tr><th>Chỉ số</th><th class="num">Tháng 6/2025</th><th class="num">Tháng 12/2025</th><th class="num">Thay đổi</th></tr></thead>
+        <tbody>
+          <tr><td>Lượt nhấp từ Google tìm kiếm</td><td class="num">27.879</td><td class="num">45.078</td><td class="num"><b>+62%</b></td></tr>
+          <tr><td>Lượt hiển thị trên Google</td><td class="num">628.842</td><td class="num">1.158.091</td><td class="num"><b>+84%</b></td></tr>
+          <tr><td>Vị trí trung bình</td><td class="num">8,1</td><td class="num">5,3</td><td class="num"><b>cải thiện 2,8 bậc</b></td></tr>
+          <tr><td>Từ khóa ở top 3</td><td class="num">833</td><td class="num">1.055</td><td class="num"><b>+222</b></td></tr>
+          <tr><td>Lượt nhấp từ từ khóa sản phẩm (không chứa tên thương hiệu)</td><td class="num">3.165</td><td class="num">11.381</td><td class="num"><b>gấp 3,6 lần</b></td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>Trong cùng kỳ, lượt nhấp từ những người gõ tên thương hiệu gần như không đổi. Toàn bộ mức tăng vì vậy đến từ các từ khóa sản phẩm vừa có thứ hạng, tiêu biểu như:</p>
+      <div style="overflow-x:auto">
+      <table>
+        <thead><tr><th>Từ khóa</th><th class="num">Vị trí 6/2025</th><th class="num">Vị trí 12/2025</th><th class="num">Lượt nhấp 12/2025</th></tr></thead>
+        <tbody>
+          <tr><td>máy lọc không khí</td><td class="num">14,7</td><td class="num">5,3</td><td class="num">706</td></tr>
+          <tr><td>bếp hồng ngoại</td><td class="num">36,3</td><td class="num">5,3</td><td class="num">160</td></tr>
+          <tr><td>ly giữ nhiệt</td><td class="num">8,0</td><td class="num">3,4</td><td class="num">217</td></tr>
+          <tr><td>máy làm sữa chua</td><td class="num">5,8</td><td class="num">2,3</td><td class="num">180</td></tr>
+          <tr><td>bình đun nước giữ nhiệt</td><td class="num">8,1</td><td class="num">3,6</td><td class="num">153</td></tr>
+          <tr><td>cốc giữ nhiệt</td><td class="num">9,4</td><td class="num">5,0</td><td class="num">157</td></tr>
+          <tr><td>bình giữ nhiệt cao cấp</td><td class="num">9,2</td><td class="num">3,8</td><td class="num">146</td></tr>
+          <tr><td>hộp cơm giữ nhiệt</td><td class="num">3,1</td><td class="num">2,4</td><td class="num">322</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="evidence">
+        <figure><img src="./Phân tích và đề xuất chiến lược SEO cho website shinelink.vn_files/gsc-casestudy-compare-v2.png" alt="Google Search Console: so sánh tháng 12/2025 với tháng 6/2025"><figcaption>Ảnh chụp Google Search Console của locknlock.vn, so sánh tháng 12/2025 với tháng 6/2025: lượt nhấp tăng từ 27,9K lên 45,1K, lượt hiển thị từ 629K lên 1,16M, vị trí trung bình từ 8,1 lên 5,3.</figcaption></figure>
+      </div>
+      <p><b>Công cụ và cách làm việc:</b> chúng tôi nghiên cứu từ khóa và đối thủ bằng Ahrefs và Google Keyword Planner, rà soát kỹ thuật bằng Screaming Frog, đo kết quả bằng Google Search Console và Google Analytics 4. Nội dung kỹ thuật luôn được bộ phận chuyên môn của khách hàng thẩm định trước khi đăng. Báo cáo hàng tháng gồm số liệu, các việc đã làm và kế hoạch cho tháng kế tiếp.</p>
+    </section>
+
+    <section id="s6" class="rv in">
+      <div class="sechead"><span class="mark">6</span><h2>Phụ lục</h2><button class="cmt-btn" type="button" contenteditable="false">💬 Comment</button></div>
+      <h3 id="phu-luc-a-ho-so-thuong-hieu-va-lien-ket-nen-social-entity">6.1. Phụ lục A: Hồ sơ thương hiệu và liên kết nền (social entity)</h3>
+      <p><b>Đây là việc gì?</b> Chúng tôi lập hồ sơ chính thức của Shinelink trên các mạng xã hội, nền tảng nội dung và diễn đàn kỹ thuật. Mỗi hồ sơ dùng chung một bộ thông tin thống nhất: tên thương hiệu và tên tài khoản, phần giới thiệu ngắn và dài về doanh nghiệp, email, số điện thoại, địa chỉ và điểm bản đồ, logo, ảnh bìa, năm thành lập, bộ hashtag và đường dẫn về shinelink.vn cùng các kênh mạng xã hội chính.</p>
+      <p><b>Vì sao cần làm, và làm trước?</b> Hiện nay "xích shinelink" chỉ có dưới 10 lượt tìm mỗi tháng trên Google Việt Nam, trong khi "xích tsubaki", "xích kana" hay "xích donghua" đều đạt khoảng 100. Nói cách khác, Shinelink chưa phải là một cái tên mà Google và người mua trong nước nhận diện. Có thể nhìn sang Toàn Phát: website này chỉ xếp hạng 40 từ khóa nhưng có uy tín tên miền 34, cao nhất trong nhóm dẫn đầu, vì được hơn 2.300 tên miền khác nhắc đến và trỏ về. Uy tín đó không đến từ nội dung tìm kiếm mà từ lớp hồ sơ và liên kết bên ngoài. Với shinelink.vn, lớp hồ sơ này mang lại ba lợi ích:</p>
+      <ul>
+        <li>Google có căn cứ để xác nhận shinelink.vn là website chính thức của một nhà sản xuất có thật, điều kiện cần để một tên miền mới xếp hạng ổn định.</li>
+        <li>Bộ phận kỹ thuật và mua hàng của nhà máy tìm thấy đủ bằng chứng khi tra cứu tên công ty.</li>
+        <li>Các bài PR, textlink và guest post về sau có nền để phát huy giá trị, thay vì trỏ về một tên miền chưa ai biết.</li>
+      </ul>
+      <p><b>Các nền tảng tiêu biểu trong kho hơn 700 nền tảng chúng tôi đang triển khai</b> (lập <span data-bind="q:3:0">300</span> hồ sơ, chọn theo mức phù hợp với doanh nghiệp công nghiệp):</p>
+      <div style="overflow-x:auto">
+      <table>
+        <thead><tr><th style="width:26%">Nhóm</th><th>Nền tảng</th></tr></thead>
+        <tbody>
+          <tr><td><b>Mạng xã hội và hồ sơ doanh nghiệp</b></td><td>LinkedIn (trang công ty), Facebook, YouTube, X, Instagram, Pinterest, Reddit, Quora, Bluesky, Flipboard, Crunchbase, About.me, Gravatar</td></tr>
+          <tr><td><b>Nền tảng nội dung và tài liệu</b></td><td>Medium, Blogger, WordPress.com, Tumblr, Substack, Google Sites, Issuu, Scribd, SlideShare, Academia.edu</td></tr>
+          <tr><td><b>Diễn đàn kỹ thuật và cộng đồng Việt Nam</b></td><td>MES Lab (meslab.org), Diễn đàn CNC Việt Nam (forum.cncprovn.com), Kết cấu (ketcau.com), Tinh tế, Webmastersun</td></tr>
+          <tr><td><b>Kho mã và dữ liệu kỹ thuật</b></td><td>GitHub, GitLab, Hugging Face (tài liệu thông số dạng mở)</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p style="font-size:12.5px;color:var(--muted)">Danh sách đầy đủ gửi kèm khi triển khai; nền tảng nào thay đổi chính sách trong quá trình triển khai sẽ được thay bằng nền tảng tương đương.</p>
+      <h3 id="phu-luc-b-bao-va-website-dat-bai-pr-textlink-guest-post">6.2. Phụ lục B: Báo và website đặt bài PR, textlink, guest post</h3>
+      <p>Ba hạng mục PR, textlink và guest post trong bảng ngân sách dùng ba nhóm website khác nhau. Dưới đây là các website tiêu biểu trong kho chúng tôi đang triển khai, kèm chỉ số uy tín tên miền theo Ahrefs (thang 0-100, càng cao website càng có giá trị liên kết).</p>
+      <p><b>Bài PR:</b> bài giới thiệu năng lực sản xuất và dự án của Shinelink, đăng trên báo có chuyên mục kinh tế, doanh nghiệp hoặc xây dựng, công nghiệp; ưu tiên báo địa phương tại các tỉnh có nhà máy đường, luyện kim và khu công nghiệp. Ba mươi tên miền dưới đây đã được kiểm tra còn hoạt động ngày 19/09/2026; hai bài PR trong hợp đồng sẽ chọn ra từ danh sách này, theo ngành hàng và địa bàn nhà máy mà Shinelink nhắm tới.</p>
+      <div style="overflow-x:auto">
+      <table class="issues">
+        <thead><tr><th style="width:26%">Nhóm</th><th>Tên miền dự kiến triển khai</th></tr></thead>
+        <tbody><tr><td><b>Báo tỉnh nơi có nhà máy đường, luyện kim, khai khoáng</b></td><td>Báo Hà Tĩnh (baohatinh.vn, uy tín 70), Báo Thanh Hóa (baothanhhoa.vn, uy tín 61), Báo Quảng Ninh (baoquangninh.vn, uy tín 60), Báo Tuyên Quang (baotuyenquang.com.vn, uy tín 53), Báo Thái Nguyên (baothainguyen.vn, uy tín 52), Báo Phú Thọ (baophutho.vn, uy tín 46), Báo An Giang (baoangiang.com.vn, uy tín 60), Báo Vĩnh Long (baovinhlong.com.vn)</td></tr><tr><td><b>Báo tỉnh, thành phố có khu công nghiệp lớn</b></td><td>Báo Đồng Nai (baodongnai.com.vn, uy tín 66), Báo Đà Nẵng (baodanang.vn, uy tín 65), Báo Lâm Đồng (baolamdong.vn, uy tín 61), Báo Hưng Yên (baohungyen.vn, uy tín 42)</td></tr><tr><td><b>Báo và tạp chí kinh tế, đầu tư, công nghiệp</b></td><td>Kinh tế và Đầu tư (kinhtevadautu.info, uy tín 43), Đầu tư Việt Nam (dautuvietnam.com.vn, uy tín 33), Nông thôn và Phát triển (nongthonvaphattrien.vn, uy tín 42), Hàng hóa và Thương hiệu (hanghoathuonghieu.vn, uy tín 30), Tiêu dùng Việt Nam (tieudungvietnam.vn, uy tín 19), Tạp chí Việt Đức (tapchivietduc.vn, uy tín 12), Khoa học và Cuộc sống (khoahoccuocsong.com, uy tín 30), Truyền thông và Phát triển (truyenthongvaphattrien.vn, uy tín 8)</td></tr><tr><td><b>Báo trung ương và báo tổng hợp uy tín</b></td><td>Báo Biên phòng (bienphong.com.vn, uy tín 54), Xa lộ News (xaluannews.com, uy tín 70), Gia đình và Pháp luật (giadinhvaphapluat.vn, uy tín 61), Pháp luật và Cuộc sống (phapluatvacuocsong.vn, uy tín 45), Sức khỏe Việt (suckhoeviet.org.vn, uy tín 44), Sống Đẹp (songdep.com.vn, uy tín 48), Văn hóa Đời sống (vanhoadoisong.net, uy tín 37), Nhịp sống Đô thị (nhipsongdothi.info, uy tín 33), Văn hóa Thời đại (vanhoathoidai.vn, uy tín 26), Việt Nam Hương Sắc (vietnamhuongsac.vn, uy tín 17)</td></tr></tbody>
+      </table>
+      </div>
+
+      <p><b>Textlink:</b> liên kết đặt trong bài viết trên các báo điện tử uy tín, gồm báo ngành, báo trung ương và báo địa phương tại các tỉnh có nhà máy đường, khu công nghiệp, luyện kim và khai khoáng. 27 tên miền dưới đây đã được kiểm tra còn hoạt động ngày 19/09/2026.</p>
+      <div style="overflow-x:auto">
+      <table class="issues">
+        <thead><tr><th style="width:26%">Nhóm</th><th>Tên miền dự kiến triển khai</th></tr></thead>
+        <tbody><tr><td><b>Báo ngành, báo trung ương và tạp chí kinh tế</b></td><td>Báo Công Thương (congthuong.vn), Báo Pháp luật Việt Nam (baophapluat.vn), Báo Công lý (congly.vn), Giáo dục và Thời đại (giaoducthoidai.vn), An ninh Thủ đô (anninhthudo.vn), Doanh nghiệp và Hội nhập (doanhnghiephoinhap.vn), Người Đô Thị (nguoidothi.net.vn), Giao thông Hà Nội (Kinh tế và Đô thị) (giaothonghanoi.kinhtedothi.vn), Phụ nữ và Gia đình (phunuvagiadinh.vn)</td></tr><tr><td><b>Báo tỉnh nơi có nhà máy đường, luyện kim, khai khoáng</b></td><td>Báo Thanh Hóa (baothanhhoa.vn), Báo Thái Nguyên (baothainguyen.vn), Báo Gia Lai (baogialai.com.vn), Báo Tây Ninh (baotayninh.vn), Báo Lào Cai (baolaocai.vn), Báo Lạng Sơn (baolangson.vn), Báo Tuyên Quang (baohagiang.vn), Truyền hình Nghệ An (truyenhinhnghean.vn), Báo An Giang (baoangiang.com.vn)</td></tr><tr><td><b>Báo tỉnh, thành phố có khu công nghiệp lớn</b></td><td>Báo Đồng Nai (baodongnai.com.vn), Báo Đà Nẵng (baodanang.vn), Báo Cần Thơ (baocantho.com.vn), Báo Long An (baolongan.vn), Báo Cà Mau (baocamau.vn), Báo Huế ngày nay (huengaynay.vn), Báo Bà Rịa - Vũng Tàu (baobariavungtau.com.vn)</td></tr><tr><td><b>Trang tin và cộng đồng chuyên ngành</b></td><td>Home.vn (home.vn), VnReview (vnreview.vn)</td></tr></tbody>
+      </table>
+      </div>
+
+      <p><b>Guest post:</b> bài viết riêng đăng trên các website kỹ thuật, xây dựng, vận tải và tin tổng hợp có uy tín, liên kết đặt trong ngữ cảnh bài. 19 tên miền dưới đây đã được kiểm tra còn hoạt động ngày 19/09/2026.</p>
+      <div style="overflow-x:auto">
+      <table class="issues">
+        <thead><tr><th style="width:26%">Nhóm</th><th>Tên miền dự kiến triển khai</th></tr></thead>
+        <tbody><tr><td><b>Kỹ thuật, xây dựng, công nghiệp</b></td><td>xaydunghtd.com (sơn epoxy nhà xưởng), trambetongtuoi.com (bê tông, vật liệu), ecci.com.vn (thiết bị, công nghiệp), phongvuarc.com (kiến trúc, xây dựng), thietkemyb.com.vn (thiết kế kỹ thuật)</td></tr><tr><td><b>Vận tải, xe cộ, nông nghiệp</b></td><td>busvietnam.net (vận tải), megacar.com.vn (ô tô, xe cộ), dangkiem5006v.com.vn (đăng kiểm ô tô), gianongsan.org (nông sản, giá cả thị trường)</td></tr><tr><td><b>Tin tổng hợp và đánh giá có uy tín</b></td><td>truongthinh.info, techvui.com, giavangnhanh.com, congtythienlong.com, hoacanhquangvy.com, megatop.vn, bestnhat.com, congngheaz.com, topreview.vn, tindichvu.com</td></tr></tbody>
+      </table>
+      </div>
+      <p style="font-size:12.5px;color:var(--muted)">Ba danh sách trên là kho địa chỉ chúng tôi đang triển khai được, không phải số lượng sẽ đăng. Số bài và số liên kết thực tế theo bảng ngân sách ở mục 4 được chọn ra từ các danh sách này, ưu tiên báo phù hợp với ngành và địa bàn nhà máy của khách hàng mục tiêu. Nếu đến lúc triển khai một địa chỉ ngưng nhận bài, ngừng hoạt động hoặc đổi chính sách biên tập, chúng tôi chọn địa chỉ khác trong danh sách và ghi rõ trong báo cáo tháng đó.</p>
+      <h3 id="phu-luc-c-nguon-so-lieu">6.3. Phụ lục C: Nguồn số liệu</h3>
+      <div style="overflow-x:auto">
+      <table>
+        <thead><tr><th style="width:30%">Số liệu</th><th>Nguồn và thời điểm</th></tr></thead>
+        <tbody>
+          <tr><td>Lượt tìm kiếm của từ khóa</td><td>Google Keyword Planner, thị trường Việt Nam, kỳ 09/2025 đến 08/2026, xuất ngày 16/09/2026</td></tr>
+          <tr><td>Uy tín tên miền, liên kết và lượt truy cập của đối thủ</td><td>Ahrefs, thị trường Việt Nam, ngày 16/09/2026</td></tr>
+          <tr><td>Website đang ở trang một Google tìm kiếm</td><td>Kiểm tra trực tiếp trên Google Việt Nam ngày 16/09/2026 với các từ khóa trọng tâm của ngành</td></tr>
+          <tr><td>Hiện trạng website shinelinkgroup.com</td><td>Thu thập sơ đồ site và mã nguồn 250 trang ngày 16/09/2026</td></tr>
+          <tr><td>Sản lượng ngành mía đường</td><td><a class="src" href="https://www.vienmiaduong.vn/vi/detailkhoa.php?idTin=3502" target="_blank" rel="noopener">Hiệp hội Mía đường Việt Nam, dẫn lại bởi Viện Nghiên cứu Mía đường</a></td></tr>
+          <tr><td>Sản lượng ngành than</td><td><a class="src" href="https://sct.dongnai.gov.vn/vi/news/Dien-nang/san-xuat-tieu-thu-than-nam-2025-vuot-ke-hoach-52280.html" target="_blank" rel="noopener">Sở Công Thương Đồng Nai, dẫn số liệu TKV</a></td></tr>
+          <tr><td>Sản lượng ngành thép</td><td><a class="src" href="https://vsa.com.vn/nganh-thep-viet-nam-nhin-lai-2025-trien-vong-2026/" target="_blank" rel="noopener">Hiệp hội Thép Việt Nam</a></td></tr>
+          <tr><td>Chính sách của Google về nội dung tạo hàng loạt</td><td><a class="src" href="https://developers.google.com/search/docs/essentials/spam-policies" target="_blank" rel="noopener">Google Search Central, Spam policies</a></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+  </main>
+</div>
+
+<footer><div class="in" style="justify-content:center;text-align:center"><span>Prepared by <b>Phap Le</b>, SEO Team Leader with over three years of hands-on experience</span></div></footer>
+
+<script>
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0,rootMargin:"0px 0px -5% 0px"});
+  document.querySelectorAll('.rv').forEach(function(s){io.observe(s);});
+  /* dự phòng: IntersectionObserver có lúc không bắn (mobile, in, cuộn nhanh) → tự lộ theo vị trí cuộn, và lộ hết sau 2,5s */
+  function revealByScroll(){var lim=scrollY+innerHeight;document.querySelectorAll('.rv:not(.in)').forEach(function(s){if(s.getBoundingClientRect().top+scrollY<lim)s.classList.add('in');});}
+  addEventListener('scroll',revealByScroll,{passive:true});addEventListener('resize',revealByScroll);revealByScroll();
+  setTimeout(function(){document.querySelectorAll('.rv').forEach(function(s){s.classList.add('in');});},2500);
+  addEventListener('beforeprint',function(){document.querySelectorAll('.rv').forEach(function(s){s.classList.add('in');});});
+  /* mục lục: tự thêm liên kết tới các tiểu mục đánh số (2.1, 3.2, 4.4...) */
+  (function(){
+    var toc=document.getElementById('toc');
+    [].slice.call(toc.querySelectorAll('a[href^="#s"]')).forEach(function(parent){
+      var sec=document.querySelector(parent.getAttribute('href'));
+      if(!sec) return;
+      var after=parent;
+      [].slice.call(sec.querySelectorAll('h3')).forEach(function(h){
+        var m=h.textContent.trim().match(/^(\d+\.\d+)\.\s*(.+)$/);
+        if(!m) return;
+        if(!h.id){
+          var slug=m[2].toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+                    .replace(/đ/g,'d').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'').slice(0,60);
+          var base=slug||('muc-'+m[1].replace('.','-')), n=1;
+          while(document.getElementById(slug)) slug=base+'-'+(++n);
+          h.id=slug;
+        }
+        var a=document.createElement('a');
+        a.className='sub'; a.href='#'+h.id;
+        a.innerHTML='<span class="s">'+m[1]+'</span>'+m[2];
+        after.insertAdjacentElement('afterend',a); after=a;
+      });
+    });
+  })();
+  var links=[].slice.call(document.querySelectorAll('nav.toc a'));
+  var map=links.map(function(a){return{a:a,el:document.querySelector(a.getAttribute('href'))};}).filter(function(x){return x.el;});
+  function spy(){var y=scrollY+120,cur=null;map.forEach(function(x){if(x.el.offsetTop<=y)cur=x;});links.forEach(function(a){a.classList.remove('active');});if(cur)cur.a.classList.add('active');}
+  addEventListener('scroll',spy,{passive:true});spy();
+</script>
+
+<!-- ===== App: cổng mật khẩu · đăng nhập Google · sửa nội dung · nhận xét ===== -->
+<script>
+(function(){
+  var toastEl=document.getElementById('toast');
+  function toast(m){toastEl.textContent=m;toastEl.classList.add('show');clearTimeout(toast._t);toast._t=setTimeout(function(){toastEl.classList.remove('show');},2800);}
+  function esc(s){return (s||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function fmt(ts){ if(!ts) return ''; var d=ts.toDate?ts.toDate():new Date(ts); return d.toLocaleDateString('en-GB')+' '+d.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'}); }
+  var $=function(s){return document.querySelector(s);};
+  function ssGet(k){ try{return sessionStorage.getItem(k);}catch(e){return null;} }
+  function ssSet(k,v){ try{sessionStorage.setItem(k,v);}catch(e){} }
+  var gate=document.getElementById('gate');
+  function passOk(){ gate.style.display='none'; document.body.classList.remove('locked'); }
+  if(ssGet(SS_KEY)==='1') passOk();
+  document.getElementById('gate-go').onclick=function(){
+    if(document.getElementById('gate-pw').value===VIEW_PASSWORD){ ssSet(SS_KEY,'1'); passOk(); }
+    else document.getElementById('gate-err').textContent='Incorrect password.';
+  };
+  document.getElementById('gate-pw').addEventListener('keydown',function(e){ if(e.key==='Enter') document.getElementById('gate-go').click(); });
+
+  var db=null,auth=null,provider=null,user=null;
+  var configured = FIREBASE_CONFIG.apiKey && FIREBASE_CONFIG.apiKey.indexOf('REPLACE')<0;
+  var mainEl=document.querySelector('main[data-edit]');
+  var commentsBySection={};
+  if(configured){
+    firebase.initializeApp(FIREBASE_CONFIG);
+    db=firebase.firestore(); auth=firebase.auth(); provider=new firebase.auth.GoogleAuthProvider();
+    loadContent();
+    auth.onAuthStateChanged(function(u){ user=u; renderEbar(); document.querySelectorAll('.cmt-panel').forEach(function(p){renderPanel(p.dataset.sec);}); });
+  } else { buildCommentUI(); }
+
+  function loadContent(){
+    db.doc(CONTENT_DOC).get().then(function(s){
+      if(s.exists && s.data().html){ mainEl.innerHTML=s.data().html; reinitPage(); }
+      buildCommentUI(); startComments(); loadPricing();
+    }).catch(function(){ buildCommentUI(); startComments(); loadPricing(); });
+  }
+
+  /* ---- bảng giá: đọc / áp / tính lại / sửa (owner) ---- */
+  function vnd(n){ return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g,'.'); }
+  var pricingEditing=false;
+  function readModel(){ var m={items:{},kpi:{}};
+    document.querySelectorAll('tr[data-item]').forEach(function(tr){ var i=tr.dataset.item; var pc=tr.querySelector('td[data-price]');
+      var it={kind:pc.dataset.kind,price:Number(pc.dataset.val)||0,q:[0,0,0]};
+      tr.querySelectorAll('td[data-q]').forEach(function(td){ var k=Number(td.dataset.q.split(':')[1]); it.q[k]=Number(td.dataset.val)||0; });
+      m.items[i]=it; });
+    document.querySelectorAll('td[data-kpi]').forEach(function(td){ var a=td.dataset.kpi.split(':'); (m.kpi[a[0]]=m.kpi[a[0]]||[0,0,0])[Number(a[1])]=Number(td.dataset.val)||0; });
+    return m; }
+  function totals(m){ var t=[0,0,0]; Object.keys(m.items).forEach(function(i){ var it=m.items[i]; if(it.kind==='check'){t=t.map(function(x){return x+it.price;});} else if(it.kind==='qty'){t=t.map(function(x,k){return x+it.price*it.q[k];});} }); return t; }
+  function applyModel(m){
+    Object.keys(m.items).forEach(function(i){ var it=m.items[i]; var tr=document.querySelector('tr[data-item="'+i+'"]'); if(!tr) return;
+      var pc=tr.querySelector('td[data-price]'); pc.dataset.val=it.price; if(it.kind!=='free') pc.textContent=it.price?vnd(it.price):'—';
+      tr.querySelectorAll('td[data-q]').forEach(function(td){ var k=Number(td.dataset.q.split(':')[1]); if(it.kind==='qty'){ td.dataset.val=it.q[k]; td.textContent=it.q[k]?vnd(it.q[k]):'—'; } });
+      document.querySelectorAll('[data-bind^="q:'+i+':"]').forEach(function(sp){ var k=Number(sp.dataset.bind.split(':')[2]); sp.textContent=vnd(it.q[k]); });
+    });
+    Object.keys(m.kpi).forEach(function(r){ m.kpi[r].forEach(function(v,k){ var td=document.querySelector('td[data-kpi="'+r+':'+k+'"]'); if(td){ td.dataset.val=v; td.textContent=vnd(v); } }); });
+    var t=totals(m); t.forEach(function(v,k){ var a=document.querySelector('td[data-tot="'+k+'"]'); if(a) a.textContent=vnd(v); var b=document.querySelector('td[data-mo="'+k+'"]'); if(b) b.textContent='≈ '+vnd(Math.round(v/12/1000)*1000); });
+  }
+  function loadPricing(){ db.doc(PRICING_DOC).get().then(function(s){ if(s.exists && s.data().items){ var m=readModel(); var d=s.data();
+      Object.keys(d.items||{}).forEach(function(i){ if(m.items[i]){ m.items[i].price=Number(d.items[i].price)||0; if(Array.isArray(d.items[i].q)) m.items[i].q=d.items[i].q.map(Number); } });
+      Object.keys(d.kpi||{}).forEach(function(r){ if(m.kpi[r]) m.kpi[r]=d.kpi[r].map(Number); });
+      applyModel(m); } }).catch(function(e){ console.warn('pricing load',e); }); }
+  function enablePricing(){ if(editing) return; pricingEditing=true; document.body.classList.add('pricing');
+    document.querySelectorAll('td[data-price][data-kind="check"],td[data-price][data-kind="qty"],td[data-q][data-val]:not([data-val=""]),td[data-kpi]').forEach(function(td){
+      if(td.dataset.kind==='free') return; if(td.hasAttribute('data-q') && td.dataset.val==='') return;
+      var inp=document.createElement('input'); inp.type='number'; inp.min='0'; inp.step=td.hasAttribute('data-price')?'1000':'1'; inp.className='pin'; inp.value=td.dataset.val; td.textContent=''; td.appendChild(inp);
+      inp.addEventListener('input',function(){ td.dataset.val=inp.value; var m=readModel(); var t=totals(m);
+        t.forEach(function(v,k){ var ta=document.querySelector('td[data-tot="'+k+'"]'); if(ta) ta.textContent=vnd(v); var tb=document.querySelector('td[data-mo="'+k+'"]'); if(tb) tb.textContent='≈ '+vnd(Math.round(v/12/1000)*1000); });
+        if(td.hasAttribute('data-q')){ var a=td.dataset.q.split(':'); document.querySelectorAll('[data-bind="q:'+a[0]+':'+a[1]+'"]').forEach(function(sp){ sp.textContent=vnd(Number(inp.value)||0); sp.classList.add('dirty'); }); }
+        td.classList.add('dirty'); });
+    });
+    renderEbar(); toast('Pricing edit mode: change unit prices, quantities or targets; totals update automatically. Click Save pricing.');
+    document.getElementById('s4') && document.getElementById('s4').scrollIntoView({behavior:'smooth'}); }
+  if(location.hostname==='localhost'||location.hostname==='127.0.0.1'){ window.__shl={enablePricing:enablePricing,readModel:readModel,applyModel:applyModel,totals:totals}; } /* chỉ để test local */
+  function savePricing(){ if(!isOwner()) return; var m=readModel(); var payload={items:{},kpi:{},updatedAt:firebase.firestore.FieldValue.serverTimestamp(),updatedBy:user.email};
+    Object.keys(m.items).forEach(function(i){ payload.items[i]={price:m.items[i].price,q:m.items[i].q}; }); Object.keys(m.kpi).forEach(function(r){ payload.kpi[r]=m.kpi[r]; });
+    db.doc(PRICING_DOC).set(payload).then(function(){ toast('Pricing saved. Everyone now sees the new numbers.'); setTimeout(function(){location.reload();},900); }).catch(function(e){ toast('Save failed: '+e.message); }); }
+  function reinitPage(){ document.querySelectorAll('.rv').forEach(function(s){s.classList.add('in');}); }
+  function cleanHtml(){ var c=mainEl.cloneNode(true); c.querySelectorAll('.cmt-btn,.cmt-panel').forEach(function(n){n.remove();}); c.querySelectorAll('[contenteditable]').forEach(function(n){n.removeAttribute('contenteditable');}); return c.innerHTML; }
+
+  var editing=false;
+  function isOwner(){ return !!(user && user.email===OWNER_EMAIL); }
+  function renderEbar(){
+    var bar=document.getElementById('ebar');
+    if(!configured || !user){ bar.style.display='none'; return; }
+    bar.style.display='flex';
+    if(isOwner() && pricingEditing){
+      bar.innerHTML='<b>Pricing edit</b> <button id="p-save">Save pricing</button> <button id="p-cancel" class="ghost">Cancel</button>';
+      $('#p-save').onclick=savePricing; $('#p-cancel').onclick=function(){location.reload();};
+    } else if(isOwner() && editing){
+      bar.innerHTML='<b>Edit mode</b> <button id="e-save">Save</button> <button id="e-cancel" class="ghost">Exit</button>';
+      $('#e-save').onclick=saveContent; $('#e-cancel').onclick=function(){location.reload();};
+    } else if(isOwner()){
+      bar.innerHTML='<b>'+esc(user.displayName||'Owner')+'</b> <button id="e-on">Enable editing</button> <button id="p-on">Edit pricing</button> <button id="e-out" class="ghost">Sign out</button>';
+      $('#e-on').onclick=enableEdit; $('#p-on').onclick=enablePricing; $('#e-out').onclick=function(){auth.signOut();};
+    } else {
+      bar.innerHTML='<b>'+esc(user.displayName||user.email)+'</b> <button id="e-out" class="ghost">Sign out</button>';
+      $('#e-out').onclick=function(){auth.signOut();};
+    }
+  }
+  function enableEdit(){ if(pricingEditing) return; editing=true; document.body.classList.add('editing'); mainEl.contentEditable='true'; mainEl.querySelectorAll('.cmt-btn,.cmt-panel').forEach(function(n){n.contentEditable='false';}); renderEbar(); toast('Editing enabled. Click Save when done.'); }
+  function saveContent(){ if(!isOwner())return; db.doc(CONTENT_DOC).set({html:cleanHtml(),updatedAt:firebase.firestore.FieldValue.serverTimestamp(),updatedBy:user.email},{merge:true}).then(function(){ editing=false; document.body.classList.remove('editing'); mainEl.contentEditable='false'; renderEbar(); toast('Content saved.'); }).catch(function(e){ toast('Save failed: '+e.message); }); }
+
+  function buildCommentUI(){
+    document.querySelectorAll('main[data-edit] > section').forEach(function(sec){
+      var head=sec.querySelector('.sechead'); if(!head || head.querySelector('.cmt-btn')) return;
+      var btn=document.createElement('button'); btn.className='cmt-btn'; btn.type='button'; btn.setAttribute('contenteditable','false');
+      btn.textContent='💬 Comment'; btn.onclick=function(){ togglePanel(sec); };
+      head.appendChild(btn);
+    });
+    updateCounts();
+  }
+  function togglePanel(sec){ var ex=sec.querySelector('.cmt-panel'); if(ex){ex.remove();return;} var p=document.createElement('div'); p.className='cmt-panel'; p.setAttribute('contenteditable','false'); p.dataset.sec=sec.id; sec.querySelector('.sechead').insertAdjacentElement('afterend',p); renderPanel(sec.id); }
+  function renderPanel(secId){
+    var p=document.querySelector('.cmt-panel[data-sec="'+secId+'"]'); if(!p) return;
+    var list=commentsBySection[secId]||[];
+    var h=list.length ? list.map(function(c){ var canDel=user&&(c.uid===user.uid||user.email===OWNER_EMAIL);
+      return '<div class="cmt">'+(canDel?'<button class="del" data-id="'+c.id+'">Delete</button>':'')+'<span class="who">'+esc(c.name)+'</span><span class="when">'+esc(fmt(c.createdAt))+'</span><div class="tx">'+esc(c.text)+'</div></div>';
+    }).join('') : '<div class="cmt-empty">No comments on this section yet.</div>';
+    p.innerHTML=h+'<div class="cmt-form"></div>';
+    p.querySelectorAll('.del').forEach(function(b){ b.onclick=function(){ delComment(b.dataset.id); }; });
+    renderForm(p.querySelector('.cmt-form'), secId);
+  }
+  function renderForm(box,secId){
+    if(!configured){ box.innerHTML='<div class="hint">Comments require Firebase (not configured).</div>'; return; }
+    if(!user){ box.innerHTML='<button class="signin" type="button" contenteditable="false">Sign in with Google to comment</button>'; box.querySelector('button').onclick=function(){ auth.signInWithPopup(provider).catch(function(e){toast('Sign-in failed: '+e.message);}); }; return; }
+    box.innerHTML='<textarea placeholder="Your comment on this section..."></textarea><div class="row"><button type="button">Post comment</button><span class="hint">Posting as '+esc(user.displayName||user.email)+'</span></div>';
+    var ta=box.querySelector('textarea');
+    box.querySelector('button').onclick=function(){ var t=ta.value.trim(); if(!t)return; db.collection(COMMENTS_COL).add({section:secId,uid:user.uid,name:user.displayName||user.email,text:t,createdAt:firebase.firestore.FieldValue.serverTimestamp()}).then(function(){ ta.value=''; toast('Comment posted.'); }).catch(function(e){toast('Error: '+e.message);}); };
+  }
+  function delComment(id){ if(!confirm('Delete this comment?'))return; db.collection(COMMENTS_COL).doc(id).delete().then(function(){toast('Deleted.');}).catch(function(e){toast('Error: '+e.message);}); }
+  function updateCounts(){ document.querySelectorAll('main[data-edit] > section').forEach(function(sec){ var b=sec.querySelector('.cmt-btn'); if(!b)return; var n=(commentsBySection[sec.id]||[]).length; b.textContent='💬 Comment'+(n?' ('+n+')':''); }); }
+  function startComments(){ if(!configured)return; db.collection(COMMENTS_COL).orderBy('createdAt','asc').onSnapshot(function(qs){ commentsBySection={}; qs.forEach(function(d){ var c=d.data(); c.id=d.id; (commentsBySection[c.section]=commentsBySection[c.section]||[]).push(c); }); updateCounts(); document.querySelectorAll('.cmt-panel').forEach(function(p){renderPanel(p.dataset.sec);}); }, function(e){ console.warn('comments listen error',e); }); }
+})();
+</script>
+
+
+</body></html>
