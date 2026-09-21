@@ -861,6 +861,117 @@
       font-weight: 800;
     }
 
+    /* STRENGTHS CARDS (SHINELINK ASSETS) */
+    .strengths-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin: 18px 0;
+    }
+
+    .strength-card {
+      background: var(--bg-card-alt);
+      border: 1px solid var(--border-subtle);
+      border-left: 3px solid var(--gold);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 18px 20px;
+      transition: all 0.2s ease;
+    }
+
+    .strength-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-2px);
+      background: rgba(196, 151, 58, 0.05);
+    }
+
+    .strength-title {
+      font-family: var(--font-display);
+      font-size: 1.12rem;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .strength-desc {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    /* SWOT & CHALLENGE / ADVANTAGE GRID */
+    .swot-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .swot-col {
+      background: var(--bg-card-alt);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 24px;
+      position: relative;
+    }
+
+    .swot-col.challenge {
+      border-top: 3px solid #EF4444;
+    }
+
+    .swot-col.advantage {
+      border-top: 3px solid var(--gold);
+      background: rgba(196, 151, 58, 0.04);
+    }
+
+    .swot-title {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .swot-col.challenge .swot-title { color: #F87171; }
+    .swot-col.advantage .swot-title { color: var(--gold); }
+
+    .swot-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .swot-list li {
+      position: relative;
+      padding-left: 24px;
+      font-size: 0.88rem;
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    .swot-list li::before {
+      position: absolute;
+      left: 0;
+      top: 2px;
+      font-size: 13px;
+    }
+
+    .swot-col.challenge .swot-list li::before {
+      content: '⚠️';
+    }
+
+    .swot-col.advantage .swot-list li::before {
+      content: '★';
+      color: var(--gold);
+    }
+
     /* ══════════════════════════════════════════════════════════════════
        SECTION 02: 4 STRATEGIC PILLARS (VSF ADVISORY FORM)
        ══════════════════════════════════════════════════════════════════ */
@@ -907,6 +1018,52 @@
       font-size: 0.86rem;
       color: var(--text-muted);
       line-height: 1.6;
+    }
+
+    .pillar-list {
+      list-style: none;
+      padding: 0;
+      margin: 12px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .pillar-list li {
+      position: relative;
+      padding-left: 20px;
+      font-size: 0.85rem;
+      color: var(--text-main);
+      line-height: 1.5;
+    }
+
+    .pillar-list li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      top: 1px;
+      color: var(--gold);
+      font-weight: 800;
+      font-size: 11px;
+    }
+
+    .pillar-action {
+      background: rgba(196, 151, 58, 0.07);
+      border-radius: var(--radius);
+      padding: 12px 14px;
+      margin-top: 14px;
+      border-left: 2px solid var(--gold);
+      font-size: 0.83rem;
+      color: var(--text-main);
+      line-height: 1.55;
+    }
+
+    .pillar-res {
+      margin-top: 10px;
+      font-size: 0.83rem;
+      color: var(--accent-green);
+      font-weight: 600;
+      line-height: 1.5;
     }
 
     /* ══════════════════════════════════════════════════════════════════
@@ -1072,6 +1229,18 @@
 
     .custom-table tbody tr:hover td {
       background: rgba(196, 151, 58, 0.04);
+    }
+
+    .custom-table tr.table-grp td {
+      background: rgba(196, 151, 58, 0.09) !important;
+      color: var(--gold);
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      padding: 10px 18px;
     }
 
     .price-num {
@@ -1756,6 +1925,47 @@
       color: #845D18;
     }
 
+    [data-theme="light"] .strength-card {
+      background: #FFFFFF;
+      border-color: var(--border-color);
+      border-left-color: var(--gold);
+      box-shadow: 0 3px 12px rgba(8, 20, 42, 0.04);
+    }
+
+    [data-theme="light"] .strength-title {
+      color: #8C6016;
+    }
+
+    [data-theme="light"] .custom-table tr.table-grp td {
+      background: #F0E8D9 !important;
+      color: #8C6016;
+      border-color: #DFD5C4;
+    }
+
+    [data-theme="light"] .swot-col {
+      background: #FFFFFF;
+      border-color: var(--border-color);
+      box-shadow: 0 4px 16px rgba(8, 20, 42, 0.04);
+    }
+
+    [data-theme="light"] .swot-col.advantage {
+      background: #FAF6EE;
+      border-top-color: var(--gold);
+    }
+
+    [data-theme="light"] .swot-col.challenge .swot-title {
+      color: #DC2626;
+    }
+
+    [data-theme="light"] .swot-col.advantage .swot-title {
+      color: #8C6016;
+    }
+
+    [data-theme="light"] .pillar-action {
+      background: #F5EFE4;
+      border-left-color: #8C6016;
+    }
+
     /* ══════════════════════════════════════════════════════════════════
        PRINT STYLES FOR BOARDROOM & SIGNING PRESENTATION
        ══════════════════════════════════════════════════════════════════ */
@@ -2057,14 +2267,44 @@
       <section id="sec-intro" class="section-card">
         <div class="section-header">
           <div class="section-label">Mục 01 • Hiện Trạng &amp; Bối Cảnh Kênh Số</div>
-          <h2 class="section-title">Lý Do Shinelink Cần Kênh Số Độc Lập <em>(shinelink.vn)</em></h2>
+          <h2 class="section-title">Đánh Giá Toàn Diện Website Hiện Tại &amp; <em>Lý Do Cần Kênh Số shinelink.vn</em></h2>
         </div>
 
         <p class="section-intro">
-          Shinelink Industries là nhà sản xuất xích công nghiệp chất lượng cao tại Hàng Châu, đã xuất khẩu thành công sang Châu Âu và Bắc Mỹ, với ưu thế cạnh tranh vượt trội: <strong>khả năng tùy biến (customized) theo bản vẽ</strong> và chi phí cạnh tranh so với Nhật Bản. Để thâm nhập thị trường Việt Nam và thuyết phục <strong>Phòng Kỹ thuật &amp; Ban Quản lý Nhà máy Mía đường, Luyện kim, Xi măng</strong>, Shinelink cần một kênh số thương hiệu độc lập, tin cậy tuyệt đối thay vì dùng chung subdomain phụ.
+          Shinelink đang chuẩn bị xây dựng website <strong>shinelink.vn</strong> dành riêng cho thị trường Việt Nam. Vì website mới nhiều khả năng sẽ kế thừa tư liệu, thông số và hình ảnh của website hiện tại, <strong>Đội ngũ Kỹ thuật &amp; Tăng trưởng Số Vietnam Sales Force (VSF)</strong> đã tiến hành rà soát kỹ thuật độc lập toàn bộ website hiện tại (shinelinkgroup.com / vi.shinelinkgroup.com) trước khi bắt tay thi công: <strong>250 địa chỉ URL</strong> trong sơ đồ site được thu thập và kiểm toán toàn diện ngày 16/09/2026, đối chiếu với số liệu Ahrefs và kết quả tìm kiếm thực tế trên Google Việt Nam. Việc rà soát nhằm hai mục đích cốt lõi:
         </p>
 
-        <div class="compare-grid">
+        <ul style="margin: 0 0 20px 24px; line-height: 1.7; color: var(--text-main); font-size: 0.92rem;">
+          <li><strong>Xác định chính xác vị thế hiện tại của Shinelink trên Google:</strong> Đo lường lưu lượng, thứ hạng từ khóa ngành và mức độ nhận diện thương hiệu tại Việt Nam.</li>
+          <li><strong>Chỉ rõ toàn bộ lỗi kỹ thuật và cấu trúc shinelink.vn tuyệt đối không lặp lại:</strong> Đảm bảo kênh số mới được đội ngũ VSF xây dựng chuẩn mực và tối ưu ngay từ ngày đầu tiên.</li>
+        </ul>
+
+        <!-- ĐIỂM MẠNH SẴN CÓ CỦA SHINELINK -->
+        <div style="margin-bottom: 24px;">
+          <h3 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--gold); margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+            💎 Điểm Mạnh Sẵn Có Của Shinelink (Nguồn Tư Liệu Vàng Cho Kênh Số Mới)
+          </h3>
+          <div class="strengths-grid">
+            <div class="strength-card">
+              <div class="strength-title">📦 Danh Mục Đầy Đủ 81 Dòng Xích</div>
+              <div class="strength-desc">Hệ thống sản phẩm đa dạng từ xích truyền động tiêu chuẩn, xích tải nặng, xích cào bã mía đến xích gầu tải, mỗi dòng đều có trang giới thiệu riêng biệt.</div>
+            </div>
+            <div class="strength-card">
+              <div class="strength-title">📑 42 Tài Liệu PDF Thông Số Gốc</div>
+              <div class="strength-desc">42 dòng sản phẩm chủ lực đã có sẵn tài liệu bản vẽ kích thước và bảng tra tải kéo đứt (tuy nhiên trước đây chỉ để tải PDF, Google bot chưa thể đọc được).</div>
+            </div>
+            <div class="strength-card">
+              <div class="strength-title">🌍 02 Dự Án Đường Quốc Tế Thực Tế</div>
+              <div class="strength-desc">Hai dự án cung cấp xích cho nhà máy mía đường quy mô lớn tại Ethiopia và Bolivia cùng hình ảnh xưởng sản xuất thực tế tại Hàng Châu — bằng chứng năng lực đắt giá.</div>
+            </div>
+          </div>
+          <p style="font-size: 0.86rem; color: var(--text-muted); font-style: italic; margin-top: 4px;">
+            * Nhận định của VSF: Đây là nguồn tài nguyên tư liệu vô cùng quý giá cho website mới. Tuy nhiên trên website cũ, các thông tin này chưa được tổ chức theo cấu trúc chuẩn để Google bot và kỹ sư nhà máy có thể tìm kiếm, đọc hiểu và ra quyết định mua hàng.
+          </p>
+        </div>
+
+        <!-- SO SÁNH NHANH DOMAIN CŨ VS MỚI -->
+        <div class="compare-grid" style="margin-bottom: 28px;">
           <div class="compare-card old">
             <div class="compare-header">
               <span>Hạn Chế Của Domain Cũ (vi.shinelinkgroup.com)</span>
@@ -2090,20 +2330,168 @@
           </div>
         </div>
 
+        <!-- BẢNG 15 VẤN ĐỀ TỒN ĐỌNG & PHƯƠNG ÁN VSF THI CÔNG -->
+        <div style="margin-top: 24px;">
+          <h3 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--gold); margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+            📋 Bảng Kiểm Toán 15 Điểm Yếu Của Website Hiện Tại &amp; Giải Pháp VSF Trực Tiếp Thực Hiện
+          </h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 16px;">
+            Đối chiếu chi tiết giữa hiện trạng website cũ và phương án kỹ thuật do đội ngũ VSF trực tiếp thiết kế, lập trình Pure Code và biên tập nội dung trên <code>shinelink.vn</code>:
+          </p>
+
+          <div class="table-responsive">
+            <table class="custom-table">
+              <thead>
+                <tr>
+                  <th style="width: 21%;">Vấn Đề Tồn Đọng</th>
+                  <th style="width: 29%;">Hiện Trạng Website shinelinkgroup.com</th>
+                  <th style="width: 23%;">Ảnh Hưởng Đến SEO &amp; Khách Hàng</th>
+                  <th>shinelink.vn Do VSF Thiết Kế &amp; Tối Ưu</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-grp"><td colspan="4">I. Nhóm Vấn Đề: Nội Dung &amp; Hiện Diện Tại Việt Nam</td></tr>
+                <tr>
+                  <td><strong>Trang sản phẩm gần như không có nội dung</strong></td>
+                  <td>Nội dung rất mỏng: đa số trang dưới 150 từ; mô tả thực tế chỉ 1-3 câu sơ sài, thiếu phần giới thiệu ứng dụng thực tế hoặc ưu điểm cạnh tranh của xích.</td>
+                  <td>Google không có dữ liệu văn bản để xếp hạng; kỹ sư nhà máy vào trang không có đủ cơ sở kỹ thuật để so sánh và lựa chọn.</td>
+                  <td><strong>Đội ngũ VSF tối ưu lại từng trang:</strong> Viết mới mô tả kỹ thuật theo từ khóa tra cứu, chỉ rõ ứng dụng theo ngành (mía đường, xi măng, khai khoáng), ảnh xích hiển thị ngay kèm CTA gửi bản vẽ/mã xích cũ.</td>
+                </tr>
+                <tr>
+                  <td><strong>Thông số kỹ thuật nằm trong PDF, gần nửa số trang thiếu PDF</strong></td>
+                  <td>42/81 trang chỉ có nút tải PDF (ví dụ Mining Chain Page1.pdf); 39 trang còn lại hoàn toàn không có thông số dưới bất kỳ hình thức nào.</td>
+                  <td>Googlebot không thể đọc bảng trong PDF để xếp hạng cho các truy vấn kỹ thuật (bước xích, tải kéo đứt, vật liệu); kỹ sư dùng mobile xem rất bất tiện.</td>
+                  <td><strong>VSF lập trình bảng thông số HTML ngay trên trang</strong> cho toàn bộ 49 dòng sản phẩm catalog mũi nhọn; tệp PDF giữ vai trò tài liệu đính kèm để in ấn.</td>
+                </tr>
+                <tr>
+                  <td><strong>87 bài tin tức viết chung chung, trùng lặp chủ đề</strong></td>
+                  <td>87 bài chi tiết (144 URL kể cả trang tag/danh mục); nhiều bài cùng chủ đề: 6 bài "Theme Park Chain", 3 bài "Water Treatment Chain", 10 trang dùng chung 5 tiêu đề giống hệt.</td>
+                  <td>Các bài tự cạnh tranh lẫn nhau (Keyword Cannibalization), Google chỉ chọn 1; chủ đề website bị loãng bởi các bài không phù hợp thị trường công nghiệp VN.</td>
+                  <td><strong>VSF loại bỏ các bài dịch tự động rác:</strong> Chỉ giữ lại ~5 bài còn giá trị thực tế (dự án Ethiopia, hướng dẫn lắp đặt, bảo trì); VSF biên soạn mới 50 bài blog kỹ thuật B2B theo bản đồ từ khóa chuyên ngành.</td>
+                </tr>
+                <tr>
+                  <td><strong>Chưa có nội dung tiếng Việt trên Google</strong></td>
+                  <td>Ahrefs: 1 từ khóa xếp hạng (tại Mỹ), 0 lượt truy cập từ Việt Nam; không xuất hiện ở trang 1 Google của bất kỳ từ khóa ngành nào, kể cả từ khóa Shinelink ưu tiên.</td>
+                  <td>Kỹ sư và nhà máy tại Việt Nam hoàn toàn không tìm thấy Shinelink; mọi yêu cầu báo giá trên Google đang rơi vào tay các đối thủ thương mại.</td>
+                  <td><strong>Toàn bộ website shinelink.vn do VSF biên soạn bằng tiếng Việt chuyên ngành cơ khí</strong> chuẩn xác, đáp ứng đúng hành vi tìm kiếm của kỹ sư trong nước.</td>
+                </tr>
+
+                <tr class="table-grp"><td colspan="4">II. Nhóm Vấn Đề: Thẻ Tiêu Đề (Title) &amp; Thẻ Mô Tả (Meta Description)</td></tr>
+                <tr>
+                  <td><strong>Tiêu đề trang đặt theo mẫu cứng, không theo từ khóa</strong></td>
+                  <td>Dập khuôn mẫu "Tên sản phẩm-Products-Shinelink" cho cả 81 trang; 129/248 trang dài quá 60 ký tự; trang chủ chỉ ghi chung chung "Shinelink-Transmission Chain-Conveyor Chain".</td>
+                  <td>Google hiển thị tiêu đề bị cắt cụt hoặc tự thay đổi; tiêu đề không chứa từ khóa thương mại quan trọng (nhà sản xuất, bước xích, ứng dụng).</td>
+                  <td><strong>VSF chuẩn hóa khung tiêu đề SEO cho từng loại trang</strong>, chứa từ khóa mục tiêu và lợi ích độc quyền, kiểm soát độ dài chuẩn mực 50-60 ký tự.</td>
+                </tr>
+                <tr>
+                  <td><strong>Thẻ mô tả chỉ lặp lại tên trang</strong></td>
+                  <td>85/248 trang có thẻ mô tả chỉ là tên trang + chữ "Shinelink" (ví dụ "Marsh Buggy Chain Shinelink"); 81/81 trang sản phẩm đều như vậy; 15 trang dùng chung 1 mô tả; 4 trang không có.</td>
+                  <td>Mất quyền kiểm soát đoạn tóm tắt xuất hiện trên Google, làm giảm nghiêm trọng tỷ lệ nhấp chuột (CTR) của kỹ sư nhà máy.</td>
+                  <td><strong>VSF viết thẻ mô tả (Meta Description) độc bản cho từng trang</strong>, nêu rõ ứng dụng công nghiệp và điểm khác biệt của nhà sản xuất gốc.</td>
+                </tr>
+
+                <tr class="table-grp"><td colspan="4">III. Nhóm Vấn Đề: Tiêu Chuẩn Kỹ Thuật Lập Trình &amp; Nền Tảng</td></tr>
+                <tr>
+                  <td><strong>Thiếu tiêu đề chính H1, không có tiêu đề phụ H2</strong></td>
+                  <td>53/248 trang không có thẻ H1 (gồm cả trang chủ và 30 trang sản phẩm); 19 trang có nhiều hơn một H1; 232/248 trang không có bất kỳ thẻ H2 nào.</td>
+                  <td>Googlebot không thể nhận biết đâu là chủ đề chính và cấu trúc phân cấp nội dung của tài liệu.</td>
+                  <td><strong>VSF lập trình chuẩn mực cấu trúc Heading:</strong> Mỗi trang có duy nhất 1 thẻ H1 chứa từ khóa chính, các thẻ H2 phân định rõ ràng các phần (thông số, ứng dụng, bản vẽ, catalog).</td>
+                </tr>
+                <tr>
+                  <td><strong>Một sản phẩm tồn tại ở nhiều đường dẫn URL</strong></td>
+                  <td>18 tên sản phẩm tồn tại ở từ 2 địa chỉ trở lên trong sơ đồ site; trang sản phẩm còn được liên kết bằng mã số dạng <code>/product/1256046662581374976.html</code>.</td>
+                  <td>Nội dung bị trùng lặp nội bộ; sức mạnh liên kết (link equity) bị phân tán manh mún giữa nhiều URL.</td>
+                  <td><strong>VSF quy hoạch cấu trúc URL thân thiện (Clean URL)</strong>, mỗi sản phẩm có 1 đường dẫn duy nhất và khai báo thẻ <code>canonical</code> tuyệt đối chuẩn xác.</td>
+                </tr>
+                <tr>
+                  <td><strong>Không có dữ liệu có cấu trúc (Schema JSON-LD)</strong></td>
+                  <td>248/248 trang trên website hiện tại không có bất kỳ khối mã Schema nào.</td>
+                  <td>Google và các mô hình AI Search (ChatGPT, Gemini, Perplexity) thiếu cơ sở dữ liệu để nhận diện Shinelink là nhà sản xuất; mất cơ hội hiển thị Rich Snippet.</td>
+                  <td><strong>VSF tích hợp Schema Organization &amp; Schema Product chuẩn Schema.org</strong> cho toàn site, đồng thời thiết lập file chuẩn <code>llms.txt</code> phục vụ AI Crawler.</td>
+                </tr>
+                <tr>
+                  <td><strong>Không khai báo thẻ ngôn ngữ (hreflang)</strong></td>
+                  <td>248/248 trang không có thẻ hreflang dù website có cả phiên bản tiếng Anh và tiếng Trung.</td>
+                  <td>Google không thể liên kết shinelink.vn và shinelinkgroup.com là hai phiên bản ngôn ngữ của cùng một doanh nghiệp.</td>
+                  <td><strong>VSF cấu hình thẻ hreflang hai chiều</strong> đồng bộ giữa tên miền mẹ (.com) và tên miền Việt Nam (.vn).</td>
+                </tr>
+                <tr>
+                  <td><strong>Ảnh nạp bằng cơ chế riêng của CMS cũ, thiếu thẻ alt</strong></td>
+                  <td>27.799 thẻ ảnh trên 248 trang, 88% có src là ảnh rỗng (ảnh thật nằm ở thuộc tính riêng); 276 ảnh thiếu alt; trang nặng (HTML trung vị 197 KB).</td>
+                  <td>Googlebot không thể nhận diện hình ảnh xích; mất toàn bộ lưu lượng từ tìm kiếm hình ảnh (Google Image Search); tốc độ tải trang chậm.</td>
+                  <td><strong>VSF sử dụng Native Lazy Loading chuẩn HTML5</strong>, ảnh định dạng WebP nhẹ &lt; 100KB, 100% hình ảnh có thẻ alt mô tả chi tiết thông số xích.</td>
+                </tr>
+                <tr>
+                  <td><strong>Máy chủ chặn công cụ thu thập dữ liệu (CE-WAF)</strong></td>
+                  <td>Ahrefs nhận mã 403; khi quét 250 trang, trang danh mục quan trọng nhất "Sugar mill chain &amp; attachment" bị tường lửa chặn trả về mã lỗi 403.</td>
+                  <td>Công cụ phân tích SEO và trình thu thập dữ liệu của AI không thể đọc được web; trang danh mục sống còn với Shinelink lại bị chặn hoàn toàn.</td>
+                  <td><strong>VSF cấu hình tường lửa CDN thông minh tại Việt Nam</strong>, mở đường thông suốt cho Googlebot, Bingbot và các công cụ đo lường kỹ thuật hợp lệ.</td>
+                </tr>
+                <tr>
+                  <td><strong>Nền tảng CMS đóng, máy chủ đặt tại Trung Quốc</strong></td>
+                  <td>Chân trang ghi "Powered by www.300.cn"; tài nguyên tải từ máy chủ Trung Quốc (faststatics.com, thefastimg.com).</td>
+                  <td>Không thể tùy biến can thiệp sâu vào mã nguồn, schema; tốc độ tải trang từ mạng Việt Nam rất chậm và không thể kiểm soát.</td>
+                  <td><strong>VSF lập trình mã nguồn Pure HTML/CSS/JS độc quyền</strong>, đặt trên hạ tầng Cloud Server CDN Việt Nam, tốc độ &lt; 1s, bàn giao 100% mã nguồn sạch cho Shinelink.</td>
+                </tr>
+
+                <tr class="table-grp"><td colspan="4">IV. Nhóm Vấn Đề: Uy Tín Tên Miền &amp; Nhận Diện Thực Thể Doanh Nghiệp</td></tr>
+                <tr>
+                  <td><strong>Uy tín tên miền (Domain Rating) bằng 0</strong></td>
+                  <td>Domain Rating (DR) = 0, Ahrefs Rank 122.664.251 tại thị trường Việt Nam.</td>
+                  <td>Chưa có nền tảng uy tín để cạnh tranh thứ hạng cho các từ khóa xích công nghiệp có độ khó cao.</td>
+                  <td><strong>VSF xây dựng hệ thống 300 hồ sơ Social Entity</strong>, bài PR báo chí uy tín và 1.500 liên kết chất lượng cao phủ đều trong 12 tháng.</td>
+                </tr>
+                <tr>
+                  <td><strong>Hồ sơ liên kết cũ phần lớn là liên kết rác (Spam Links)</strong></td>
+                  <td>383 tên miền trỏ về, nhưng 9/10 tên miền DR cao nhất là các trang bán liên kết rác tự động (backlinksplace.site, backlinkshop.site...).</td>
+                  <td>Không mang lại giá trị SEO và tiềm ẩn rủi ro thuật toán rất lớn nếu chuyển tiếp (redirect) sang tên miền mới.</td>
+                  <td><strong>Website shinelink.vn khởi tạo sạch sẽ hoàn toàn</strong>, không kế thừa liên kết rác của .com; chỉ kết nối an toàn qua thẻ hreflang.</td>
+                </tr>
+                <tr>
+                  <td><strong>Hai tên công ty mâu thuẫn trên cùng một trang</strong></td>
+                  <td>Đầu trang ghi "Hangzhou Shinelink Machinery Co., Ltd.", chân trang lại ghi "Hangzhou Sailike Machinery Equipment Co., Ltd.".</td>
+                  <td>Googlebot và kỹ sư thu mua khó xác thực pháp nhân; tín hiệu thực thể doanh nghiệp bị chia đôi, giảm độ tin cậy.</td>
+                  <td><strong>VSF chuẩn hóa thông tin nhất quán 100%:</strong> Tên thương hiệu Shinelink được đồng bộ trên toàn bộ website và các hồ sơ số bên ngoài.</td>
+                </tr>
+                <tr>
+                  <td><strong>Tên thương hiệu gần như chưa có ai tìm kiếm tại Việt Nam</strong></td>
+                  <td>Từ khóa "xích shinelink" dưới 10 lượt tìm kiếm/tháng, trong khi "xích tsubaki", "xích kana", "xích donghua" đạt 100 lượt/tháng.</td>
+                  <td>Google và các kỹ sư nhà máy chưa nhận diện được thương hiệu Shinelink tại thị trường Việt Nam.</td>
+                  <td><strong>VSF triển khai chiến lược nội dung B2B phủ sóng:</strong> Viết các bài so sánh thông số tương đương hàng Nhật, bài PR báo ngành để kéo nhận diện thương hiệu tăng vọt.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- HỘP CẢNH BÁO 6 RỦI RO SCALED CONTENT ABUSE -->
         <div class="note-box warn" style="margin-top: 24px;">
           <div class="note-title">
-            <span>⚠️ Kết Quả Rà Soát Kỹ Thuật Website Hiện Tại (shinelinkgroup.com) &amp; Cảnh Báo Scaled Content Abuse</span>
+            <span>⚠️ Vì Sao Không Nên Dịch Nguyên Trạng 133 Bài Viết Cũ Sang shinelink.vn?</span>
           </div>
           <p>
-            Đội ngũ VSF đã kiểm toán toàn diện 250 URL trên sơ đồ site <code>shinelinkgroup.com</code> và đối chiếu dữ liệu công cụ phân tích tìm kiếm tại Việt Nam:
+            Dịch lại nội dung sẵn có là cách làm nhanh nhất để website mới có bài viết, nhưng với hiện trạng phân tích kỹ thuật nêu trên, việc dịch máy nguyên trạng sẽ mang theo toàn bộ điểm yếu của website cũ và đối mặt với <strong>6 rủi ro nghiêm trọng</strong>:
           </p>
-          <ul style="margin: 10px 0 10px 20px; line-height: 1.65; color: var(--text-main);">
-            <li><strong>Chưa có nội dung tiếng Việt trên Google:</strong> 0 từ khóa xếp hạng tại Việt Nam, 0 lượt truy cập tự nhiên. Mọi yêu cầu báo giá từ Google hiện đang thuộc về các công ty thương mại đối thủ.</li>
-            <li><strong>Thông số kỹ thuật bị giấu trong tệp PDF:</strong> 42/81 trang sản phẩm chỉ có nút tải PDF, không có bảng dữ liệu trực tiếp trên trang khiến Googlebot không thể lập chỉ mục cho các truy vấn kỹ thuật (bước xích, tải kéo đứt, vật liệu).</li>
-            <li><strong>87 bài tin tức viết chung chung, trùng lặp chủ đề:</strong> 6 bài về "Theme Park Chain", 3 bài về "Water Treatment Chain", 10 trang dùng chung 5 tiêu đề giống hệt nhau.</li>
-          </ul>
-          <p>
-            <strong>Cảnh báo chiến lược của VSF:</strong> Nếu dịch máy hoặc viết lại hàng loạt 133 bài cũ sẽ vi phạm chính sách <em>"Scaled Content Abuse"</em> (lạm dụng nội dung quy mô lớn) của Google Search Central, dẫn đến nguy cơ bị Google phạt hạ thứ hạng toàn trang. <strong>VSF khuyến nghị bỏ hẳn việc viết lại 133 bài cũ</strong>, chỉ giữ lại ~5 bài có giá trị thực tế (dự án Ethiopia, Bolivia, hướng dẫn lắp đặt/bảo trì) làm tư liệu kỹ thuật; toàn bộ nguồn lực chuyển sang biên soạn <strong>50 bài blog kỹ thuật B2B chuyên sâu mới</strong> đáp ứng đúng nhu cầu tra cứu của kỹ sư nhà máy Việt Nam.
+          <ol style="margin: 8px 0 12px 20px; line-height: 1.65; color: var(--text-main);">
+            <li><strong>Nội dung mỏng:</strong> Trang sản phẩm tiếng Anh chỉ có 1-3 câu; nếu chỉ dịch thô thì bản tiếng Việt vẫn chỉ có 1-3 câu, hoàn toàn không đủ dữ liệu để Google xếp hạng.</li>
+            <li><strong>Trùng lặp nội bộ:</strong> Các bài cùng chủ đề sau khi dịch sẽ tạo ra nhiều trang tiếng Việt gần giống nhau, tự cạnh tranh triệt tiêu lẫn nhau và Google chỉ chọn 1 trang để hiển thị.</li>
+            <li><strong>Vi phạm nghiêm trọng chính sách của Google (Scaled Content Abuse):</strong> Việc tạo hàng loạt trang bằng công cụ dịch tự động mà không bổ sung giá trị thực tế cho người đọc bị Google xếp vào hành vi lạm dụng nội dung quy mô lớn <em>(Nguồn: Google Search Central — Spam Policies)</em>. Hậu quả là toàn bộ tên miền mới shinelink.vn có thể bị phạt tác vụ thủ công (manual action) và hạ thứ hạng vĩnh viễn.</li>
+            <li><strong>Lệch hoàn toàn nhu cầu tìm kiếm:</strong> Bài tiếng Anh viết cho từ khóa toàn cầu chung chung, trong khi kỹ sư Việt Nam tìm kiếm cụ thể theo cỡ xích tiêu chuẩn, loại băng tải và bảng tra thông số kỹ thuật.</li>
+            <li><strong>Dịch sai thuật ngữ cơ khí chuyên ngành:</strong> Dịch máy các từ chuyên môn như <em>pintle, rivetless, bushed chain</em> dễ cho ra các cách gọi ngô nghê, sai lệch so với thói quen của kỹ sư nhà máy Việt Nam, gây mất uy tín thương hiệu ngay từ lần đọc đầu tiên.</li>
+            <li><strong>Làm loãng chủ đề trọng tâm:</strong> Những bài không liên quan thị trường công nghiệp Việt Nam (như Theme Park Chain) khiến thuật toán Google khó xác định shinelink.vn chuyên sâu về xích tải nặng cho nhà máy đường &amp; luyện kim.</li>
+          </ol>
+          <p style="font-weight: 600; color: var(--gold-pale); margin-top: 10px;">
+            💡 Đề xuất chiến lược của VSF: Shinelink nên dùng bản dịch cũ làm nguồn tư liệu đầu vào về thông số kích thước và hình ảnh dự án. Đội ngũ VSF sẽ trực tiếp biên tập lại 30 trang sản phẩm chủ lực và biên soạn mới hoàn toàn 50 bài blog kỹ thuật B2B chuyên sâu. Đối với 87 bài tin cũ (133 URL), VSF khuyến nghị bỏ hẳn việc dịch lại hàng loạt, vừa giúp Shinelink tiết kiệm ngân sách, vừa loại bỏ hoàn toàn nguy cơ bị Google xử phạt.
+          </p>
+        </div>
+
+        <!-- HỘP KẾT LUẬN MỤC 01 -->
+        <div class="note-box navy" style="margin-top: 20px;">
+          <div class="note-title">
+            <span>🎯 Kết Luận: Lợi Thế Vượt Trội Khi VSF Xây Dựng shinelink.vn Mới Từ Đầu</span>
+          </div>
+          <p style="color: var(--text-main); line-height: 1.65;">
+            Shinelink đã sở hữu sẵn danh mục sản phẩm đồ sộ, tài liệu kỹ thuật gốc và các dự án thực tế tầm cỡ quốc tế. Việc bắt đầu với tên miền mới <strong>shinelink.vn</strong> do <strong>Vietnam Sales Force trực tiếp thiết kế, lập trình Pure Code và tối ưu nội dung</strong> là một lợi thế chiến lược rất lớn: Website hoàn toàn không phải kế thừa bất kỳ lỗi kỹ thuật hay liên kết rác nào từ hệ thống cũ. Mọi trang sản phẩm, bài viết kỹ thuật, cấu trúc schema và tốc độ tải trang &lt; 1s đều được VSF chuẩn hóa hoàn hảo ngay từ ngày đầu go-live mà không cần qua bất kỳ đơn vị trung gian nào.
           </p>
         </div>
       </section>
@@ -2259,14 +2647,103 @@
           </div>
         </div>
 
+        <!-- NHẬN XÉT CHUYÊN SÂU CỦA VSF VỀ DỮ LIỆU ĐỐI THỦ -->
         <div class="note-box navy" style="margin-top: 24px;">
           <div class="note-title">
-            <span>🎯 Kết Luận: 2 Lợi Thế Vàng Của Shinelink Tại Thị Trường Việt Nam</span>
+            <span>🔍 Nhận Xét Chuyên Sâu Của Đội Ngũ Tăng Trưởng Số VSF</span>
           </div>
-          <ol style="margin: 8px 0 8px 20px; line-height: 1.65; color: var(--text-main);">
-            <li><strong>Shinelink là NHÀ SẢN XUẤT TRỰC TIẾP:</strong> Tất cả 5 đối thủ dẫn đầu hiện nay đều là công ty thương mại thuần túy. Nhà máy thực tế, thông số kỹ thuật gốc, năng lực tùy biến theo bản vẽ kể cả mẫu xích đã ngừng sản xuất và 2 dự án nhà máy đường quốc tế (Ethiopia, Bolivia) là những bằng chứng năng lực đắt giá mà đối thủ thương mại không thể có được.</li>
-            <li><strong>Lợi thế giá &amp; tùy biến so với hàng Nhật chưa từng được ai khai thác trên Google:</strong> Trang 1 của "xích tsubaki", "xích kana" hiện chỉ có bài bán hàng chính hãng giá cao. Các bài so sánh thông số, tương đương mã xích và giải pháp thay thế từ Shinelink sẽ đón trúng tâm lý của các Trưởng phòng Kỹ thuật đang tìm kiếm giải pháp giảm chi phí bảo trì mà vẫn đảm bảo độ bền nhà máy.</li>
-          </ol>
+          <p style="line-height: 1.7; color: var(--text-main);">
+            Qua phân tích chi tiết dữ liệu Ahrefs và kết quả tìm kiếm Google Việt Nam, cả <strong>5 đối thủ dẫn đầu hiện nay đều là công ty thương mại hoặc nhà phân phối thuần túy</strong>. Mỗi website đang xếp hạng từ 35 đến 110 từ khóa tại Việt Nam và thu về khoảng 319 đến 1.400 lượt truy cập tự nhiên mỗi tháng.
+          </p>
+          <p style="line-height: 1.7; color: var(--text-main); margin-top: 8px;">
+            <strong>Điểm cốt lõi đáng chú ý nhất:</strong> Phần lớn lưu lượng truy cập của các website này đến từ các sản phẩm phụ trợ lân cận (bảng tra vòng bi, băng tải cao su, bánh răng hộp số, máng cáp nhựa hoặc xích inox dân dụng). <em>Nếu tính riêng nhóm từ khóa xích công nghiệp và xích tải nặng</em>, mỗi website đối thủ thực tế chỉ thu về khoảng <strong>90 đến 470 lượt truy cập mỗi tháng</strong> (cao nhất là Cơ Khí Nguyên Việt với ~470 lượt/tháng).
+          </p>
+          <p style="line-height: 1.7; color: var(--text-main); margin-top: 8px;">
+            Uy tín tên miền (Domain Rating - DR) của nhóm dẫn đầu chỉ ở mức 0 đến 34, không quá cao. Dù shinelink.vn bắt đầu từ con số 0 nên phải xây dựng bài bản cả nội dung và liên kết nền tảng từ đầu, nhưng điểm thuận lợi quyết định là <strong>hoàn toàn không có đối thủ nào là nhà sản xuất trực tiếp</strong>. Mức lưu lượng 500 - 700 lượt/tháng riêng cho mảng xích của nhóm dẫn đầu chính là một đích ngắm cụ thể, khả thi mà VSF cam kết đưa Shinelink vượt qua sau 12 tháng (mục tiêu tháng 12 đạt ≥ 690 lượt/tháng, tổng cộng dồn ≥ 3.000 lượt).
+          </p>
+        </div>
+
+        <!-- 2.2 HAI NHÓM ĐỐI THỦ CHIA SẺ THỊ PHẦN TÌM KIẾM -->
+        <div style="margin-top: 28px;">
+          <h4 style="font-family: var(--font-display); font-size: 1.25rem; color: var(--gold); margin-bottom: 12px;">
+            2.2. Hai Nhóm Website Khác Đang Cùng Chia Sẻ Thị Phần Tìm Kiếm
+          </h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 14px;">
+            Bên cạnh 5 đối thủ chuyên về xích nêu trên, thị phần tìm kiếm ngành cơ khí tại Việt Nam còn chịu sự cạnh tranh từ hai nhóm website:
+          </p>
+          <div class="strengths-grid">
+            <div class="strength-card">
+              <div class="strength-title">🏭 Các Công Ty Thiết Bị &amp; Băng Tải Lớn</div>
+              <div class="strength-desc">
+                Xích chỉ là một phần trong danh mục sản phẩm, nhưng nhờ toàn bộ website có lưu lượng tổng thể rất cao nên họ vẫn chiếm giữ nhiều vị trí Top Google:
+                <ul style="margin: 8px 0 0 16px; padding: 0; line-height: 1.6;">
+                  <li><strong>Hoàng Long Vũ (hoanglongvu.com):</strong> Chuyên motor &amp; hộp số (toàn trang đạt 6.983 visits/tháng); đứng đầu Google ở từ khóa "sên công nghiệp", Top 3 ở "bảng tra thông số xích" và "đĩa xích công nghiệp".</li>
+                  <li><strong>Intech Group (intech-group.vn):</strong> Chuyên hệ thống băng tải (đạt 2.899 visits/tháng); giữ Top 3 từ khóa "băng tải xích tấm".</li>
+                </ul>
+              </div>
+            </div>
+            <div class="strength-card">
+              <div class="strength-title">⚙️ Các Website Xích Quy Mô Nhỏ Hơn</div>
+              <div class="strength-desc">
+                Lưu lượng thấp hơn nhóm dẫn đầu nhưng vẫn đang bám trụ nhiều vị trí trên trang 1 Google nhờ thời gian hoạt động lâu năm:
+                <ul style="margin: 8px 0 0 16px; padding: 0; line-height: 1.6;">
+                  <li><strong>Hộp Giảm Tốc:</strong> Đạt ~393 lượt truy cập/tháng.</li>
+                  <li><strong>Nhông Xích 119:</strong> Đạt ~374 lượt truy cập/tháng.</li>
+                  <li><strong>Sumac &amp; Đại Kinh Bắc:</strong> Chuyên phân phối xích tiêu chuẩn.</li>
+                  <li><strong>Truyền Động Cơ Khí:</strong> Bán xích Tsubaki, uy tín tên miền DR 51 nhờ hệ thống liên kết cũ.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2.3 KẾT LUẬN CHIẾN LƯỢC: KHÓ KHĂN & THUẬN LỢI CỦA SHINELINK -->
+        <div style="margin-top: 32px;">
+          <div class="section-label" style="font-size: 0.72rem;">Đánh Giá Tương Quan • Cơ Sở Cam Kết Hiệu Quả</div>
+          <h3 style="font-family: var(--font-display); font-size: 1.35rem; color: var(--text-main); margin-bottom: 6px;">
+            2.3. Kết Luận Chiến Lược: <em>Thách Thức Cần Vượt Qua &amp; Lợi Thế Vàng Của Shinelink</em>
+          </h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 16px;">
+            Từ phân tích chuyên sâu các đối thủ trực tiếp và gián tiếp ở trên, đội ngũ VSF chỉ rõ những thách thức khách quan và 2 lợi thế cạnh tranh mang tính bước ngoặt của Shinelink:
+          </p>
+
+          <div class="swot-grid">
+            <!-- CỘT KHÓ KHĂN / THÁCH THỨC -->
+            <div class="swot-col challenge">
+              <div class="swot-title">
+                <span>⚠️ 3 Thách Thức Thực Tế Cần Giải Quyết</span>
+              </div>
+              <ul class="swot-list">
+                <li>
+                  <strong>Các từ khóa chung của ngành đang bị 5 website thương mại chiếm giữ:</strong> Các từ khóa "xích công nghiệp", "xích băng tải", "xích con lăn", các cỡ xích tiêu chuẩn (40, 50, 60, 80) hay bảng tra thông số đã được các đối thủ làm nội dung ổn định trong nhiều năm, mỗi bên nắm giữ trang 1 ở 1/4 đến gần 1/2 số từ khóa trọng tâm.
+                </li>
+                <li>
+                  <strong>Các hãng Nhật (Tsubaki, KANA) đã có mặt qua mạng lưới đại lý:</strong> Tsubaki phủ sóng qua MHP Technique và Truyền Động Cơ Khí; KANA đi qua Cơ Khí Nguyên Việt. Kỹ sư tìm kiếm tên hãng sẽ gặp ngay các nhà phân phối có sẵn bài giới thiệu tiếng Việt chi tiết.
+                </li>
+                <li>
+                  <strong>Chênh lệch uy tín tên miền (DR) ban đầu:</strong> Một số đối thủ đã có DR từ 34 đến 51 với hàng trăm đến hơn 2.300 tên miền trỏ về (như Toàn Phát, Hoàng Long Vũ); ngay cả nhóm DR 0-10 cũng đã có 250-420 tên miền giới thiệu. Trong khi đó, shinelink.vn là tên miền hoàn toàn mới, bắt đầu từ con số 0 tròn trĩnh.
+                </li>
+              </ul>
+            </div>
+
+            <!-- CỘT THUẬN LỢI / LỢI THẾ VÀNG -->
+            <div class="swot-col advantage">
+              <div class="swot-title">
+                <span>⭐ 2 Lợi Thế Cạnh Tranh Vàng Của Shinelink</span>
+              </div>
+              <ul class="swot-list">
+                <li>
+                  <strong>Shinelink là NHÀ SẢN XUẤT TRỰC TIẾP — đối thủ chỉ là đơn vị bán hàng:</strong> Nhà máy thực tế tại Hàng Châu, bảng thông số kỹ thuật gốc từ phòng R&amp;D, 02 dự án nhà máy đường quốc tế tại Ethiopia &amp; Bolivia, năng lực tùy biến gia công theo bản vẽ kể cả những mẫu xích các hãng khác đã ngừng sản xuất — đây là những giá trị cốt lõi đắt giá mà các công ty thương mại trung gian tuyệt đối không thể tự tạo ra được.
+                </li>
+                <li>
+                  <strong>Lợi thế giá &amp; giải pháp thay thế hàng Nhật chưa từng có ai khai thác trên Google Việt Nam:</strong> Trang 1 của "xích tsubaki", "xích kana" hiện nay chỉ có bài bán hàng chính hãng giá cao ngất ngưởng. Chuỗi bài so sánh thông số, tương đương mã xích và bài toán thay thế hàng Nhật do VSF biên soạn sẽ đánh trúng tâm lý của các Trưởng phòng Kỹ thuật nhà máy đang tìm giải pháp cắt giảm chi phí vật tư mà vẫn đảm bảo độ bền và an toàn dây chuyền.
+                </li>
+              </ul>
+              <div style="margin-top: 18px; padding-top: 14px; border-top: 1px solid rgba(196, 151, 58, 0.2); font-size: 0.84rem; color: var(--gold-pale); line-height: 1.55;">
+                👉 <em>Chiến lược 12 tháng của VSF được thiết kế xoay quanh chính 2 lợi thế vàng này để vượt qua các công ty thương mại trung gian và đoạt lấy vị trí dẫn đầu cho Shinelink.</em>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -2451,91 +2928,221 @@
           <h2 class="section-title">Kế Hoạch SEO 12 Tháng &amp; <em>Bản Đồ Từ Khóa B2B Chuyên Sâu</em></h2>
         </div>
 
-        <div class="badge-phase badge-phase-2">GIAI ĐOẠN 2 • TĂNG TRƯỞNG LƯU LƯỢNG &amp; THƯƠNG HIỆU B2B (12 THÁNG)</div>
+        <div class="badge-phase badge-phase-2">GIAI ĐOẠN 2 • CHIẾN LƯỢC TĂNG TRƯỞNG LƯU LƯỢNG &amp; THƯƠNG HIỆU B2B (12 THÁNG)</div>
 
         <p class="section-intro">
-          Chiến lược SEO 12 tháng do đội ngũ chuyên gia của <strong>Vietnam Sales Force</strong> trực tiếp hoạch định và triển khai. Toàn bộ kế hoạch tập trung thâm nhập 2 nhóm khách hàng mục tiêu có giá trị đơn hàng lớn nhất: <strong>Nhà máy sản xuất Mía đường (miền Nam)</strong> và <strong>Nhà máy Luyện kim, Khai khoáng (Quảng Ninh, Nghệ An)</strong>.
+          Kế hoạch SEO 12 tháng do <strong>Đội ngũ Kỹ thuật &amp; Tăng trưởng Số Vietnam Sales Force (VSF)</strong> trực tiếp hoạch định và thực thi trọn gói. Chiến lược bám sát vào <strong>hai lợi thế cạnh tranh vàng</strong> đã được xác lập ở Mục 02: <em>Nội dung chuyên sâu chỉ nhà sản xuất trực tiếp mới viết được</em>, và <em>Lợi thế về giá / khả năng tùy biến so với hàng Nhật Bản chưa từng có ai khai thác trên Google Việt Nam</em>.
         </p>
 
-        <!-- KEYWORD MAP -->
-        <h3 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--gold); margin: 24px 0 12px 0;">
-          Bản Đồ Từ Khóa Chiến Lược 2 Mũi Nhọn
-        </h3>
-        <div class="table-responsive">
-          <table class="custom-table">
-            <thead>
-              <tr>
-                <th style="width: 22%;">Nhóm Từ Khóa Mục Tiêu</th>
-                <th style="width: 38%;">Cụm Từ Khóa Kỹ Sư Tra Cứu (Long-tail)</th>
-                <th>Trang Đích &amp; Nội Dung Hỗ Trợ Trên Shinelink.vn</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Xích cho ngành mía đường</strong></td>
-                <td>
-                  <span class="kw-tag">cách chọn xích cho băng tải mía</span>
-                  <span class="kw-tag">xích tải mía loại nào tốt</span>
-                  <span class="kw-tag">xích chịu ăn mòn nhà máy đường</span>
-                  <span class="kw-tag">xích gầu tải nhà máy đường</span>
-                  <span class="kw-tag">xích tải mía bị giãn</span>
-                  <span class="kw-tag">tiêu chuẩn xích nhà máy mía đường</span>
-                </td>
-                <td style="font-size: 0.84rem;">
-                  <strong>Trang giải pháp chuyên ngành:</strong> "Xích Cho Nhà Máy Mía Đường" phân tích các vị trí sử dụng xích (băng tải mía, máy ép, băng bã, gầu tải), bảng thông số chống ăn mòn, dự án Welkait Sugar Mill Ethiopia và Bolivia; nút gửi bản vẽ nhận báo giá.
-                </td>
-              </tr>
-              <tr>
-                <td><strong>Xích công nghiệp nặng</strong></td>
-                <td>
-                  <span class="kw-tag">cách chọn xích tải nặng</span>
-                  <span class="kw-tag">xích tải nặng dùng trong ngành nào</span>
-                  <span class="kw-tag">xích bước lớn dùng để làm gì</span>
-                  <span class="kw-tag">xích tấm chịu lực</span>
-                  <span class="kw-tag">so sánh xích rèn và xích con lăn</span>
-                  <span class="kw-tag">cách đọc mã xích công nghiệp</span>
-                  <span class="kw-tag">cách tính số mắt xích băng tải</span>
-                  <span class="kw-tag">độ giãn xích cho phép</span>
-                  <span class="kw-tag">dấu hiệu xích cần thay</span>
-                  <span class="kw-tag">cách căng xích băng tải</span>
-                  <span class="kw-tag">tuổi thọ xích công nghiệp</span>
-                  <span class="kw-tag">xích Shinelink, Shinelink Vietnam</span>
-                </td>
-                <td style="font-size: 0.84rem;">
-                  <strong>Trang danh mục giải pháp:</strong> "Xích Công Nghiệp Tải Nặng" tổng hợp các dòng xích tải rèn, xích tải thép hàn, xích tải đúc chịu lực va đập cao; bảng tra cứu bước xích tiêu chuẩn ANSI/BS và nút gửi mã xích cũ để yêu cầu báo giá xích thay thế.
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <!-- 3.1 MỤC TIÊU & KHÁCH HÀNG MỤC TIÊU -->
+        <div style="margin-top: 24px;">
+          <h3 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--gold); margin-bottom: 14px;">
+            3.1. Mục Tiêu Tăng Trưởng &amp; Nhóm Khách Hàng B2B Trọng Tâm
+          </h3>
+
+          <div class="strengths-grid">
+            <div class="strength-card">
+              <div class="strength-title">🏭 Vị Thế Nhà Sản Xuất Shinelink</div>
+              <div class="strength-desc">
+                Nhà sản xuất xích công nghiệp nặng tại Hàng Châu, đã xuất khẩu sang Châu Âu và Bắc Mỹ, sở hữu 2 dự án nhà máy đường quốc tế tại Ethiopia và Bolivia. Hai điểm khác biệt sống còn:
+                <ul style="margin: 6px 0 0 16px; padding: 0; line-height: 1.55;">
+                  <li><strong>Tùy biến theo yêu cầu của từng nhà máy:</strong> Gia công theo bản vẽ kích thước riêng, kể cả những mẫu xích các hãng khác đã ngừng sản xuất.</li>
+                  <li><strong>Giá thấp hơn đáng kể so với hàng Nhật cùng loại:</strong> Tiết kiệm lớn chi phí vật tư nhà máy mà chất lượng kỹ thuật tương đương.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="strength-card">
+              <div class="strength-title">🎯 Khách Hàng Mục Tiêu &amp; Dữ Liệu Ngành</div>
+              <div class="strength-desc">
+                Người ra quyết định là <strong>Bộ phận Kỹ thuật &amp; Ban Giám đốc Nhà máy</strong>. Trong 12 tháng đầu, toàn bộ nội dung và từ khóa dồn trọng tâm cho ngành mía đường và nhu cầu xích tải nặng nói chung:
+                <ul style="margin: 6px 0 0 16px; padding: 0; line-height: 1.55;">
+                  <li><strong>Nhà máy mía đường ở miền Nam &amp; Tây Nguyên:</strong> Niên vụ 2024-2025 ép 12,43 triệu tấn mía, sản xuất trên 1,26 triệu tấn đường; niên vụ 2025-2026 dự kiến 25 nhà máy hoạt động với tổng công suất 124.000 tấn mía/ngày <em>(Nguồn: Hiệp hội Mía đường Việt Nam, dẫn lại bởi Viện Nghiên cứu Mía đường)</em>.</li>
+                  <li><strong>Nhà máy luyện kim và khai khoáng (Quảng Ninh, Nghệ An, Hà Tĩnh):</strong> TKV khai thác 38,6 triệu tấn than nguyên khai năm 2025 <em>(Nguồn: Sở Công Thương Đồng Nai, dẫn số liệu TKV)</em>; ngành thép đạt 24,7 triệu tấn thép thô, tăng 12% <em>(Nguồn: Hiệp hội Thép Việt Nam)</em>.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="note-box navy" style="margin-top: 14px;">
+            <p style="font-size: 0.88rem; color: var(--text-main); line-height: 1.65;">
+              📌 <strong>Đặc thù hành vi tìm kiếm &amp; Mục tiêu đo lường:</strong> Hai từ khóa Shinelink lựa chọn ("xích cho ngành mía đường" và "xích công nghiệp nặng") có ít người tìm trực tiếp nhưng <strong>giá trị mỗi đơn hàng là cực kỳ lớn</strong>. Lưu lượng truy cập chất lượng sẽ đến chủ yếu từ mạng lưới các từ khóa kỹ thuật cùng nghĩa (long-tail) dẫn về trang giải pháp. Mục tiêu của VSF: Đưa shinelink.vn có thứ hạng vững chắc và cải thiện liên tục cho danh mục từ khóa triển khai, từ đó kéo lưu lượng truy cập tự nhiên tăng trưởng đều đặn từ đúng nhóm kỹ sư nhà máy mục tiêu (cam kết ≥ 3.000 visits, Top 10 Google).
+            </p>
+          </div>
         </div>
 
-        <!-- 3 PILLARS OF SEO EXECUTION -->
-        <h3 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--gold); margin: 30px 0 16px 0;">
-          3 Trụ Cột Triển Khai Thực Thi Của VSF Trong 12 Tháng
-        </h3>
-        <div class="pillars-grid">
-          <div class="pillar-item">
-            <span class="pillar-tag">TRỤ CỘT 1 • ONPAGE CONTENT</span>
-            <h3 class="pillar-title">Tối Ưu 30 Trang Mũi Nhọn</h3>
-            <p class="pillar-desc">
-              Biên tập chuyên sâu cho <strong>2 trang giải pháp</strong> (Mía đường, Tải nặng) và <strong>28 trang sản phẩm chủ lực</strong>: đưa bảng thông số từ PDF lên web, tối ưu title/meta, ứng dụng theo ngành và nút gửi bản vẽ.
-            </p>
+        <!-- 3.2 BẢN ĐỒ TỪ KHÓA CHIẾN LƯỢC -->
+        <div style="margin-top: 28px;">
+          <h3 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--gold); margin-bottom: 8px;">
+            3.2. Bản Đồ Từ Khóa Chiến Lược 2 Mũi Nhọn
+          </h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 14px;">
+            Toàn bộ 12 tháng tập trung vào 2 từ khóa Shinelink đề xuất: <strong>"xích cho ngành mía đường"</strong> và <strong>"xích công nghiệp nặng"</strong>. Kỹ sư nhà máy tra cứu 2 nhu cầu này dưới nhiều dạng khác nhau: gõ tên nhu cầu, gõ tên sản phẩm theo thói quen trong nước, hoặc gõ một câu hỏi tra cứu kỹ thuật. VSF tối ưu đồng thời cả từ khóa mục tiêu và toàn bộ cụm từ khóa cùng nghĩa để mọi cách tìm kiếm đều điều hướng người đọc về đúng trang đích:
+          </p>
+
+          <div class="table-responsive">
+            <table class="custom-table">
+              <thead>
+                <tr>
+                  <th style="width: 20%;">Từ Khóa Mục Tiêu</th>
+                  <th style="width: 38%;">Từ Khóa Cùng Nghĩa Kỹ Sư Tra Cứu, Dẫn Về Trang Đích</th>
+                  <th>Trang Đích &amp; Nội Dung Hỗ Trợ Trên Shinelink.vn</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>xích cho ngành mía đường</strong></td>
+                  <td>
+                    <div style="display: flex; flex-direction: column; gap: 4px;">
+                      <span class="kw-tag">• cách chọn xích cho băng tải mía</span>
+                      <span class="kw-tag">• xích tải mía loại nào tốt</span>
+                      <span class="kw-tag">• xích chịu ăn mòn nhà máy đường</span>
+                      <span class="kw-tag">• xích gầu tải nhà máy đường</span>
+                      <span class="kw-tag">• xích tải mía bị giãn</span>
+                      <span class="kw-tag">• tiêu chuẩn xích nhà máy mía đường</span>
+                    </div>
+                  </td>
+                  <td style="font-size: 0.85rem; line-height: 1.6;">
+                    <strong>Trang giải pháp "Xích cho nhà máy đường":</strong> Phân tích chi tiết các vị trí sử dụng xích trong dây chuyền (băng tải mía, máy ép, băng bã mía, gầu tải), các dòng xích phù hợp kèm bảng thông số chống mài mòn, minh chứng dự án thực tế tại Ethiopia và Bolivia, nút kêu gọi gửi bản vẽ nhận báo giá.<br>
+                    <em>Hệ thống bổ trợ:</em> Các trang sản phẩm xích tải mía, xích cào, xích tấm, xích gầu tải, xích tải rèn, xích tải thép hàn và cụm bài kỹ thuật (chọn xích cho băng tải mía, thay xích hãng Nhật bằng xích tương đương, bảo trì mùa vụ) liên kết nội bộ trực tiếp về trang giải pháp.
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>xích công nghiệp nặng</strong></td>
+                  <td>
+                    <div style="display: flex; flex-direction: column; gap: 4px;">
+                      <span class="kw-tag">• cách chọn xích tải nặng</span>
+                      <span class="kw-tag">• xích tải nặng dùng trong ngành nào</span>
+                      <span class="kw-tag">• xích bước lớn dùng để làm gì</span>
+                      <span class="kw-tag">• xích tấm chịu lực</span>
+                      <span class="kw-tag">• so sánh xích rèn và xích con lăn</span>
+                      <span class="kw-tag">• cách đọc mã xích công nghiệp</span>
+                      <span class="kw-tag">• cách tính số mắt xích băng tải</span>
+                      <span class="kw-tag">• độ giãn xích cho phép</span>
+                      <span class="kw-tag">• dấu hiệu xích công nghiệp cần thay</span>
+                      <span class="kw-tag">• cách căng xích băng tải</span>
+                      <span class="kw-tag">• tuổi thọ xích công nghiệp</span>
+                      <span class="kw-tag">• xích Shinelink, Shinelink Vietnam (từ khóa thương hiệu)</span>
+                    </div>
+                  </td>
+                  <td style="font-size: 0.85rem; line-height: 1.6;">
+                    <strong>Trang danh mục "Xích công nghiệp nặng":</strong> Gom xích tải nặng, xích tải rèn, xích tải thép hàn, xích tải đúc chịu va đập cao, kèm bảng chọn xích theo tải trọng và ứng dụng công nghiệp.<br>
+                    <em>Hệ thống bổ trợ:</em> Trang chi tiết theo từng cỡ xích tiêu chuẩn và bài "bảng tra thông số xích tải nặng" kéo trọn vẹn lượt tìm kiếm có sẵn của thị trường và liên kết nội bộ về trang danh mục.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
-          <div class="pillar-item">
-            <span class="pillar-tag">TRỤ CỘT 2 • TECHNICAL BLOG</span>
-            <h3 class="pillar-title">50 Bài Blog Kỹ Thuật B2B</h3>
-            <p class="pillar-desc">
-              Biên soạn 50 bài viết chuyên môn cho kỹ sư: hướng dẫn tính bước xích, tra cứu mã tiêu chuẩn, <strong>bài so sánh thay thế hàng Nhật (Tsubaki, KANA)</strong>, vận hành bảo trì và case study dự án thực tế.
+          <!-- 4 NHÓM BÀI BLOG THÔNG TIN BỔ TRỢ CHUẨN AI OVERVIEW -->
+          <div style="margin-top: 24px;">
+            <h4 style="font-family: var(--font-display); font-size: 1.2rem; color: var(--text-main); margin-bottom: 10px;">
+              4 Nhóm Bài Blog Kỹ Thuật Bổ Trợ (Thiết Kế Chuẩn Trích Dẫn AI Overview &amp; Featured Snippet)
+            </h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 14px;">
+              Song song với hai nhóm từ khóa trên, VSF biên soạn 50 bài blog kỹ thuật chuyên sâu: Mỗi bài nhắm trúng một câu hỏi kỹ thuật kỹ sư thường tra cứu, trả lời trực tiếp ở đầu bài để được Google AI Overview trích dẫn, và đặt liên kết điều hướng về trang giải pháp hoặc trang sản phẩm tương ứng:
             </p>
-          </div>
 
-          <div class="pillar-item">
-            <span class="pillar-tag">TRỤ CỘT 3 • OFFPAGE &amp; ENTITY</span>
-            <h3 class="pillar-title">Xây Dựng Thực Thể &amp; Link</h3>
-            <p class="pillar-desc">
-              Thiết lập <strong>300 hồ sơ Social Entity</strong> để Google công nhận Shinelink tại VN; <strong>02 bài báo PR</strong> trên báo chí lớn; <strong>1.500 Textlink</strong> báo ngành &amp; báo tỉnh; <strong>04 Guest post</strong> và <strong>1.500 lượt chia sẻ MXH</strong>.
-            </p>
+            <div class="strengths-grid">
+              <div class="strength-card">
+                <div class="strength-title">📐 1. Bài Hướng Dẫn Chọn Xích</div>
+                <div class="strength-desc">
+                  Viết riêng cho từng vị trí làm việc trong nhà máy đường (băng tải mía, máy ép, băng bã, gầu tải) và cho tải nặng nói chung: công thức tính tải trọng kéo, cách chọn bước xích, chọn mác thép chịu mài mòn; liên kết trực tiếp về trang giải pháp và sản phẩm.
+                </div>
+              </div>
+
+              <div class="strength-card">
+                <div class="strength-title">🔍 2. Bài Tra Cứu Kỹ Thuật</div>
+                <div class="strength-desc">
+                  Giải quyết các nhu cầu có lượng tra cứu kỹ thuật cao nhất ngành: cách đọc mã xích công nghiệp, đối chiếu mã xích hãng Nhật, cách tính số mắt xích băng tải, độ giãn xích cho phép, bảng tra thông số theo cỡ xích (nhóm mang lại lưu lượng nhiều nhất cho đối thủ).
+                </div>
+              </div>
+
+              <div class="strength-card">
+                <div class="strength-title">⚖️ 3. Bài So Sánh &amp; Thay Thế Hãng Nhật</div>
+                <div class="strength-desc">
+                  Đối chiếu trực tiếp với Tsubaki, KANA: xích Shinelink tương đương mã nào, khác biệt về giá và thời gian giao hàng, khả năng gia công theo bản vẽ và làm lại mẫu xích hãng Nhật đã ngừng sản xuất; đón trúng kỹ sư tìm theo tên hãng (100 lượt tìm/tháng mỗi từ).
+                </div>
+              </div>
+
+              <div class="strength-card">
+                <div class="strength-title">🛠️ 4. Bài Vận Hành, Bảo Dưỡng &amp; Dự Án</div>
+                <div class="strength-desc">
+                  Quy trình bảo trì xích theo mùa vụ ép mía, dấu hiệu nhận biết xích cần thay thế, kỹ thuật căng xích băng tải, dự báo tuổi thọ xích theo môi trường làm việc, bài học thực tế từ 2 dự án nhà máy đường Ethiopia và Bolivia; xây dựng niềm tin tuyệt đối trước khi kỹ sư gửi bản vẽ.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3.3 BA HẠNG MỤC TRIỂN KHAI THỰC THI CỦA VSF -->
+        <div style="margin-top: 32px;">
+          <h3 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--gold); margin-bottom: 6px;">
+            3.3. Ba Hạng Mục Triển Khai Thực Thi Của VSF (Onpage • Content • Offpage)
+          </h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 16px;">
+            Kế hoạch bám chắc vào 2 lợi thế vàng của Shinelink: Nội dung chỉ nhà sản xuất trực tiếp mới viết được, và lợi thế giá / tùy biến so với hàng Nhật chưa ai khai thác trên Google. Ba hạng mục dưới đây tương ứng trực tiếp với các dòng ngân sách cam kết:
+          </p>
+
+          <div class="pillars-grid">
+            <!-- TRỤ CỘT 1: ONPAGE -->
+            <div class="pillar-item">
+              <span class="pillar-tag">HẠNG MỤC 1 · ONPAGE</span>
+              <h3 class="pillar-title">Nền Tảng Kỹ Thuật Chuẩn Từ Đầu</h3>
+              <ul class="pillar-list">
+                <li>Cấu trúc chuyên mục và đường dẫn URL chuẩn SEO (Clean URL), mỗi sản phẩm một địa chỉ duy nhất có thẻ <code>canonical</code>.</li>
+                <li>Khung tiêu đề (Title), thẻ mô tả (Meta Description) và tiêu đề chính H1/H2 chuẩn phân cấp theo từng loại trang.</li>
+                <li>Khai báo thẻ ngôn ngữ <code>hreflang</code> hai chiều giữa shinelinkgroup.com và shinelink.vn.</li>
+                <li>Tích hợp khối dữ liệu có cấu trúc Schema Organization và Schema Product chuẩn mực.</li>
+                <li>Sơ đồ trang XML sitemap, file robots.txt, cấu hình chuẩn file <code>llms.txt</code> cho AI Search, kết nối Google Search Console và GA4.</li>
+              </ul>
+              <div class="pillar-action">
+                <strong>Cách làm trực tiếp của VSF:</strong> Đội ngũ Kỹ thuật &amp; Tăng trưởng Số VSF trực tiếp thiết kế, lập trình Pure Code toàn bộ nền tảng website shinelink.vn và tự tiến hành 2 vòng audit kỹ thuật onpage nghiêm ngặt (trước và sau khi go-live) để đo lường tốc độ Core Web Vitals &lt; 1s, đảm bảo mọi trang sản phẩm đạt chuẩn xếp hạng ngay từ ngày đầu tiên mà không qua bất kỳ đơn vị trung gian nào.
+              </div>
+              <div class="pillar-res">
+                🎯 <strong>Kết quả:</strong> Mọi trang đủ điều kiện xếp hạng ngay từ ngày đầu hoạt động, tuyệt đối không phải sửa lại sau.
+              </div>
+            </div>
+
+            <!-- TRỤ CỘT 2: CONTENT -->
+            <div class="pillar-item">
+              <span class="pillar-tag">HẠNG MỤC 2 · CONTENT</span>
+              <h3 class="pillar-title">Nội Dung Cho Kỹ Sư Nhà Máy</h3>
+              <ul class="pillar-list">
+                <li><strong>02 Trang giải pháp chuyên sâu:</strong> "Xích cho nhà máy đường" và "Xích công nghiệp nặng", viết từ thông số gốc, năng lực xưởng sản xuất và 2 dự án Ethiopia, Bolivia.</li>
+                <li><strong>Tối ưu 28 trang sản phẩm mũi nhọn</strong> từ nội dung Shinelink đã có, đặt tên theo cách gọi trong nước: cỡ xích tiêu chuẩn, xích con lăn, xích băng tải, xích cào, xích tấm, xích gầu tải, xích tải rèn, xích tải thép hàn.</li>
+                <li><strong>Bảng thông số kỹ thuật HTML ngay trên trang</strong>, chuyển đổi trực tiếp từ tài liệu PDF của Shinelink để Google đọc được.</li>
+                <li><strong>50 bài blog kỹ thuật B2B</strong> theo 4 nhóm chủ đề ở mục 3.2: hướng dẫn chọn xích, tra cứu kỹ thuật, so sánh và thay thế hàng Nhật (Tsubaki, KANA), vận hành và dự án.</li>
+                <li>Mọi bài viết theo chuẩn được <strong>AI Overview trích dẫn:</strong> đoạn tóm tắt trực tiếp ở đầu, bảng thông số, câu hỏi thường gặp FAQ.</li>
+                <li>Đội ngũ VSF phối hợp Bộ phận Kỹ thuật Shinelink thẩm định thông số trước khi xuất bản.</li>
+              </ul>
+              <div class="pillar-action">
+                <strong>Cách làm trực tiếp của VSF:</strong> Đội ngũ biên tập viên kỹ thuật công nghiệp của VSF trực tiếp chấp bút, biên dịch tài liệu kỹ thuật gốc của Shinelink sang văn phong kỹ sư cơ khí Việt Nam, cam kết không dùng công cụ dịch tự động hàng loạt.
+              </div>
+              <div class="pillar-res">
+                🎯 <strong>Kết quả:</strong> Phủ trọn vẹn nhu cầu tra cứu của kỹ sư nhà máy và chuyển đổi họ thành yêu cầu báo giá trên shinelink.vn.
+              </div>
+            </div>
+
+            <!-- TRỤ CỘT 3: OFFPAGE -->
+            <div class="pillar-item">
+              <span class="pillar-tag">HẠNG MỤC 3 · OFFPAGE &amp; ENTITY</span>
+              <h3 class="pillar-title">Uy Tín Thực Thể Ngoài Website</h3>
+              <ul class="pillar-list">
+                <li><strong>Xây dựng hồ sơ thương hiệu và liên kết nền (Social Entity):</strong> 300 hồ sơ Shinelink trên 300 mạng xã hội, nền tảng nội dung và diễn đàn kỹ thuật uy tín, mỗi hồ sơ có liên kết về shinelink.vn, hoàn thành ngay trong tháng đầu để Google nhận diện Shinelink là doanh nghiệp thật tại Việt Nam.</li>
+                <li><strong>02 Bài PR trên báo uy tín:</strong> Giới thiệu năng lực nhà sản xuất và các dự án quốc tế tiêu biểu, khẳng định thương hiệu khi kỹ sư tra cứu.</li>
+                <li><strong>1.500 Textlink báo ngành &amp; báo tỉnh uy tín:</strong> Liên kết đặt trong ngữ cảnh bài viết trên hệ thống báo chí, nhịp độ tăng đều đặn để nâng cao Domain Rating bền vững.</li>
+                <li><strong>04 Bài Guest post chuyên ngành:</strong> Đăng trên các website kỹ thuật, xây dựng và tin tổng hợp có uy tín tên miền cao.</li>
+                <li><strong>1.500 Lượt chia sẻ MXH &amp; diễn đàn kỹ sư:</strong> Kích thích người đọc thực, tăng tốc độ phát hiện và lập chỉ mục trang mới cho Googlebot.</li>
+                <li>Xây tín hiệu thực thể để từ khóa <em>"xích Shinelink"</em> dần được nhận diện và tìm kiếm chủ động tại Việt Nam như các hãng Nhật.</li>
+              </ul>
+              <div class="pillar-action">
+                <strong>Cách làm trực tiếp của VSF:</strong> Đội ngũ VSF trực tiếp quản trị mạng lưới đối tác báo chí, diễn đàn và kiểm soát chặt chẽ chất lượng liên kết, loại trừ 100% link spam rác.
+              </div>
+              <div class="pillar-res">
+                🎯 <strong>Kết quả:</strong> Tạo nền uy tín vững chắc để shinelink.vn leo Top Google bền vững và không bị tụt hạng khi thuật toán thay đổi.
+              </div>
+            </div>
           </div>
         </div>
       </section>
