@@ -1591,6 +1591,91 @@
       gap: 8px;
     }
 
+    /* TIMELINE DETAILED SERVICE HEADERS (DARK THEME DEFAULT) */
+    .timeline-service-header {
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+      transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .timeline-service-icon {
+      font-size: 1.25rem;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+    .timeline-service-info {
+      display: flex;
+      flex-direction: column;
+    }
+    .timeline-service-tag {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+    .timeline-service-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-top: 2px;
+      line-height: 1.35;
+    }
+
+    /* Dịch Vụ 1: Website B2B */
+    .timeline-service-header.srv-web {
+      background: linear-gradient(135deg, #1a3a5c, #0d2540);
+      border-color: rgba(196, 151, 58, 0.35);
+      border-left: 4px solid var(--gold);
+    }
+    .timeline-service-header.srv-web .timeline-service-tag {
+      color: var(--gold);
+    }
+
+    /* Dịch Vụ 2: SEO */
+    .timeline-service-header.srv-seo {
+      background: linear-gradient(135deg, #0e3735, #082424);
+      border-color: rgba(16, 185, 129, 0.35);
+      border-left: 4px solid var(--accent-green);
+    }
+    .timeline-service-header.srv-seo .timeline-service-tag {
+      color: var(--accent-green);
+    }
+
+    /* Dịch Vụ 3: Google Ads */
+    .timeline-service-header.srv-ads {
+      background: linear-gradient(135deg, #2a1b0a, #1a0f05);
+      border-color: rgba(234, 88, 12, 0.35);
+      border-left: 4px solid #EA580C;
+    }
+    .timeline-service-header.srv-ads .timeline-service-tag {
+      color: #FB923C;
+    }
+
+    /* Timeline month sub-labels & highlights (Dark default) */
+    .timeline-month-sub.seo {
+      font-size: 0.72rem;
+      color: var(--accent-green);
+    }
+    .timeline-month-sub.ads {
+      font-size: 0.72rem;
+      color: #FB923C;
+    }
+    .timeline-highlight-orange {
+      color: #FB923C;
+      font-weight: 700;
+    }
+    .timeline-gantt-ads-label {
+      color: #FB923C;
+    }
+    .timeline-gantt-ads-box {
+      color: #FB923C;
+    }
+
     /* ══════════════════════════════════════════════════════════════════
        SECTION 08: SIGN-OFF & ACCEPTANCE BLOCK (VSF & SHINELINK)
        ══════════════════════════════════════════════════════════════════ */
@@ -2306,6 +2391,80 @@
     [data-theme="light"] .pillar-action {
       background: #F5EFE4;
       border-left-color: #8C6016;
+    }
+
+    /* LIGHT THEME TIMELINE SERVICE HEADERS & SECTION 08 ELEMENTS */
+    [data-theme="light"] .timeline-service-header {
+      box-shadow: 0 4px 14px rgba(8, 20, 42, 0.05);
+    }
+    [data-theme="light"] .timeline-service-title {
+      color: var(--text-main);
+    }
+
+    /* Dịch Vụ 1 Light: Website */
+    [data-theme="light"] .timeline-service-header.srv-web {
+      background: linear-gradient(135deg, #FFFDF7 0%, #F7F1E4 100%);
+      border-color: rgba(168, 121, 38, 0.3);
+      border-left: 4px solid var(--gold);
+    }
+    [data-theme="light"] .timeline-service-header.srv-web .timeline-service-tag {
+      color: #8C6016;
+    }
+
+    /* Dịch Vụ 2 Light: SEO */
+    [data-theme="light"] .timeline-service-header.srv-seo {
+      background: linear-gradient(135deg, #F0FDF4 0%, #E6F7EC 100%);
+      border-color: rgba(16, 185, 129, 0.35);
+      border-left: 4px solid #059669;
+    }
+    [data-theme="light"] .timeline-service-header.srv-seo .timeline-service-tag {
+      color: #047857;
+    }
+
+    /* Dịch Vụ 3 Light: Google Ads */
+    [data-theme="light"] .timeline-service-header.srv-ads {
+      background: linear-gradient(135deg, #FFF7ED 0%, #FEEDDC 100%);
+      border-color: rgba(234, 88, 12, 0.3);
+      border-left: 4px solid #EA580C;
+    }
+    [data-theme="light"] .timeline-service-header.srv-ads .timeline-service-tag {
+      color: #C2410C;
+    }
+
+    /* Light theme sub labels & highlights */
+    [data-theme="light"] .timeline-month-sub.seo {
+      color: #047857;
+      font-weight: 600;
+    }
+    [data-theme="light"] .timeline-month-sub.ads {
+      color: #C2410C;
+      font-weight: 600;
+    }
+    [data-theme="light"] .timeline-highlight-orange {
+      color: #C2410C;
+    }
+    [data-theme="light"] .timeline-gantt-ads-label {
+      color: #C2410C !important;
+    }
+    [data-theme="light"] .timeline-gantt-ads-box {
+      background: #FFEDD5 !important;
+      color: #C2410C !important;
+      border-color: #FDBA74 !important;
+    }
+    [data-theme="light"] .timeline-card {
+      background: #F0FDF4;
+      border: 1px solid rgba(16, 185, 129, 0.25);
+    }
+    [data-theme="light"] .timeline-card-title {
+      color: #047857;
+    }
+    [data-theme="light"] .note-box.success {
+      background: #F0FDF4;
+      border-color: #86EFAC;
+      border-left-color: #059669;
+    }
+    [data-theme="light"] .note-box.success .note-title {
+      color: #047857;
     }
 
     /* ══════════════════════════════════════════════════════════════════
@@ -5319,7 +5478,7 @@
               <div style="font-size: 0.68rem; color: var(--text-muted); text-align: center; font-weight: 600;">T4</div>
               <div style="font-size: 0.68rem; color: var(--text-muted); text-align: center; font-weight: 600;">T5</div>
               <div style="font-size: 0.68rem; color: var(--text-muted); text-align: center; font-weight: 600;">T6</div>
-              <div style="font-size: 0.68rem; color: #FB923C; text-align: center; font-weight: 700;">T7</div>
+              <div class="timeline-gantt-ads-label" style="font-size: 0.68rem; text-align: center; font-weight: 700;">T7</div>
               <div style="font-size: 0.68rem; color: var(--text-muted); text-align: center; font-weight: 600;">T8</div>
               <div style="font-size: 0.68rem; color: var(--text-muted); text-align: center; font-weight: 600;">T9</div>
               <div style="font-size: 0.68rem; color: var(--text-muted); text-align: center; font-weight: 600;">T10</div>
@@ -5369,15 +5528,15 @@
 
             <!-- Row 3: Google Ads -->
             <div style="display: grid; grid-template-columns: 130px repeat(14, 1fr); gap: 2px; margin-bottom: 6px; align-items: center;">
-              <div style="font-size: 0.78rem; font-weight: 700; color: #FB923C; padding-right: 8px;">📊 Google Ads</div>
-              <div style="background: rgba(234,88,12,0.12); border: 1px dashed #EA580C; border-radius: 4px; height: 28px; display: flex; align-items: center; justify-content: center; font-size: 0.58rem; color: #FB923C;">Chuẩn bị</div>
+              <div class="timeline-gantt-ads-label" style="font-size: 0.78rem; font-weight: 700; padding-right: 8px;">📊 Google Ads</div>
+              <div class="timeline-gantt-ads-box" style="background: rgba(234,88,12,0.12); border: 1px dashed #EA580C; border-radius: 4px; height: 28px; display: flex; align-items: center; justify-content: center; font-size: 0.58rem;">Chuẩn bị</div>
               <div style="background: #EA580C; border-radius: 4px; height: 28px; display: flex; align-items: center; justify-content: center; font-size: 0.62rem; font-weight: 700; color: #fff;">Chạy T1</div>
               <div style="background: #EA580C; border-radius: 4px; height: 28px; display: flex; align-items: center; justify-content: center; font-size: 0.62rem; font-weight: 700; color: #fff;">T2 Ads</div>
               <div style="background: #EA580C; border-radius: 4px; height: 28px; display: flex; align-items: center; justify-content: center; font-size: 0.62rem; font-weight: 700; color: #fff;">T3 Ads</div>
               <div style="background: #EA580C; border-radius: 4px; height: 28px; display: flex; align-items: center; justify-content: center; font-size: 0.62rem; font-weight: 700; color: #fff;">T4 Ads</div>
               <div style="background: #EA580C; border-radius: 4px; height: 28px; display: flex; align-items: center; justify-content: center; font-size: 0.62rem; font-weight: 700; color: #fff;">T5 Ads</div>
               <div style="background: linear-gradient(90deg, #EA580C, #10B981); border-radius: 4px; height: 28px; display: flex; align-items: center; justify-content: center; font-size: 0.58rem; font-weight: 700; color: #fff; white-space: nowrap; padding: 0 2px;">✅ T6 Ads</div>
-              <div style="background: rgba(234,88,12,0.1); border: 1px dashed rgba(234,88,12,0.3); border-radius: 4px; height: 28px; display: flex; align-items: center; justify-content: center; font-size: 0.58rem; color: #FB923C;">Đánh giá</div>
+              <div class="timeline-gantt-ads-box" style="background: rgba(234,88,12,0.1); border: 1px dashed rgba(234,88,12,0.3); border-radius: 4px; height: 28px; display: flex; align-items: center; justify-content: center; font-size: 0.58rem;">Đánh giá</div>
               <div style="height: 28px;"></div>
               <div style="height: 28px;"></div>
               <div style="height: 28px;"></div>
@@ -5398,14 +5557,14 @@
           </div>
         </div>
 
-        <!-- ── QA WEBSITE ── -->
+        <!-- ── DỊCH VỤ 1: TIẾN ĐỘ CHI TIẾT WEBSITE ── -->
         <div style="margin-bottom: 32px;">
           <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
-            <div style="background: linear-gradient(135deg, #1a3a5c, #0d2540); border: 1px solid var(--border-color); border-left: 4px solid var(--gold); border-radius: 8px; padding: 10px 20px; display: flex; align-items: center; gap: 10px;">
-              <span style="font-size: 1.1rem;">🏗️</span>
-              <div>
-                <div style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--gold); font-weight: 700;">Dịch Vụ 1 — Tiến Độ Chi Tiết</div>
-                <div style="font-size: 0.95rem; font-weight: 700; color: var(--text-primary); margin-top: 2px;">Xây Dựng Website B2B shinelink.vn (Tháng 1 — 4 Tuần Hoàn Thiện &amp; Bàn Giao)</div>
+            <div class="timeline-service-header srv-web">
+              <span class="timeline-service-icon">🏗️</span>
+              <div class="timeline-service-info">
+                <div class="timeline-service-tag">Dịch Vụ 1 — Tiến Độ Chi Tiết</div>
+                <div class="timeline-service-title">Xây Dựng Website B2B shinelink.vn (Tháng 1 — 4 Tuần Hoàn Thiện &amp; Bàn Giao)</div>
               </div>
             </div>
           </div>
@@ -5453,7 +5612,7 @@
                     • Cấu hình Google Analytics 4 (GA4) &amp; Google Search Console (GSC) — sẵn sàng làm nền tảng cho SEO và Google Ads.<br>
                     • Khắc phục toàn bộ lỗi phát sinh sau vòng review của Shinelink.<br>
                     • <strong>Bàn giao chính thức website shinelink.vn</strong> kèm 100% mã nguồn sạch &amp; tài khoản quản trị hạ tầng.<br>
-                    • <span style="color: #FB923C; font-weight: 700;">→ Website go-live hoàn tất, sẵn sàng để Tháng 2 (T2) khởi động song song SEO &amp; Google Ads.</span>
+                    • <span class="timeline-highlight-orange">→ Website go-live hoàn tất, sẵn sàng để Tháng 2 (T2) khởi động song song SEO &amp; Google Ads.</span>
                   </td>
                   <td style="text-align: right;" class="price-num"><strong style="color: var(--accent-green);">✅ Nghiệm thu &amp; Bàn giao website</strong></td>
                 </tr>
@@ -5465,11 +5624,11 @@
         <!-- ── DỊCH VỤ 2: TIẾN ĐỘ SEO 12 THÁNG ── -->
         <div style="margin-bottom: 32px;">
           <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
-            <div style="background: linear-gradient(135deg, #1a3a5c, #0d2540); border: 1px solid var(--border-color); border-left: 4px solid var(--accent-green); border-radius: 8px; padding: 10px 20px; display: flex; align-items: center; gap: 10px;">
-              <span style="font-size: 1.1rem;">📈</span>
-              <div>
-                <div style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-green); font-weight: 700;">Dịch Vụ 2 — Chính Thức Vận Hành</div>
-                <div style="font-size: 0.95rem; font-weight: 700; color: var(--text-primary); margin-top: 2px;">Chiến Lược SEO &amp; Tăng Trưởng 12 Tháng (Bắt Đầu Từ Tháng 2 → Tháng 13)</div>
+            <div class="timeline-service-header srv-seo">
+              <span class="timeline-service-icon">📈</span>
+              <div class="timeline-service-info">
+                <div class="timeline-service-tag">Dịch Vụ 2 — Chính Thức Vận Hành</div>
+                <div class="timeline-service-title">Chiến Lược SEO &amp; Tăng Trưởng 12 Tháng (Bắt Đầu Từ Tháng 2 → Tháng 13)</div>
               </div>
             </div>
           </div>
@@ -5487,7 +5646,7 @@
               </thead>
               <tbody>
                 <tr>
-                  <td style="text-align: center;"><strong>Tháng 2</strong><br><span style="font-size: 0.72rem; color: var(--accent-green);">(Tháng 1 SEO)</span></td>
+                  <td style="text-align: center;"><strong>Tháng 2</strong><br><span class="timeline-month-sub seo">(Tháng 1 SEO)</span></td>
                   <td>
                     • Hoàn thành bộ tiêu chuẩn kỹ thuật SEO &amp; Audit sau go-live website shinelink.vn.<br>
                     • Bàn giao 10 trang sản phẩm tối ưu đầu tiên (10 × 300.000 = 3.000.000 đ).<br>
@@ -5499,7 +5658,7 @@
                   <td style="text-align: right;" class="price-num"><strong style="color: var(--accent-green);">6.930.000</strong></td>
                 </tr>
                 <tr>
-                  <td style="text-align: center;"><strong>Tháng 3</strong><br><span style="font-size: 0.72rem; color: var(--accent-green);">(Tháng 2 SEO)</span></td>
+                  <td style="text-align: center;"><strong>Tháng 3</strong><br><span class="timeline-month-sub seo">(Tháng 2 SEO)</span></td>
                   <td>
                     • Bàn giao 10 trang sản phẩm tối ưu tiếp theo (10 × 300.000 = 3.000.000 đ, lũy kế 20 trang).<br>
                     • Bàn giao 9 bài blog kỹ thuật B2B chuyên sâu (9 × 500.000 = 4.500.000 đ).<br>
@@ -5511,7 +5670,7 @@
                   <td style="text-align: right;" class="price-num"><strong style="color: var(--accent-green);">10.780.000</strong></td>
                 </tr>
                 <tr>
-                  <td style="text-align: center;"><strong>Tháng 4</strong><br><span style="font-size: 0.72rem; color: var(--accent-green);">(Tháng 3 SEO)</span></td>
+                  <td style="text-align: center;"><strong>Tháng 4</strong><br><span class="timeline-month-sub seo">(Tháng 3 SEO)</span></td>
                   <td>
                     • Bàn giao 10 trang sản phẩm tối ưu còn lại (<strong>hoàn tất 30/30 trang</strong>: 10 × 300.000 = 3.000.000 đ).<br>
                     • Bàn giao 9 bài blog kỹ thuật B2B chuyên sâu (9 × 500.000 = 4.500.000 đ).<br>
@@ -5525,7 +5684,7 @@
                   <td style="text-align: right;" class="price-num"><strong style="color: var(--accent-green);">13.650.000</strong></td>
                 </tr>
                 <tr>
-                  <td style="text-align: center;"><strong>Tháng 5</strong><br><span style="font-size: 0.72rem; color: var(--accent-green);">(Tháng 4 SEO)</span></td>
+                  <td style="text-align: center;"><strong>Tháng 5</strong><br><span class="timeline-month-sub seo">(Tháng 4 SEO)</span></td>
                   <td>
                     • Bàn giao 9 bài blog kỹ thuật B2B chuyên sâu (9 × 500.000 = 4.500.000 đ).<br>
                     • 110 textlink báo chí chất lượng cao (110 × 16.000 = 1.760.000 đ).<br>
@@ -5536,7 +5695,7 @@
                   <td style="text-align: right;" class="price-num"><strong style="color: var(--accent-green);">5.012.000</strong></td>
                 </tr>
                 <tr>
-                  <td style="text-align: center;"><strong>Tháng 6</strong><br><span style="font-size: 0.72rem; color: var(--accent-green);">(Tháng 5 SEO)</span></td>
+                  <td style="text-align: center;"><strong>Tháng 6</strong><br><span class="timeline-month-sub seo">(Tháng 5 SEO)</span></td>
                   <td>
                     • Bàn giao 9 bài blog kỹ thuật B2B chuyên sâu (9 × 500.000 = 4.500.000 đ).<br>
                     • 120 textlink báo chí chất lượng cao (120 × 16.000 = 1.920.000 đ).<br>
@@ -5548,7 +5707,7 @@
                   <td style="text-align: right;" class="price-num"><strong style="color: var(--accent-green);">6.874.000</strong></td>
                 </tr>
                 <tr>
-                  <td style="text-align: center;"><strong>Tháng 7</strong><br><span style="font-size: 0.72rem; color: var(--accent-green);">(Tháng 6 SEO)</span></td>
+                  <td style="text-align: center;"><strong>Tháng 7</strong><br><span class="timeline-month-sub seo">(Tháng 6 SEO)</span></td>
                   <td>
                     • Bàn giao 8 bài blog kỹ thuật B2B chuyên sâu (8 × 500.000 = 4.000.000 đ, <strong>hoàn tất 50/50 bài blog kỹ thuật</strong>).<br>
                     • 130 textlink báo chí chất lượng cao (130 × 16.000 = 2.080.000 đ).<br>
@@ -5560,7 +5719,7 @@
                   <td style="text-align: right;" class="price-num"><strong style="color: var(--accent-green);">4.886.000</strong></td>
                 </tr>
                 <tr>
-                  <td style="text-align: center;"><strong>Tháng 8</strong><br><span style="font-size: 0.72rem; color: var(--accent-green);">(Tháng 7 SEO)</span></td>
+                  <td style="text-align: center;"><strong>Tháng 8</strong><br><span class="timeline-month-sub seo">(Tháng 7 SEO)</span></td>
                   <td>
                     • 140 textlink báo chí chất lượng cao (140 × 16.000 = 2.240.000 đ).<br>
                     • 01 bài Guest post chuyên ngành (1 × 2.500.000 = 2.500.000 đ).<br>
@@ -5571,7 +5730,7 @@
                   <td style="text-align: right;" class="price-num"><strong style="color: var(--accent-green);">3.948.000</strong></td>
                 </tr>
                 <tr>
-                  <td style="text-align: center;"><strong>Tháng 9</strong><br><span style="font-size: 0.72rem; color: var(--accent-green);">(Tháng 8 SEO)</span></td>
+                  <td style="text-align: center;"><strong>Tháng 9</strong><br><span class="timeline-month-sub seo">(Tháng 8 SEO)</span></td>
                   <td>
                     • 150 textlink báo chí chất lượng cao (150 × 16.000 = 2.400.000 đ).<br>
                     • 150 lượt chia sẻ diễn đàn kỹ sư cơ khí (150 × 6.000 = 900.000 đ).
@@ -5581,7 +5740,7 @@
                   <td style="text-align: right;" class="price-num"><strong style="color: var(--accent-green);">2.310.000</strong></td>
                 </tr>
                 <tr>
-                  <td style="text-align: center;"><strong>Tháng 10</strong><br><span style="font-size: 0.72rem; color: var(--accent-green);">(Tháng 9 SEO)</span></td>
+                  <td style="text-align: center;"><strong>Tháng 10</strong><br><span class="timeline-month-sub seo">(Tháng 9 SEO)</span></td>
                   <td>
                     • 160 textlink báo chí chất lượng cao (160 × 16.000 = 2.560.000 đ).<br>
                     • 01 bài Guest post chuyên ngành (1 × 2.500.000 = 2.500.000 đ, <strong>hoàn tất 4/4 bài Guest post</strong>).<br>
@@ -5592,7 +5751,7 @@
                   <td style="text-align: right;" class="price-num"><strong style="color: var(--accent-green);">4.172.000</strong></td>
                 </tr>
                 <tr>
-                  <td style="text-align: center;"><strong>Tháng 11</strong><br><span style="font-size: 0.72rem; color: var(--accent-green);">(Tháng 10 SEO)</span></td>
+                  <td style="text-align: center;"><strong>Tháng 11</strong><br><span class="timeline-month-sub seo">(Tháng 10 SEO)</span></td>
                   <td>
                     • 170 textlink báo chí chất lượng cao (170 × 16.000 = 2.720.000 đ).<br>
                     • 150 lượt chia sẻ diễn đàn (150 × 6.000 = 900.000 đ).
@@ -5602,7 +5761,7 @@
                   <td style="text-align: right;" class="price-num"><strong style="color: var(--accent-green);">2.534.000</strong></td>
                 </tr>
                 <tr>
-                  <td style="text-align: center;"><strong>Tháng 12</strong><br><span style="font-size: 0.72rem; color: var(--accent-green);">(Tháng 11 SEO)</span></td>
+                  <td style="text-align: center;"><strong>Tháng 12</strong><br><span class="timeline-month-sub seo">(Tháng 11 SEO)</span></td>
                   <td>
                     • 200 textlink báo chí chất lượng cao (200 × 16.000 = 3.200.000 đ).<br>
                     • 150 lượt chia sẻ diễn đàn (150 × 6.000 = 900.000 đ, <strong>hoàn tất 1.500/1.500 lượt chia sẻ</strong>).
@@ -5612,7 +5771,7 @@
                   <td style="text-align: right;" class="price-num"><strong style="color: var(--accent-green);">2.870.000</strong></td>
                 </tr>
                 <tr>
-                  <td style="text-align: center;"><strong>Tháng 13</strong><br><span style="font-size: 0.72rem; color: var(--accent-green);">(Tháng 12 SEO)</span></td>
+                  <td style="text-align: center;"><strong>Tháng 13</strong><br><span class="timeline-month-sub seo">(Tháng 12 SEO)</span></td>
                   <td>
                     • 220 textlink báo chí chất lượng cao (220 × 16.000 = 3.520.000 đ, <strong>hoàn tất 1.500/1.500 textlink</strong>).<br>
                     • Tổng kết và nghiệm thu toàn diện chỉ số KPI 12 tháng theo cam kết hợp đồng (≥ 3.000 visits, ≥ 2 từ khóa Top 10).
@@ -5625,7 +5784,7 @@
                   <td colspan="2" style="text-align: right;">TỔNG CỘNG 12 THÁNG SEO:</td>
                   <td style="text-align: right; font-weight: 700; color: var(--accent-green);">≥ 3.000 visits</td>
                   <td style="text-align: right;" class="total-price">94.900.000 VNĐ</td>
-                  <td style="text-align: right;" class="total-price" style="color: var(--accent-green);">66.430.000 VNĐ</td>
+                  <td style="text-align: right; color: var(--accent-green);" class="total-price">66.430.000 VNĐ</td>
                 </tr>
               </tbody>
             </table>
@@ -5646,11 +5805,11 @@
         <!-- ── DỊCH VỤ 3: TIẾN ĐỘ GOOGLE ADS 6 THÁNG ── -->
         <div style="margin-bottom: 32px;">
           <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
-            <div style="background: linear-gradient(135deg, #2a1b0a, #1a0f05); border: 1px solid var(--border-color); border-left: 4px solid #EA580C; border-radius: 8px; padding: 10px 20px; display: flex; align-items: center; gap: 10px;">
-              <span style="font-size: 1.1rem;">🎯</span>
-              <div>
-                <div style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: #FB923C; font-weight: 700;">Dịch Vụ 3 — Tiến Độ Chi Tiết</div>
-                <div style="font-size: 0.95rem; font-weight: 700; color: var(--text-primary); margin-top: 2px;">Google Ads Awareness B2B — Ngành Mía Đường &amp; Công Nghiệp Nặng (6 Tháng Triển Khai • Bắt Đầu Từ Tháng 2 → Tháng 7)</div>
+            <div class="timeline-service-header srv-ads">
+              <span class="timeline-service-icon">🎯</span>
+              <div class="timeline-service-info">
+                <div class="timeline-service-tag">Dịch Vụ 3 — Tiến Độ Chi Tiết</div>
+                <div class="timeline-service-title">Google Ads Awareness B2B — Ngành Mía Đường &amp; Công Nghiệp Nặng (6 Tháng Triển Khai • Bắt Đầu Từ Tháng 2 → Tháng 7)</div>
               </div>
             </div>
           </div>
@@ -5665,7 +5824,7 @@
               </thead>
               <tbody>
                 <tr>
-                  <td style="text-align: center;"><strong>Tháng 2</strong><br><span style="font-size: 0.72rem; color: #FB923C;">(Tháng 1 Ads)</span></td>
+                  <td style="text-align: center;"><strong>Tháng 2</strong><br><span class="timeline-month-sub ads">(Tháng 1 Ads)</span></td>
                   <td>
                     • Khởi tạo &amp; cấu hình tài khoản Google Ads, xác minh nhà quảng cáo (Advertiser Verification).<br>
                     • Cài đặt Google Tag, mã chuyển đổi (Conversion Tracking) &amp; liên kết Google Analytics 4 (GA4) đã sẵn sàng từ website shinelink.vn.<br>
@@ -5675,7 +5834,7 @@
                   <td style="text-align: right; color: var(--gold-pale);">Setup hạ tầng</td>
                 </tr>
                 <tr>
-                  <td style="text-align: center;"><strong>Tháng 3</strong><br><span style="font-size: 0.72rem; color: #FB923C;">(Tháng 2 Ads)</span></td>
+                  <td style="text-align: center;"><strong>Tháng 3</strong><br><span class="timeline-month-sub ads">(Tháng 2 Ads)</span></td>
                   <td>
                     • Vận hành full budget (30M hoặc 50M/tháng theo Option đã chọn).<br>
                     • Tối ưu giai đoạn Machine Learning của Google, lọc các placement kém hiệu quả/không phù hợp và loại trừ negative keywords.<br>
@@ -5685,7 +5844,7 @@
                   <td style="text-align: right; color: var(--gold-pale);">Kích hoạt Remarketing &amp; Báo cáo T1 Ads</td>
                 </tr>
                 <tr>
-                  <td style="text-align: center;"><strong>Tháng 4</strong><br><span style="font-size: 0.72rem; color: #FB923C;">(Tháng 3 Ads)</span></td>
+                  <td style="text-align: center;"><strong>Tháng 4</strong><br><span class="timeline-month-sub ads">(Tháng 3 Ads)</span></td>
                   <td>
                     • Tinh chỉnh thông điệp quảng cáo (A/B testing ad copy &amp; video creatives ngành mía đường/công nghiệp nặng).<br>
                     • Tối ưu điểm chất lượng (Quality Score) trang đích để giảm chi phí bid giá thầu.<br>
@@ -5694,7 +5853,7 @@
                   <td style="text-align: right; color: var(--gold-pale);">A/B Testing &amp; Báo cáo T2 Ads</td>
                 </tr>
                 <tr>
-                  <td style="text-align: center;"><strong>Tháng 5</strong><br><span style="font-size: 0.72rem; color: #FB923C;">(Tháng 4 Ads)</span></td>
+                  <td style="text-align: center;"><strong>Tháng 5</strong><br><span class="timeline-month-sub ads">(Tháng 4 Ads)</span></td>
                   <td>
                     • Mở rộng tệp Custom Segments và In-Market kỹ sư/nhà máy cơ khí tại khu vực miền Nam &amp; Tây Nam Bộ.<br>
                     • Tăng tần suất hiển thị thương hiệu Shinelink trên các trang tin kỹ thuật và video công nghiệp.<br>
@@ -5703,7 +5862,7 @@
                   <td style="text-align: right; color: var(--gold-pale);">Mở rộng tệp &amp; Báo cáo T3 Ads</td>
                 </tr>
                 <tr>
-                  <td style="text-align: center;"><strong>Tháng 6</strong><br><span style="font-size: 0.72rem; color: #FB923C;">(Tháng 5 Ads)</span></td>
+                  <td style="text-align: center;"><strong>Tháng 6</strong><br><span class="timeline-month-sub ads">(Tháng 5 Ads)</span></td>
                   <td>
                     • Duy trì độ phủ sóng thương hiệu nhận biết sâu rộng ngành mía đường &amp; công nghiệp nặng trước mùa cao điểm bảo dưỡng.<br>
                     • Đẩy mạnh tiếp cận remarketing tới nhóm kỹ sư đã tải catalog hoặc xem trang thông số kỹ thuật.<br>
@@ -5712,7 +5871,7 @@
                   <td style="text-align: right; color: var(--gold-pale);">Tối ưu chuyển đổi &amp; Báo cáo T4 Ads</td>
                 </tr>
                 <tr style="border-top: 2px solid #EA580C;">
-                  <td style="text-align: center;"><strong>Tháng 7</strong><br><span style="font-size: 0.72rem; color: #FB923C;">(Tháng 6 Ads)</span></td>
+                  <td style="text-align: center;"><strong>Tháng 7</strong><br><span class="timeline-month-sub ads">(Tháng 6 Ads)</span></td>
                   <td>
                     • Hoàn tất chu kỳ 6 tháng chiến dịch Google Ads Awareness.<br>
                     • Tổng kết nghiệm thu KPI lũy kế 6 tháng (Impressions, Video Views, Clicks) theo cam kết hợp đồng.<br>
