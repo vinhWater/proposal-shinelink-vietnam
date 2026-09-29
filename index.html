@@ -381,21 +381,77 @@
       border-color: var(--gold);
     }
 
-    /* HORIZONTAL TOC CHIP BAR */
+    /* HORIZONTAL TOC CHIP BAR WITH SCROLL CONTROLS */
+    .toc-bar-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px solid var(--border-subtle);
+      position: relative;
+    }
+
     .mobile-toc-bar {
+      position: relative;
+      flex: 1;
+      min-width: 0;
       display: flex;
       align-items: center;
       gap: 6px;
       overflow-x: auto;
       white-space: nowrap;
       -webkit-overflow-scrolling: touch;
-      padding-top: 10px;
-      margin-top: 8px;
-      border-top: 1px solid var(--border-subtle);
+      scroll-behavior: smooth;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      margin: 0;
+      padding: 3px 0;
     }
 
     .mobile-toc-bar::-webkit-scrollbar {
       display: none;
+    }
+
+    .toc-scroll-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      flex-shrink: 0;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 50%;
+      color: var(--gold);
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      padding: 0;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+    }
+
+    .toc-scroll-btn:hover:not(:disabled) {
+      background: var(--gold);
+      color: var(--navy);
+      border-color: var(--gold);
+      box-shadow: 0 0 12px rgba(196, 151, 58, 0.45);
+      transform: scale(1.08);
+    }
+
+    .toc-scroll-btn:active:not(:disabled) {
+      transform: scale(0.92);
+    }
+
+    .toc-scroll-btn:disabled,
+    .toc-scroll-btn.disabled {
+      opacity: 0.22;
+      cursor: not-allowed;
+      pointer-events: none;
+      color: var(--text-dim);
+      border-color: var(--border-subtle);
+      background: var(--bg-card-alt);
+      box-shadow: none;
+      transform: none;
     }
 
     .toc-chip {
@@ -515,6 +571,65 @@
       border-color: var(--gold);
       color: var(--gold);
       font-weight: 600;
+    }
+
+    .toc-drawer-footer {
+      margin-top: auto;
+      padding-top: 18px;
+      border-top: 1px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    .toc-drawer-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .btn-drawer-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      padding: 10px 12px;
+      background: var(--bg-card-alt);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      color: var(--text-main);
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-drawer-action:hover {
+      background: var(--gold);
+      color: var(--navy);
+      border-color: var(--gold);
+    }
+
+    .btn-drawer-action.btn-drawer-logout {
+      color: #EF4444;
+      border-color: rgba(239, 68, 68, 0.25);
+      background: rgba(239, 68, 68, 0.05);
+    }
+
+    .btn-drawer-action.btn-drawer-logout:hover {
+      background: #EF4444;
+      color: #ffffff;
+      border-color: #EF4444;
+    }
+
+    .toc-drawer-meta {
+      text-align: center;
+      font-size: 0.68rem;
+      color: var(--text-dim);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-weight: 500;
     }
 
     /* ══════════════════════════════════════════════════════════════════
@@ -2220,12 +2335,31 @@
       .nav-client-tag {
         display: none;
       }
+      .nav-brand-main {
+        font-size: 1.15rem;
+        white-space: nowrap;
+      }
+      .btn-nav-print,
+      .btn-nav-logout {
+        display: none !important;
+      }
+      .btn-nav-theme {
+        order: 1;
+      }
+      .btn-nav-toc {
+        order: 2;
+        border-color: var(--gold);
+        color: var(--gold);
+        background: rgba(196, 151, 58, 0.12);
+        box-shadow: 0 0 10px rgba(196, 151, 58, 0.2);
+      }
       .btn-icon span {
         display: none;
       }
       .btn-icon {
-        padding: 8px 10px;
+        padding: 8px 11px;
       }
+      .toc-bar-wrapper,
       .mobile-toc-bar {
         display: none !important;
       }
@@ -2377,6 +2511,25 @@
         <li><a href="#sec-timeline" class="toc-menu-link" onclick="toggleTocDrawer()"><span>08. Lộ Trình Triển Khai &amp; QA</span><span>➔</span></a></li>
         <li><a href="#sec-signoff" class="toc-menu-link" onclick="toggleTocDrawer()"><span>09. Đại Diện Trình Ký</span><span>➔</span></a></li>
       </ul>
+      <div class="toc-drawer-footer">
+        <div class="toc-drawer-actions">
+          <button class="btn-drawer-action" onclick="toggleTocDrawer(); setTimeout(function(){ window.print(); }, 250);" title="In văn bản hoặc Xuất PDF">
+            <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
+            </svg>
+            <span>In / Xuất PDF</span>
+          </button>
+          <button class="btn-drawer-action btn-drawer-logout" onclick="logout()" title="Đăng xuất bảo mật">
+            <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
+            </svg>
+            <span>Đăng Xuất</span>
+          </button>
+        </div>
+        <div class="toc-drawer-meta">
+          <span>Vietnam Sales Force · Shinelink Vietnam</span>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -2399,25 +2552,25 @@
             </div>
           </div>
           <div class="nav-actions">
-            <button class="btn-icon" onclick="toggleTocDrawer()" title="Mục lục đề xuất">
+            <button class="btn-icon btn-nav-toc" onclick="toggleTocDrawer()" title="Mục lục đề xuất">
               <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path>
               </svg>
               <span>Mục Lục</span>
             </button>
-            <button class="btn-icon" onclick="toggleTheme()" title="Đổi giao diện Navy / Cream">
+            <button class="btn-icon btn-nav-theme" onclick="toggleTheme()" title="Đổi giao diện Navy / Cream">
               <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
               </svg>
               <span>Giao Diện</span>
             </button>
-            <button class="btn-icon" onclick="window.print()" title="In văn bản hoặc Xuất PDF">
+            <button class="btn-icon btn-nav-print" onclick="window.print()" title="In văn bản hoặc Xuất PDF">
               <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
               </svg>
               <span>In / PDF</span>
             </button>
-            <button class="btn-icon" onclick="logout()" title="Đăng xuất bảo mật">
+            <button class="btn-icon btn-nav-logout" onclick="logout()" title="Đăng xuất bảo mật">
               <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
               </svg>
@@ -2426,18 +2579,32 @@
           </div>
         </div>
 
-        <!-- HORIZONTAL QUICK NAV -->
-        <nav class="mobile-toc-bar">
-          <a href="#sec-intro" class="toc-chip">01. Bối Cảnh</a>
-          <a href="#sec-competitors" class="toc-chip">02. Đối Thủ &amp; Cơ Hội</a>
-          <a href="#sec-templates" class="toc-chip">03. Website &amp; Công Nghệ</a>
-          <a href="#sec-google-ads" class="toc-chip">04. Google Ads</a>
-          <a href="#sec-seo-strategy" class="toc-chip">05. SEO &amp; Cam Kết KPI</a>
-          <a href="#sec-case-study" class="toc-chip">06. Năng Lực VSF</a>
-          <a href="#sec-pricing" class="toc-chip">07. Báo Giá Toàn Diện</a>
-          <a href="#sec-timeline" class="toc-chip">08. Lộ Trình QA</a>
-          <a href="#sec-signoff" class="toc-chip">09. Trình Ký</a>
-        </nav>
+        <!-- HORIZONTAL QUICK NAV WITH DESKTOP SCROLL CONTROLS -->
+        <div class="toc-bar-wrapper">
+          <button type="button" class="toc-scroll-btn toc-scroll-left" id="toc-scroll-left" onclick="scrollTocBar('left')" aria-label="Cuộn sang trái" title="Cuộn danh mục sang trái">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+
+          <nav class="mobile-toc-bar" id="mobile-toc-bar">
+            <a href="#sec-intro" class="toc-chip">01. Bối Cảnh</a>
+            <a href="#sec-competitors" class="toc-chip">02. Đối Thủ &amp; Cơ Hội</a>
+            <a href="#sec-templates" class="toc-chip">03. Website &amp; Công Nghệ</a>
+            <a href="#sec-google-ads" class="toc-chip">04. Google Ads</a>
+            <a href="#sec-seo-strategy" class="toc-chip">05. SEO &amp; Cam Kết KPI</a>
+            <a href="#sec-case-study" class="toc-chip">06. Năng Lực VSF</a>
+            <a href="#sec-pricing" class="toc-chip">07. Báo Giá Toàn Diện</a>
+            <a href="#sec-timeline" class="toc-chip">08. Lộ Trình QA</a>
+            <a href="#sec-signoff" class="toc-chip">09. Trình Ký</a>
+          </nav>
+
+          <button type="button" class="toc-scroll-btn toc-scroll-right" id="toc-scroll-right" onclick="scrollTocBar('right')" aria-label="Cuộn sang phải" title="Cuộn danh mục sang phải">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -2459,7 +2626,7 @@
           </h1>
           
           <p class="hero-desc">
-            Kế hoạch chiến lược do <strong>Vietnam Sales Force (VSF)</strong> xây dựng nhằm đồng hành cùng Shinelink Industries thâm nhập thị trường Việt Nam. Đề xuất tích hợp <strong>3 dịch vụ</strong>, mỗi dịch vụ có timeline và điều khoản thanh toán riêng:
+            Kế hoạch chiến lược do <strong>Vietnam Sales Force (VSF)</strong> xây dựng nhằm đồng hành cùng <strong>Shinelink Industries</strong> thâm nhập thị trường Việt Nam. Đề xuất tích hợp <strong>3 dịch vụ</strong>, mỗi dịch vụ có timeline và điều khoản thanh toán riêng:
           </p>
 
           <ul class="hero-service-list">
@@ -5438,6 +5605,7 @@
       overlay.classList.add("hidden");
       content.classList.remove("blurred");
       window.dispatchEvent(new Event("scroll"));
+      setTimeout(updateTocScrollButtons, 60);
     }
 
     function logout() {
@@ -5460,6 +5628,43 @@
     function closeTocDrawer(e) {
       const drawer = document.getElementById("toc-drawer");
       drawer.classList.remove("active");
+    }
+
+    function scrollTocBar(direction) {
+      const tocBar = document.getElementById("mobile-toc-bar") || document.querySelector(".mobile-toc-bar");
+      if (!tocBar) return;
+      const step = Math.max(200, Math.round(tocBar.clientWidth * 0.45));
+      tocBar.scrollBy({ left: direction === "left" ? -step : step, behavior: "smooth" });
+      setTimeout(updateTocScrollButtons, 350);
+    }
+
+    function updateTocScrollButtons() {
+      const tocBar = document.getElementById("mobile-toc-bar") || document.querySelector(".mobile-toc-bar");
+      const leftBtn = document.getElementById("toc-scroll-left");
+      const rightBtn = document.getElementById("toc-scroll-right");
+      if (!tocBar || !leftBtn || !rightBtn) return;
+
+      const maxScroll = Math.max(0, tocBar.scrollWidth - tocBar.clientWidth);
+      if (maxScroll <= 2) {
+        leftBtn.style.opacity = "0";
+        leftBtn.style.pointerEvents = "none";
+        rightBtn.style.opacity = "0";
+        rightBtn.style.pointerEvents = "none";
+        return;
+      }
+
+      leftBtn.style.removeProperty("opacity");
+      leftBtn.style.removeProperty("pointer-events");
+      rightBtn.style.removeProperty("opacity");
+      rightBtn.style.removeProperty("pointer-events");
+
+      const isAtStart = tocBar.scrollLeft <= 4;
+      const isAtEnd = tocBar.scrollLeft >= maxScroll - 4;
+
+      leftBtn.disabled = isAtStart;
+      leftBtn.classList.toggle("disabled", isAtStart);
+      rightBtn.disabled = isAtEnd;
+      rightBtn.classList.toggle("disabled", isAtEnd);
     }
 
     function setupActiveTocHighlight() {
@@ -5522,8 +5727,21 @@
         }
       }, { passive: true });
 
+      if (tocBar) {
+        tocBar.addEventListener("scroll", updateTocScrollButtons, { passive: true });
+      }
+
       updateActive();
-      window.addEventListener("resize", updateActive, { passive: true });
+      updateTocScrollButtons();
+
+      window.addEventListener("resize", () => {
+        updateActive();
+        updateTocScrollButtons();
+      }, { passive: true });
+
+      if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(updateTocScrollButtons);
+      }
 
       document.querySelectorAll(".toc-chip, .toc-menu-link").forEach(link => {
         link.addEventListener("click", () => {
