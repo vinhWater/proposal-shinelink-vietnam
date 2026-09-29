@@ -2195,15 +2195,22 @@
     }
 
     [data-theme="light"] .stats-promo-bar,
-    [data-theme="light"] .party-promo-bar {
-      background: rgba(16, 185, 129, 0.07);
-      border-color: rgba(16, 185, 129, 0.28);
-      color: #065F46;
+    [data-theme="light"] .party-promo-bar,
+    [data-theme="light"] .stat-promo-badge {
+      background: rgba(16, 185, 129, 0.07) !important;
+      border-color: rgba(16, 185, 129, 0.28) !important;
+      color: #065F46 !important;
     }
 
     [data-theme="light"] .stats-promo-bar strong,
-    [data-theme="light"] .party-promo-bar strong {
-      color: #047857;
+    [data-theme="light"] .party-promo-bar strong,
+    [data-theme="light"] .stat-promo-badge strong,
+    [data-theme="light"] .stat-promo-desc strong {
+      color: #047857 !important;
+    }
+
+    [data-theme="light"] .stat-promo-desc {
+      color: #065F46 !important;
     }
 
     [data-theme="light"] .party-sub a {
@@ -2790,12 +2797,11 @@
           <div class="stat-card">
             <div class="stat-number">180M / 300M</div>
             <div class="stat-label">Dịch Vụ 3 · Google Ads Awareness (2 Options)</div>
-            <div class="stat-desc">Awareness B2B 6 tháng · Xích mía đường &amp; xích CN nặng · YouTube + GDN + Search</div>
+            <div class="stat-desc">
+              Awareness B2B 6 tháng · Xích mía đường &amp; xích CN nặng · YouTube + GDN + Search.<br>
+              <span class="stat-promo-desc" style="color: var(--accent-green); display: inline-block; margin-top: 6px; line-height: 1.45;">✨ <strong>Ưu đãi Agency Fee 20%</strong> (gốc 30%) áp dụng khi đại diện Shinelink ký kết combo đề xuất trước ngày <strong>15/10/2026</strong></span>
+            </div>
           </div>
-        </div>
-        <div class="stats-promo-bar">
-          <span style="font-size: 1.1rem; line-height: 1; flex-shrink: 0;">✨</span>
-          <span><strong>Ưu đãi Agency Fee 20%</strong> (gốc 30%) áp dụng khi đại diện Shinelink ký kết combo đề xuất trước ngày <strong>15/10/2026</strong></span>
         </div>
       </div>
 
