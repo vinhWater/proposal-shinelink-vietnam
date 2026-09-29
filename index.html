@@ -975,6 +975,10 @@
       margin: 18px 0;
     }
 
+    .strengths-grid.grid-2col {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     .strength-card {
       background: var(--bg-card-alt);
       border: 1px solid var(--border-subtle);
@@ -2228,6 +2232,90 @@
       .navbar {
         padding: 12px 18px;
       }
+      .strengths-grid.grid-2col {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* GOOGLE ADS ENHANCED BADGES & STYLES */
+    .badge-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 0.74rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .badge-status.normal {
+      background: rgba(16, 185, 129, 0.12);
+      color: var(--accent-green);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+    .badge-status.warn {
+      background: rgba(245, 158, 11, 0.12);
+      color: #F59E0B;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+    .badge-status.blue {
+      background: rgba(59, 130, 246, 0.12);
+      color: #60A5FA;
+      border: 1px solid rgba(59, 130, 246, 0.3);
+    }
+    .badge-status.purple {
+      background: rgba(168, 85, 247, 0.12);
+      color: #C084FC;
+      border: 1px solid rgba(168, 85, 247, 0.3);
+    }
+    [data-theme="light"] .badge-status.normal {
+      background: #DCFCE7;
+      color: #15803D;
+      border-color: #86EFAC;
+    }
+    [data-theme="light"] .badge-status.warn {
+      background: #FEF3C7;
+      color: #B45309;
+      border-color: #FCD34D;
+    }
+    [data-theme="light"] .badge-status.blue {
+      background: #DBEAFE;
+      color: #1D4ED8;
+      border-color: #93C5FD;
+    }
+    [data-theme="light"] .badge-status.purple {
+      background: #F3E8FF;
+      color: #7E22CE;
+      border-color: #D8B4FE;
+    }
+
+    .ads-phase-pill {
+      display: inline-block;
+      padding: 2px 7px;
+      border-radius: 3px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+    .ads-phase-pill.p1 {
+      background: rgba(234, 88, 12, 0.15);
+      color: #FB923C;
+      border: 1px solid rgba(234, 88, 12, 0.35);
+    }
+    .ads-phase-pill.p2 {
+      background: rgba(168, 85, 247, 0.15);
+      color: #C084FC;
+      border: 1px solid rgba(168, 85, 247, 0.35);
+    }
+    [data-theme="light"] .ads-phase-pill.p1 {
+      background: #FFEDD5;
+      color: #C2410C;
+      border-color: #FDBA74;
+    }
+    [data-theme="light"] .ads-phase-pill.p2 {
+      background: #F3E8FF;
+      color: #7E22CE;
+      border-color: #D8B4FE;
     }
   </style>
 </head>
@@ -2426,7 +2514,7 @@
           <div class="stat-card">
             <div class="stat-number">17M</div>
             <div class="stat-label">Dịch Vụ 1 · Website B2B shinelink.vn</div>
-            <div class="stat-desc">Load &lt;1s · Chuẩn GEO · Tên miền 3 năm &amp; 49 catalog (1 tháng)</div>
+            <div class="stat-desc">Load &lt;1s · Chuẩn SEO · Tên miền 3 năm &amp; 49 catalog (1 tháng)</div>
           </div>
           <div class="stat-card">
             <div class="stat-number">180M / 300M</div>
@@ -3107,117 +3195,976 @@
       <section id="sec-google-ads" class="section-card">
         <div class="section-header">
           <div class="section-label">Mục 04 • Dịch Vụ 2: Google Ads Awareness B2B (6 Tháng)</div>
-          <h2 class="section-title">Chiến Dịch Google Ads <em>Ngành Mía Đường &amp; Công Nghiệp Nặng</em></h2>
+          <h2 class="section-title">Chiến Dịch Google Ads Awareness B2B <em>Ngành Mía Đường &amp; Công Nghiệp Nặng</em></h2>
         </div>
 
-        <div class="badge-phase" style="background: rgba(234,88,12,0.12); border: 1px solid #EA580C; color: #FB923C; margin-bottom: 18px;">DỊCH VỤ 2 • GOOGLE ADS AWARENESS — 6 THÁNG GIAI ĐOẠN 1</div>
+        <div class="badge-phase" style="background: rgba(234,88,12,0.12); border: 1px solid #EA580C; color: #FB923C; margin-bottom: 18px;">DỊCH VỤ 2 • GOOGLE ADS AWARENESS B2B — 6 THÁNG GIAI ĐOẠN 1</div>
 
         <p class="section-intro">
-          Chiến dịch Google Ads B2B dành riêng cho ngành mía đường &amp; công nghiệp nặng tại miền Nam. Vì đây là B2B siêu ngách — tổng số người thuộc đúng đối tượng (kỹ thuật nhà máy mía đường) rất có hạn — VSF thiết kế cấu trúc audience-capped thay vì ước tính tuyến tính theo % ngân sách.
+          Chiến dịch Google Ads B2B do <strong>Đội ngũ Kỹ thuật Hiệu suất Google Ads Vietnam Sales Force (VSF)</strong> trực tiếp nghiên cứu, lập kế hoạch định lượng và vận hành trọn gói. Khác biệt hoàn toàn với các chiến dịch B2C chạy theo cảm tính hoặc phân bổ tuyến tính thông thường, toàn bộ chiến lược được VSF thiết kế dựa trên <strong>mô hình toán học Audience-Capped độc quyền</strong> — giải pháp khoa học giải quyết bài toán thị trường B2B siêu ngách: quy mô đối tượng hữu hạn, kiểm soát tần suất tiếp cận vàng (4–8 lần/người/tháng) và tối ưu hóa từng đồng ngân sách media cho Shinelink.
           <br><br>
-          <strong>Điều kiện tiên quyết:</strong> Chiến dịch chỉ bơm ngân sách đầy đủ sau khi website shinelink.vn go-live (GA4 + Google Tag đã cài đặt).
+          <strong>Điều kiện tiên quyết:</strong> Chiến dịch chính thức bơm ngân sách chạy media sau khi website <strong>shinelink.vn</strong> hoàn tất go-live và hệ thống hạ tầng đo lường chuyển đổi (Google Analytics 4 + Google Tag) đã được cài đặt, kiểm thử chuẩn mực.
         </p>
 
-        <!-- CAMPAIGN STRUCTURE -->
-        <h3 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--gold); margin: 24px 0 14px; display: flex; align-items: center; gap: 8px;">📡 Cấu Trúc Chiến Dịch</h3>
-        <div class="table-responsive">
-          <table class="custom-table">
-            <thead>
-              <tr>
-                <th>Loại Chiến Dịch</th>
-                <th>Mục Tiêu</th>
-                <th>Hình Thức Giá</th>
-                <th>Option 1</th>
-                <th>Option 2</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>YouTube Video Reach</strong><br><span style="font-size: 0.78rem; color: var(--text-muted);">In-stream skippable + Bumper 6s</span></td>
-                <td>Nhận biết thương hiệu, tiếp cận rộng</td>
-                <td>Target CPM / Maximize Reach</td>
-                <td style="text-align: right;">45% media spend</td>
-                <td style="text-align: right;">35% media spend</td>
-              </tr>
-              <tr>
-                <td><strong>GDN — Display</strong><br><span style="font-size: 0.78rem; color: var(--text-muted);">Managed Placement + Custom Segments + In-Market</span></td>
-                <td>Phủ sóng liên tục website/app ngành kỹ thuật</td>
-                <td>Viewable CPM (vCPM)</td>
-                <td style="text-align: right;">30% media spend</td>
-                <td style="text-align: right;">35% media spend</td>
-              </tr>
-              <tr>
-                <td><strong>Demand Gen</strong><br><span style="font-size: 0.78rem; color: var(--text-muted);">Discovery + Gmail + YouTube Shorts/Feed</span></td>
-                <td>Thêm điểm chạm Gmail/Shorts, tăng brand recall</td>
-                <td>Target CPM</td>
-                <td style="text-align: right;">20% media spend</td>
-                <td style="text-align: right;">22% media spend</td>
-              </tr>
-              <tr>
-                <td><strong>Search</strong><br><span style="font-size: 0.78rem; color: var(--text-muted);">Brand + Generic low-volume</span></td>
-                <td>Bắt nhu cầu tìm kiếm chủ động, bảo vệ brand</td>
-                <td>Maximize Clicks</td>
-                <td style="text-align: right;">5% media spend</td>
-                <td style="text-align: right;">3% media spend</td>
-              </tr>
-              <tr>
-                <td><strong>Remarketing</strong><br><span style="font-size: 0.78rem; color: var(--text-muted);">GDN + Demand Gen • Từ tháng 2 — chỉ Option 2</span></td>
-                <td>Nhắc lại người đã ghé website, CPM thấp hơn 20–30%</td>
-                <td>Target CPM (tần suất cao)</td>
-                <td style="text-align: right; color: var(--text-dim);">—</td>
-                <td style="text-align: right;">5% media spend</td>
-              </tr>
-            </tbody>
-          </table>
+        <!-- 4.1 BỐI CẢNH & AUDIENCE-CAPPED -->
+        <div style="margin-top: 28px;">
+          <h3 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--gold); margin-bottom: 14px; display: flex; align-items: center; gap: 8px;">
+            4.1. Bối Cảnh Thị Trường &amp; Triết Lý Vận Hành "Audience-Capped"
+          </h3>
+
+          <div class="strengths-grid grid-2col">
+            <div class="strength-card">
+              <div class="strength-title">📊 Hiện Trạng Tài Sản Số Shinelink</div>
+              <div class="strength-desc">
+                Shinelink <strong>chưa từng chạy Google/Meta/LinkedIn Ads</strong> trước đây, chưa có dữ liệu tệp đối tượng (Audience) hay chỉ số chuyển đổi nội bộ đối chiếu. Do đó, việc lập kế hoạch đòi hỏi sự cẩn trọng và nghiên cứu thị trường thực tế sâu sắc. Toàn bộ kế hoạch của VSF được xây dựng dựa trên khảo sát thực địa ngành xích công nghiệp và benchmark thị trường Google Ads Việt Nam 2026.
+              </div>
+            </div>
+
+            <div class="strength-card">
+              <div class="strength-title">🏭 Thách Thức B2B Siêu Ngách (Hyper-Niche)</div>
+              <div class="strength-desc">
+                Người ra quyết định và ảnh hưởng kỹ thuật (Kỹ sư cơ điện, Trưởng phòng bảo trì, Ban Giám đốc nhà máy mía đường) là một <strong>con số hữu hạn</strong> (ước tính chỉ từ vài nghìn đến hơn chục nghìn nhân sự chủ chốt tại miền Nam). Nếu quảng cáo chạy dàn trải hoặc ước tính theo % ngân sách thông thường sẽ dẫn đến lãng phí lớn vì tiếp cận sai đối tượng.
+              </div>
+            </div>
+
+            <div class="strength-card">
+              <div class="strength-title">📐 Mô Hình Toán Học Audience-Capped</div>
+              <div class="strength-desc">
+                Bác bỏ hoàn toàn tư duy B2C "tăng ngân sách là tăng reach tuyến tính". Các tệp hẹp (Custom Segment từ khóa, URL đối thủ) chỉ có vài nghìn người. Khi ngân sách tăng, nếu không kiểm soát trần (Coverage Cap 80–95%), tiền sẽ bị dồn vào việc tăng tần suất (Frequency) lên 12–15 lần/tháng đối với cùng một người, gây phản cảm và cháy ngân sách vô ích.
+              </div>
+            </div>
+
+            <div class="strength-card">
+              <div class="strength-title">📍 Địa Bàn Mục Tiêu &amp; Radius Targeting</div>
+              <div class="strength-desc">
+                Đề xuất tập trung <strong>9 tỉnh thành có mật độ nhà máy mía đường và khu công nghiệp cao nhất miền Nam:</strong> Tây Ninh, Long An, Hậu Giang, Sóc Trăng, Trà Vinh, Bến Tre, Kiên Giang, Cà Mau + TP.HCM (trụ sở văn phòng, đơn vị mua sắm). Khi Shinelink cung cấp tọa độ nhà máy cụ thể, VSF sẽ kích hoạt <em>Radius Targeting</em> (bán kính 5–15km quanh nhà máy).
+              </div>
+            </div>
+          </div>
+
+          <div class="note-box navy" style="margin-top: 14px;">
+            <p style="font-size: 0.88rem; color: var(--text-main); line-height: 1.65;">
+              📌 <strong>Tần suất tiếp cận vàng (Optimal Frequency):</strong> Mục tiêu của chiến dịch không phải "bắn phá" bừa bãi mà duy trì tần suất xuất hiện từ <strong>4 đến 8 lần/người/tháng</strong> trong suốt 6 tháng. Đây là ngưỡng tiếp cận tâm lý hoàn hảo để thương hiệu Shinelink ăn sâu vào tiềm thức kỹ sư nhà máy đường trước khi bước vào cao điểm bảo dưỡng và ép mía niên vụ 2026–2027.
+            </p>
+          </div>
         </div>
 
-        <!-- KPI CAM KẾT -->
-        <h3 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--gold); margin: 28px 0 14px; display: flex; align-items: center; gap: 8px;">🎯 KPI Cam Kết (Tích Lũy 6 Tháng • Buffer 15%)</h3>
-        <div class="table-responsive">
-          <table class="custom-table">
-            <thead>
-              <tr>
-                <th>Chỉ Số KPI</th>
-                <th style="text-align: center;">Option 1 / tháng</th>
-                <th style="text-align: center;">Option 1 (6 tháng)</th>
-                <th style="text-align: center;">Option 2 / tháng</th>
-                <th style="text-align: center;">Option 2 (6 tháng)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Impressions</strong></td>
-                <td style="text-align: center;" class="price-num">72.727</td>
-                <td style="text-align: center;">436.363</td>
-                <td style="text-align: center;" class="price-num">305.718</td>
-                <td style="text-align: center;">1.834.307</td>
-              </tr>
-              <tr>
-                <td><strong>Video Views</strong></td>
-                <td style="text-align: center;" class="price-num">6.259</td>
-                <td style="text-align: center;">37.555</td>
-                <td style="text-align: center;" class="price-num">16.227</td>
-                <td style="text-align: center;">97.364</td>
-              </tr>
-              <tr>
-                <td><strong>Clicks / Traffic</strong></td>
-                <td style="text-align: center;" class="price-num">467</td>
-                <td style="text-align: center;">2.802</td>
-                <td style="text-align: center;" class="price-num">1.878</td>
-                <td style="text-align: center;">11.269</td>
-              </tr>
-            </tbody>
-          </table>
+        <!-- 4.2 TẠI SAO OPTION 2 KHÔNG PHẢI OPTION 1 NHÂN 50/30 -->
+        <div style="margin-top: 32px;">
+          <h3 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--gold); margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+            4.2. Giải Mã Chiến Lược: Tại Sao Option 2 (50M) Không Phải Là Option 1 Nhân Tỷ Lệ 50/30?
+          </h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 14px;">
+            Đây là một trong những <strong>điểm sáng kỹ thuật và sự trung thực nghề nghiệp</strong> cao nhất của đội ngũ Google Ads VSF. Rất nhiều agency trên thị trường khi khách hàng nâng ngân sách từ 30 triệu lên 50 triệu/tháng chỉ đơn giản lấy ngân sách cũ nhân tỷ lệ 50/30 (1,67 lần) cho tất cả các kênh. VSF khẳng định: <em>Cách làm đó là phá hoại ngân sách của khách hàng!</em>
+          </p>
+
+          <div class="swot-grid" style="margin-top: 14px;">
+            <div class="swot-col challenge">
+              <div class="swot-title">⚠️ Cách Tiếp Cận Tuyến Tính (Sai Lầm Phổ Biến)</div>
+              <ul class="swot-list">
+                <li>Các tệp siêu ngách (Custom Segment từ khóa "xích tải mía", URL web đối thủ) chỉ có 3.000 – 6.000 người. Ở mức 30M/tháng, các tệp này <strong>đã gần bão hòa</strong> về lượt hiển thị.</li>
+                <li>Nếu nâng lên 50M mà giữ nguyên % phân bổ, số tiền tăng thêm sẽ bị Google ép hiển thị lặp lại 12–15 lần/tháng cho cùng một nhóm kỹ sư đã xem, <strong>không tạo ra thêm bất kỳ người tiếp cận mới (Reach) nào</strong>.</li>
+                <li>Ngân sách bị "đốt" lãng phí vào các kênh đã kịch trần dung lượng tự nhiên.</li>
+              </ul>
+            </div>
+
+            <div class="swot-col advantage">
+              <div class="swot-title">✨ Giải Pháp Tái Cơ Cấu Của VSF (Option 2)</div>
+              <ul class="swot-list">
+                <li><strong>Giảm tỷ trọng kênh bão hòa:</strong> YouTube Video Reach giảm từ 45% xuống 35% media spend; chuyển hướng mở rộng danh sách Managed Placement kênh kỹ thuật cơ khí.</li>
+                <li><strong>Tăng tỷ trọng kênh có dư địa:</strong> GDN Display tăng từ 30% lên 35%, đưa lớp đối tượng In-Market <em>"Business &amp; Industrial"</em> (quy mô hàng trăm nghìn người) vào chạy ngay từ Phase 1.</li>
+                <li><strong>Tối ưu Demand Gen:</strong> Tăng lên 22% media spend, nâng tỷ trọng <em>Optimized Targeting</em> (Google AI tự tìm đối tượng mở rộng) lên 60% để tích lũy dữ liệu chuyển đổi nhanh hơn.</li>
+                <li><strong>Giữ nguyên số tuyệt đối Google Search:</strong> Cố định ở mức 1,2 triệu đồng/tháng (giảm tỷ trọng từ 5% xuống 3%) vì volume tìm kiếm tự nhiên của từ khóa xích tải mía đường có giới hạn vật lý.</li>
+                <li><strong>Kích hoạt Kênh Remarketing riêng biệt (5% = 2M/tháng từ Tháng 2):</strong> Bám đuổi những kỹ sư đã từng truy cập shinelink.vn với chi phí CPM rẻ hơn 25%, gia tăng tối đa khả năng chuyển đổi.</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <div class="note-box warn" style="margin-top: 20px;">
-          <div class="note-title">📌 Điều Khoản Vận Hành Google Ads</div>
-          <ul style="margin: 8px 0 0 20px; line-height: 1.75; font-size: 0.88rem;">
-            <li>Ngân sách được tái phân bổ linh hoạt giữa các Ad Group trong cùng 1 Option theo hiệu suất thực tế, không cần thương thảo lại hợp đồng.</li>
-            <li>KPI được đánh giá theo lũy kế cả 6 tháng — tháng 1–2 là giai đoạn hệ thống học (machine learning), không cam kết theo từng tháng riêng lẻ.</li>
-            <li>VSF chủ động được quyền thử nghiệm creative, placement, audience trong ngân sách đã duyệt để tối ưu hiệu suất.</li>
-            <li>Benchmark CPM/CPC/audience sẽ được hiệu chỉnh sau tháng 1–2 dựa trên số liệu thực tế.</li>
-          </ul>
+        <!-- 4.3 BỘ CHỈ SỐ BENCHMARK THỊ TRƯỜNG & HỆ SỐ QUY ĐỔI -->
+        <div style="margin-top: 32px;">
+          <h3 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--gold); margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+            4.3. Bộ Chỉ Số Benchmark B2B 2026 &amp; Hệ Số Quy Đổi Audience Khoa Học
+          </h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 16px;">
+            Mọi số liệu cam kết và dự báo của VSF đều được tính toán từ bộ chỉ số Benchmark thị trường Google Ads Việt Nam 2026 (vùng chọn lọc B2B chất lượng cao) và hệ số quy đổi tệp người dùng khắt khe:
+          </p>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px;">
+            <!-- BẢNG BENCHMARK GIÁ THẦU -->
+            <div>
+              <div style="font-size: 0.92rem; font-weight: 700; color: var(--gold-pale); margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+                <span>💰 Bảng 4.3A: Benchmark CPM / CPC &amp; Tỷ Lệ Tương Tác</span>
+              </div>
+              <div class="table-responsive" style="margin-top: 0;">
+                <table class="custom-table">
+                  <thead>
+                    <tr>
+                      <th>Kênh Chiến Dịch</th>
+                      <th style="text-align: right;">Đơn Giá Benchmark</th>
+                      <th style="text-align: center;">Tỷ Lệ Tương Tác</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>YouTube Video Reach</strong><br><span style="font-size: 0.76rem; color: var(--text-muted);">In-stream skippable + Bumper 6s</span></td>
+                      <td style="text-align: right;" class="price-num">220.000 <span style="font-size: 0.75rem; color: var(--text-muted);">đ/CPM</span></td>
+                      <td style="text-align: center;"><span class="badge-status normal">VTR 30%</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong>GDN — Display</strong><br><span style="font-size: 0.76rem; color: var(--text-muted);">Managed Placement + Custom + In-Market</span></td>
+                      <td style="text-align: right;" class="price-num">85.000 <span style="font-size: 0.75rem; color: var(--text-muted);">đ/vCPM</span></td>
+                      <td style="text-align: center;"><span class="badge-status blue">CTR 0.6%</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Demand Gen</strong><br><span style="font-size: 0.76rem; color: var(--text-muted);">Discovery + Gmail + Shorts/Feed</span></td>
+                      <td style="text-align: right;" class="price-num">92.000 <span style="font-size: 0.75rem; color: var(--text-muted);">đ/CPM</span></td>
+                      <td style="text-align: center;"><span class="badge-status blue">CTR 0.6%</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Google Search</strong><br><span style="font-size: 0.76rem; color: var(--text-muted);">Brand + Generic intent cao</span></td>
+                      <td style="text-align: right;" class="price-num">15.500 <span style="font-size: 0.75rem; color: var(--text-muted);">đ/CPC</span></td>
+                      <td style="text-align: center;"><span class="badge-status warn">CTR 1.8%</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Remarketing</strong><br><span style="font-size: 0.76rem; color: var(--text-muted);">GDN + Demand Gen (Tháng 2, Option 2)</span></td>
+                      <td style="text-align: right;" class="price-num">63.750 <span style="font-size: 0.75rem; color: var(--text-muted);">đ/CPM</span></td>
+                      <td style="text-align: center;"><span class="badge-status purple">Tiết kiệm 25%</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- BẢNG HỆ SỐ QUY ĐỔI AUDIENCE -->
+            <div>
+              <div style="font-size: 0.92rem; font-weight: 700; color: var(--gold-pale); margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+                <span>🎯 Bảng 4.3B: Hệ Số Quy Đổi Tệp Người Dùng Hiệu Quả</span>
+              </div>
+              <div class="table-responsive" style="margin-top: 0;">
+                <table class="custom-table">
+                  <thead>
+                    <tr>
+                      <th>Hệ Số Quy Đổi Đối Tượng</th>
+                      <th style="text-align: center;">Tỷ Lệ</th>
+                      <th>Ý Nghĩa Đo Lường Kỹ Thuật</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>YouTube Subscriber → Reach Thực</strong></td>
+                      <td style="text-align: center;" class="price-num">10%</td>
+                      <td style="font-size: 0.78rem; color: var(--text-muted);">Lọc bỏ tài khoản không hoạt động hoặc ngoài địa bàn mục tiêu.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Lượt Xem Site Ngành → Unique Readers</strong></td>
+                      <td style="text-align: center;" class="price-num">50%</td>
+                      <td style="font-size: 0.78rem; color: var(--text-muted);">Khử trùng lặp giữa nhiều phiên duyệt web của cùng 1 kỹ sư.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Click Quảng Cáo → Pool Remarketing</strong></td>
+                      <td style="text-align: center;" class="price-num">80%</td>
+                      <td style="font-size: 0.78rem; color: var(--text-muted);">Tỷ lệ người truy cập thực tế lưu cookie chuẩn vào tệp bám đuổi.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Khử Trùng Lặp Toàn Portfolio (Unique Reach)</strong></td>
+                      <td style="text-align: center;" class="price-num">45%</td>
+                      <td style="font-size: 0.78rem; color: var(--text-muted);">Khử trùng chéo khi 1 kỹ sư thấy ads trên cả YouTube, Display &amp; Gmail.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Coverage Cap (Tệp Ngách / Custom)</strong></td>
+                      <td style="text-align: center;" class="price-num">80%</td>
+                      <td style="font-size: 0.78rem; color: var(--text-muted);">Chặn trần tiếp cận tối đa để tránh đẩy tần suất lên quá cao.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4.4 BÁO GIÁ & PHÂN BỔ NGÂN SÁCH TRỌN GÓI -->
+        <div style="margin-top: 32px;">
+          <h3 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--gold); margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+            4.4. Cơ Cấu Báo Giá &amp; Phân Bổ Ngân Sách Trọn Gói 6 Tháng
+          </h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 14px;">
+            Ngân sách được cấu trúc hoàn toàn minh bạch giữa <strong>Phí dịch vụ quản lý (Agency Fee 20%)</strong> và <strong>Ngân sách Media thực tế (80%)</strong> nạp trực tiếp vào tài khoản Google Ads của Shinelink:
+          </p>
+
+          <div class="table-responsive">
+            <table class="custom-table">
+              <thead>
+                <tr>
+                  <th style="width: 44%;">Hạng Mục Tài Chính</th>
+                  <th style="width: 28%; text-align: right;">OPTION 1 (Gói Tiêu Chuẩn)</th>
+                  <th style="width: 28%; text-align: right;">OPTION 2 (Gói Đột Phá)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Ngân sách trọn gói / tháng</strong> <span style="font-size: 0.78rem; color: var(--text-muted);">(Đã gồm Agency Fee, chưa VAT)</span></td>
+                  <td style="text-align: right;" class="price-num">30.000.000 đ</td>
+                  <td style="text-align: right;" class="price-num">50.000.000 đ</td>
+                </tr>
+                <tr>
+                  <td><strong>Thời gian triển khai Giai đoạn 1</strong></td>
+                  <td style="text-align: right;">6 tháng</td>
+                  <td style="text-align: right;">6 tháng</td>
+                </tr>
+                <tr>
+                  <td><strong>Tổng ngân sách 6 tháng</strong> <span style="font-size: 0.78rem; color: var(--text-muted);">(Chưa VAT)</span></td>
+                  <td style="text-align: right;" class="price-num">180.000.000 đ</td>
+                  <td style="text-align: right;" class="price-num">300.000.000 đ</td>
+                </tr>
+                <tr>
+                  <td><strong>Agency Fee VSF (Ưu đãi 20% khi ký combo • Gốc 30%)</strong></td>
+                  <td style="text-align: right; color: var(--accent-green); font-weight: 700;">6.000.000 đ/tháng <span style="font-size: 0.76rem; color: var(--text-muted);">(36M/6T)</span></td>
+                  <td style="text-align: right; color: var(--accent-green); font-weight: 700;">10.000.000 đ/tháng <span style="font-size: 0.76rem; color: var(--text-muted);">(60M/6T)</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Ngân sách Media thực tế / tháng nạp vào Google (80%)</strong></td>
+                  <td style="text-align: right; font-weight: 700; color: #FB923C;">24.000.000 đ/tháng <span style="font-size: 0.76rem; color: var(--text-muted);">(144M/6T)</span></td>
+                  <td style="text-align: right; font-weight: 700; color: #FB923C;">40.000.000 đ/tháng <span style="font-size: 0.76rem; color: var(--text-muted);">(240M/6T)</span></td>
+                </tr>
+                <tr class="total-row">
+                  <td><strong>Tổng thanh toán ước tính / tháng</strong> <span style="font-size: 0.8rem; color: var(--text-muted);">(Đã gồm 8% thuế GTGT)</span></td>
+                  <td style="text-align: right;" class="total-price" style="font-size: 1.25rem;">32.400.000 đ</td>
+                  <td style="text-align: right;" class="total-price" style="font-size: 1.25rem;">54.000.000 đ</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- BẢNG PHÂN BỔ MEDIA SPEND THEO KÊNH -->
+          <div style="margin-top: 20px;">
+            <div style="font-size: 0.95rem; font-weight: 700; color: var(--gold); margin-bottom: 8px;">
+              📊 So Sánh Tỷ Trọng Phân Bổ Ngân Sách Media Thực Tế Hàng Tháng:
+            </div>
+            <div class="table-responsive">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>Chiến Dịch (Campaign)</th>
+                    <th style="text-align: center;">% Media (Opt 1)</th>
+                    <th style="text-align: right;">Ngân Sách / Tháng (Opt 1)</th>
+                    <th style="text-align: center;">% Media (Opt 2)</th>
+                    <th style="text-align: right;">Ngân Sách / Tháng (Opt 2)</th>
+                    <th>Chiến Lược Tối Ưu Đi Kèm</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>YouTube Video Reach</strong><br><span style="font-size: 0.76rem; color: var(--text-muted);">In-stream skippable + Bumper 6s</span></td>
+                    <td style="text-align: center; font-weight: 700;">45%</td>
+                    <td style="text-align: right;" class="price-num">10.800.000 đ</td>
+                    <td style="text-align: center; font-weight: 700;">35%</td>
+                    <td style="text-align: right;" class="price-num">14.000.000 đ</td>
+                    <td style="font-size: 0.8rem; color: var(--text-muted);">Opt 2 giảm tỷ trọng để tránh bão hòa, mở rộng thêm kênh cơ khí.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>GDN — Display Network</strong><br><span style="font-size: 0.76rem; color: var(--text-muted);">Managed Placement + Custom + In-Market</span></td>
+                    <td style="text-align: center; font-weight: 700;">30%</td>
+                    <td style="text-align: right;" class="price-num">7.200.000 đ</td>
+                    <td style="text-align: center; font-weight: 700;">35%</td>
+                    <td style="text-align: right;" class="price-num">14.000.000 đ</td>
+                    <td style="font-size: 0.8rem; color: var(--text-muted);">Opt 2 tăng tỷ trọng, kích hoạt In-Market chạy ngay từ Phase 1.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Demand Gen</strong><br><span style="font-size: 0.76rem; color: var(--text-muted);">Discovery + Gmail + Shorts/Feed</span></td>
+                    <td style="text-align: center; font-weight: 700;">20%</td>
+                    <td style="text-align: right;" class="price-num">4.800.000 đ</td>
+                    <td style="text-align: center; font-weight: 700;">22%</td>
+                    <td style="text-align: right;" class="price-num">8.800.000 đ</td>
+                    <td style="font-size: 0.8rem; color: var(--text-muted);">Opt 2 tăng tỷ trọng Optimized Targeting (Google AI mở rộng).</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Google Search</strong><br><span style="font-size: 0.76rem; color: var(--text-muted);">Brand + Generic intent kỹ thuật</span></td>
+                    <td style="text-align: center; font-weight: 700;">5%</td>
+                    <td style="text-align: right;" class="price-num">1.200.000 đ</td>
+                    <td style="text-align: center; font-weight: 700;">3%</td>
+                    <td style="text-align: right;" class="price-num">1.200.000 đ</td>
+                    <td style="font-size: 0.8rem; color: var(--text-muted);">Giữ nguyên số tuyệt đối 1,2M/tháng vì volume tìm kiếm có hạn.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Remarketing Chuyên Sâu</strong><br><span style="font-size: 0.76rem; color: var(--text-muted);">GDN + Demand Gen (Từ Tháng 2)</span></td>
+                    <td style="text-align: center; color: var(--text-dim);">—</td>
+                    <td style="text-align: right; color: var(--text-dim);">—</td>
+                    <td style="text-align: center; font-weight: 700; color: #C084FC;">5%</td>
+                    <td style="text-align: right; color: #C084FC;" class="price-num">2.000.000 đ</td>
+                    <td style="font-size: 0.8rem; color: var(--text-muted);">Độc quyền Option 2: Bám đuổi kỹ sư đã ghé website, CPM rẻ hơn 25%.</td>
+                  </tr>
+                  <tr class="total-row">
+                    <td><strong>TỔNG MEDIA SPEND NẠP GOOGLE</strong></td>
+                    <td style="text-align: center;"><strong>100%</strong></td>
+                    <td style="text-align: right;"><strong>24.000.000 đ</strong></td>
+                    <td style="text-align: center;"><strong>100%</strong></td>
+                    <td style="text-align: right;"><strong>40.000.000 đ</strong></td>
+                    <td style="font-size: 0.8rem; color: var(--gold);">Shinelink kiểm soát 100% báo cáo số dư realtime.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4.5 MA TRẬN KẾ HOẠCH TRIỂN KHAI CHI TIẾT AD GROUPS -->
+        <div style="margin-top: 34px;">
+          <h3 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--gold); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+            4.5. Ma Trận Kế Hoạch Triển Khai Chi Tiết Nhóm Quảng Cáo (Ad Groups)
+          </h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 16px;">
+            Đội ngũ Google Ads của VSF đã bóc tách từng nhóm quảng cáo (Ad Group) với đầy đủ thông số: quy mô tệp thô, hệ số quy đổi, tệp hiệu quả, ngân sách ngày/tháng, giá thầu và dự báo kết quả đầu ra:
+          </p>
+
+          <!-- OPTION 1 MATRIX -->
+          <div style="margin-bottom: 26px;">
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
+              <div style="font-size: 1.05rem; font-weight: 700; color: #FB923C; display: flex; align-items: center; gap: 8px;">
+                <span>📦 Kế Hoạch Chi Tiết 9 Ad Groups — OPTION 1 (30 Triệu/Tháng • Media: 24M)</span>
+              </div>
+              <span class="ads-phase-pill p1">GÓI TIÊU CHUẨN</span>
+            </div>
+
+            <div class="table-responsive">
+              <table class="custom-table" style="font-size: 0.82rem;">
+                <thead>
+                  <tr>
+                    <th>Chiến Dịch</th>
+                    <th>Nhóm Quảng Cáo (Ad Group) &amp; Đối Tượng</th>
+                    <th>Loại Nhắm Chọn</th>
+                    <th style="text-align: center;">Tệp Thô</th>
+                    <th style="text-align: center;">Tệp Hiệu Quả</th>
+                    <th style="text-align: center;">% Kênh</th>
+                    <th style="text-align: right;">Ngân Sách/T</th>
+                    <th style="text-align: right;">CPM/CPC</th>
+                    <th style="text-align: center;">Impressions</th>
+                    <th style="text-align: center;">Clicks</th>
+                    <th style="text-align: center;">Reach</th>
+                    <th style="text-align: center;">Freq</th>
+                    <th style="text-align: center;">Trạng Thái</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table-grp"><td colspan="13">1. YOUTUBE VIDEO REACH (45% Media = 10.800.000 đ/tháng)</td></tr>
+                  <tr>
+                    <td>YouTube</td>
+                    <td><strong>AG1 - Custom Segment</strong><br><span style="font-size: 0.74rem; color: var(--text-muted);">Từ khóa: xích công nghiệp, xích tải mía đường...</span></td>
+                    <td>Custom Segment</td>
+                    <td style="text-align: center;">3K–6K</td>
+                    <td style="text-align: center;">2,7K–5,4K</td>
+                    <td style="text-align: center;">50%</td>
+                    <td style="text-align: right;">5.400.000 đ</td>
+                    <td style="text-align: right;">220.000 đ</td>
+                    <td style="text-align: center;">24.545</td>
+                    <td style="text-align: center;">147</td>
+                    <td style="text-align: center;">4.320</td>
+                    <td style="text-align: center;">5.7x</td>
+                    <td style="text-align: center;"><span class="badge-status normal">Bình thường</span></td>
+                  </tr>
+                  <tr>
+                    <td>YouTube</td>
+                    <td><strong>AG2 - Custom Segment</strong><br><span style="font-size: 0.74rem; color: var(--text-muted);">URL website đối thủ &amp; nhà cung cấp ngành</span></td>
+                    <td>Custom Segment</td>
+                    <td style="text-align: center;">5K–10K</td>
+                    <td style="text-align: center;">4,5K–9,0K</td>
+                    <td style="text-align: center;">30%</td>
+                    <td style="text-align: right;">3.240.000 đ</td>
+                    <td style="text-align: right;">220.000 đ</td>
+                    <td style="text-align: center;">14.727</td>
+                    <td style="text-align: center;">88</td>
+                    <td style="text-align: center;">3.682</td>
+                    <td style="text-align: center;">4.0x</td>
+                    <td style="text-align: center;"><span class="badge-status normal">Bình thường</span></td>
+                  </tr>
+                  <tr>
+                    <td>YouTube</td>
+                    <td><strong>AG3 - Managed Placement</strong><br><span style="font-size: 0.74rem; color: var(--text-muted);">Kênh YouTube cơ khí / công nghiệp nặng</span></td>
+                    <td>Managed Placement</td>
+                    <td style="text-align: center;">10K–30K</td>
+                    <td style="text-align: center;">1,0K–3,0K</td>
+                    <td style="text-align: center;">20%</td>
+                    <td style="text-align: right;">2.160.000 đ</td>
+                    <td style="text-align: right;">220.000 đ</td>
+                    <td style="text-align: center;">9.818</td>
+                    <td style="text-align: center;">59</td>
+                    <td style="text-align: center;">2.400</td>
+                    <td style="text-align: center;">4.1x</td>
+                    <td style="text-align: center;"><span class="badge-status normal">Bình thường</span></td>
+                  </tr>
+
+                  <tr class="table-grp"><td colspan="13">2. GDN — DISPLAY NETWORK (30% Media = 7.200.000 đ/tháng)</td></tr>
+                  <tr>
+                    <td>GDN</td>
+                    <td><strong>AG1 - Managed Placement</strong><br><span style="font-size: 0.74rem; color: var(--text-muted);">Website ngành mía đường, cơ khí, vật tư kỹ thuật</span></td>
+                    <td>Managed Site</td>
+                    <td style="text-align: center;">5K–15K</td>
+                    <td style="text-align: center;">2,5K–7,5K</td>
+                    <td style="text-align: center;">50%</td>
+                    <td style="text-align: right;">3.600.000 đ</td>
+                    <td style="text-align: right;">85.000 đ</td>
+                    <td style="text-align: center;">42.353</td>
+                    <td style="text-align: center;">254</td>
+                    <td style="text-align: center;">6.000</td>
+                    <td style="text-align: center;">7.1x</td>
+                    <td style="text-align: center;"><span class="badge-status normal">Bình thường</span></td>
+                  </tr>
+                  <tr>
+                    <td>GDN</td>
+                    <td><strong>AG2 - Custom Segment</strong><br><span style="font-size: 0.74rem; color: var(--text-muted);">Từ khóa + URL, đồng bộ hành vi YouTube</span></td>
+                    <td>Custom Segment</td>
+                    <td style="text-align: center;">3K–8K</td>
+                    <td style="text-align: center;">2,7K–7,2K</td>
+                    <td style="text-align: center;">35%</td>
+                    <td style="text-align: right;">2.520.000 đ</td>
+                    <td style="text-align: right;">85.000 đ</td>
+                    <td style="text-align: center;">29.647</td>
+                    <td style="text-align: center;">178</td>
+                    <td style="text-align: center;">5.760</td>
+                    <td style="text-align: center;">5.1x</td>
+                    <td style="text-align: center;"><span class="badge-status normal">Bình thường</span></td>
+                  </tr>
+                  <tr>
+                    <td>GDN</td>
+                    <td><strong>AG3 - In-Market</strong><br><span style="font-size: 0.74rem; color: var(--text-muted);">Nhóm người dùng 'Business &amp; Industrial'</span></td>
+                    <td>In-Market</td>
+                    <td style="text-align: center;">200K–500K</td>
+                    <td style="text-align: center;">180K–450K</td>
+                    <td style="text-align: center;">15%</td>
+                    <td style="text-align: right;">1.080.000 đ</td>
+                    <td style="text-align: right;">85.000 đ</td>
+                    <td style="text-align: center;">12.706</td>
+                    <td style="text-align: center;">76</td>
+                    <td style="text-align: center;">3.176</td>
+                    <td style="text-align: center;">4.0x</td>
+                    <td style="text-align: center;"><span class="badge-status normal">Bình thường</span></td>
+                  </tr>
+
+                  <tr class="table-grp"><td colspan="13">3. DEMAND GEN (20% Media = 4.800.000 đ/tháng)</td></tr>
+                  <tr>
+                    <td>Demand Gen</td>
+                    <td><strong>AG1 - Custom Segment</strong><br><span style="font-size: 0.74rem; color: var(--text-muted);">Đồng bộ Display/YouTube qua Discovery &amp; Gmail</span></td>
+                    <td>Custom Segment</td>
+                    <td style="text-align: center;">3K–8K</td>
+                    <td style="text-align: center;">2,7K–7,2K</td>
+                    <td style="text-align: center;">70%</td>
+                    <td style="text-align: right;">3.360.000 đ</td>
+                    <td style="text-align: right;">92.000 đ</td>
+                    <td style="text-align: center;">36.522</td>
+                    <td style="text-align: center;">219</td>
+                    <td style="text-align: center;">5.760</td>
+                    <td style="text-align: center;">6.3x</td>
+                    <td style="text-align: center;"><span class="badge-status normal">Bình thường</span></td>
+                  </tr>
+                  <tr>
+                    <td>Demand Gen</td>
+                    <td><strong>AG2 - Optimized Targeting</strong><br><span style="font-size: 0.74rem; color: var(--text-muted);">Google AI tự mở rộng tệp tương đồng</span></td>
+                    <td>AI Optimized</td>
+                    <td style="text-align: center;">50K–150K</td>
+                    <td style="text-align: center;">45K–135K</td>
+                    <td style="text-align: center;">30%</td>
+                    <td style="text-align: right;">1.440.000 đ</td>
+                    <td style="text-align: right;">92.000 đ</td>
+                    <td style="text-align: center;">15.652</td>
+                    <td style="text-align: center;">94</td>
+                    <td style="text-align: center;">3.913</td>
+                    <td style="text-align: center;">4.0x</td>
+                    <td style="text-align: center;"><span class="badge-status normal">Bình thường</span></td>
+                  </tr>
+
+                  <tr class="table-grp"><td colspan="13">4. GOOGLE SEARCH (5% Media = 1.200.000 đ/tháng)</td></tr>
+                  <tr>
+                    <td>Search</td>
+                    <td><strong>AG1 - Brand Keyword</strong><br><span style="font-size: 0.74rem; color: var(--text-muted);">Bảo vệ từ khóa thương hiệu 'Shinelink'</span></td>
+                    <td>Brand Search</td>
+                    <td style="text-align: center;">—</td>
+                    <td style="text-align: center;">—</td>
+                    <td style="text-align: center;">30%</td>
+                    <td style="text-align: right;">360.000 đ</td>
+                    <td style="text-align: right;">15.500 đ</td>
+                    <td style="text-align: center;">1.290</td>
+                    <td style="text-align: center;">23</td>
+                    <td style="text-align: center;">Theo search</td>
+                    <td style="text-align: center;">—</td>
+                    <td style="text-align: center;"><span class="badge-status blue">Bảo vệ Brand</span></td>
+                  </tr>
+                  <tr>
+                    <td>Search</td>
+                    <td><strong>AG2 - Generic Keyword</strong><br><span style="font-size: 0.74rem; color: var(--text-muted);">Xích công nghiệp, xích tải mía đường...</span></td>
+                    <td>Intent Search</td>
+                    <td style="text-align: center;">—</td>
+                    <td style="text-align: center;">—</td>
+                    <td style="text-align: center;">70%</td>
+                    <td style="text-align: right;">840.000 đ</td>
+                    <td style="text-align: right;">15.500 đ</td>
+                    <td style="text-align: center;">3.011</td>
+                    <td style="text-align: center;">54</td>
+                    <td style="text-align: center;">Theo search</td>
+                    <td style="text-align: center;">—</td>
+                    <td style="text-align: center;"><span class="badge-status blue">Intent cao</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div style="background: rgba(196, 151, 58, 0.08); border: 1px solid var(--border-color); border-radius: var(--radius); padding: 12px 18px; margin-top: 10px; display: flex; justify-content: space-around; flex-wrap: wrap; gap: 12px;">
+              <div style="text-align: center;"><span style="font-size: 0.78rem; color: var(--text-muted);">Tổng Ngân Sách Media/Tháng:</span><br><strong class="price-num" style="font-size: 1.05rem;">24.000.000 đ</strong></div>
+              <div style="text-align: center;"><span style="font-size: 0.78rem; color: var(--text-muted);">Ước Tính Impressions/Tháng:</span><br><strong style="color: var(--text-main); font-size: 1.05rem;">85.561</strong></div>
+              <div style="text-align: center;"><span style="font-size: 0.78rem; color: var(--text-muted);">Ước Tính Video Views/Tháng:</span><br><strong style="color: var(--text-main); font-size: 1.05rem;">7.364</strong></div>
+              <div style="text-align: center;"><span style="font-size: 0.78rem; color: var(--text-muted);">Ước Tính Clicks/Tháng:</span><br><strong style="color: var(--text-main); font-size: 1.05rem;">549</strong></div>
+              <div style="text-align: center;"><span style="font-size: 0.78rem; color: var(--text-muted);">Tổng Unique Reach Ước Tính:</span><br><strong style="color: var(--gold); font-size: 1.05rem;">18.931 người</strong></div>
+            </div>
+          </div>
+
+          <!-- OPTION 2 MATRIX -->
+          <div>
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
+              <div style="font-size: 1.05rem; font-weight: 700; color: #C084FC; display: flex; align-items: center; gap: 8px;">
+                <span>🚀 Kế Hoạch Chi Tiết 10 Ad Groups — OPTION 2 (50 Triệu/Tháng • Media: 40M)</span>
+              </div>
+              <span class="ads-phase-pill p2">GÓI ĐỘT PHÁ TỐI ƯU</span>
+            </div>
+
+            <div class="table-responsive">
+              <table class="custom-table" style="font-size: 0.82rem;">
+                <thead>
+                  <tr>
+                    <th>Chiến Dịch</th>
+                    <th>Nhóm Quảng Cáo (Ad Group) &amp; Đối Tượng</th>
+                    <th>Giai Đoạn</th>
+                    <th style="text-align: center;">Tệp Thô</th>
+                    <th style="text-align: center;">Tệp Hiệu Quả</th>
+                    <th style="text-align: center;">% Kênh</th>
+                    <th style="text-align: right;">Ngân Sách/T</th>
+                    <th style="text-align: right;">CPM/CPC</th>
+                    <th style="text-align: center;">Impressions</th>
+                    <th style="text-align: center;">Clicks</th>
+                    <th style="text-align: center;">Reach</th>
+                    <th style="text-align: center;">Freq</th>
+                    <th style="text-align: center;">Trạng Thái</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table-grp"><td colspan="13">1. YOUTUBE VIDEO REACH (35% Media = 14.000.000 đ/tháng • Giảm tỷ trọng, tránh bão hòa)</td></tr>
+                  <tr>
+                    <td>YouTube</td>
+                    <td><strong>AG1 - Custom Segment (Từ khóa)</strong></td>
+                    <td><span class="ads-phase-pill p1">P1 + P2</span></td>
+                    <td style="text-align: center;">3K–6K</td>
+                    <td style="text-align: center;">2,7K–5,4K</td>
+                    <td style="text-align: center;">35%</td>
+                    <td style="text-align: right;">4.900.000 đ</td>
+                    <td style="text-align: right;">220.000 đ</td>
+                    <td style="text-align: center;">22.273</td>
+                    <td style="text-align: center;">134</td>
+                    <td style="text-align: center;">4.320</td>
+                    <td style="text-align: center;">5.2x</td>
+                    <td style="text-align: center;"><span class="badge-status normal">Bình thường</span></td>
+                  </tr>
+                  <tr>
+                    <td>YouTube</td>
+                    <td><strong>AG2 - Custom Segment (URL Đối thủ)</strong></td>
+                    <td><span class="ads-phase-pill p1">P1 + P2</span></td>
+                    <td style="text-align: center;">5K–10K</td>
+                    <td style="text-align: center;">4,5K–9,0K</td>
+                    <td style="text-align: center;">25%</td>
+                    <td style="text-align: right;">3.500.000 đ</td>
+                    <td style="text-align: right;">220.000 đ</td>
+                    <td style="text-align: center;">15.909</td>
+                    <td style="text-align: center;">95</td>
+                    <td style="text-align: center;">3.977</td>
+                    <td style="text-align: center;">4.0x</td>
+                    <td style="text-align: center;"><span class="badge-status normal">Bình thường</span></td>
+                  </tr>
+                  <tr>
+                    <td>YouTube</td>
+                    <td><strong>AG3 - Managed Placement (Mở rộng kênh cơ khí)</strong></td>
+                    <td><span class="ads-phase-pill p1">P1 + P2</span></td>
+                    <td style="text-align: center;">20K–50K</td>
+                    <td style="text-align: center;">2,0K–5,0K</td>
+                    <td style="text-align: center;">40%</td>
+                    <td style="text-align: right;">5.600.000 đ</td>
+                    <td style="text-align: right;">220.000 đ</td>
+                    <td style="text-align: center;">25.455</td>
+                    <td style="text-align: center;">153</td>
+                    <td style="text-align: center;">4.000</td>
+                    <td style="text-align: center;">6.4x</td>
+                    <td style="text-align: center;"><span class="badge-status normal">Bình thường</span></td>
+                  </tr>
+
+                  <tr class="table-grp"><td colspan="13">2. GDN — DISPLAY NETWORK (35% Media = 14.000.000 đ/tháng • Tăng tỷ trọng, nhiều dư địa)</td></tr>
+                  <tr>
+                    <td>GDN</td>
+                    <td><strong>AG1 - Managed Placement (Mở rộng site ngành)</strong></td>
+                    <td><span class="ads-phase-pill p1">P1 + P2</span></td>
+                    <td style="text-align: center;">10K–25K</td>
+                    <td style="text-align: center;">5,0K–12,5K</td>
+                    <td style="text-align: center;">35%</td>
+                    <td style="text-align: right;">4.900.000 đ</td>
+                    <td style="text-align: right;">85.000 đ</td>
+                    <td style="text-align: center;">57.647</td>
+                    <td style="text-align: center;">346</td>
+                    <td style="text-align: center;">10.000</td>
+                    <td style="text-align: center;">5.8x</td>
+                    <td style="text-align: center;"><span class="badge-status normal">Bình thường</span></td>
+                  </tr>
+                  <tr>
+                    <td>GDN</td>
+                    <td><strong>AG2 - Custom Segment (Từ khóa + URL)</strong></td>
+                    <td><span class="ads-phase-pill p1">P1 + P2</span></td>
+                    <td style="text-align: center;">3K–8K</td>
+                    <td style="text-align: center;">2,7K–7,2K</td>
+                    <td style="text-align: center;">20%</td>
+                    <td style="text-align: right;">2.800.000 đ</td>
+                    <td style="text-align: right;">85.000 đ</td>
+                    <td style="text-align: center;">32.941</td>
+                    <td style="text-align: center;">198</td>
+                    <td style="text-align: center;">5.760</td>
+                    <td style="text-align: center;">5.7x</td>
+                    <td style="text-align: center;"><span class="badge-status normal">Bình thường</span></td>
+                  </tr>
+                  <tr>
+                    <td>GDN</td>
+                    <td><strong>AG3 - In-Market 'Business &amp; Industrial'</strong></td>
+                    <td><span class="ads-phase-pill p1">P1 + P2 (Đầu kỳ)</span></td>
+                    <td style="text-align: center;">200K–500K</td>
+                    <td style="text-align: center;">180K–450K</td>
+                    <td style="text-align: center;">45%</td>
+                    <td style="text-align: right;">6.300.000 đ</td>
+                    <td style="text-align: right;">85.000 đ</td>
+                    <td style="text-align: center;">74.118</td>
+                    <td style="text-align: center;">445</td>
+                    <td style="text-align: center;">18.529</td>
+                    <td style="text-align: center;">4.0x</td>
+                    <td style="text-align: center;"><span class="badge-status normal">Bình thường</span></td>
+                  </tr>
+
+                  <tr class="table-grp"><td colspan="13">3. DEMAND GEN (22% Media = 8.800.000 đ/tháng • Tối ưu mở rộng AI)</td></tr>
+                  <tr>
+                    <td>Demand Gen</td>
+                    <td><strong>AG1 - Custom Segment (Đồng bộ Display/YouTube)</strong></td>
+                    <td><span class="ads-phase-pill p1">P1 + P2</span></td>
+                    <td style="text-align: center;">3K–8K</td>
+                    <td style="text-align: center;">2,7K–7,2K</td>
+                    <td style="text-align: center;">40%</td>
+                    <td style="text-align: right;">3.520.000 đ</td>
+                    <td style="text-align: right;">92.000 đ</td>
+                    <td style="text-align: center;">38.261</td>
+                    <td style="text-align: center;">230</td>
+                    <td style="text-align: center;">5.760</td>
+                    <td style="text-align: center;">6.6x</td>
+                    <td style="text-align: center;"><span class="badge-status normal">Bình thường</span></td>
+                  </tr>
+                  <tr>
+                    <td>Demand Gen</td>
+                    <td><strong>AG2 - Optimized Targeting (Google AI mở rộng)</strong></td>
+                    <td><span class="ads-phase-pill p1">P1 + P2</span></td>
+                    <td style="text-align: center;">50K–150K</td>
+                    <td style="text-align: center;">45K–135K</td>
+                    <td style="text-align: center;">60%</td>
+                    <td style="text-align: right;">5.280.000 đ</td>
+                    <td style="text-align: right;">92.000 đ</td>
+                    <td style="text-align: center;">57.391</td>
+                    <td style="text-align: center;">344</td>
+                    <td style="text-align: center;">14.348</td>
+                    <td style="text-align: center;">4.0x</td>
+                    <td style="text-align: center;"><span class="badge-status normal">Bình thường</span></td>
+                  </tr>
+
+                  <tr class="table-grp"><td colspan="13">4. GOOGLE SEARCH (3% Media = 1.200.000 đ/tháng • Cố định số tuyệt đối)</td></tr>
+                  <tr>
+                    <td>Search</td>
+                    <td><strong>AG1 - Brand Keyword ('Shinelink')</strong></td>
+                    <td><span class="ads-phase-pill p1">P1 + P2</span></td>
+                    <td style="text-align: center;">—</td>
+                    <td style="text-align: center;">—</td>
+                    <td style="text-align: center;">30%</td>
+                    <td style="text-align: right;">360.000 đ</td>
+                    <td style="text-align: right;">15.500 đ</td>
+                    <td style="text-align: center;">1.290</td>
+                    <td style="text-align: center;">23</td>
+                    <td style="text-align: center;">Theo search</td>
+                    <td style="text-align: center;">—</td>
+                    <td style="text-align: center;"><span class="badge-status blue">Bảo vệ Brand</span></td>
+                  </tr>
+                  <tr>
+                    <td>Search</td>
+                    <td><strong>AG2 - Generic Keyword (Xích tải mía, xích tải nặng)</strong></td>
+                    <td><span class="ads-phase-pill p1">P1 + P2</span></td>
+                    <td style="text-align: center;">—</td>
+                    <td style="text-align: center;">—</td>
+                    <td style="text-align: center;">70%</td>
+                    <td style="text-align: right;">840.000 đ</td>
+                    <td style="text-align: right;">15.500 đ</td>
+                    <td style="text-align: center;">3.011</td>
+                    <td style="text-align: center;">54</td>
+                    <td style="text-align: center;">Theo search</td>
+                    <td style="text-align: center;">—</td>
+                    <td style="text-align: center;"><span class="badge-status blue">Intent cao</span></td>
+                  </tr>
+
+                  <tr class="table-grp"><td colspan="13">5. REMARKETING CHUYÊN SÂU (5% Media = 2.000.000 đ/tháng • Độc quyền Option 2, từ Tháng 2)</td></tr>
+                  <tr>
+                    <td>GDN / Demand</td>
+                    <td><strong>AG - Remarketing (Kỹ sư đã ghé web tháng trước)</strong></td>
+                    <td><span class="ads-phase-pill p2">Phase 2 (Từ T2)</span></td>
+                    <td style="text-align: center;">1,1K–1,6K</td>
+                    <td style="text-align: center;">1,0K–1,5K</td>
+                    <td style="text-align: center;">100%</td>
+                    <td style="text-align: right;">2.000.000 đ</td>
+                    <td style="text-align: right;">63.750 đ</td>
+                    <td style="text-align: center;">31.373</td>
+                    <td style="text-align: center;">188</td>
+                    <td style="text-align: center;">1.237</td>
+                    <td style="text-align: center;">25.4x</td>
+                    <td style="text-align: center;"><span class="badge-status purple">Bám đuổi sâu</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div style="background: rgba(168, 85, 247, 0.08); border: 1px solid rgba(168, 85, 247, 0.25); border-radius: var(--radius); padding: 12px 18px; margin-top: 10px; display: flex; justify-content: space-around; flex-wrap: wrap; gap: 12px;">
+              <div style="text-align: center;"><span style="font-size: 0.78rem; color: var(--text-muted);">Tổng Ngân Sách Media/Tháng:</span><br><strong class="price-num" style="font-size: 1.05rem; color: #C084FC;">40.000.000 đ</strong></div>
+              <div style="text-align: center;"><span style="font-size: 0.78rem; color: var(--text-muted);">Ước Tính Impressions/Tháng:</span><br><strong style="color: var(--text-main); font-size: 1.05rem;">359.668</strong></div>
+              <div style="text-align: center;"><span style="font-size: 0.78rem; color: var(--text-muted);">Ước Tính Video Views/Tháng:</span><br><strong style="color: var(--text-main); font-size: 1.05rem;">19.091</strong></div>
+              <div style="text-align: center;"><span style="font-size: 0.78rem; color: var(--text-muted);">Ước Tính Clicks/Tháng:</span><br><strong style="color: var(--text-main); font-size: 1.05rem;">2.210</strong></div>
+              <div style="text-align: center;"><span style="font-size: 0.78rem; color: var(--text-muted);">Tổng Unique Reach Ước Tính:</span><br><strong style="color: #C084FC; font-size: 1.05rem;">67.932 người</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4.6 CAM KẾT KPI & BUFFER BẢO HIỂM 15% -->
+        <div style="margin-top: 34px;">
+          <h3 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--gold); margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+            4.6. Cam Kết Hiệu Quả Đầu Ra (KPI) &amp; Buffer Bảo Vệ Rủi Ro 15%
+          </h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 14px;">
+            Để bảo đảm quyền lợi tối đa cho Shinelink trước các biến động giá thầu thực tế trên sàn đấu giá Google, VSF áp dụng <strong>Buffer sàn an toàn 15%</strong> (cam kết tối thiểu đạt 85% số liệu ước tính từ Media Plan):
+          </p>
+
+          <div class="table-responsive">
+            <table class="custom-table">
+              <thead>
+                <tr>
+                  <th rowspan="2" style="vertical-align: middle;">Chỉ Số Đo Lường KPI</th>
+                  <th colspan="2" style="text-align: center; background: rgba(234,88,12,0.15); color: #FB923C;">OPTION 1 (Gói 30M/tháng)</th>
+                  <th colspan="2" style="text-align: center; background: rgba(168,85,247,0.15); color: #C084FC;">OPTION 2 (Gói 50M/tháng)</th>
+                </tr>
+                <tr>
+                  <th style="text-align: center;">Cam Kết / Tháng</th>
+                  <th style="text-align: center;">Lũy Kế 6 Tháng</th>
+                  <th style="text-align: center;">Cam Kết / Tháng</th>
+                  <th style="text-align: center;">Lũy Kế 6 Tháng</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Lượt hiển thị quảng cáo (Impressions)</strong><br><span style="font-size: 0.76rem; color: var(--text-muted);">Độ phủ nhận diện trên YouTube, GDN, Gmail &amp; Search</span></td>
+                  <td style="text-align: center;" class="price-num">72.727</td>
+                  <td style="text-align: center; font-weight: 700;">436.363</td>
+                  <td style="text-align: center;" class="price-num" style="color: #C084FC;">305.718</td>
+                  <td style="text-align: center; font-weight: 700; color: #C084FC;">1.834.307</td>
+                </tr>
+                <tr>
+                  <td><strong>Lượt xem video kỹ thuật (Video Views)</strong><br><span style="font-size: 0.76rem; color: var(--text-muted);">Tính trên người xem &gt; 30s hoặc hết video Bumper/In-stream</span></td>
+                  <td style="text-align: center;" class="price-num">6.259</td>
+                  <td style="text-align: center; font-weight: 700;">37.555</td>
+                  <td style="text-align: center;" class="price-num" style="color: #C084FC;">16.227</td>
+                  <td style="text-align: center; font-weight: 700; color: #C084FC;">97.364</td>
+                </tr>
+                <tr>
+                  <td><strong>Lượt nhấp vào website (Clicks / Traffic)</strong><br><span style="font-size: 0.76rem; color: var(--text-muted);">Kéo kỹ sư nhà máy vào xem catalog &amp; giải pháp trên shinelink.vn</span></td>
+                  <td style="text-align: center;" class="price-num">467</td>
+                  <td style="text-align: center; font-weight: 700;">2.802</td>
+                  <td style="text-align: center;" class="price-num" style="color: #C084FC;">1.878</td>
+                  <td style="text-align: center; font-weight: 700; color: #C084FC;">11.269</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="note-box success" style="margin-top: 14px;">
+            <p style="font-size: 0.88rem; color: var(--text-main); line-height: 1.65;">
+              🎯 <strong>Tác động cộng hưởng chiến lược:</strong> Với Option 2, hơn <strong>1,8 triệu lượt hiển thị</strong> và gần <strong>100.000 lượt xem video kỹ thuật</strong> sẽ bao phủ gần như toàn bộ nhân sự kỹ thuật nhà máy mía đường và công nghiệp nặng miền Nam. Đây là bệ phóng nhận diện vô giá để thúc đẩy tỷ lệ chuyển đổi khi nhân viên kinh doanh Shinelink tiếp cận chào hàng trực tiếp hoặc khi khách hàng tìm kiếm vật tư thay thế.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4.7 KHUNG GIÁM SÁT THỰC TẾ & MẪU TRACKING FILE 6 THÁNG -->
+        <div style="margin-top: 34px;">
+          <h3 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--gold); margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+            4.7. Khung Giám Sát, Nghiệm Thu Thực Tế (Tracking File 6 Tháng) &amp; Cấu Hình GA4
+          </h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 14px;">
+            VSF cam kết <strong>minh bạch số liệu 100%</strong>: Shinelink được cấp quyền quản trị trực tiếp tài khoản Google Ads và hệ thống Google Analytics 4 (GA4). Hàng tháng, hai bên cùng đối soát kết quả thực tế qua bảng biểu chuẩn mực sau:
+          </p>
+
+          <!-- TRACKING SHEET DEMO -->
+          <div class="table-responsive">
+            <table class="custom-table" style="font-size: 0.82rem;">
+              <thead>
+                <tr>
+                  <th rowspan="2" style="vertical-align: middle; width: 22%;">Chỉ Số Đo Lường Thực Tế</th>
+                  <th rowspan="2" style="vertical-align: middle; text-align: center;">Cam Kết / Tháng</th>
+                  <th colspan="2" style="text-align: center;">Tháng 1 (Học ML)</th>
+                  <th colspan="2" style="text-align: center;">Tháng 2 (Tăng tốc)</th>
+                  <th colspan="2" style="text-align: center;">Tháng 3 (Ổn định)</th>
+                  <th colspan="2" style="text-align: center;">Tháng 4 (Mở rộng)</th>
+                  <th colspan="2" style="text-align: center;">Tháng 5 (Bám đuổi)</th>
+                  <th colspan="2" style="text-align: center;">Tháng 6 (Về đích)</th>
+                  <th rowspan="2" style="vertical-align: middle; text-align: center; color: var(--gold);">Lũy Kế Thực Tế</th>
+                  <th rowspan="2" style="vertical-align: middle; text-align: center;">Cam Kết GD1</th>
+                  <th rowspan="2" style="vertical-align: middle; text-align: center; color: var(--accent-green);">% Hoàn Thành</th>
+                </tr>
+                <tr>
+                  <th style="text-align: center;">Thực Tế</th><th style="text-align: center;">Lệch %</th>
+                  <th style="text-align: center;">Thực Tế</th><th style="text-align: center;">Lệch %</th>
+                  <th style="text-align: center;">Thực Tế</th><th style="text-align: center;">Lệch %</th>
+                  <th style="text-align: center;">Thực Tế</th><th style="text-align: center;">Lệch %</th>
+                  <th style="text-align: center;">Thực Tế</th><th style="text-align: center;">Lệch %</th>
+                  <th style="text-align: center;">Thực Tế</th><th style="text-align: center;">Lệch %</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Lượt hiển thị (Impressions)</strong></td>
+                  <td style="text-align: center;" class="price-num">72.727</td>
+                  <td style="text-align: center; color: var(--text-muted);">Cập nhật</td><td style="text-align: center; color: var(--text-muted);">—</td>
+                  <td style="text-align: center; color: var(--text-muted);">Cập nhật</td><td style="text-align: center; color: var(--text-muted);">—</td>
+                  <td style="text-align: center; color: var(--text-muted);">Cập nhật</td><td style="text-align: center; color: var(--text-muted);">—</td>
+                  <td style="text-align: center; color: var(--text-muted);">Cập nhật</td><td style="text-align: center; color: var(--text-muted);">—</td>
+                  <td style="text-align: center; color: var(--text-muted);">Cập nhật</td><td style="text-align: center; color: var(--text-muted);">—</td>
+                  <td style="text-align: center; color: var(--text-muted);">Cập nhật</td><td style="text-align: center; color: var(--text-muted);">—</td>
+                  <td style="text-align: center; font-weight: 700; color: var(--gold);">Theo dõi</td>
+                  <td style="text-align: center; font-weight: 700;">436.363</td>
+                  <td style="text-align: center;"><span class="badge-status normal">Cam kết ≥100%</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Lượt xem video (Video Views)</strong></td>
+                  <td style="text-align: center;" class="price-num">6.259</td>
+                  <td style="text-align: center; color: var(--text-muted);">Cập nhật</td><td style="text-align: center; color: var(--text-muted);">—</td>
+                  <td style="text-align: center; color: var(--text-muted);">Cập nhật</td><td style="text-align: center; color: var(--text-muted);">—</td>
+                  <td style="text-align: center; color: var(--text-muted);">Cập nhật</td><td style="text-align: center; color: var(--text-muted);">—</td>
+                  <td style="text-align: center; color: var(--text-muted);">Cập nhật</td><td style="text-align: center; color: var(--text-muted);">—</td>
+                  <td style="text-align: center; color: var(--text-muted);">Cập nhật</td><td style="text-align: center; color: var(--text-muted);">—</td>
+                  <td style="text-align: center; color: var(--text-muted);">Cập nhật</td><td style="text-align: center; color: var(--text-muted);">—</td>
+                  <td style="text-align: center; font-weight: 700; color: var(--gold);">Theo dõi</td>
+                  <td style="text-align: center; font-weight: 700;">37.555</td>
+                  <td style="text-align: center;"><span class="badge-status normal">Cam kết ≥100%</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Lượt nhấp (Clicks / Traffic)</strong></td>
+                  <td style="text-align: center;" class="price-num">467</td>
+                  <td style="text-align: center; color: var(--text-muted);">Cập nhật</td><td style="text-align: center; color: var(--text-muted);">—</td>
+                  <td style="text-align: center; color: var(--text-muted);">Cập nhật</td><td style="text-align: center; color: var(--text-muted);">—</td>
+                  <td style="text-align: center; color: var(--text-muted);">Cập nhật</td><td style="text-align: center; color: var(--text-muted);">—</td>
+                  <td style="text-align: center; color: var(--text-muted);">Cập nhật</td><td style="text-align: center; color: var(--text-muted);">—</td>
+                  <td style="text-align: center; color: var(--text-muted);">Cập nhật</td><td style="text-align: center; color: var(--text-muted);">—</td>
+                  <td style="text-align: center; color: var(--text-muted);">Cập nhật</td><td style="text-align: center; color: var(--text-muted);">—</td>
+                  <td style="text-align: center; font-weight: 700; color: var(--gold);">Theo dõi</td>
+                  <td style="text-align: center; font-weight: 700;">2.802</td>
+                  <td style="text-align: center;"><span class="badge-status normal">Cam kết ≥100%</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- GA4 CONFIGURATION BOX -->
+          <div style="margin-top: 18px; background: var(--bg-card-alt); border: 1px solid var(--border-subtle); border-radius: var(--radius); padding: 18px 22px;">
+            <div style="font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; color: var(--gold); margin-bottom: 8px;">
+              ⚙️ Hạ Tầng Đo Lường Chuyển Đổi Kỹ Thuật (GA4 &amp; Google Tag):
+            </div>
+            <p style="font-size: 0.86rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 10px;">
+              Để đảm bảo chất lượng người truy cập không phải "lưu lượng rác", VSF cài đặt 3 tầng vi chuyển đổi (micro-conversions) ngay trên website shinelink.vn:
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px;">
+              <div style="background: var(--bg-card); padding: 10px 14px; border-radius: 4px; border-left: 3px solid #60A5FA;">
+                <strong style="color: #60A5FA; font-size: 0.82rem;">1. Đo Lường Mức Độ Quan Tâm</strong>
+                <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 4px;">Thời gian xem trang &gt; 60 giây và độ cuộn trang (Scroll depth) &gt; 75% nội dung kỹ thuật.</p>
+              </div>
+              <div style="background: var(--bg-card); padding: 10px 14px; border-radius: 4px; border-left: 3px solid var(--gold);">
+                <strong style="color: var(--gold); font-size: 0.82rem;">2. Tương Tác Kỹ Thuật Cao</strong>
+                <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 4px;">Click xem bảng tra thông số xích, tải catalogue PDF hoặc tài liệu so sánh xích thay thế Tsubaki/KANA.</p>
+              </div>
+              <div style="background: var(--bg-card); padding: 10px 14px; border-radius: 4px; border-left: 3px solid var(--accent-green);">
+                <strong style="color: var(--accent-green); font-size: 0.82rem;">3. Hành Động Chuyển Đổi Lead</strong>
+                <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 4px;">Click gọi hotline kỹ sư tư vấn, click chat Zalo B2B hoặc gửi biểu mẫu yêu cầu báo giá theo bản vẽ.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4.8 MA TRẬN PHÂN ĐỊNH TRÁCH NHIỆM CHUẨN BỊ -->
+        <div style="margin-top: 34px;">
+          <h3 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--gold); margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+            4.8. Ma Trận Phân Định Trách Nhiệm Chuẩn Bị Trước Khi Setup &amp; Go-Live
+          </h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 14px;">
+            Để chiến dịch lên sóng đúng tiến độ và vận hành trơn tru ngay từ ngày đầu tiên, các đầu việc được phân công minh bạch giữa Shinelink và Agency VSF:
+          </p>
+
+          <div class="table-responsive">
+            <table class="custom-table">
+              <thead>
+                <tr>
+                  <th style="width: 25%;">Hạng Mục Chuẩn Bị</th>
+                  <th style="width: 55%;">Nội Dung Chi Tiết Cần Hoàn Tất</th>
+                  <th style="width: 20%; text-align: center;">Trách Nhiệm Chính</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Website Tiếng Việt / Landing Page</strong></td>
+                  <td>Hoàn thiện tên miền <code>shinelink.vn</code> + website tiếng Việt; cung cấp link nghiệm thu trước ngày dự kiến lên chiến dịch.</td>
+                  <td style="text-align: center;"><span class="badge-status normal">Shinelink / VSF</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Hạ Tầng GA4 + Google Tag</strong></td>
+                  <td>Cấu hình song song khi website go-live; kiểm tra toàn bộ luồng tracking và tạo Content Group riêng cho chuyên mục mía đường.</td>
+                  <td style="text-align: center;"><span class="badge-status normal">Đội Web + Agency</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Danh Sách Managed Placement</strong></td>
+                  <td>Nghiên cứu &amp; lập danh sách website, diễn đàn, kênh YouTube ngành mía đường, gia công cơ khí, vật tư kỹ thuật công nghiệp nặng.</td>
+                  <td style="text-align: center;"><span class="badge-status blue">Agency VSF</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Custom Segments (Từ Khóa &amp; URL Đối Thủ)</strong></td>
+                  <td>Xây dựng danh mục từ khóa kỹ thuật chuyên sâu ngành đường + danh sách URL các nhà cung cấp, đối thủ cạnh tranh trên thị trường.</td>
+                  <td style="text-align: center;"><span class="badge-status blue">Agency VSF</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Tư Liệu Hình Ảnh &amp; Video Gốc</strong></td>
+                  <td>Cung cấp kho hình ảnh nhà máy, xưởng sản xuất Hàng Châu, bản vẽ và video dây chuyền. Agency resize, biên tập thành các kích thước chuẩn Display &amp; Video.</td>
+                  <td style="text-align: center;"><span class="badge-status warn">Shinelink cấp → VSF dựng</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Frequency Cap &amp; Lịch Chạy Ads</strong></td>
+                  <td>Thiết lập giới hạn 4–8 lần/người/tháng; ưu tiên chạy trong khung giờ hành chính từ Thứ Hai đến Thứ Sáu (giờ làm việc của kỹ sư nhà máy).</td>
+                  <td style="text-align: center;"><span class="badge-status blue">Agency VSF</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 4.9 ĐIỀU KHOẢN VẬN HÀNH THỰC CHIẾN -->
+        <div style="margin-top: 34px;">
+          <h3 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--gold); margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+            4.9. Sáu (06) Điều Khoản Vận Hành Thực Chiến Khuyến Nghị Đưa Vào Hợp Đồng
+          </h3>
+
+          <div class="note-box warn" style="margin-top: 10px;">
+            <div class="note-title">📌 Điều Khoản Vận Hành &amp; Cam Kết Giám Sát Hiệu Năng Google Ads</div>
+            <ol style="margin: 10px 0 0 22px; line-height: 1.8; font-size: 0.88rem; color: var(--text-main);">
+              <li><strong>Tái phân bổ linh hoạt giữa các nhóm quảng cáo:</strong> Ngân sách được tái phân bổ linh hoạt giữa các Ad Group/Campaign trong cùng 1 Option theo hiệu suất thực tế (ví dụ: Ad Group nào có Coverage đã đạt &gt;=90% hoặc bão hòa sẽ được giảm bớt ngân sách để chuyển sang Ad Group còn dư địa), không cần thương thảo lại hợp đồng, miễn tổng ngân sách media hàng tháng không đổi.</li>
+              <li><strong>Đánh giá KPI theo lũy kế cả 6 tháng:</strong> KPI cam kết được đánh giá dựa trên tổng kết quả tích lũy của cả chu kỳ 6 tháng. Tháng 1–2 là giai đoạn hệ thống máy học (Machine Learning) của Google học tệp đối tượng B2B ngách, không áp cứng cam kết theo từng tháng riêng lẻ.</li>
+              <li><strong>Cơ chế xử lý tệp bão hòa:</strong> Các Ad Group bị đánh dấu "bão hòa" sau Tháng 1 sẽ được VSF chủ động xem xét giảm ngân sách hoặc mở rộng danh sách placement/audience, tuyệt đối không tiếp tục "đốt tiền" vào cùng một nhóm người dùng đã xem nhiều lần.</li>
+              <li><strong>Điều chỉnh ngân sách Remarketing linh hoạt (riêng Option 2):</strong> Dòng ngân sách Remarketing là ước tính (quy mô tệp phụ thuộc vào lượng traffic thực tế website tích lũy được trong Tháng 1). Ngân sách thực tế cho Remarketing sẽ được cân đối theo dữ liệu thật, nếu traffic thấp hơn dự kiến sẽ chuyển phần dư sang các Ad Group khác để tối ưu hóa hiển thị.</li>
+              <li><strong>Hiệu chỉnh Benchmark định kỳ:</strong> Benchmark CPM/CPC và quy mô tệp đối tượng sẽ được xem xét và hiệu chỉnh lại sau 30–60 ngày chạy thực tế dựa trên dữ liệu đối soát chuẩn xác trong <em>Tracking File</em>.</li>
+              <li><strong>Quyền chủ động tối ưu sáng tạo của VSF:</strong> VSF được toàn quyền chủ động thử nghiệm A/B testing về creative (thông điệp, hình ảnh, video), placement và audience trong phạm vi ngân sách đã được duyệt nhằm liên tục cải thiện tỷ lệ CTR, hạ giá thầu và tối đa hóa KPI cam kết cho Shinelink.</li>
+            </ol>
+          </div>
         </div>
       </section>
 
